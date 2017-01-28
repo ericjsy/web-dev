@@ -1,0 +1,4 @@
+Individual Feedback:
+Good.
+
+I am concerned that your functional requirements may be a bit much for this course unless you already have some server side development experience.  You may want to have a fall back plan to allow users to register / login / comment on different products from the bakery, replies, etc.
