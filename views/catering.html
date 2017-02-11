@@ -7,10 +7,44 @@
 	<meta charset="utf-8">
 	<title>Catering Form</title>
 
-<!--Remove once external style sheet has been set up -->
+<!-- Remove once external style sheet has been set up -->
+
+<!-- Work on alignment, color scheme, general aesthetics -->
 	<style>
 		body {
 			font-family: sans-serif;
+			font-size: 12pt;
+			background-color: #F5CeFF;
+		}
+	
+		h1 {
+			border-bottom: 1px solid black;
+			width: 480px;
+		}
+
+		#info {
+			padding: 20px;
+			width: 435px;
+			background-color: white;
+			border: 1px solid #9B3417;
+		}
+
+		form {
+			padding-top: 30px;
+			width: 475px;
+		}
+		
+		fieldset {
+			width:450px;
+			background-color: white;
+			border: 1px solid #9B3417;
+			margin-bottom: 10px;
+			border-radius: 15px;
+		}
+		
+		h2 {
+			padding-top: 5px;
+			margin-top: 0px;
 		}
 	
 		li {
@@ -21,138 +55,270 @@
 			color: red;
 		}
 		
-		.tel {
-			width: 54px;
-		}
-
-		fieldset {
-			width:450px;
-		}
-		
 		input {
 			border-radius: 2px;
 			border: 1px solid #eee;
-			padding: 10px;
+			padding: 5px;
+			width: 300px;
+		}
+
+		input[type=number]::-webkit-inner-spin-button,
+		input[type=number]::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		.tel {
+			width: 54px;
+		}
+		
+		#desired input {
+			width: 30px;
 		}
 		
 		#submit input {
-			background-color: #0779BE;
+			background-color: #9B3417;
 			border-style: none;
 			color: white;
+			width: 100px;
+			height: 40px;
+			margin-bottom: 20px;
+		}
+		
+		#submit input:hover {
+			opacity: 0.75;
 		}
 	</style>
 <!--Remove once external style sheet has been set up -->
 
 </head>
 	<body>
+		<h1>
+			Catering Form
+		</h1>
+		<div id="info">
+		This is the information box.  
+		</div>
 		<form>
-			<h1>
-				Catering Form
-			</h1>
-			<div id="info">
-			This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. 
-			</div>
 			<fieldset>
-				<legend>
-					Contact Information
-				</legend>
+			
+				<!-- Need to finish all acceptable patterns -->
+			
+				<h2>
+				Contact Information
+				</h2>
 				<ul>
 					<li>
 						<label for="name">
-							Full Name <span class="required">*</span><br>
+							First Name<span class="required">*</span><br>
 						</label>
-						<input type="text" name="name" id="name" required="required" placeholder="Your first and last name.">
+						<input 
+							type="text" 
+							id="fname" 
+							name="fname" 
+							placeholder="First name" 
+							required="required" 
+							pattern="[a-zA-Z]{1,}" 
+							title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
+					</li>
+					<li>
+						<label for="name">
+							<br>Last Name <span class="required">*</span><br>
+						</label>
+						<input 
+							type="text" 
+							id="lname" 
+							name="lname" 
+							placeholder="Last name" 
+							required="required" 
+							pattern="[a-zA-Z]{1,}" 
+							title="Last name cannot contain any numbers, symbols or spaces. e.g. John, john">
 					</li>
 					<li>
 						<label for="phone">
 							<br>Contact Number <span class="required">*</span><br>
 						</label>
-						<input type="text" step="1" name="tel1" class="tel" maxlength="3" required="required"> -
-						<input type="text" name="tel2" class="tel" maxlength="3" required="required"> -
-						<input type="text" name="tel3" class="tel" maxlength="4" required="required">
-						
+						<input 
+							type="text" 
+							class="tel"
+							name="tel1" 
+							placeholder="###" 
+							required="required" 
+							maxlength="3" 
+							pattern="([0-9]{3})" 
+							title="Contact number should only contain numbers. e.g. 123"> -
+						<input 
+							type="text" 
+							class="tel" 
+							name="tel2" 
+							placeholder="###" 
+							required="required"
+							maxlength="3" 
+							pattern="([0-9]{3})"  
+							title="Contact number should only contain numbers. e.g. 123"> -
+						<input 
+							type="text" 
+							class="tel"  
+							name="tel3" 
+							placeholder="####" 
+							required="required" 
+							maxlength="4" 
+							pattern="([0-9]{4})" 
+							title="Contact number should only contain numbers. e.g. 123">
 					</li>
 					<li>
 						<label for="email">
 							<br>Email <span class="required">*</span><br>
 						</label>
-						<input type="email" name="email" id="email" required="required" placeholder="name@domain.com">
+						<input 
+							type="email" 
+							id="email" 
+							name="email" 
+							placeholder="name@domain.com"
+							required="required">
 					</li>
 				</ul>
 			</fieldset>
 			<fieldset>
-				<legend>
+				<h2>
 					Event Information
-				</legend>
+				</h2>
 				<ul>
 					<li>
 						<label for="organization">
 							Organization<br>
 						</label>
-						<input type="text" name="organization" id="organization">
+						<input 
+							type="text" 
+							id="organization" 
+							name="organization" 
+							placeholder="Organization">
 					</li>
 					<li>
 						<label for="address">
 							<br>Address <span class="required">*</span><br>
 						</label>
-						<input type="text" name="address" id="address" required="required">
+						<input 
+							type="text" 
+							id="address" 
+							name="address" 
+							placeholder="Address"
+							required="required" 
+							pattern="[a-zA-z0-9/s]{1,}" 
+							title="Address should be alphanumeric. e.g. 1234 Baker Street">
 					</li>
 					<li>
 						<label for="date">
 							<br>Date of Event <span class="required">*</span><br>
 						</label>
-						<input type="date" name="date" id="date" required="required">
+						<input 
+							type="date" 
+							id="date" 
+							name="date" 
+							required="required">
 					</li>
 					<li>
 						<label for="start">
 							<br>Start Time <span class="required">*</span><br>
 						</label>
-						<input type="time" name="start" id="start" required="required">
+						<input 
+							type="time" 
+							id="start" 
+							name="start" 
+							required="required">
+					</li>
+					<li>
+						<label for="end">
+							<br>End Time <span class="required">*</span><br>
+						</label>
+						<input 
+							type="time" 
+							id="end" 
+							name="end" 
+							required="required">
 					</li>
 				</ul>
 			</fieldset>
 			<fieldset>
-				<legend>
+				<h2>
 					Order Form
-				</legend>
+				</h2>
 				<ul>
 					<li>
 						<label for="function">
-							Type of Function &nbsp
+							Type of Function <span class="required">*</span>
 						</label>
-						<input type="text" name="function" id="function" list="functions" required="required">
-							<datalist id="functions">
-								<option value="Type 1">
-								<option value="Type 2">
-								<option value="Type 3">
-								<option value="Type 4">
-							</datalist>
+						<input 
+							type="text" 
+							id="function" 
+							name="function" 
+							placeholder="Function"
+							required="required" 
+							list="functions">
+
+								<datalist id="functions">
+									<option value="Type 1">
+									<option value="Type 2">
+									<option value="Type 3">
+									<option value="Type 4">
+								</datalist>
 					</li>
 					<li>
 						<label for="guests">
 							<br>Number of Guests <span class="required">*</span><br>
 						</label>
-						<input type="text" name="guests" id="guests" required="required">
+						<input 
+							type="number" 
+							id="guests" 
+							name="guests" 
+							placeholder="Number of Guests"
+							required="required"
+							min="0">
 					</li>
 					<li>
-						<label>
+						<label id="desired">
 							<br>Desired Products &nbsp
-							Item 1<input type="checkbox" name="item1" id="item1" value="yes">
-							Item 2<input type="checkbox" name="item2" id="item2" value="yes">
-							Item 3<input type="checkbox" name="item3" id="item3" value="yes">
+							Item 1
+								<input 
+									type="checkbox" 
+									id="item1" 
+									name="item1" 
+									value="yes">
+							Item 2
+								<input 
+									type="checkbox" 
+									id="item2" 
+									name="item2" 
+									value="yes">
+							Item 3
+								<input 
+									type="checkbox" 
+									id="item3" 
+									name="item3" 
+									value="yes">
 						</label>
 					</li>
 					<li>
 						<label for="allergies">
 							<br>Dietary Restrictions<br>
 						</label>
-						<textarea name="allergies" id="allergies" cols="50" rows="4" placeholder="Enter your allergies here."></textarea>
+						<textarea 
+							id="allergies" 
+							name="allergies" 
+							placeholder="Enter your allergies here."
+							cols="39" 
+							rows="4"></textarea>
 					</li>
 					<li>
 						<label for="comments">
 						<br>Additional Information<br>
 						</label>
-						<textarea name="comments" id="comments" cols="50" rows="4" placeholder="Enter your comments here."></textarea>
+						<textarea 
+							name="comments" 
+							id="comments" 
+							placeholder="Enter your comments here."
+							cols="39" 
+							rows="4"></textarea>
 					</li>
 				</ul>
 			</fieldset>
