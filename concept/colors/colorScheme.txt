@@ -1,4 +1,4 @@
-body background: #F5CeFF
+body background: #F5CEFF
 header background: #9B3417
 body text color: #90423C
 header text color: #F7D0BB
