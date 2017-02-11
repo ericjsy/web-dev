@@ -1,0 +1,82 @@
+header, footer, nav, main {
+	display: block;
+	}
+
+body {
+	background-color: #F5CEFF;
+	color:#90423C;
+	margin: 0;
+	font-family: Verdana, Arial, sans-serif;
+	}
+
+header {
+	background-color: #9B3417;
+	color: #F7D0BB;
+	}
+	
+header ul {
+	list-style-type: none;
+	margin: 0;
+	}
+header li {
+	display: inline;
+	}
+	
+header a {
+	padding-right: 15px;
+	text-decoration: none;
+	}
+
+#signin {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+	
+nav ul {
+	padding: 0;
+	}
+	
+.navbutton {
+	border: solid 1px #FF00FF;
+	padding: 10px 15px;
+	}
+	
+.navbutton a {
+	text-align: center;
+	}
+	
+footer {
+	background-color: #9B3417;
+	color: #F7D0BB;
+	font-size: 0.7em;
+	padding: 10px;
+	}
+
+footer table {
+	float: left;
+	padding: 0 70px 0 20px;
+	}
+
+#contactinfo {
+	float: right;
+	padding: 30px 40px 0 0;
+	}
+
+#sitemap {
+	text-transform: uppercase;
+	}
+#sitemap ul {
+	list-style-position: inside;
+	list-style-type: none;
+	}
+#sitemap li {
+	padding: 7px 0;
+	}
+#sitemap a {
+	color: #F7D0BB;
+	text-decoration: none;
+	}
+	
+	
