@@ -57,6 +57,11 @@ footer {
 footer table {
 	float: left;
 	padding: 0 70px 0 20px;
+	text-align: left;
+	}
+
+footer th, td {
+	padding: 0 20px;
 	}
 
 #contactinfo {
