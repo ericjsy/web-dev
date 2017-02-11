@@ -1,0 +1,165 @@
+<!-- PLACE IN TEMPLATE -->
+
+<DOCTYPE! html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Catering Form</title>
+
+<!--Remove once external style sheet has been set up -->
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+	
+		li {
+			list-style-type: none;
+		}
+
+		.required {
+			color: red;
+		}
+		
+		.tel {
+			width: 54px;
+		}
+
+		fieldset {
+			width:450px;
+		}
+		
+		input {
+			border-radius: 2px;
+			border: 1px solid #eee;
+			padding: 10px;
+		}
+		
+		#submit input {
+			background-color: #0779BE;
+			border-style: none;
+			color: white;
+		}
+	</style>
+<!--Remove once external style sheet has been set up -->
+
+</head>
+	<body>
+		<form>
+			<h1>
+				Catering Form
+			</h1>
+			<div id="info">
+			This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. This is the information box. 
+			</div>
+			<fieldset>
+				<legend>
+					Contact Information
+				</legend>
+				<ul>
+					<li>
+						<label for="name">
+							Full Name <span class="required">*</span><br>
+						</label>
+						<input type="text" name="name" id="name" required="required" placeholder="Your first and last name.">
+					</li>
+					<li>
+						<label for="phone">
+							<br>Contact Number <span class="required">*</span><br>
+						</label>
+						<input type="text" step="1" name="tel1" class="tel" maxlength="3" required="required"> -
+						<input type="text" name="tel2" class="tel" maxlength="3" required="required"> -
+						<input type="text" name="tel3" class="tel" maxlength="4" required="required">
+						
+					</li>
+					<li>
+						<label for="email">
+							<br>Email <span class="required">*</span><br>
+						</label>
+						<input type="email" name="email" id="email" required="required" placeholder="name@domain.com">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>
+					Event Information
+				</legend>
+				<ul>
+					<li>
+						<label for="organization">
+							Organization<br>
+						</label>
+						<input type="text" name="organization" id="organization">
+					</li>
+					<li>
+						<label for="address">
+							<br>Address <span class="required">*</span><br>
+						</label>
+						<input type="text" name="address" id="address" required="required">
+					</li>
+					<li>
+						<label for="date">
+							<br>Date of Event <span class="required">*</span><br>
+						</label>
+						<input type="date" name="date" id="date" required="required">
+					</li>
+					<li>
+						<label for="start">
+							<br>Start Time <span class="required">*</span><br>
+						</label>
+						<input type="time" name="start" id="start" required="required">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>
+					Order Form
+				</legend>
+				<ul>
+					<li>
+						<label for="function">
+							Type of Function &nbsp
+						</label>
+						<input type="text" name="function" id="function" list="functions" required="required">
+							<datalist id="functions">
+								<option value="Type 1">
+								<option value="Type 2">
+								<option value="Type 3">
+								<option value="Type 4">
+							</datalist>
+					</li>
+					<li>
+						<label for="guests">
+							<br>Number of Guests <span class="required">*</span><br>
+						</label>
+						<input type="text" name="guests" id="guests" required="required">
+					</li>
+					<li>
+						<label>
+							<br>Desired Products &nbsp
+							Item 1<input type="checkbox" name="item1" id="item1" value="yes">
+							Item 2<input type="checkbox" name="item2" id="item2" value="yes">
+							Item 3<input type="checkbox" name="item3" id="item3" value="yes">
+						</label>
+					</li>
+					<li>
+						<label for="allergies">
+							<br>Dietary Restrictions<br>
+						</label>
+						<textarea name="allergies" id="allergies" cols="50" rows="4" placeholder="Enter your allergies here."></textarea>
+					</li>
+					<li>
+						<label for="comments">
+						<br>Additional Information<br>
+						</label>
+						<textarea name="comments" id="comments" cols="50" rows="4" placeholder="Enter your comments here."></textarea>
+					</li>
+				</ul>
+			</fieldset>
+			<div id="submit">
+				<br><input type="submit" accesskey="S">
+			</div>
+		</form>
+
+	</body>
+</html>
