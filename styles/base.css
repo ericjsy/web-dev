@@ -99,6 +99,20 @@ footer th, td {
 	color: #F7D0BB;
 	text-decoration: none;
 	}
+	
+#phone a:link {
+	text-decoration: none;
+	color: #F7D0BB;
+}
+
+#phone a:visited {
+	text-decoration: none;
+	color: #F7D0BB;
+}
+
+#phone a:hover {
+	color: white;
+}
 /* End of footer styles */	
 
 /* The back to top anchor */
