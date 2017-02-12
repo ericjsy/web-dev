@@ -1,20 +1,29 @@
 /* For older browsers that don't support header,
-footer, nav, and main elements*/
+footer, nav, and main elements */
 header, footer, nav, main {
 	display: block;
 	}
 
+/* Styles for the whole page */
 body {
 	background-color: #F5CEFF;
 	color:#90423C;
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0;
 	}
+	/*This is to make the "back to top" text
+	within the main content */
+#top {
+	margin-bottom: 50px;
+	}
+/* End of whole page styles */
 
 /* Header styles */
 header {
 	background-color: #9B3417;
 	color: #F7D0BB;
+	padding: 10px;
+	width: 100%;
 	}
 	
 header ul {
@@ -58,6 +67,7 @@ footer {
 	color: #F7D0BB;
 	font-size: 0.7em;
 	padding: 10px;
+	width: 100%
 	}
 
 footer table {
@@ -118,5 +128,20 @@ h2 {
 	}
 .content {
 	padding: 20px;
+	}
+	
+/* Products Exclusive */
+#filter {
+	float: left;
+	}
+#products {
+	margin-left: 150px;
+	}
+.thumbnails {
+	display: inline-block;
+	}
+.sectionhead {
+	padding-left: 20px;
+	text-align: left;
 	}
 	
