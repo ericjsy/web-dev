@@ -22,7 +22,6 @@ body {
 header {
 	background-color: #9B3417;
 	color: #F7D0BB;
-	padding: 10px;
 	width: 100%;
 	}
 	
@@ -42,22 +41,28 @@ header a {
 
 #signin {
 	float: right;
+	font-size: 0.85em;
 	position: absolute;
 	right: 0;
 	top: 0;
 	}
 
 /* Nav styles. Contained within header */	
-nav ul {
-	padding: 0;
+#logo {
+	float: left;
+	position: relative;
+	top: 10px;
 	}
 	
 .navbutton {
-	border: solid 1px #FF00FF;
-	padding: 10px 15px;
+	display: inline-block;
+	font-size: 1.2em;
+	margin-top: 20px;
+	padding: 0 15px;
+	width: 130px;
 	}
 	
-.navbutton a {
+.navbutton p {
 	text-align: center;
 	}
 /* End of header styles*/
@@ -67,17 +72,21 @@ footer {
 	background-color: #9B3417;
 	color: #F7D0BB;
 	font-size: 0.7em;
-	padding: 10px;
+	padding-bottom: 10px;
 	width: 100%
 	}
 
 footer table {
 	float: left;
-	padding: 0 70px 0 20px;
+	padding: 10px 0 0 20px;
 	text-align: left;
 	}
 
-footer th, td {
+footer th {
+	padding: 5px 20px;
+	}
+	
+footer td {
 	padding: 0 20px;
 	}
 
@@ -87,14 +96,19 @@ footer th, td {
 	}
 
 #sitemap {
+	text-align: center;
 	text-transform: uppercase;
 	}
 #sitemap ul {
+	padding-top: 12px;
 	list-style-position: inside;
 	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
 	}
 #sitemap li {
-	padding: 7px 0;
+	padding: 6px 0;
 	}
 #sitemap a {
 	color: #F7D0BB;
