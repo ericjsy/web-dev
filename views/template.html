@@ -9,7 +9,13 @@
 
 <body>
 
-	<header role="banner">
+	<!--header-->
+	<header>
+		<div id="skip">
+			<p>
+				<a href="#main">Skip to content</a>
+			</p>
+		</div>
 		<div id="signin">
 			<ul>
 				<li>
@@ -18,12 +24,11 @@
 				<li>
 					<a href="cart">Cart</a>
 				</li>
-			</ul>
-				
+			</ul>	
 		</div>
 		
-		<nav role="navigation">
-			
+		<!--Nav is within the header-->
+		<nav>
 			<div id="logo">
 				<img src="../images/chocolatecake.jpg" alt="Logo" style="width:170px; height:70px;">
 			</div>
@@ -52,16 +57,21 @@
 					<p>Contact Us</p>
 				</div>
 			</a>
-			
 		</nav>
 	</header>
 	
-	<main role="main">
+	<!--main content here-->
+	<main id="main">
+		<!--leave the id="top" somewhere so we have a back to top link-->
 		<div id="top" style="height: 600px; border: solid 2px;">
-			<a href="#top" id="backup">Back to top</a>
+			<p id="backup">
+				<a href="#top">Back to top</a>
+			</p>
 		</div>
 	</main>
-	<footer role="contentinfo">
+	
+	<!--footer-->
+	<footer>
 		<table>
 			<tr>
 				<th colspan="2">Hours of Operation</th>
@@ -137,6 +147,7 @@
 				social media here
 			</div>
 		</div>
+		
 		<div id="sitemap">
 			<ul>
 				<li>

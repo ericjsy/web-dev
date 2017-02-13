@@ -11,11 +11,7 @@ body {
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0;
 	}
-	/*This is to make the "back to top" text
-	within the main content */
-#top {
-	margin-bottom: 50px;
-	}
+
 /* End of whole page styles */
 
 /* Header styles */
@@ -39,6 +35,13 @@ header a {
 	text-decoration: none;
 	}
 
+#skip {
+	float: left;
+	font-size: 0.6em;
+	position: absolute;
+	top: 0;
+	}
+
 #signin {
 	float: right;
 	font-size: 0.85em;
@@ -51,15 +54,15 @@ header a {
 #logo {
 	float: left;
 	position: relative;
-	top: 10px;
+	top: 25px;
 	}
 	
 .navbutton {
 	display: inline-block;
 	font-size: 1.2em;
-	margin-top: 20px;
-	padding: 0 15px;
-	width: 130px;
+	margin: 30px 0 0 0;
+	padding: 0 20px;
+	width: 150px;
 	}
 	
 .navbutton p {
@@ -132,7 +135,9 @@ footer td {
 
 /* The back to top anchor */
 #backup {
-	float:right;
+	background-color: #F5CEFF;
+	padding-right: 10px;
+	text-align:right;
 	}
 
 /* Testimonials exclusive */
@@ -176,13 +181,12 @@ h2 {
 	text-decoration: none;
 	}
 #products {
-	margin-left: 150px;
+	margin-left: 170px;
 	}
 .thumbnails {
 	display: inline-block;
 	}
 .sectionhead {
-	padding-left: 20px;
 	text-align: left;
 	text-transform: uppercase;
 	}

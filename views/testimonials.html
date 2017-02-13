@@ -4,12 +4,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>The most amazing patisserie!</title>
-	<link rel="stylesheet" href="../styles/base.css">
+	<link rel="stylesheet" href="../styles/base.css" media="screen">
 </head>
 
 <body>
 
+	<!--header-->
 	<header>
+		<div id="skip">
+			<p>
+				<a href="#main">Skip to content</a>
+			</p>
+		</div>
 		<div id="signin">
 			<ul>
 				<li>
@@ -18,34 +24,45 @@
 				<li>
 					<a href="cart">Cart</a>
 				</li>
-			</ul>
-				
+			</ul>	
 		</div>
 		
+		<!--Nav is within the header-->
 		<nav>
-		<ul>
-			<li>
+			<div id="logo">
 				<img src="../images/chocolatecake.jpg" alt="Logo" style="width:170px; height:70px;">
-			</li>
-			<li class="navbutton">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="navbutton">
-				<a href="about.html">About Us</a>
-			</li>
-			<li class="navbutton">
-				<a href="products.html">Products</a>
-			</li>
-			<li class="navbutton">
-				<a href="catering">Catering</a>
-			</li>
-			<li class="navbutton">
-				<a href="contact">Contact Us</a>
-			</li>
+			</div>
+			<a href="index.html">
+				<div class="navbutton">
+					<p>Home</p>
+				</div>
+			</a>
+			<a href="about.html">
+				<div class="navbutton">
+					<p>About Us</p>
+				</div>
+			</a>
+			<a href="products.html">
+				<div class="navbutton">
+					<p>Products</p>
+				</div>
+			</a>
+			<a href="catering">
+				<div class="navbutton">
+					<p>Catering</p>
+				</div>
+			</a>
+			<a href="contact">
+				<div class="navbutton">
+					<p>Contact Us</p>
+				</div>
+			</a>
 		</nav>
 	</header>
 	
-	<main>
+	<!--main content here-->
+	<main id="main">
+		<!--leave the id="top" somewhere so we have a back to top link-->
 		<div id="top">
 			<h2>
 				Testimonials
@@ -87,13 +104,14 @@
 					ex pro, latine molestie vivendum eos te. Vis soluta virtute ad.
 				</div>
 			</div>
-				<p>
-					<a href="#top" id="backup">Back to top</a>
+				<p id="backup">
+					<a href="#top">Back to top</a>
 				</p>
 		</div>
-		</div>
+
 	</main>
 	
+	<!--footer-->
 	<footer>
 		<table>
 			<tr>
@@ -170,6 +188,7 @@
 				social media here
 			</div>
 		</div>
+		
 		<div id="sitemap">
 			<ul>
 				<li>
