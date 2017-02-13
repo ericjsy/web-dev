@@ -146,21 +146,34 @@ h2 {
 	}
 .testimonial {
 	border-bottom: solid 1px #9B3417;
-	margin: 20px;
+	margin: 0 10px;
+	min-height: 120px;
+	position: relative;
+	overflow: hidden;
 	}
 .odd {
+	bottom: 0;
 	float: left;
 	height: 100px;
 	margin: auto;
-	width: 100px;
+	position: absolute;
+	top: 0;
 	}
 .even {
+	bottom: 0;
 	float: right;
 	height: 100px;
 	margin: auto;
-	width: 100px;
+	position: absolute;
+	right: 0;
+	top: 0;
 	}
-.content {
+.oddcontent {
+	margin-left: 100px;
+	padding: 20px;
+	}
+.evencontent {
+	margin-right: 100px;
 	padding: 20px;
 	}
 	
