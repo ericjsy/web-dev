@@ -35,6 +35,7 @@ header li {
 	}
 	
 header a {
+	color: #F7D0BB;
 	padding-right: 15px;
 	text-decoration: none;
 	}
@@ -147,6 +148,18 @@ h2 {
 /* Products Exclusive */
 #filter {
 	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+#filter ul {
+	list-style-type: none;
+	}
+#filter li {
+	padding: 5px 0;
+	}
+#filter a {
+	color:#90423C;
+	text-decoration: none;
 	}
 #products {
 	margin-left: 150px;
@@ -157,5 +170,6 @@ h2 {
 .sectionhead {
 	padding-left: 20px;
 	text-align: left;
+	text-transform: uppercase;
 	}
 	
