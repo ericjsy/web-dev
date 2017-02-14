@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+<head>
+	<meta charset=utf-8>
+	<title>Sign in</title>
+	
+	<style>
+		body{background-color: #F5CEFF;
+			color:#90423C;
+	        font-family: Verdana, Arial, sans-serif;
+			margin: 0;
+			}
+			
+			header{background: #9B3417;
+			color: #F7D0BB;
+			width:100%;
+			height:140px;
+			}
+			
+			header ul{list-style-type: none;
+			float:right;
+			padding-right:50px
+			}
+			
+		    header ul li{display: inline-block;
+			text-decoration: none;
+			left:30px;
+			}
+			
+			.cart{margin:10px}
+			
+			#logo{margin-top= 0;
+			margin-right= 0;
+			border= 0;
+			}
+			
+			#navbar{list-style-type: none;
+			text-align:center;
+			}
+			
+			#navbar li{display: inline-block;
+			}
+			
+			#navbar li a{padding:20px;
+			text-decoration: none;
+			color: white;
+			font-weight:bold;
+			margin-bottom:20%;
+			}
+			
+			nav{padding-right:25%;
+			}
+			
+			#main{margin:auto;
+			}
+			
+		#left{width:50%;
+			float:left;
+			height:500px
+		}
+		
+		#right{width:50%;
+			float:right;
+			height:500px
+		}
+			
+		.input {
+			border: 1px solid #eee;
+			border-radius: 2px;
+			padding: 5px;
+			width: 250px;
+			height: 20px;
+			margin-up:1px;
+			margin-bottom:10px;
+			margin-left:10px;
+		}
+	
+		h2{margin-left:60px
+			margin-bottom:10px;
+		}
+		
+		
+		fieldset {
+			background-color: #F5CEFF;
+			height: 400px;
+			
+		}
+		
+		label{margin-left:20px;
+		padding-bottom:10px;
+		}
+
+		.submit{margin-left:40px;
+			background-color:
+		}	
+		
+		footer {
+			background-color: #9B3417;
+	        color: #F7D0BB;
+			font-size: 0.7em;
+			padding: 10px;
+			width: 100%
+			}
+
+			footer table {
+			float: left;
+			padding: 0 70px 0 20px;
+			text-align: left;
+			}
+
+			footer th, td {
+			padding: 0 20px;
+			}
+
+			#contactinfo {
+			float: right;
+			padding: 30px 40px 0 0;
+			}
+
+			#sitemap {
+			text-transform: uppercase;
+			}
+			
+			#sitemap ul {
+			list-style-position: inside;
+			list-style-type: none;
+			}
+			
+			#sitemap li {
+			padding: 7px 0;
+			}
+			
+			#sitemap a {
+			color: #F7D0BB;
+			text-decoration: none;
+			}
+			
+			#backup {float:right
+			}
+			
+			#top {
+	margin-bottom: 50px
+			
+			
+	</style>
+</head>	
+<body>
+	<header>
+		<img src="../images/logo.png" alt="logo" width="200">
+		<ul>
+			<li><a class="cart" href="signup.html"><button id="button">SIGN IN </button></a></li>
+			<li><a class="cart" href="#"><img src="../images/img.png" width="50" height="50"></a></li>
+		</ul>
+			
+		<!--<nav>-->
+			<ul id="navbar">
+				<li><a href= "#">Home</a></li>
+				<li><a href= "#">About us</a></li>
+				<li><a href= "#">Product</a></li>
+				<li><a href= "#">Catering</a></li>
+				<li><a href= "#">Contact Us</a></li>
+			</ul>
+		<!--</nav>-->	   
+		
+	</header>
+	
+	</main id ="main">
+		<div id="abc">
+			<div id="left">
+				<form action="#" method="post">
+					<fieldset>
+						<h2>Sign in</h2>
+						<label for="Username">Username<br>
+						</label>
+							<input class="input" type="text" name="name" placeholder="Username" required><br>
+						
+						<label for="Password">Password<br>
+						</label>
+							<input class="input" type="password" name="password" placeholder="********" required><br>
+						
+						<label for="Remember me">Remember me
+						</label>
+							<input type="radio">
+						
+							<input class="submit" type="submit" name="name" value="log in"><br>
+					</fieldset>
+				</form>
+			</div>
+			
+			<div id="right">
+				<form action="#" method="post">
+					<fieldset>
+					<h2>Create a new account</h2>
+						<label for="Username">Username<br>
+						</label>
+							<input class="input" type="text" name="name" id="Username" placeholder="Username" required><br>
+						<label for="Password">Password<br>
+						</label>
+							<input class="input" type="password" name="password"  id="Password" placeholder="********" required><br>
+							
+						<label for="Password">Verify Password<br>
+						</label>
+							<input class="input" type="password" name="password" id="Verify Password" placeholder="********" required><br>
+							
+						<label for="email">E-mail<br>
+						</label>
+							<input class="input" type="email" name="email" id="E-mail" placeholder="e-mail" required><br>
+							
+							<input class="submit" type="submit" name="name" value="submit"><br>
+							
+					</fieldset>
+				</form>
+				
+			</div>
+		</div>
+		
+	</main>	
+
+	<footer>
+		<table>
+			<tr>
+				<th colspan="2">Hours of Operation</th>
+			</tr>
+			<tr>
+				<td>
+					Sunday
+				</td>
+				<td>
+					Hours etc
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Monday
+				</td>
+				<td>
+					Hours etc
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Tuesday
+				</td>
+				<td>
+					Hours etc
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Wednesday
+				</td>
+				<td>
+					Hours etc
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Thursday
+				</td>
+				<td>
+					Hours etc
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Friday
+				</td>
+				<td>
+					Hours etc
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Saturday
+				</td>
+				<td>
+	     			Hours etc
+				</td>
+			</tr>
+		</table>
+		
+		<div id="contactinfo">
+			<div id="address">
+				1234 Bakery Lane
+				<br>Vancouver, British Columbia
+				<br>Canada V8W 5K9
+			</div>
+			<div id="phone">
+				(604) 888-8888
+			</div>
+			<div id="socialmedia">
+				social media here
+			</div>
+		</div>
+			<div id="sitemap">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="products.html">Products</a>
+					</li>
+					<li>
+						<a href="catering.html">Catering</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</main>
+</body>
+</html>
