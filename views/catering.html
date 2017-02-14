@@ -132,7 +132,7 @@
 						placeholder="Last name" 
 						required="required" 
 						pattern="[a-zA-Z]{1,}" 
-						title="Last name cannot contain any numbers, symbols or spaces. e.g. John, john">
+						title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe">
 				</li>
 				<li>
 					<label for="phone">
@@ -164,7 +164,7 @@
 						required="required" 
 						maxlength="4" 
 						pattern="([0-9]{4})" 
-						title="Contact number should only contain numbers. e.g. 123">
+						title="Contact number should only contain numbers. e.g. 1234">
 				</li>
 				<li>
 					<label for="email">
@@ -254,6 +254,8 @@
 						name="function" 
 						placeholder="Function"
 						required="required" 
+						pattern="[a-zA-Z]{1,}"
+						title="Function cannot contain any numbers, symbols or spaces. Please see the drop down for suggestions.">
 						list="functions">
 
 							<datalist id="functions">
