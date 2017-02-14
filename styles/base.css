@@ -2,14 +2,22 @@
 footer, nav, and main elements */
 header, footer, nav, main {
 	display: block;
-	}
+}
 
 /* Styles for the whole page */
 body {
-	background-color: #F5CEFF;
+	background-color: #F2B7A6;
 	color:#90423C;
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0;
+	}
+	
+#main {
+	background-color: #FFFFFF;
+	height: 100%;
+	margin: auto;
+	min-height: 100vh;
+	width: 85%;
 	}
 
 /* End of whole page styles */
@@ -21,6 +29,11 @@ header {
 	width: 100%;
 	}
 	
+#headcontainer {
+	margin: auto;
+	position: relative;
+	width: 85%;
+}
 header ul {
 	list-style-type: none;
 	margin: 0;
@@ -31,7 +44,6 @@ header li {
 	
 header a {
 	color: #F7D0BB;
-	padding-right: 15px;
 	text-decoration: none;
 	}
 
@@ -45,6 +57,7 @@ header a {
 #signin {
 	float: right;
 	font-size: 0.85em;
+	padding-right: 15px;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -61,8 +74,8 @@ header a {
 	display: inline-block;
 	font-size: 1.2em;
 	margin: 30px 0 0 0;
-	padding: 0 20px;
-	width: 150px;
+	padding: 0 10px;
+	width: 105px;
 	}
 	
 .navbutton p {
@@ -73,12 +86,18 @@ header a {
 /* Footer styles*/	
 footer {
 	background-color: #9B3417;
+	bottom: 0;
 	color: #F7D0BB;
 	font-size: 0.7em;
 	padding-bottom: 10px;
+	position: relative;
 	width: 100%
 	}
 
+#footcontainer {
+	margin: auto;
+	width: 85%;
+}
 footer table {
 	float: left;
 	padding: 10px 0 0 20px;
@@ -108,6 +127,7 @@ footer td {
 	list-style-type: none;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0;
 	width: 100px;
 	}
 #sitemap li {
@@ -135,7 +155,8 @@ footer td {
 
 /* The back to top anchor */
 #backup {
-	background-color: #F5CEFF;
+	background-color: #FFFFFF;
+	margin: 0;
 	padding-right: 10px;
 	text-align:right;
 	}
