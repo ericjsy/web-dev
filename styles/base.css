@@ -1,20 +1,20 @@
 /* For older browsers that don't support header,
 footer, nav, and main elements */
 header, footer, nav, main {
+	background-color: #FFFFFF;
 	display: block;
+	margin: auto;
 }
 
 /* Styles for the whole page */
+
 body {
 	background-color: #F2B7A6;
-	color:#90423C;
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0;
 }
-	
+
 #main {
-	background-color: #FFFFFF;
-	height: 100%;
 	margin: auto;
 	min-height: 100vh;
 	width: 85%;
@@ -24,19 +24,54 @@ body {
 
 /* Header styles */
 header {
-	background-color: #FFFFFF;
-	color: #F7D0BB;
-	margin: auto;
+	height: 100px;
 	width: 100%;
 }
-	
+
 #headcontainer {
+	margin: auto;
+	position: relative;
+	width: 80%;	
+}
+
+#logo{
 	background-image: url(../images/trans_logo.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	margin: auto;
-	position: relative;
-	width: 85%;
+	float: left;
+	height: 100px;
+	width: 200px;
+}
+
+#special{	
+	margin-left: 200px;
+}
+
+nav{
+	float: right;
+	position:relative;
+}
+
+nav div{
+	float: left;
+	margin-top: 20px;
+}
+
+/* Nav styles. Contained within header */	
+.navbutton {
+	width: 100px;
+}
+	
+.navbutton p {
+	text-align: center;
+}
+
+#skip {
+	float: left;
+}
+
+#logincart {
+	float: right;
 }
 
 header ul {
@@ -61,110 +96,76 @@ header a:visited {
 header p:hover {
 	text-decoration: underline;
 }
-
-nav {
-	margin-left: 200px;
-}
-
-#skip {
-	float: left;
-	font-size: 0.6em;
-	position: absolute;
-	top: 0;
-}
-
-#signin {
-	float: right;
-	font-size: 0.85em;
-	padding-right: 15px;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-/* Nav styles. Contained within header */	
-.navbutton {
-	display: inline-block;
-	font-size: 1.2em;
-	margin-top: 30px;
-	padding: 0 10px;
-	width: 130px;
-}
-	
-.navbutton p {
-	text-align: center;
-}
 /* End of header styles*/
-
 /* Footer styles*/	
 footer {
 	background-color: #9B3417;
-	bottom: 0;
 	color: #F7D0BB;
-	font-size: 0.7em;
-	margin: auto;
-	padding-bottom: 10px;
-	position: relative;
-	width: 85%
+	font-size: 0.9em;
+	padding: 30px 0px;
 }
 
-#footcontainer {
-	margin: auto;
-	width: 85%;
+#days{
+	float: left;
 }
 
-#footcontainer a:link {
+#hours{
+	margin-left: 100px;
+}
+
+.footcontainer > div {
+	padding: 20px 0px;
+}
+
+@media screen and (min-width: 50em) {
+  .footcontainer {
+    overflow: hidden;
+  }
+  .footcontainer > div {
+    float: left;
+    width: 50%;
+  }
+  .footcontainer > div:nth-child(odd) {
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .footcontainer > div {
+    width: 25%;
+  }
+  .footcontainer > div:nth-child(odd) {
+    clear: none;
+  }
+}
+
+.footcontainer {
+	margin: auto;
+	width: 80%;	
+}	
+
+.footcontainer>div{
+	padding-bottom: 50px;
+}
+
+.footcontainer a:link {
 	color: #F7D0BB;
 	text-decoration: none;
 }
 
-#footcontainer a:visited {
+.footcontainer a:visited {
 	color: #F7D0BB;
 	text-decoration: none;
 }
 
-#footcontainer a:hover {
+.footcontainer a:hover {
 	color: #FFFFFF;
 }
 
-footer table {
-	float: left;
-	padding: 10px 0 0 20px;
-	text-align: left;
-}
-
-footer th {
-	padding: 5px 20px;
-}
-	
-footer td {
-	padding: 0 20px;
-}
-
-#contactinfo {
-	float: right;
-	padding: 10px 40px 0 0;
-}
-
-#sitemap {
-	text-align: center;
+#sitemap div{
 	text-transform: uppercase;
-}
-
-#sitemap ul {
-	list-style-position: inside;
 	list-style-type: none;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	padding-top: 10px;
-	width: 100px;
 }
-	
-#sitemap li {
-	padding: 6px 0;
-}
-
 /* End of footer styles */	
 
 /* The back to top anchor */
