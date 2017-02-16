@@ -1,0 +1,32 @@
+/* Products Exclusive CSS */
+#filter {
+	float: left;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#filter ul {
+	list-style-type: none;
+}
+
+#filter li {
+	padding: 5px 0;
+}
+
+#filter a {
+	color:#90423C;
+	text-decoration: none;
+}
+
+#products {
+	margin-left: 170px;
+}
+
+.thumbnails {
+	display: inline-block;
+}
+
+.sectionhead {
+	text-align: left;
+	text-transform: uppercase;
+}
