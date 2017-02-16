@@ -5,156 +5,230 @@
 	<meta charset="utf-8">
 	<title>Contact Us</title>
 
-<!-- Remove once external style sheet has been set up -->
-	
-	<style>
-	
-	body, html {
-		height: 100%;
-	}
-	
-	body {
-		background-color: #F5CeFF;
-		font-family: sans-serif;
-		font-size: 12pt;
-		margin: auto;
-		width: 760px;
-	}
-
-	.container1 {
-		float: left;
-	}
-	
-	.container2 {
-		margin: auto;
-		overflow: auto;
-		width: 450px;
-	}
-	
-	fieldset {
-		background-color: white;
-		border: 1px solid #9B3417;
-		border-radius: 15px;
-		margin-bottom: 10px;
-		width:400px;
-	}
-
-	 #map {
-		background-color: white;
-		border: 1px solid #9B3417;
-		border-radius: 15px;
-		height: 200px;
-		margin-bottom: 10px;
-		padding: 10px;
-		width:275px;
-	}
-	 
-	 #address {
-		background-color: white;
-		border: 1px solid #9B3417;
-		border-radius: 15px;
-		height: 85px;
-		margin-bottom: 10px;
-		padding: 10px;
-		width:275px;
-	}
-	
-	li {
-		list-style-type: none;
-	}
-
-	.required {
-		color: red;
-	}
-	
-	input {
-		border: 1px solid #eee;
-		border-radius: 2px;
-		padding: 5px;
-		width: 300px;
-	}
-
-	#submit input {
-		background-color: #9B3417;
-		border-style: none;
-		color: white;
-		height: 40px;
-		margin-bottom: 20px;
-		width: 100px;
-	}
-	
-	#submit input:hover {
-		opacity: 0.75;
-	}
-
-	</style>
-	
-<!-- Remove once external style sheet has been set up -->
-	
 </head>
 <body>
-	<div class="container1">
-		<h2>
-			Location
-		</h2>
-		<div id="map">MAP PLACEHOLDER</div>
-		<div id="address">
-			1234 Bakery Lane
-			<br>Vancouver, British Columbia
-			<br>Canada V8W 5K9
-		</div>
-	</div>
-	<div class="container2">
-	<h2>
-		Feedback
-	</h2>
-	<form>
-		<fieldset>
-			<ul>
-				<li>
-					<label for="name">
-						Full Name<span class="required">*</span><br>
-					</label>
-					<input 
-						type="text" 
-						id="fname" 
-						name="fname" 
-						placeholder="First and last name" 
-						required="required" 
-						pattern="[a-zA-Z\s]{1,}" 
-						title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
-				</li>
-				<li>
-					<label for="email">
-						<br>Email <span class="required">*</span><br>
-					</label>
-					<input 
-						type="email" 
-						id="email" 
-						name="email" 
-						placeholder="name@domain.com"
-						required="required">
-				</li>
-				<li>
-					<label for="feedback">
-					<br>Feedback <span class="required">*</span><br>
-					</label>
-					<textarea 
-						name="feedback" 
-						id="feedback" 
-						placeholder="Enter your comments here."
-						required="required"
-						cols="41" 
-						rows="4"></textarea>
-				</li>
-				<div id="submit">
-					<br><input type="submit" accesskey="S">
-				</div>
-			</ul>
-		</fieldset>
-	</form>
-	
-	</div>
 	
 </body>
 <html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>!DOCTYPE Desserts</title>
+	<link rel="stylesheet" href="../styles/base.css" media="screen">
+	<link rel="stylesheet" href="../styles/contact.css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		<div id="headcontainer">
+			<!--Nav is within the header-->
+			<div id="logo"></div>
+			
+				<div id="skip"> 
+					<a href="#main" tabindex="1">Skip to content</a>
+				</div>	
+				<div id="logincart">
+					<a href="login">Sign In</a>
+					<a href="cart">Cart</a>
+				</div>
+			
+			
+				<nav>
+					<a href="index.html">
+						<div class="navbutton">
+							<p>Home</p>
+						</div>
+					</a>
+					<a href="about.html">
+						<div class="navbutton">
+							<p>About Us</p>
+						</div>
+					</a>
+					<a href="products.html">
+						<div class="navbutton">
+							<p>Products</p>
+						</div>
+					</a>
+					<a href="catering.html">
+						<div class="navbutton">
+							<p>Catering</p>
+						</div>
+					</a>
+					<a href="contact.html">
+						<div class="navbutton">
+							<p>Contact Us</p>
+						</div>
+					</a>
+				</nav>
+			
+			<!--Keep the "clear" div so all the floated divs stay in the header-->
+			<div class="clear"></div>
+		</div>
+	</header>
+	
+	<!--main content here-->
+	<main id="main">
+		<div id="fullcontainer">
+			<div class="container1">
+				<h2>
+					Location
+				</h2>
+				<div id="map"><img src="../images/map.png" alt="map" width="303" height="302"></div>
+				<div id="location">
+					1234 Bakery Lane
+					<br>Vancouver, British Columbia
+					<br>Canada V8W 5K9
+				</div>
+			</div>
+			<div class="container2">
+			<h2>
+				Feedback
+			</h2>
+			<form action="checkout.html">
+				<fieldset>
+					<ul>
+						<li>
+							<label for="name">
+								Full Name<span class="required">*</span><br>
+							</label>
+							<input 
+								type="text" 
+								id="fname" 
+								name="fname" 
+								placeholder="First and last name" 
+								required="required" 
+								pattern="[a-zA-Z\s]{1,}" 
+								title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
+						</li>
+						<li>
+							<label for="email">
+								<br>Email <span class="required">*</span><br>
+							</label>
+							<input 
+								type="email" 
+								id="email" 
+								name="email" 
+								placeholder="name@domain.com"
+								required="required">
+						</li>
+						<li>
+							<label for="feedback">
+							<br>Feedback <span class="required">*</span><br>
+							</label>
+							<textarea 
+								name="feedback" 
+								id="feedback" 
+								placeholder="Enter your comments here."
+								required="required"
+								cols="41" 
+								rows="4"></textarea>
+						</li>
+						<div id="submit">
+							<br><input type="submit" accesskey="S">
+						</div>
+					</ul>
+				</fieldset>
+			</form>
+			</div>
+		</div>
+	</main>
+	
+	<!--footer-->
+	<footer>
+		<div class="footcontainer">
+			<div>
+				<table id="operation">					
+					<tr>
+						<th colspan="2">Hours of Operation <br> &nbsp; </th>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Holidays
+						</td>
+						<td>
+							Closed
+						</td>
+					</tr>
+				</table>
+			</div>			
+			<div id="sitemap">
+				<div> 
+					<b>Navigation links</b>
+					<br> &nbsp; 
+				</div>
+				<div>
+					<a href="index.html">Home</a>
+				</div>
+				<div>
+					<a href="about.html">About</a>
+				</div>
+				<div>
+					<a href="products.html">Products</a>
+				</div>
+				<div>
+					<a href="catering.html">Catering</a>
+				</div>
+				<div>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+			<div id="contactinfo">
+				<div id="address">
+					<b>Address</b>
+					<br> &nbsp;
+				</div>
+				<div>
+					1234 Bakery Lane<br>
+					Vancouver, British Columbia<br>
+					Canada V8W 5K9
+				</div>
+				<br>
+				<div id="phone">
+					<a href="tel:604-888-8888">(604)-888-8888</a>
+				</div>			
+			</div>
+			<div class="fa">
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
+				<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
