@@ -3,60 +3,60 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>The most amazing patisserie!</title>
+	<title>!DOCTYPE Dessert - Testimonials</title>
 	<link rel="stylesheet" href="../styles/base.css" media="screen">
 	<link rel="stylesheet" href="../styles/testimonials.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 	<!--header-->
 	<header>
-		<div id="skip">
-			<p>
-				<a href="#main">Skip to content</a>
-			</p>
-		</div>
-		<div id="signin">
-			<ul>
-				<li>
-					<a href="signin">Sign In</a>
-				</li>
-				<li>
+		<div id="headcontainer">
+			<!--Nav is within the header-->
+			<div id="logo"></div>
+			
+				<div id="skip"> 
+					<a href="#main" tabindex="1">Skip to content</a>
+				</div>	
+				<div id="logincart">
+					<a href="login">Sign In</a>
 					<a href="cart">Cart</a>
-				</li>
-			</ul>	
+				</div>
+			
+			
+				<nav>
+					<a href="index.html">
+						<div class="navbutton">
+							<p>Home</p>
+						</div>
+					</a>
+					<a href="about.html">
+						<div class="navbutton">
+							<p>About Us</p>
+						</div>
+					</a>
+					<a href="products.html">
+						<div class="navbutton">
+							<p>Products</p>
+						</div>
+					</a>
+					<a href="catering.html">
+						<div class="navbutton">
+							<p>Catering</p>
+						</div>
+					</a>
+					<a href="contact.html">
+						<div class="navbutton">
+							<p>Contact Us</p>
+						</div>
+					</a>
+				</nav>
+			
+			<!--Keep the "clear" div so all the floated divs stay in the header-->
+			<div class="clear"></div>
 		</div>
-		
-		<!--Nav is within the header-->
-		<nav>
-			<div id="logo">	</div>
-			<a href="index.html">
-				<div class="navbutton">
-					<p>Home</p>
-				</div>
-			</a>
-			<a href="about.html">
-				<div class="navbutton">
-					<p>About Us</p>
-				</div>
-			</a>
-			<a href="products.html">
-				<div class="navbutton">
-					<p>Products</p>
-				</div>
-			</a>
-			<a href="catering">
-				<div class="navbutton">
-					<p>Catering</p>
-				</div>
-			</a>
-			<a href="contact">
-				<div class="navbutton">
-					<p>Contact Us</p>
-				</div>
-			</a>
-		</nav>
 	</header>
 	
 	<!--main content here-->
@@ -112,104 +112,77 @@
 	
 	<!--footer-->
 	<footer>
-		<table>
-			<tr>
-				<th colspan="2">Hours of Operation</th>
-			</tr>
-			<tr>
-				<td>
-					Sunday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Monday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Tuesday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Wednesday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Thursday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Friday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Saturday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-		</table>
-		
-		<div id="contactinfo">
-			<div id="address">
-				1234 Bakery Lane
-				<br>Vancouver, British Columbia
-				<br>Canada V8W 5K9
-			</div>
-			<div id="phone">
-				(604) 888-8888
-			</div>
-			<div id="socialmedia">
-				social media here
-			</div>
-		</div>
-		
+		<div class="footcontainer">
+			<div>
+				<table id="operation">					
+					<tr>
+						<th colspan="2">Hours of Operation <br> &nbsp; </th>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Holidays
+						</td>
+						<td>
+							Closed
+						</td>
+					</tr>
+				</table>
+			</div>			
 		<div id="sitemap">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="about.html">About</a>
-				</li>
-				<li>
-					<a href="products.html">Products</a>
-				</li>
-				<li>
-					<a href="catering.html">Catering</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-			</ul>
+			<div> 
+				<b>Navigation links</b>
+				<br>
+				<a href="index.html">Home</a>
+				<br>
+				<a href="about.html">About</a>
+				<br>
+				<a href="products.html">Products</a>
+				<br>
+				<a href="catering.html">Catering</a>
+				<br>
+				<a href="contact.html">Contact</a>
+			</div>
 		</div>
-		
+			<div id="contactinfo">
+				<div id="address">
+					<b>Address</b>
+					<br> &nbsp;
+				</div>
+				<div>
+					1234 Bakery Lane<br>
+					Vancouver, British Columbia<br>
+					Canada V8W 5K9
+				</div>
+				<br>
+				<div id="phone">
+					<a href="tel:604-888-8888">(604)-888-8888</a>
+				</div>			
+			</div>
+			<div class="fa">
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
+				<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+			</div>
+		</div>
 	</footer>
-	
+
 </body>
 
-</html>
+</html
