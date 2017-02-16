@@ -1,0 +1,57 @@
+        h1 {
+	     margin-left: 80px
+	}
+			
+	.text1 {
+		float: right
+		width: 70%
+	}
+			
+	.image1 {
+		float: left;
+		width: 30%;
+		height: 300px;
+		border: 0;	
+		margin-top: 5px;
+	}
+			
+	.image2 { 
+		float: right;
+		width: 30%;
+		height: 300px;
+		border: 0;
+		margin-right: 0;
+		margin-top: 5px;
+	}
+			
+	.text2 { 
+		float: left;
+		width: 70%
+	}
+			
+	.box1 {
+		border-bottom: 2px solid red;
+		border-top: 2px solid red;
+		height: 300px;
+	}
+			
+	h3 {
+		padding-left: 80px;
+	}
+			
+	.philosophy {
+		padding: 10px 60px 0 60px
+	}
+			
+	#main {
+		margin:auto;
+	}
+			
+	.box {
+		border-top: 2px solid red;
+		height:300px;
+	}
+			
+	.history {
+		padding: 10px 60px 0 60px
+	} 
