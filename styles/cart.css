@@ -3,61 +3,71 @@ body {
 }
 
 #cart{
-	border: 1px gray solid;
+	border: 1px red solid;
 	float: left;
-	width: 50%;
-	margin: auto;
+	width: 65%;
 	padding-top: 60px;	
 }
 
 #toprow{
-	width: 75%;
+	border: 1px red solid;
+	width: 85%;
 	margin: auto;
-	padding-top: 60px;
+	padding-top: 30px;
+}
+
+#botrow{
+	border: 1px red solid;
+	width: 85%;
+	margin: auto;
+}
+
+main{
+	padding-bottom: 120px;
 }
 
 #hrow{
-	
+	border: 1px red solid;
 }
 
 #irow{
-	
+	border: 1px red solid;
 }
 
 .item{
-	
+	border: 1px red solid;
 }
 
 .img{
-	
+	border: 1px red solid;
 }
 
 .name{
-	
+	border: 1px red solid;
 }
 
 .info{
-	
+	border: 1px red solid;
 }
 
 .pqi{
-	
+	border: 1px red solid;
 }
 
 .price{
-	
+	border: 1px red solid;
 }
 
 .quantity{
-	
+	border: 1px red solid;
 }
 
 .itemtotal{
-	
+	border: 1px red solid;
 }
 
 .Subtotal{
-	
+	border: 1px red solid;
 }
 
 #checkout{
@@ -69,257 +79,24 @@ body {
 }
 
 #order{
-	
+	border: 1px red solid;
 }
 
 #pickup{
-	
+	border: 1px red solid;
 }
 
 #total{
-	
+	border: 1px red solid;
 }
 
 #finalize{
-	
+	border: 1px red solid;
 }
 
 .btmfood{
-	
+	border: 1px red solid;
 }
-
-
-/*                                                */
-
-
-
-
-/* For older browsers that don't support header,
-footer, nav, and main elements */
-header, footer, nav, main {
-	display: block;
-	}
-
-/* Styles for the whole page */
-body {
-	background-color: #F5CEFF;
-	color:#90423C;
-	font-family: Verdana, Arial, sans-serif;
-	margin: 0;
-	}
-
-/* End of whole page styles */
-
-/* Header styles */
-header {
-	background-color: #9B3417;
-	color: #F7D0BB;
-	width: 100%;
-	}
-	
-header ul {
-	list-style-type: none;
-	margin: 0;
-	}
-header li {
-	display: inline;
-	}
-	
-header a {
-	color: #F7D0BB;
-	padding-right: 15px;
-	text-decoration: none;
-	}
-
-#skip {
-	float: left;
-	font-size: 0.6em;
-	position: absolute;
-	top: 0;
-	}
-
-#signin {
-	float: right;
-	font-size: 0.85em;
-	position: absolute;
-	right: 0;
-	top: 0;
-	}
-
-/* Nav styles. Contained within header */	
-#logo {
-	float: left;
-	position: relative;
-	top: 25px;
-	}
-	
-.navbutton {
-	display: inline-block;
-	font-size: 1.2em;
-	margin: 30px 0 0 0;
-	padding: 0 20px;
-	width: 150px;
-	}
-	
-.navbutton p {
-	text-align: center;
-	}
-/* End of header styles*/
-
-main {
-	background-color: white;
-	overflow: auto;
-}
-
-/* Footer styles*/	
-footer {
-	background-color: #9B3417;
-	bottom: 0;
-	color: #F7D0BB;
-	font-size: 0.7em;
-	padding-bottom: 10px;
-	position: relative;
-	width: 100%
-	}
-
-footer table {
-	float: left;
-	padding: 10px 0 0 20px;
-	text-align: left;
-	}
-
-footer th {
-	padding: 5px 20px;
-	}
-	
-footer td {
-	padding: 0 20px;
-	}
-
-#contactinfo {
-	float: right;
-	padding: 30px 40px 0 0;
-	}
-
-#sitemap {
-	text-align: center;
-	text-transform: uppercase;
-	}
-#sitemap ul {
-	padding-top: 12px;
-	list-style-position: inside;
-	list-style-type: none;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top:0;
-	width: 100px;
-	}
-#sitemap li {
-	padding: 6px 0;
-	}
-#sitemap a {
-	color: #F7D0BB;
-	text-decoration: none;
-	}
-	
-#phone a:link {
-	color: #F7D0BB;
-	text-decoration: none;
-}
-
-#phone a:visited {
-	color: #F7D0BB;
-	text-decoration: none;
-}
-
-#phone a:hover {
-	color: white;
-}
-/* End of footer styles */	
-
-/* The back to top anchor */
-#backup {
-	background-color: #F5CEFF;
-	padding-right: 10px;
-	text-align:right;
-	}
-
-/* Testimonials exclusive */
-h2 {
-	padding-left: 20px;
-	}
-.testimonial {
-	border-bottom: solid 1px #9B3417;
-	margin: 0 10px;
-	min-height: 120px;
-	position: relative;
-	overflow: hidden;
-	}
-.odd {
-	bottom: 0;
-	float: left;
-	height: 100px;
-	margin: auto;
-	position: absolute;
-	top: 0;
-	}
-.even {
-	bottom: 0;
-	float: right;
-	height: 100px;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	top: 0;
-	}
-.oddcontent {
-	margin-left: 100px;
-	padding: 20px;
-	}
-.evencontent {
-	margin-right: 100px;
-	padding: 20px;
-	}
-	
-/* Products Exclusive */
-#filter {
-	float: left;
-	font-weight: bold;
-	text-transform: uppercase;
-	}
-#filter ul {
-	list-style-type: none;
-	}
-#filter li {
-	padding: 5px 0;
-	}
-#filter a {
-	color:#90423C;
-	text-decoration: none;
-	}
-#products {
-	margin-left: 170px;
-	}
-.thumbnails {
-	display: inline-block;
-	}
-.sectionhead {
-	text-align: left;
-	text-transform: uppercase;
-	}
-	
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

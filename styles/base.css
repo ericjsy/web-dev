@@ -40,7 +40,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: contain;
 	float: left;
-	height: 200px;
+	height: 100px;
 	width: 300px;
 }
 
@@ -124,6 +124,8 @@ footer {
 	color: #F7D0BB;
 	height: 20%;
 	font-size: 0.7em;
+	position: relative;
+	bottom: 0;
 }
 
 #days{
