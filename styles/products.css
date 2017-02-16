@@ -1,7 +1,12 @@
 /* Products Exclusive CSS */
+#main {
+	position: relative;
+}
+
 #filter {
 	float: left;
 	font-weight: bold;
+	position: fixed;
 	text-transform: uppercase;
 }
 
@@ -10,11 +15,11 @@
 }
 
 #filter li {
-	padding: 5px 0;
+	padding: 20px 0;
 }
 
 #filter a {
-	color:#90423C;
+	color:#000000;
 	text-decoration: none;
 }
 
@@ -27,6 +32,8 @@
 }
 
 .sectionhead {
+	border-bottom: solid 1px #F7D0BB;
+	padding-top: 20px;
 	text-align: left;
 	text-transform: uppercase;
 }

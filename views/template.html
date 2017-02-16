@@ -14,7 +14,7 @@
 		<div id="headcontainer">
 			<!--Nav is within the header-->
 			<div id="logo"></div>
-			<div id="special">
+			
 				<div id="skip"> 
 					<a href="#main" tabindex="1">Skip to content</a>
 				</div>	
@@ -22,8 +22,8 @@
 					<a href="login">Sign In</a>
 					<a href="cart">Cart</a>
 				</div>
-			</div>
-			<div>
+			
+			
 				<nav>
 					<a href="index.html">
 						<div class="navbutton">
@@ -51,7 +51,9 @@
 						</div>
 					</a>
 				</nav>
-			</div>
+			
+			<!--Keep the "clear" div so all the floated divs stay in the header-->
+			<div class="clear"></div>
 		</div>
 	</header>
 	
@@ -69,9 +71,9 @@
 	<footer>
 		<div class="footcontainer">
 			<div>
-				<table>					
+				<table id="operation">					
 					<tr>
-						<th>Hours of Operation <br> &nbsp; </th>
+						<th colspan="2">Hours of Operation <br> &nbsp; </th>
 					</tr>
 					<tr>
 						<td>
@@ -99,27 +101,21 @@
 					</tr>
 				</table>
 			</div>			
-			<div id="sitemap">
-				<div> 
-					<b>Navigation links</b>
-					<br> &nbsp; 
-				</div>
-				<div>
-					<a href="index.html">Home</a>
-				</div>
-				<div>
-					<a href="about.html">About</a>
-				</div>
-				<div>
-					<a href="products.html">Products</a>
-				</div>
-				<div>
-					<a href="catering.html">Catering</a>
-				</div>
-				<div>
-					<a href="contact.html">Contact</a>
-				</div>
+		<div id="sitemap">
+			<div> 
+				<b>Navigation links</b>
+				<br>
+				<a href="index.html">Home</a>
+				<br>
+				<a href="about.html">About</a>
+				<br>
+				<a href="products.html">Products</a>
+				<br>
+				<a href="catering.html">Catering</a>
+				<br>
+				<a href="contact.html">Contact</a>
 			</div>
+		</div>
 			<div id="contactinfo">
 				<div id="address">
 					<b>Address</b>
@@ -146,7 +142,7 @@
 
 </body>
 
-</html
+</html>
 
 
 
