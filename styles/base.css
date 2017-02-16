@@ -7,7 +7,6 @@ header, footer, nav, main {
 }
 
 /* Styles for the whole page */
-
 body {
 	background-color: #F2B7A6;
 	font-family: Verdana, Arial, sans-serif;
@@ -24,6 +23,8 @@ body {
 
 /* Header styles */
 header {
+	background-color: #9B3417;
+	color: #F7D0BB;
 	height: 100px;
 	width: 100%;
 }
@@ -35,12 +36,12 @@ header {
 }
 
 #logo{
-	background-image: url(../images/trans_logo.png);
+	background-image: url(../images/trans_logo2.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	float: left;
-	height: 100px;
-	width: 200px;
+	height: 200px;
+	width: 300px;
 }
 
 #special{	
@@ -48,6 +49,7 @@ header {
 }
 
 nav{
+	background-color: #9B3417;
 	float: right;
 	position:relative;
 }
@@ -57,9 +59,19 @@ nav div{
 	margin-top: 20px;
 }
 
+/* For headcontainer */
+@media screen and (min-width: 70em) {
+	.headcontainer > div {
+		float: left;
+		width: 50%;
+	}
+}
+
 /* Nav styles. Contained within header */	
 .navbutton {
 	width: 100px;
+	color: #F7D0BB;
+	display: inline-block;
 }
 	
 .navbutton p {
@@ -70,8 +82,16 @@ nav div{
 	float: left;
 }
 
+#skip a{
+	color: #F7D0BB;
+}
+
 #logincart {
 	float: right;
+}
+
+#logincart a{
+	color: #F7D0BB;
 }
 
 header ul {
@@ -97,12 +117,13 @@ header p:hover {
 	text-decoration: underline;
 }
 /* End of header styles*/
+
 /* Footer styles*/	
 footer {
 	background-color: #9B3417;
 	color: #F7D0BB;
 	height: 20%;
-	font-size: 0.9em;
+	font-size: 0.7em;
 }
 
 #days{
@@ -117,6 +138,7 @@ footer {
 	padding: 20px 0px;
 }
 
+/* For footcontainer */
 @media screen and (min-width: 50em) {
   .footcontainer {
     overflow: hidden;
@@ -130,6 +152,7 @@ footer {
   }
 }
 
+/* For footcontainer */
 @media screen and (min-width: 70em) {
   .footcontainer > div {
     width: 25%;
@@ -158,11 +181,49 @@ footer {
 	color: #FFFFFF;
 }
 
+.footcontainer table{
+	padding:0; margin:0;
+	border-collapse: collapse;
+}
+
 #sitemap div{
 	text-transform: uppercase;
 	list-style-type: none;
 }
-/* End of footer styles */	
+
+/*SM*/
+.fa a{
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+/* End of footer styles */
 
 /* The back to top anchor */
 #backup {
