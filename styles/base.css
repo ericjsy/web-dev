@@ -16,7 +16,7 @@ body {
 #main {
 	margin: auto;
 	min-height: 100vh;
-	width: 85%;
+	width: 960px;
 }
 
 /* End of whole page styles */
@@ -34,7 +34,9 @@ header {
 	background-color: #9B3417;
 	color: #F7D0BB;
 	min-height: 100px;
+	position: absolute;
 	width: 100%;
+	z-index: 1;
 }
 
 #headcontainer {
