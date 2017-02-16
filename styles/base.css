@@ -21,11 +21,19 @@ body {
 
 /* End of whole page styles */
 
+/* The back to top anchor */
+#backup {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding-right: 10px;
+	text-align:right;
+}
+
 /* Header styles */
 header {
 	background-color: #9B3417;
 	color: #F7D0BB;
-	height: 100px;
+	min-height: 100px;
 	width: 100%;
 }
 
@@ -42,40 +50,6 @@ header {
 	float: left;
 	height: 100px;
 	width: 300px;
-}
-
-#special{	
-	margin-left: 200px;
-}
-
-nav{
-	background-color: #9B3417;
-	float: right;
-	position:relative;
-}
-
-nav div{
-	float: left;
-	margin-top: 20px;
-}
-
-/* For headcontainer */
-@media screen and (min-width: 70em) {
-	.headcontainer > div {
-		float: left;
-		width: 50%;
-	}
-}
-
-/* Nav styles. Contained within header */	
-.navbutton {
-	width: 100px;
-	color: #F7D0BB;
-	display: inline-block;
-}
-	
-.navbutton p {
-	text-align: center;
 }
 
 #skip {
@@ -116,6 +90,30 @@ header a:visited {
 header p:hover {
 	text-decoration: underline;
 }
+
+.clear {
+	clear: both;
+}
+
+
+/* Nav styles. Contained within header */
+nav{
+	background-color: #9B3417;
+	float: right;
+	position: relative;
+	margin-top: 20px;
+}
+
+.navbutton {
+	width: 100px;
+	color: #F7D0BB;
+	display: inline-block;
+}
+	
+.navbutton p {
+	text-align: center;
+}
+
 /* End of header styles*/
 
 /* Footer styles*/	
@@ -128,12 +126,11 @@ footer {
 	bottom: 0;
 }
 
-#days{
-	float: left;
+#operation th {
+	text-align: left;
 }
-
-#hours{
-	margin-left: 100px;
+#operation td {
+	padding-right: 10px;
 }
 
 .footcontainer > div {
@@ -227,86 +224,5 @@ footer {
 
 /* End of footer styles */
 
-/* The back to top anchor */
-#backup {
-	background-color: #FFFFFF;
-	margin: 0;
-	padding-right: 10px;
-	text-align:right;
-}
 
-/* Testimonials exclusive */
-h2 {
-	padding-left: 20px;
-}
 
-.testimonial {
-	border-bottom: solid 1px #9B3417;
-	margin: 0 10px;
-	min-height: 120px;
-	position: relative;
-	overflow: hidden;
-}
-
-.odd {
-	bottom: 0;
-	float: left;
-	height: 100px;
-	margin: auto;
-	position: absolute;
-	top: 0;
-}
-
-.even {
-	bottom: 0;
-	float: right;
-	height: 100px;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.oddcontent {
-	margin-left: 100px;
-	padding: 20px;
-}
-
-.evencontent {
-	margin-right: 100px;
-	padding: 20px;
-}
-	
-/* Products Exclusive */
-#filter {
-	float: left;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-#filter ul {
-	list-style-type: none;
-}
-
-#filter li {
-	padding: 5px 0;
-}
-
-#filter a {
-	color:#90423C;
-	text-decoration: none;
-}
-
-#products {
-	margin-left: 170px;
-}
-
-.thumbnails {
-	display: inline-block;
-}
-
-.sectionhead {
-	text-align: left;
-	text-transform: uppercase;
-}
-	
