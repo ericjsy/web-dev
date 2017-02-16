@@ -34,9 +34,7 @@ header {
 	background-color: #9B3417;
 	color: #F7D0BB;
 	min-height: 100px;
-	position: absolute;
 	width: 100%;
-	z-index: 1;
 }
 
 #headcontainer {
