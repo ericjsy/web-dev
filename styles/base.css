@@ -1,6 +1,7 @@
 /* For older browsers that don't support header,
 footer, nav, and main elements */
 header, footer, nav, main {
+	background-color: #FFFFFF;
 	display: block;
 }
 
