@@ -61,6 +61,10 @@ nav{
 	display: none;
 }
 
+.change {
+	display: none;
+}
+
 #content hr {
 	background-color: #000000;
 	border: 0;
