@@ -42,12 +42,31 @@ main {
 	background-color: #9B3417;
 	border-style: none;	
 	color: white;
-	height: 24px;
+	height: 16px;
+	width: 80px;
 	font-family: Verdana;
 	text-decoration: none;
-	padding: 4px;
+	padding-top: 2px;
+	padding-bottom: 6px;
+}
+
+.finalize:hover{
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	background-color: #7B1403;
+	cursor: pointer;
 }
 
 #detail{
 	padding: 20px;
+}
+
+input#submit{
+	background:none;
+	border:none;
+	color: white;
+	
+	font-family: Verdana;
+	font-size: 12px;
+	cursor: pointer;	
 }
