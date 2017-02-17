@@ -1,14 +1,14 @@
-#leftright {
+#leftrightcol {
 	margin: auto;
 	width: 750px;
 }
 	
-#right {
+#rightcol {
 	height: 400px;
 	overflow: auto;
 }
 		
-#left {
+#leftcol {
 	float: left;
 	height: 400px;
 	padding-right: 10px;
