@@ -1,0 +1,20 @@
+
+h1 {
+        margin-left: 80px;
+	margin-top: 0px;
+	padding-top:10px;
+}
+		
+#box1 {
+	border-top: 3px solid black
+}	
+		
+.box {
+	height: 200px;
+	width: 100%;
+	border-bottom: 2px solid #F2B7A6;
+}
+
+h3{ 
+    	margin: 80px 0 30px 200px;
+}
