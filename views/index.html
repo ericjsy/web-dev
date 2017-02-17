@@ -6,6 +6,7 @@
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../styles/base.css" media="screen">
 	<link rel="stylesheet" href="../styles/index.css" media="screen">
+	<link rel="stylesheet" href="../styles/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -21,11 +22,11 @@
 			<div id="logo"></div>
 			<div id="special">
 				<div id="skip"> 
-					<a href="#main" tabindex="1">Skip to content</a>
+					<a href="#content" tabindex="1">Skip to content</a>
 				</div>	
 				<div id="logincart">
-					<a href="login">Sign In</a>
-					<a href="cart">Cart</a>
+					<a href="signin.html">Sign In</a>
+					<a href="cart.html">Cart</a>
 				</div>
 			</div>
 			<div>
@@ -63,6 +64,7 @@
 	</header>
 	<!--main content here-->
 	<main id="main">
+		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div class="fotorama" data-autoplay="true">
 			<img src="../images/Slideshow/cupcakes.jpg" data-caption="Cupcakes" alt="cupcakes" height="961" width="2048">
 			<img src="../images/Slideshow/fruitcake.jpg" data-caption="Fruitcake" alt="fruitcake" height="961" width="2048">

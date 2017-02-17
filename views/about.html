@@ -1,202 +1,72 @@
 <!DOCTYPE html>
-	<html lang="en">
-	
+<html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>About Us</title>
-	
-	<style>
-	
-	body { 
-		background-color: #F5CEFF;
-		color: #90423C;
-		font-family: Verdana, Arial, sans-serif;
-		margin: 0;
-	}
-			
-	header { 
-		background: #9B3417;
-		color: #F7D0BB;
-		width: 100%;
-		height: 140px;
-	}
-			
-	header ul {
-		list-style-type: none;
-		float: right;
-		padding-right: 50px
-	}
-			
-	header ul li {
-     	display: inline-block;
-		text-decoration: none;
-		left: 30px;
-	}
-			
-	.cart { 
-		margin: 10px
-	}
-			
-	#logo {
-		margin-top= 0;
-		margin-right= 0;
-		border= 0;
-	}
-			
-	#navbar {
-		list-style-type: none;
-		text-align:center;
-	}
-			
-	#navbar li {
-		display: inline-block;
-	}
-			
-	#navbar li a { 
-		padding: 20px;
-		text-decoration: none;
-		color: white;
-		font-weight: bold;
-		margin-bottom: 20%;
-	}
-			
-	nav {
-		padding-right: 25%;
-	}
-			
-	h1 {
-		margin-left: 80px
-	}
-			
-	.text1 {
-		float: right
-		width: 70%
-	}
-			
-	.image1 {
-		float: left;
-		width: 30%;
-		height: 300px;
-		border: 0;	
-		margin-top: 5px;
-	}
-			
-	.image2 { 
-		float: right;
-		width: 30%;
-		height: 300px;
-		border: 0;
-		margin-right: 0;
-		margin-top: 5px;
-	}
-			
-	.text2 { 
-		float: left;
-		width: 70%
-	}
-			
-	.box1 {
-		border-bottom: 2px solid red;
-		border-top: 2px solid red;
-		height: 300px;
-	}
-			
-	h3 {
-		padding-left: 80px;
-	}
-			
-	.philosophy {
-		padding: 10px 60px 0 60px
-	}
-			
-	#main {
-		margin:auto;
-	}
-			
-	.box {
-		border-top: 2px solid red;
-		height:300px;
-	}
-			
-	.history {
-		padding: 10px 60px 0 60px
-	} 
-			
-	footer {
-		background-color: #9B3417;
-	    color: #F7D0BB;
-		font-size: 0.7em;
-		padding: 10px;
-		width: 100%
-	}
+	<title>!DOCTYPE Desserts</title>
+	<link rel="stylesheet" href="../styles/base.css" media="screen">
+	<link rel="stylesheet" href="../styles/AboutUs.css" media="screen">
+	<link rel="stylesheet" href="../styles/printbase.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-	footer table {
-		float: left;
-		padding: 0 70px 0 20px;
-		text-align: left;
-	}
-
-	footer th, td {
-		padding: 0 20px;
-	}
-
-	#contactinfo {
-		float: right;
-		padding: 30px 40px 0 0;
-	}
-
-	#sitemap {
-			text-transform: uppercase;
-	}
-			
-	#sitemap ul {
-		list-style-position: inside;
-		list-style-type: none;
-	}
-			
-	#sitemap li {
-		padding: 7px 0;
-	}
-			
-	#sitemap a {
-		color: #F7D0BB;
-		text-decoration: none;
-	}
-			
-	#backup { 
-		float:right
-	}
-			
-	#top {
-		margin-bottom: 50px
-	}		
-			
-	</style>
-</head>	
 <body>
+	<!--header-->
 	<header>
-		<img src="../images/logo.png" alt="logo" width="200">
-		<ul>
-			<li><a class="cart" href="signup.html"><button id="button">SIGN IN </button></a></li>
-			<li><a class="cart" href="signup.html"><img src="../images/img.png" width="50" height="50"></a></li>
-		</ul>
+		<div id="headcontainer">
+			<!--Nav is within the header-->
+			<div id="logo"></div>
 			
-		<!--<nav>-->
-			<ul id="navbar">
-				<li><a href= "#">Home</a></li>
-				<li><a href= "AboutUs.html">About us</a></li>
-				<li><a href= "product.html">Product</a></li>
-				<li><a href= "catering.html">Catering</a></li>
-				<li><a href= "contact.html">Contact Us</a></li>
-			</ul>
-		<!--</nav>-->	   
-		
+				<div id="skip"> 
+					<a href="#main" tabindex="1">Skip to content</a>
+				</div>	
+				<div id="logincart">
+					<a href="signin.html">Sign In</a>
+					<a href="cart.html">Cart</a>
+				</div>
+			
+			
+				<nav>
+					<a href="index.html">
+						<div class="navbutton">
+							<p>Home</p>
+						</div>
+					</a>
+					<a href="about.html">
+						<div class="navbutton">
+							<p>About Us</p>
+						</div>
+					</a>
+					<a href="products.html">
+						<div class="navbutton">
+							<p>Products</p>
+						</div>
+					</a>
+					<a href="catering.html">
+						<div class="navbutton">
+							<p>Catering</p>
+						</div>
+					</a>
+					<a href="contact.html">
+						<div class="navbutton">
+							<p>Contact Us</p>
+						</div>
+					</a>
+				</nav>
+				
+			
+			<!--Keep the "clear" div so all the floated divs stay in the header-->
+			<div class="clear"></div>
+		</div>
 	</header>
-	</main id ="main">
+	
+	<!--main content here-->
+	<main id="main">
+	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<h1>WELCOME!</h1>
 		<div class="box1">
 			<div class="image1">
-				<img src= "../images/chocolatecake.jpg" alt="cake" width="250" height="200">
+				<img src= "../images/chocolatecake.jpg" alt="cake" width="200" height="150">
 			</div>
 			<div class="text1">
 				<h3>Philosophy</h3>
@@ -205,9 +75,10 @@
 			latine molestie vivendum eos te.Vis soluta virtute ad.</p>
 			</div>
 		</div>
+		<hr>
 		<div class="box1">
 			<div class="image2">
-				<img src= "../images/chocolatecake.jpg" alt="old shop" width="250" height="200">
+				<img src= "../images/chocolatecake.jpg" alt="old shop" width="200" height="150">
 			</div>
 			<div class="text2">
 				<h3>History</h3>
@@ -215,124 +86,106 @@
 				At alterum legimus mnesarchum vix. Ne omnis nihil assentior pro. Blandit argumentum ex pro,
 				latine molestie vivendum eos te.Vis soluta virtute ad.</p>
 			</div>
+			<hr>
 		</div>
+			
 		<div class="box1">
-			<div class="image1">
-				<img src= "../images/chocolatecake.jpg" alt="cake" width="250" height="200">
+			<div class="image1" >
+				<img src= "../images/chocolatecake.jpg" alt="cake" width="200" height="150">
 			</div>
-			<div class="text1">
+			<div class= "text1">
 				<h3>Chef</h3>
 				<p class="philosophy">Lorem ipsum dolor sit amet, vix et wisi porro lorem. Ius ne sadipscing temporibus.
 				At alterum legimus mnesarchum vix. Ne omnis nihil assentior pro. Blandit argumentum ex pro,
 				latine molestie vivendum eos te.Vis soluta virtute ad.</p>
 			</div>
 		</div>
-		<div class="box">
-		
-			
+		<hr>
+                   <!--leave the id="top" somewhere so we have a back to top link-->
+		<div id="top">
+			<p id="backup">
+				<a href="#top">Back to top</a>
+			</p>
 		</div>
-		<div>
-			<a href="#top" id="backup">Back to top</a>
-		</div>	
-		
-	</main>	
-
-	<footer>
-		<table>
-			<tr>
-				<th colspan="2">Hours of Operation</th>
-			</tr>
-			<tr>
-				<td>
-					Sunday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Monday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Tuesday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Wednesday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Thursday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Friday
-				</td>
-				<td>
-					Hours etc
-				</td>
-			</tr>
-			<tr>
-				<td>
-					Saturday
-				</td>
-				<td>
-	     			Hours etc
-				</td>
-			</tr>
-		</table>
-		
-		<div id="contactinfo">
-			<div id="address">
-				1234 Bakery Lane
-				<br>Vancouver, British Columbia
-				<br>Canada V8W 5K9
-			</div>
-			<div id="phone">
-				(604) 888-8888
-			</div>
-			<div id="socialmedia">
-				social media here
-			</div>
-		</div>
-			<div id="sitemap">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a href="catering.html">Catering</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</footer>
 	</main>
+	
+	<!--footer-->
+	<footer>
+		<div class="footcontainer">
+			<div>
+				<table id="operation">					
+					<tr>
+						<th colspan="2">Hours of Operation <br> &nbsp; </th>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Holidays
+						</td>
+						<td>
+							Closed
+						</td>
+					</tr>
+				</table>
+			</div>			
+		<div id="sitemap">
+			<div> 
+				<b>Navigation links</b>
+				<br>
+				<a href="index.html">Home</a>
+				<br>
+				<a href="about.html">About</a>
+				<br>
+				<a href="products.html">Products</a>
+				<br>
+				<a href="catering.html">Catering</a>
+				<br>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+			<div id="contactinfo">
+				<div id="address">
+					<b>Address</b>
+					<br> &nbsp;
+				</div>
+				<div>
+					1234 Bakery Lane<br>
+					Vancouver, British Columbia<br>
+					Canada V8W 5K9
+				</div>
+				<br>
+				<div id="phone">
+					<a href="tel:604-888-8888">(604)-888-8888</a>
+				</div>			
+			</div>
+			<div class="fa">
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
+				<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+			</div>
+		</div>
+	</footer>
+
 </body>
+
 </html>
+
+
+
+
