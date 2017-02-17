@@ -3,7 +3,6 @@ footer, nav, and main elements */
 header, footer, nav, main {
 	background-color: #FFFFFF;
 	display: block;
-	margin: auto;
 }
 
 /* Styles for the whole page */
@@ -44,7 +43,7 @@ header {
 }
 
 #logo{
-	background-image: url(../images/trans_logo2.png);
+	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	float: left;

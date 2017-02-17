@@ -1,13 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-		<header></header>
-		<nav></nav>
-		<main></main>
-		<footer><footer>
-	</body>
-</html>
+
+<head>
+	<meta charset="utf-8">
+	<title>!DOCTYPE Desserts</title>
+	<link rel="stylesheet" href="../styles/base.css" media="screen">
+	<link rel="stylesheet" href="../styles/index.css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body>
+	<div id="top"></div>
+	<!--header-->
+	<header>
+		<div id="headcontainer">
+			<!--Nav is within the header-->
+			<div id="logo"></div>
+			<div id="special">
+				<div id="skip"> 
+					<a href="#main" tabindex="1">Skip to content</a>
+				</div>	
+				<div id="logincart">
+					<a href="login">Sign In</a>
+					<a href="cart">Cart</a>
+				</div>
+			</div>
+			<div>
+				<nav>
+					<a href="index.html">
+						<div class="navbutton">
+							<p>Home</p>
+						</div>
+					</a>
+					<a href="about.html">
+						<div class="navbutton">
+							<p>About Us</p>
+						</div>
+					</a>
+					<a href="products.html">
+						<div class="navbutton">
+							<p>Products</p>
+						</div>
+					</a>
+					<a href="catering.html">
+						<div class="navbutton">
+							<p>Catering</p>
+						</div>
+					</a>
+					<a href="contact.html">
+						<div class="navbutton">
+							<p>Contact Us</p>
+						</div>
+					</a>
+				</nav>
+			</div>			
+			<!--Keep the "clear" div so all the floated divs stay in the header-->
+ 			<div class="clear"></div>
+		</div>
+	</header>
+	<!--main content here-->
+	<main id="main">
+		<div class="fotorama" data-autoplay="true">
+			<img src="../images/Slideshow/cupcakes.jpg" data-caption="Cupcakes" alt="cupcakes" height="961" width="2048">
+			<img src="../images/Slideshow/fruitcake.jpg" data-caption="Fruitcake" alt="fruitcake" height="961" width="2048">
+			<img src="../images/Slideshow/macarons.jpg" data-caption="Macarons" alt="macarons" height="961" width="2048">
+		</div>
+		<!--leave the id="top" somewhere so we have a back to top link-->
+		<div id="content">
+			<img src="../images/valentines.jpg" alt="macarons2" height="240" width="210">
+			<div class="event">
+				<h2>
+					Happy Valentines Day!
+				</h2>
+				<h6>
+					February 14, 2017
+				</h6>
+				<p>
+					It's that wonderful time of the year again!
+				</p>
+				<p>
+					 Whether you are spending this day with your significant other, family or friends, we want to help you celebrate over some delicious desserts. Visit out products page and enjoy a 20% discount on <strong>all</strong> items at check-out.
+				</p>		
+			</div>
+			<hr>
+			<img src="../images/macarons2.jpg" alt="macarons2" height="240" width="210">
+			<div class="event">
+				<h2>
+					Macaron Week!
+				</h2>
+				<h6>
+					February 6, 2017
+				</h6>
+				<p>
+					This week only, we are selling <strong>all</strong> macarons at 25% discount! 
+				</p>	
+				<p>
+					Our macaron selection continues to grow as we experiment with seasonal flavors. We have just updated our current selection, so be sure to visit our products page!
+				</p>
+			</div>
+			<hr>
+			<img src="../images/anniversary.jpg" alt="macarons2" height="240" width="210">
+			<div class="event">
+				<h2>
+					Celebrating our 10th Anniversary!
+				</h2>
+				<h6>
+					January 30, 2017
+				</h6>
+				<p>
+					We're so excited to announce that !DOCTYPE Desserts is celebrating its 10th Anniversary. We first started this patisserie as a small group of four hopeful bakers. Ten years later, our family has grown to 100+ members (past and present). We would like to show our appreciation by giving 20% discount to everyone! 
+				</p>
+				<p>
+					Thank you Vancouver for your continued support!
+				</p>
+			</div>
+		<p id="backup">
+			<a href="#top">Back to top</a>
+		</p>
+	</main>
+	
+	<!--footer-->
+	<footer>
+		<div class="footcontainer">
+			<div>
+				<table>					
+					<tr>
+						<th>Hours of Operation <br> &nbsp; </th>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Mon - Fri
+						</td>
+						<td>
+							8AM - 4PM
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Holidays
+						</td>
+						<td>
+							Closed
+						</td>
+					</tr>
+				</table>
+			</div>			
+			<div id="sitemap">
+				<div> 
+					<b>Navigation links</b>
+					<br> &nbsp; 
+				</div>
+				<div>
+					<a href="index.html">Home</a>
+				</div>
+				<div>
+					<a href="about.html">About</a>
+				</div>
+				<div>
+					<a href="products.html">Products</a>
+				</div>
+				<div>
+					<a href="catering.html">Catering</a>
+				</div>
+				<div>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+			<div id="contactinfo">
+				<div id="address">
+					<b>Address</b>
+					<br> &nbsp;
+				</div>
+				<div>
+					1234 Bakery Lane<br>
+					Vancouver, British Columbia<br>
+					Canada V8W 5K9
+				</div>
+				<br>
+				<div id="phone">
+					<a href="tel:604-888-8888">(604)-888-8888</a>
+				</div>			
+			</div>
+			<div class="fa">
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
+				<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
