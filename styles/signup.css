@@ -1,0 +1,46 @@
+#main{
+	margin-right:auto;
+	margin-left:auto;
+	height:300px;
+	padding-top: 50px;
+}
+			
+#right {
+	overflow:auto;
+	height:400px;
+}
+		
+#left {
+	width:50%;
+	float:left;
+	height:400px;
+	padding-left:20px;
+}	
+		
+.input {
+	border: 1px solid #ebcccd;
+	border-radius: 2px;
+	padding: 5px;
+	width: 250px;
+	height: 20px;
+	margin-top: 1px; 
+	margin-bottom:10px;
+	margin-left:10px;
+}
+	
+h2 {
+	margin-bottom:10px;
+ 	margin-left:10px;
+}
+
+
+
+label{
+	margin-left:30px;
+	padding-bottom:10px;
+}
+
+.submit {
+	margin-left:40px;
+        background-color: #ebcccd;
+}	
