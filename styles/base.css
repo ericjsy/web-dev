@@ -18,6 +18,10 @@ body {
 	width: 85%;
 }
 
+#printlogo {
+	display:none
+}
+
 /* End of whole page styles */
 
 /* The back to top anchor */

@@ -18,6 +18,21 @@ body {
 	width: 85%;
 }
 
+#submit {
+	display: none;
+}
+
+#filter {
+	display: none;
+}
+
+.sectionhead {
+	border-bottom: solid 1px #000000;
+	padding-top: 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
 /* End of whole page styles */
 
 /* The back to top anchor */
