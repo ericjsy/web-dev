@@ -32,13 +32,13 @@
 			Nutritional Facts per Cupcake: <br> Calories: 300<br> Total Fat: 15% <br> Calcium: 25% <br> Carbohydrates: 14%
 		</p>
 		<div class="add">
-			<div id="amount">
+			<form id="amount" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 				<label for="myChoice">How many would you like? </label>
 				<input type="number" name="myChoice" id="myChoice" min="1" max="99">	
-			</div>
 			<div id="tocart">
-				<a href="cart.html" class="finalize">Add to cart</a>
+				<input type="submit" accesskey="S"<!-- ><a href="cart.html" class="finalize">Add to cart</a> -->
 			</div>
+			</form>
 		</div>
 	</div>
 
