@@ -20,11 +20,6 @@ main p{
 	padding: 20px 0px;
 }
 
-#allergies img{
-	width: 35px;
-	height: 35px;
-}
-
 #likes{
 	margin: auto;
 	text-align: center;
@@ -32,8 +27,6 @@ main p{
 
 #likes img{
 	text-align: center;
-	width: 100px;
-	height: 100px;
 	border: 5px solid rgba(0, 0, 0, 0);
 }
 
