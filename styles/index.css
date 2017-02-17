@@ -1,11 +1,11 @@
 main #content {
-	padding: 15px 50px;
+	padding: 20px 50px;
 }
 
 #content img {
 	border-radius: 15px;
 	float: left;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .event {
@@ -21,6 +21,10 @@ main #content {
 	font-style: italic;
 	font-weight: normal;
 	margin: 0;
+}
+
+.event p {
+	text-indent: 40px;
 }
 
 #content hr {
