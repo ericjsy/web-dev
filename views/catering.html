@@ -12,300 +12,300 @@
 
 <body>
 	<!--header-->
-		<div id="top">
-	<header>
-		<div id="headcontainer">
-			<!--Nav is within the header-->
-			<div id="logo"></div>
-			
-				<div id="skip"> 
-					<a href="#main" tabindex="1">Skip to content</a>
-				</div>	
-				<div id="logincart">
-					<a href="signin.html">Sign In</a>
-					<a href="cart.html">Cart</a>
-				</div>
-			
-			
-				<nav>
-					<a href="index.html">
-						<div class="navbutton">
-							<p>Home</p>
-						</div>
-					</a>
-					<a href="about.html">
-						<div class="navbutton">
-							<p>About Us</p>
-						</div>
-					</a>
-					<a href="products.html">
-						<div class="navbutton">
-							<p>Products</p>
-						</div>
-					</a>
-					<a href="catering.html">
-						<div class="navbutton">
-							<p>Catering</p>
-						</div>
-					</a>
-					<a href="contact.html">
-						<div class="navbutton">
-							<p>Contact Us</p>
-						</div>
-					</a>
-				</nav>
-			
-			<!--Keep the "clear" div so all the floated divs stay in the header-->
-			<div class="clear"></div>
-		</div>
-	</header>
-	
-	<!--main content here-->
-	<main id="main">
-		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<div id="wrapper">
-			<div id="info">
-				<h1>
-					Catering Form
-				</h1>
-				<p>
-					We can accommodate all types of functions that require sweets! Please provide at least 2 weeks notice and a minimum of 50 guests. 
-				<br><br>All fields marked with an <span class="required">*</span> are required.
-				</p>
-			</div>
-			<form action="checkout.html">
-				<fieldset>
+	<div id="top">
+		<header>
+			<div id="headcontainer">
+				<!--Nav is within the header-->
+				<div id="logo"></div>
 				
-					<!-- Need to finish all acceptable patterns -->
+					<div id="skip"> 
+						<a href="#main" tabindex="1">Skip to content</a>
+					</div>	
+					<div id="logincart">
+						<a href="signin.html">Sign In</a>
+						<a href="cart.html">Cart</a>
+					</div>
 				
-					<h2>
-					Contact Information
-					</h2>
-					<ul>
-						<li>
-							<label for="fname">
-								First Name<span class="required">*</span><br>
-							</label>
-							<input 
-								type="text" 
-								id="fname" 
-								name="fname" 
-								placeholder="First name" 
-								required="required" 
-								pattern="[a-zA-Z]{1,}" 
-								title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
-						</li>
-						<li>
-							<label for="lname">
-								<br>Last Name <span class="required">*</span><br>
-							</label>
-							<input 
-								type="text" 
-								id="lname" 
-								name="lname" 
-								placeholder="Last name" 
-								required="required" 
-								pattern="[a-zA-Z]{1,}" 
-								title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe">
-						</li>
-						<li>
-							<label for="phone">
-								<br>Contact Number <span class="required">*</span><br>
-							</label>
-							<input 
-								type="text" 
-								class="tel"
-								name="tel1" 
-								placeholder="###" 
-								required="required" 
-								maxlength="3" 
-								pattern="([0-9]{3})" 
-								title="Contact number should only contain numbers. e.g. 123"> -
-							<input 
-								type="text" 
-								class="tel" 
-								name="tel2" 
-								placeholder="###" 
-								required="required"
-								maxlength="3" 
-								pattern="([0-9]{3})"  
-								title="Contact number should only contain numbers. e.g. 123"> -
-							<input 
-								type="text" 
-								class="tel"  
-								name="tel3" 
-								placeholder="####" 
-								required="required" 
-								maxlength="4" 
-								pattern="([0-9]{4})" 
-								title="Contact number should only contain numbers. e.g. 1234">
-						</li>
-						<li>
-							<label for="email">
-								<br>Email <span class="required">*</span><br>
-							</label>
-							<input 
-								type="email" 
-								id="email" 
-								name="email" 
-								placeholder="name@domain.com"
-								required="required">
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset>
-					<h2>
-						Event Information
-					</h2>
-					<ul>
-						<li>
-							<label for="organization">
-								Organization<br>
-							</label>
-							<input 
-								type="text" 
-								id="organization" 
-								name="organization" 
-								placeholder="Organization">
-						</li>
-						<li>
-							<label for="address">
-								<br>Address <span class="required">*</span><br>
-							</label>
-							<input 
-								type="text" 
-								id="address" 
-								name="address" 
-								placeholder="Address"
-								required="required" 
-								title="Address should be alphanumeric. e.g. 1234 Bakery Lane">
-						</li>
-						<li>
-							<label for="date">
-								<br>Date of Event <span class="required">*</span><br>
-							</label>
-							<input 
-								type="date" 
-								id="date" 
-								name="date" 
-								required="required">
-						</li>
-						<li>
-							<label for="start">
-								<br>Start Time <span class="required">*</span><br>
-							</label>
-							<input 
-								type="time" 
-								id="start" 
-								name="start" 
-								required="required">
-						</li>
-						<li>
-							<label for="end">
-								<br>End Time <span class="required">*</span><br>
-							</label>
-							<input 
-								type="time" 
-								id="end" 
-								name="end" 
-								required="required">
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset>
-					<h2>
-						Order Form
-					</h2>
-					<ul>
-						<li>
-							<label for="function">
-								Type of Function <span class="required">*</span><br>
-							</label>
-							<input 
-								type="text" 
-								id="function" 
-								name="function" 
-								placeholder="Function"
-								required="required" 
-								title="Function cannot contain any numbers, symbols or spaces. Please see the drop down for suggestions."
-								list="functions">
-									<datalist id="functions">
-										<option value="Birthday">
-										<option value="Corporate">
-										<option value="Social Event">
-										<option value="Wedding">
-									</datalist>
-						</li>
-						<li>
-							<label for="guests">
-								<br>Number of Guests <span class="required">*</span><br>
-							</label>
-							<input 
-								type="number" 
-								id="guests" 
-								name="guests" 
-								placeholder="Number of Guests"
-								required="required"
-								min="50">
-						</li>
-						<li>
-							<label id="desired">
-								<br>Desired Product(s): &nbsp
-								Macarons
-									<input 
-										type="checkbox" 
-										id="macarons" 
-										name="macarons" 
-										value="yes">
-								Desserts
-									<input 
-										type="checkbox" 
-										id="desserts" 
-										name="desserts" 
-										value="yes">
-								Cakes
-									<input 
-										type="checkbox" 
-										id="cakes" 
-										name="cakes" 
-										value="yes">
-							</label>
-						</li>
-						<li>
-							<label for="allergies">
-								<br>Dietary Restrictions<br>
-							</label>
-							<textarea 
-								id="allergies" 
-								name="allergies" 
-								placeholder="Enter your allergies here."
-								cols="41" 
-								rows="4"></textarea>
-						</li>
-						<li>
-							<label for="comments">
-							<br>Additional Information<br>
-							</label>
-							<textarea 
-								name="comments" 
-								id="comments" 
-								placeholder="Enter your comments here."
-								cols="41" 
-								rows="4"></textarea>
-						</li>
-					</ul>
-				</fieldset>
-				<div id="submit">
-					<br><input type="submit" accesskey="S">
-				</div>
+				
+					<nav>
+						<a href="index.html">
+							<div class="navbutton">
+								<p>Home</p>
+							</div>
+						</a>
+						<a href="about.html">
+							<div class="navbutton">
+								<p>About Us</p>
+							</div>
+						</a>
+						<a href="products.html">
+							<div class="navbutton">
+								<p>Products</p>
+							</div>
+						</a>
+						<a href="catering.html">
+							<div class="navbutton">
+								<p>Catering</p>
+							</div>
+						</a>
+						<a href="contact.html">
+							<div class="navbutton">
+								<p>Contact Us</p>
+							</div>
+						</a>
+					</nav>
+				
+				<!--Keep the "clear" div so all the floated divs stay in the header-->
+				<div class="clear"></div>
 			</div>
-		</form>
-		<!--leave the id="top" somewhere so we have a back to top link-->
+		</header>
+		
+		<!--main content here-->
+		<main id="main">
+			<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+			<div id="wrapper">
+				<div id="info">
+					<h1>
+						Catering Form
+					</h1>
+					<p>
+						We can accommodate all types of functions that require sweets! Please provide at least 2 weeks notice and a minimum of 50 guests. 
+					<br><br>All fields marked with an <span class="required">*</span> are required.
+					</p>
+				</div>
+				<form action="checkout.html">
+					<fieldset>
+					
+						<!-- Need to finish all acceptable patterns -->
+					
+						<h2>
+						Contact Information
+						</h2>
+						<ul>
+							<li>
+								<label for="fname">
+									First Name<span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="fname" 
+									name="fname" 
+									placeholder="First name" 
+									required="required" 
+									pattern="[a-zA-Z]{1,}" 
+									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
+							</li>
+							<li>
+								<label for="lname">
+									<br>Last Name <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="lname" 
+									name="lname" 
+									placeholder="Last name" 
+									required="required" 
+									pattern="[a-zA-Z]{1,}" 
+									title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe">
+							</li>
+							<li>
+								<div>
+									<br>Contact Number <span class="required">*</span><br>
+								</div>
+								<input 
+									type="text" 
+									class="tel"
+									name="tel1" 
+									placeholder="###" 
+									required="required" 
+									maxlength="3" 
+									pattern="([0-9]{3})" 
+									title="Contact number should only contain numbers. e.g. 123"> -
+								<input 
+									type="text" 
+									class="tel" 
+									name="tel2" 
+									placeholder="###" 
+									required="required"
+									maxlength="3" 
+									pattern="([0-9]{3})"  
+									title="Contact number should only contain numbers. e.g. 123"> -
+								<input 
+									type="text" 
+									class="tel"  
+									name="tel3" 
+									placeholder="####" 
+									required="required" 
+									maxlength="4" 
+									pattern="([0-9]{4})" 
+									title="Contact number should only contain numbers. e.g. 1234">
+							</li>
+							<li>
+								<label for="email">
+									<br>Email <span class="required">*</span><br>
+								</label>
+								<input 
+									type="email" 
+									id="email" 
+									name="email" 
+									placeholder="name@domain.com"
+									required="required">
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<h2>
+							Event Information
+						</h2>
+						<ul>
+							<li>
+								<label for="organization">
+									Organization<br>
+								</label>
+								<input 
+									type="text" 
+									id="organization" 
+									name="organization" 
+									placeholder="Organization">
+							</li>
+							<li>
+								<label for="inputaddress">
+									<br>Address <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="inputaddress" 
+									name="inputaddress" 
+									placeholder="Address"
+									required="required" 
+									title="Address should be alphanumeric. e.g. 1234 Bakery Lane">
+							</li>
+							<li>
+								<label for="date">
+									<br>Date of Event <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="date" 
+									name="date" 
+									required="required">
+							</li>
+							<li>
+								<label for="start">
+									<br>Start Time <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="start" 
+									name="start" 
+									required="required">
+							</li>
+							<li>
+								<label for="end">
+									<br>End Time <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="end" 
+									name="end" 
+									required="required">
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<h2>
+							Order Form
+						</h2>
+						<ul>
+							<li>
+								<label for="function">
+									Type of Function <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									id="function" 
+									name="function" 
+									placeholder="Function"
+									required="required" 
+									title="Function cannot contain any numbers, symbols or spaces. Please see the drop down for suggestions."
+									list="functions">
+										<datalist id="functions">
+											<option value="Birthday">
+											<option value="Corporate">
+											<option value="Social Event">
+											<option value="Wedding">
+										</datalist>
+							</li>
+							<li>
+								<label for="guests">
+									<br>Number of Guests <span class="required">*</span><br>
+								</label>
+								<input 
+									type="number" 
+									id="guests" 
+									name="guests" 
+									placeholder="Number of Guests"
+									required="required"
+									min="50">
+							</li>
+							<li>
+								<div id="desired">
+									<br>Desired Product(s): &nbsp;
+									Macarons
+										<input 
+											type="checkbox" 
+											id="macarons" 
+											name="macarons" 
+											value="yes">
+									Desserts
+										<input 
+											type="checkbox" 
+											id="desserts" 
+											name="desserts" 
+											value="yes">
+									Cakes
+										<input 
+											type="checkbox" 
+											id="cakes" 
+											name="cakes" 
+											value="yes">
+								</div>
+							</li>
+							<li>
+								<label for="allergies">
+									<br>Dietary Restrictions<br>
+								</label>
+								<textarea 
+									id="allergies" 
+									name="allergies" 
+									placeholder="Enter your allergies here."
+									cols="41" 
+									rows="4"></textarea>
+							</li>
+							<li>
+								<label for="comments">
+								<br>Additional Information<br>
+								</label>
+								<textarea 
+									name="comments" 
+									id="comments" 
+									placeholder="Enter your comments here."
+									cols="41" 
+									rows="4"></textarea>
+							</li>
+						</ul>
+					</fieldset>
+					<div id="submit">
+						<br><input type="submit" accesskey="S">
+					</div>
+				</form>
+			</div>
+			<!--leave the id="top" somewhere so we have a back to top link-->
 			<p id="backup">
 				<a href="#top">Back to top</a>
 			</p>
-		</div>
-	</main>
+		</main>
+	</div>
 	
 	<!--footer-->
 	<footer>
@@ -345,7 +345,6 @@
 			<div> 
 				<b>Navigation links</b>
 				<br>
-				&nbsp; <br>
 				<a href="index.html">Home</a>
 				<br>
 				<a href="about.html">About</a>

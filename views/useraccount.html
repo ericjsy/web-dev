@@ -11,120 +11,120 @@
 </head>
 
 <body>
-	<!--header-->
-	<header>
-		<div id="headcontainer">
-			<!--Nav is within the header-->
-			<div id="logo"></div>
-			
-				<div id="skip"> 
-					<a href="#main" tabindex="1">Skip to content</a>
-				</div>	
-				<div id="logincart">
-					<a href="login">Sign In</a>
-					<a href="cart">Cart</a>
-				</div>
-			
-			
-				<nav>
-					<a href="index.html">
-						<div class="navbutton">
-							<p>Home</p>
-						</div>
-					</a>
-					<a href="about.html">
-						<div class="navbutton">
-							<p>About Us</p>
-						</div>
-					</a>
-					<a href="products.html">
-						<div class="navbutton">
-							<p>Products</p>
-						</div>
-					</a>
-					<a href="catering.html">
-						<div class="navbutton">
-							<p>Catering</p>
-						</div>
-					</a>
-					<a href="contact.html">
-						<div class="navbutton">
-							<p>Contact Us</p>
-						</div>
-					</a>
-				</nav>
-			
-			<!--Keep the "clear" div so all the floated divs stay in the header-->
-			<div class="clear"></div>
-		</div>
-	</header>
+	<!--leave the id="top" somewhere so we have a back to top link-->
+	<div id="top">
+		<!--header-->
+		<header>
+			<div id="headcontainer">
+				<!--Nav is within the header-->
+				<div id="logo"></div>
+				
+					<div id="skip"> 
+						<a href="#main" tabindex="1">Skip to content</a>
+					</div>	
+					<div id="logincart">
+						<a href="login">Sign In</a>
+						<a href="cart">Cart</a>
+					</div>
+				
+				
+					<nav>
+						<a href="index.html">
+							<div class="navbutton">
+								<p>Home</p>
+							</div>
+						</a>
+						<a href="about.html">
+							<div class="navbutton">
+								<p>About Us</p>
+							</div>
+						</a>
+						<a href="products.html">
+							<div class="navbutton">
+								<p>Products</p>
+							</div>
+						</a>
+						<a href="catering.html">
+							<div class="navbutton">
+								<p>Catering</p>
+							</div>
+						</a>
+						<a href="contact.html">
+							<div class="navbutton">
+								<p>Contact Us</p>
+							</div>
+						</a>
+					</nav>
+				
+				<!--Keep the "clear" div so all the floated divs stay in the header-->
+				<div class="clear"></div>
+			</div>
+		</header>
 	
-	<!--main content here-->
-	<main id="main">
-	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<div class="uinfo">
-			<div class="leftcol">
-				<div class="userinfo">
-					<img src="../images/user.png" alt="Your picture" width="200" height="200">
-					<h2>John Doe</h2><hr>
+		<!--main content here-->
+		<main id="main">
+		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+			<div class="uinfo">
+				<div class="leftcol">
+					<div class="userinfo">
+						<img src="../images/user.png" alt="Your picture" width="200" height="200">
+						<h2>John Doe</h2><hr>
+					</div>
+					<div class="foods">
+						<div id="allergies">
+							<p>Allergies</p><br>
+							<img src="../images/icons/peanut.png" alt="Peanut" width="35" height="35">
+							<img src="../images/icons/egg.png" alt="Egg" width="35" height="35">
+							<img src="../images/icons/milk.png" alt="Milk" width="35"	height="35">
+						</div>
+						<table id="likes">
+							<caption>Favourites</caption>
+							<tr>
+								<td><img src="../images/products/cakes3.jpg" alt="Cakes" width="110" height="110"></td>
+								<td><img src="../images/products/brownies2.jpg" alt="Brownies" width="110" height="110"></td>
+								<td><img src="../images/products/donut2.jpg" alt="Donut" width="110" height="110"></td>
+							</tr>
+							<tr>
+								<td>Cakes</td>
+								<td>Brownies</td>
+								<td>Donut</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-				<div class="foods">
-					<div id="allergies">
-						<p>Allergies</p><br>
-						<img src="../images/icons/peanut.png" alt="Peanut" width="35px"	height="35px">
-						<img src="../images/icons/egg.png" alt="Egg" width="35px" height="35px">
-						<img src="../images/icons/milk.png" alt="Milk" width="35px"	height="35px">
-					</div>
-					<table id="likes">
-						<caption>Favourites</caption><br>
-						<tr>
-							<td><img src="../images/products/cakes3.jpg" alt="Cakes" width="110px" height="110px"></td>
-							<td><img src="../images/products/brownies2.jpg" alt="Brownies" width="110px" height="110px"></td>
-							<td><img src="../images/products/donut2.jpg" alt="Donut" width="110px" height="110px"></td>
-						</tr>
-						<tr>
-							<td>Cakes</td>
-							<td>Brownies</td>
-							<td>Donut</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="rightcol">
-				<div class="accinfo">
-					<h3> Account info</h3>
-					<div id="email">
-						<p> E-mail: Doctype@desserts.ca <button class="change">Change E-mail</button></p>
-					</div>
-					<div class="clear"></div>
-					<br>
-					<div id="password">
-						<p>Password: <button class="change">Change password</button></p>
-					</div>
-					<div class="clear"></div>
-					<br>
-					<div class="orders">
-						<div id="previous">
-							Previous pastries
-							<div class="clear"></div>
-							<br>
-							<img src="../images/products/cakes3.jpg" alt="Cake" width="150px" height="112px">
-							<img src="../images/products/cakes2.jpg" alt="Cake" width="150px" height="112px">
-							<img src="../images/products/cupcakes2.jpg" alt="Cupcake" width="150px" height="112px">
-							<img src="../images/products/cupcakes.jpg" alt="Cupcake" width="150px" height="112px">
+				<div class="rightcol">
+					<div class="accinfo">
+						<h3> Account info</h3>
+						<div id="email">
+							<p> E-mail: Doctype@desserts.ca <button class="change">Change E-mail</button></p>
+						</div>
+						<div class="clear"></div>
+						<br>
+						<div id="password">
+							<p>Password: <button class="change">Change password</button></p>
+						</div>
+						<div class="clear"></div>
+						<br>
+						<div class="orders">
+							<div id="previous">
+								Previous pastries
+								<div class="clear"></div>
+								<br>
+								<img src="../images/products/cakes3.jpg" alt="Cake" width="150" height="112">
+								<img src="../images/products/cakes2.jpg" alt="Cake" width="150" height="112">
+								<img src="../images/products/cupcakes2.jpg" alt="Cupcake" width="150" height="112">
+								<img src="../images/products/cupcakes.jpg" alt="Cupcake" width="150" height="112">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		<div class="clear"></div>
-		<!--leave the id="top" somewhere so we have a back to top link-->
-		<div id="top">
 			<p id="backup">
 				<a href="#top">Back to top</a>
 			</p>
-		</div>
-	</main>
+		</main>
+	</div>
 	<!--footer-->
 	<footer>
 		<div class="footcontainer">
@@ -163,7 +163,6 @@
 			<div> 
 				<b>Navigation links</b>
 				<br>
-				&nbsp; <br>
 				<a href="index.html">Home</a>
 				<br>
 				<a href="about.html">About</a>
