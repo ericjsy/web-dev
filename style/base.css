@@ -1,0 +1,231 @@
+/* For older browsers that don't support header,
+footer, nav, and main elements */
+header, footer, nav, main {
+	background-color: #FFFFFF;
+	display: block;
+}
+
+/* Styles for the whole page */
+body {
+	background-color: #F2B7A6;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 0;
+}
+
+#main {
+	margin: auto;
+	min-height: 100vh;
+	width: 85%;
+}
+
+#printlogo {
+	display:none
+}
+
+/* End of whole page styles */
+
+/* The back to top anchor */
+#backup {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding-right: 10px;
+	text-align:right;
+}
+
+/* Header styles */
+header {
+	background-color: #9B3417;
+	color: #F7D0BB;
+	min-height: 100px;
+	width: 100%;
+}
+
+#headcontainer {
+	margin: auto;
+	position: relative;
+	width: 80%;	
+}
+
+#logo{
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	height: 100px;
+	width: 300px;
+}
+
+#skip {
+	float: left;
+}
+
+#skip a{
+	color: #F7D0BB;
+}
+
+#logincart {
+	float: right;
+}
+
+#logincart a{
+	color: #F7D0BB;
+}
+
+header ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+header li {
+	display: inline;
+}
+
+header a:link {
+	color: #9B3417;
+	text-decoration: none;
+}
+
+header a:visited {
+	color: #9B3417;
+	text-decoration: none;
+}
+
+header p:hover {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* Nav styles. Contained within header */
+nav{
+	background-color: #9B3417;
+	float: right;
+	position: relative;
+	margin-top: 20px;
+}
+
+.navbutton {
+	width: 100px;
+	color: #F7D0BB;
+	display: inline-block;
+}
+	
+.navbutton p {
+	text-align: center;
+}
+
+/* End of header styles*/
+
+/* Footer styles*/	
+footer {
+	background-color: #9B3417;
+	color: #F7D0BB;
+	height: 20%;
+	font-size: 0.7em;
+	position: relative;
+	bottom: 0;
+}
+
+#operation th {
+	text-align: left;
+}
+#operation td {
+	padding-right: 10px;
+}
+
+.footcontainer > div {
+	padding: 20px 0px;
+}
+
+/* For footcontainer */
+@media screen and (min-width: 50em) {
+  .footcontainer {
+    overflow: hidden;
+  }
+  .footcontainer > div {
+    float: left;
+    width: 50%;
+  }
+  .footcontainer > div:nth-child(odd) {
+    clear: left;
+  }
+}
+
+/* For footcontainer */
+@media screen and (min-width: 70em) {
+  .footcontainer > div {
+    width: 25%;
+  }
+  .footcontainer > div:nth-child(odd) {
+    clear: none;
+  }
+}
+
+.footcontainer {
+	margin: auto;
+	width: 80%;	
+}	
+
+.footcontainer a:link {
+	color: #F7D0BB;
+	text-decoration: none;
+}
+
+.footcontainer a:visited {
+	color: #F7D0BB;
+	text-decoration: none;
+}
+
+.footcontainer a:hover {
+	color: #FFFFFF;
+}
+
+.footcontainer table{
+	padding:0; margin:0;
+	border-collapse: collapse;
+}
+
+#sitemap div{
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+/*SM*/
+.fa a{
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+/* End of footer styles */
+
+
+
