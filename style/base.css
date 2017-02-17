@@ -25,12 +25,27 @@ body {
 /* End of whole page styles */
 
 /* The back to top anchor */
-#backup {
-	background-color: #FFFFFF;
+.backup {
 	margin: 0;
 	padding-right: 10px;
 	text-align:right;
 }
+
+.backup a:link{
+	margin: 0;
+	padding-right: 10px;
+	text-align:right;
+	color: #9B3417;
+}
+
+.backup a:visited{
+	margin: 0;
+	padding-right: 10px;
+	text-align:right;
+	color: #9B3417;
+}
+
+
 
 /* Header styles */
 header {
@@ -59,8 +74,12 @@ header {
 	float: left;
 }
 
-#skip a{
-	color: #F7D0BB;
+#skip a:link{
+	color: #F7D0BB;	
+}
+
+#skip a:visited{
+	color: white;	
 }
 
 #logincart {
