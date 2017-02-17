@@ -3,7 +3,6 @@ main p{
 }
 
 .uinfo{
-	width: 85%;
 	margin: auto;
 }
 
@@ -24,7 +23,6 @@ main p{
 #allergies img{
 	width: 35px;
 	height: 35px;
-	border: 5px solid red;
 }
 
 #likes{
