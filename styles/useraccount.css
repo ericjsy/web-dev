@@ -1,0 +1,71 @@
+main p{
+	margin: 0;
+}
+
+.uinfo{
+	width: 85%;
+	margin: auto;
+}
+
+.leftcol{
+	float:left;
+	width: 50%;
+	margin-top: 100px;
+}
+
+#allergies{
+	text-align: center;
+}
+
+#allergies{
+	padding: 20px 0px;
+}
+
+#allergies img{
+	width: 35px;
+	height: 35px;
+	border: 5px solid red;
+}
+
+#likes{
+	margin: auto;
+	text-align: center;
+}
+
+#likes img{
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border: 5px solid rgba(0, 0, 0, 0);
+}
+
+.userinfo{	
+	text-align: center;
+	margin: 0 175px;
+}
+
+.rightcol{
+	padding-top: 50px;
+	overflow: auto;
+}
+
+.accinfo{
+	margin-top: 100px;
+	margin-left: 100px;	
+}
+
+.sline{
+	display: inline;
+}
+
+#email{
+	float: left;
+}
+
+#password{
+	float: left;
+}
+
+.previous{
+	
+}
