@@ -2,10 +2,6 @@ main #content {
 	padding: 20px 50px;
 }
 
-#printlogo {
-	display:none
-}
-
 #content img {
 	border-radius: 15px;
 	float: left;
