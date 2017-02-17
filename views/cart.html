@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../styles/base.css">
 	<link rel="stylesheet" href="../styles/cart.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
+</head>
 
 <body>
 <header>
@@ -58,123 +58,170 @@
 </header>
 	
 <main id="main">
-	<!--leave the id="top" somewhere so we have a back to top link-->
+	<!--leave the id="top" somewhere so we have a  link-->
 	<div id="toprow">
 		<div id="shopcart">
-			<p>Shopping Cart </p>
+			<p>Your shopping cart</p>
 		</div>
 		<div id="toppic">
-			<img src="" alt="">
 		</div>
 	</div>
 	<div id="botrow">
 		<div id="cart">
-			<div id="hrow">
-				Item Price Quantity Subtotal
+			<div id="detail">
+				<p>Item</p>
 			</div>
-			<br>
+			<div class="pqi">				
+				<span class="trspace">Price</span>
+				<span class="trspace">Quantity</span>
+				<span class="trspace">Subtotal</span>
+			</div>
+			<div class="clear"></div>
+			<hr>
 		<!-- ITEM(S) SEPARATOR COMMENT-->	
 			<div id="irow">
+				<!-- ITEM(S) -->
+				<div class="product">
+					<img src="../images/chocolatecake.jpg" alt="Blueberry & Strawberry Cupcake">
+				</div>
 				<div class="item">
-				
-					<div class="img">
-						<img src="" alt="">
-					</div>
-					<div class="name">
-						<h2>Item1Name</h2>
-					</div>
-					<div class="info">
-						<p>ProductDescription</p>
-					</div>
-					<div class="pqi">
-						<div class="price">
-							<p>Price</p>
-						</div>
-						<div class="quantity">
-							<p>Quantity</p>
-						</div>
-						<div class="itemtotal">
-							<p>Item Total</p>
-						</div>
+					<span class="pname">Blueberry & Strawberry Cupcake</span>
+					<div class="ppqi">
+						<span class="pinfo">$1.00</span>
+						<span class="pinfo">
+							<select>
+								<option value="3">1</option>
+								<option value="3">2</option>
+								<option value="3">3</option>
+								<option value="3">4</option>
+								<option value="3">5</option>
+								<option value="3">6</option>
+								<option value="3">7</option>
+								<option value="3">8</option>
+								<option value="3">9</option>
+								<option value="3">10</option>
+							</select>
+						</span>
+						<span class="pinfo">$10.00</span>
 					</div>
 				</div>
+				<div class="clear"></div>
+				<hr>
 				<br>
-				<div class="item">
-				
-					<div class="img">
-						<img src="" alt="">
-					</div>
-					<div class="name">
-						<h2>Item2Name</h2>
-					</div>
-					<div class="info">
-						<p>ProductDescription</p>
-					</div>
-					<div class="pqi">
-						<div class="price">
-							<p>Price</p>
-						</div>
-						<div class="quantity">
-							<p>Quantity</p>
-						</div>
-						<div class="itemtotal">
-							<p>Item Total</p>
-						</div>
-					</div>
-					
+				<!-- ITEM(S) -->
+				<div class="product">
+					<img src="../images/chocolatecake.jpg" alt="Brownies">
 				</div>
+				<div class="item">
+					<span class="pname">Brownies</span>
+					<div class="ppqi">
+						<span class="pinfo">$2.00</span>
+						<span class="pinfo">
+							<select>
+								<option value="3">1</option>
+								<option value="3">2</option>
+								<option value="3">3</option>
+								<option value="3">4</option>
+								<option value="3">5</option>
+								<option value="3">6</option>
+								<option value="3">7</option>
+								<option value="3">8</option>
+								<option value="3">9</option>
+								<option value="3">10</option>
+							</select>
+						</span>
+						<span class="pinfo">$20.00</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<hr>
 				<br>
+				<!-- ITEM(S) -->
+				<div class="product">
+					<img src="../images/chocolatecake.jpg" alt="Mousse Cake">
+				</div>
 				<div class="item">
-				
-					<div class="img">
-						<img src="" alt="">
-					</div>
-					<div class="name">
-						<h2>Item3Name</h2>
-					</div>
-					<div class="info">
-						<p>ProductDescription</p>
-					</div>
-					<div class="pqi">
-						<div class="price">
-							<p>Price</p>
-						</div>
-						<div class="quantity">
-							<p>Quantity</p>
-						</div>
-						<div class="itemtotal">
-							<p>Item Total</p>
-						</div>
+					<span class="pname">Mousse Cake</span>
+					<div class="ppqi">
+						<span class="pinfo">$1.00</span>
+						<span class="pinfo">
+							<select>
+								<option value="3">1</option>
+								<option value="3">2</option>
+								<option value="3">3</option>
+								<option value="3">4</option>
+								<option value="3">5</option>
+								<option value="3">6</option>
+								<option value="3">7</option>
+								<option value="3">8</option>
+								<option value="3">9</option>
+								<option value="3">10</option>
+							</select>
+						</span>
+						<span class="pinfo">$5.00</span>
 					</div>
 				</div>
+				<div class="clear"></div>
+				<hr>
+				<br>
+				<!-- ITEM(S) -->
+				<div class="product">
+					<img src="../images/chocolatecake.jpg" alt="Rose cookie">
+				</div>
+				<div class="item">
+					<span class="pname">Rose cookie</span>
+					<div class="ppqi">
+						<span class="pinfo">$25.00</span>
+						<span class="pinfo">
+							<select>
+								<option value="3">1</option>
+								<option value="3">2</option>
+								<option value="3">3</option>
+								<option value="3">4</option>
+								<option value="3">5</option>
+								<option value="3">6</option>
+								<option value="3">7</option>
+								<option value="3">8</option>
+								<option value="3">9</option>
+								<option value="3">10</option>
+							</select>
+						</span>
+						<span class="pinfo">$25.00</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<hr>
+				<br>
+				<!-- ITEM(S) -->
 			</div>
 		<!-- ITEM(S) SEPARATOR COMMENT-->
 		</div>
 		
-		<div id="checkout">
-			<div id="order">
-				<p>Subtotal </p>
-				<p>Tax </p>
-				<p id="pickup">Earliest pickup time: </p>				
-				<p id="total">Total: </p>
-			</div>
-			<div id="finalize">
-				<p>Checkout </p>
+		<div id="rightcont">
+			<div id="checkout">
+				<div id="receipt">Your receipt </div>
+				<div class="extraspace"></div>
+				<div id="order">
+					<p><span class="leftside">Subtotal:</span><span class="rightside">$24.99</span></p>
+					<p><span class="leftside">Tax: </span><span class="rightside">$3.75</span></p>
+					<p><span class="leftside">Pickup time: </span><span class="rightside">Feb. 14th</span></p>				
+					<p><span class="leftside">Total: </span><span class="rightside">$28.74</span></p>
+					<div class="extraspace"></div>
+					<div><span class="discount">Receive 20% off your purchase!</span></div>
+				</div>
+				
+				<div id="finalize">
+					<a class="cart" href="checkout.html"><button class="finalize">CHECKOUT</button></a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="btmfood">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
+		<div class="clear"></div>
 	</div>
 	<div id="top">
 		<p id="backup">
 			<a href="#top">Back to top</a>
 		</p>
 	</div>
-			<!--Keep the "clear" div so all the floated divs stay in the main container-->
-			<div class="clear"></div>
 </main>
 	
 <footer>
@@ -213,7 +260,7 @@
 		<div id="sitemap">
 			<div> 
 				<b>Navigation links</b>
-				<br>
+				&nbsp; <br> <br>
 				<a href="index.html">Home</a>
 				<br>
 				<a href="about.html">About</a>
@@ -251,4 +298,3 @@
 	
 </body>
 </html>
-

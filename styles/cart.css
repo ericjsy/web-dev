@@ -1,57 +1,126 @@
-body {
+main{
+	padding-bottom: 40px;
+}
+#toprow p{
+	margin-top: 0;
+	margin-bottom: 0;	
+	padding: 50px 0 30px 0;
+}
+
+#toprow{
+	width: 85%;
+	margin: auto;
+	padding-bottom: 50px;
+	background-image: url("../images/banner.jpeg");
+	background-repeat: no-repeat;
+	height: 116px;
+}
+
+#shopcart{
+	font-size: 30px;
+	padding: 0px 20px;
+	font-family: Verdana;
+}
+
+#botrow{
+	width: 87%;
+	margin: auto;
+	margin-bottom: 50px;
 	
 }
 
 #cart{
-	border: 1px red solid;
+	width: 60%;
+	margin-left: 0px;
+	padding: 50px 50px;
+	float: left;	
+}
+
+#detail{
+	font-size: 20px;
+	text-align: center;
 	float: left;
-	width: 65%;
-	padding-top: 60px;	
+	width: 25%;
 }
 
-#toprow{
-	border: 1px red solid;
-	width: 85%;
-	margin: auto;
-	padding-top: 30px;
-}
 
-#botrow{
-	border: 1px red solid;
-	width: 85%;
-	margin: auto;
-}
-
-main{
-	padding-bottom: 120px;
-}
-
-#hrow{
-	border: 1px red solid;
-}
-
-#irow{
-	border: 1px red solid;
+#detail p{
+	margin: 0;
 }
 
 .item{
-	border: 1px red solid;
-}
-
-.img{
-	border: 1px red solid;
-}
-
-.name{
-	border: 1px red solid;
-}
-
-.info{
-	border: 1px red solid;
+	padding-top: 50px;
 }
 
 .pqi{
-	border: 1px red solid;
+	font-size: 20px;
+	text-align: right;
+	width: 55%;
+	float: right;
+}
+
+.trspace {
+	padding: 0px 35px;
+}
+
+
+.product img{
+	width: 15%;
+	float: left;
+}
+
+.pname{
+	font-size: 14px;
+	font-weight: 700;
+	width: 25%;
+	float: left;
+	padding-left: 30px;
+}
+
+.pinfo{
+	padding: 0px 43px;
+}
+
+.ppqi{
+	width: 50%;
+	float: right;
+}
+
+
+
+#irow{
+	
+}
+
+#rightcont{
+	overflow: auto;
+	margin: auto;
+	width: 325px;
+}
+
+#checkout{
+	width: 325px;
+	margin-top: 30px;
+	position: absolute;
+	background-color: white;
+	border: 3px solid #9B3417;
+}
+
+#receipt{
+	
+	background-color: #9B3417;
+	border-style: none;	
+	color: white;
+	height: 60px;
+	
+	font-family: Verdana;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.extraspace{
+	height: 25px;
 }
 
 .price{
@@ -70,32 +139,50 @@ main{
 	border: 1px red solid;
 }
 
-#checkout{
-	border: 1px red solid;
-	float: right;
-	width: 30%;
-	margin: auto;
-	padding-top: 60px;	
+#main{	
+	position: relative;
 }
 
 #order{
-	border: 1px red solid;
+	margin: 15px;
+	font-family: Verdana;
+	line-height: 26.4px;
+}
+.leftside{
+	font-weight: bold;
+	color: #9B3417;
 }
 
-#pickup{
-	border: 1px red solid;
+.discount{
+	color: red;
 }
 
-#total{
-	border: 1px red solid;
+.rightside{
+	float: right;
 }
 
-#finalize{
-	border: 1px red solid;
+.finalize{	
+	background-color: #9B3417;
+	border-style: none;	
+	color: white;
+	height: 80px;
+	width: 100%;
+	
+	font-family: Verdana;
+	font-size: 20px;
+}
+
+.finalize:hover{
+	
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	background-color: #7B1403;
+	cursor: pointer;
 }
 
 .btmfood{
 	border: 1px red solid;
+	clear: both;
 }
 
 

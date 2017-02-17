@@ -1,16 +1,17 @@
 /* Products Exclusive CSS */
 #main {
 	position: relative;
+
 }
 
 #filter {
-	float: left;
 	font-weight: bold;
 	position: fixed;
 	text-transform: uppercase;
 }
 
 #filter ul {
+	
 	list-style-type: none;
 }
 
