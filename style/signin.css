@@ -14,7 +14,7 @@
 	padding-right: 10px;
 	width: 390px;
 }	
-		
+/* Submission form looks*/
 .input {
 	border: 1px solid #eee;
 	border-radius: 2px;
@@ -30,16 +30,16 @@ h2 {
 	margin-bottom: 10px;
  	margin-left: 10px;
 }
-
+/* Required submission */
 .required {
 	color: red;
 }
-
+/* Right shift input labels */
 label{
 	margin-left:30px;
 	padding-bottom:10px;
 }
-
+/* Similar to Finalize */
 .submit {
 	background-color: #9B3417;
 	border-style: none;

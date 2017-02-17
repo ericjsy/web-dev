@@ -1,17 +1,18 @@
+/* Left container floating */
 .container1 {
 	float: left;
 	margin-right: 15px;
 }
-
+/* Right imitating float */
 .container2 {
 	overflow: auto;
 }
-
+/* Similar to General */
 #fullcontainer {
 	margin: auto;
 	width: 750px;
 }
-
+/* Rounding of corners */
 fieldset {
 	border: 1px solid #9B3417;
 	border-radius: 15px;
@@ -31,7 +32,7 @@ li {
 .required {
 	color: red;
 }
-
+/* Check for post */
 input {
 	border: 1px solid #eee;
 	border-radius: 2px;
@@ -48,7 +49,10 @@ input {
 	margin-left: 40px;
 	width: 100px;
 }
-
+/* Similar to Finalize */
 #submit input:hover {
-	opacity: 0.75;
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	background-color: #7B1403;
+	cursor: pointer;
 }

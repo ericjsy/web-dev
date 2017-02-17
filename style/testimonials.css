@@ -3,7 +3,7 @@ h2 {
 	margin-top: 0;
 	padding: 10px 0 0 20px;
 }
-
+/* Picture and text alignment */
 .testimonial {
 	border-bottom: solid 1px #F2B7A6;
 	margin: 0 10px;
@@ -11,7 +11,7 @@ h2 {
 	position: relative;
 	overflow: hidden;
 }
-
+/* Float alignment*/
 .odd {
 	bottom: 0;
 	float: left;
@@ -21,7 +21,7 @@ h2 {
 	position: absolute;
 	top: 0;
 }
-
+/* Even block element right flip */
 .even {
 	bottom: 0;
 	float: right;

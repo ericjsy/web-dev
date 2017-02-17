@@ -2,12 +2,13 @@ main{
 	padding-bottom: 40px;
 }
 
+/* Top row necessary padding reset */
 #toprow p{
 	margin-top: 0;
 	margin-bottom: 0;	
 	padding: 50px 0 30px 0;
 }
-
+/* Top row + banner */
 #toprow{
 	width: 100%;
 	margin: auto;
@@ -18,19 +19,19 @@ main{
 	
 	background-size:cover;
 }
-
+/* Left column items */
 #shopcart{
 	font-size: 30px;
 	padding: 0px 20px;
 	font-family: Verdana;
 }
-
+/* Content */
 #botrow{
 	
 	margin: auto;
 	margin-bottom: 50px;
 }
-
+/* Order */
 #cart{
 	width: 60%;
 	margin-left: 0px;
@@ -53,7 +54,7 @@ main{
 .item{
 	padding-top: 20px;
 }
-
+/* Price Quantity Item total */
 .pqi{
 	font-size: 20px;
 	text-align: right;
@@ -64,8 +65,7 @@ main{
 .trspace {
 	padding: 0px 15px;
 }
-
-
+/* Product image float fix */
 .product img{
 	width: 15%;
 	float: left;
@@ -95,7 +95,7 @@ main{
 	margin: auto;
 	width: 300px;
 }
-
+/* Checkout absolute, may change to fixed */
 #checkout{
 	width: 300px;
 	margin-top: 30px;
@@ -104,7 +104,7 @@ main{
 	border: 3px solid #9B3417;
 	height: 455px;
 }
-
+/* Receipt heading */
 #receipt{
 	background-color: #9B3417;
 	border-style: none;	
@@ -141,7 +141,7 @@ main{
 .rightside{
 	float: right;
 }
-
+/* Checkout button css */
 .finalize{	
 	background-color: #9B3417;
 	border-style: none;	
@@ -170,7 +170,7 @@ main{
 	border: 1px red solid;
 	clear: both;
 }
-
+/* Form reset */
 input#submit{
 	background:none;
 	border:none;

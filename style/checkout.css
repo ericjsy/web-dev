@@ -1,18 +1,22 @@
+/* Heading reset */
 h1 {
     margin-left: 80px;
 	margin-top: 0px;
 	padding-top:10px;
 }
-		
+/* Heading separator */
 #box1 {
+	margin: 50px;
 	border-top: 3px solid black;
 }	
 		
-.box {
+.box{
 	height: 200px;
 	width: 100%;
+	
 }
-
+/* Display message */
 h2{ 
-    margin: 80px 0 30px 200px;
+    margin: 80px 0px;
+	padding: 100px;
 }

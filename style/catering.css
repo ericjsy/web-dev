@@ -1,3 +1,4 @@
+/* Left alignment */
 #wrapper {
 	padding-left: 20px;
 }
@@ -17,7 +18,7 @@ form {
 	padding-top: 10px;
 	width: 550px;
 }
-
+/* Box rounding and soften */
 fieldset {
 	border: 1px solid #9B3417;
 	border-radius: 15px;
@@ -33,7 +34,7 @@ h2 {
 li {
 	list-style-type: none;
 }
-
+/* Necessary sections */
 .required {
 	color: red;
 }
@@ -44,7 +45,7 @@ input {
 	padding: 5px;
 	width: 300px;
 }
-
+/* Necessary section -webkit for Safari */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -54,7 +55,7 @@ input[type=number]::-webkit-inner-spin-button {
 .tel {
 	width: 54px;
 }
-
+/* Float right effect */
 #desired input {
 	width: 15px;
 }
@@ -67,7 +68,10 @@ input[type=number]::-webkit-inner-spin-button {
 	margin-bottom: 20px;
 	width: 100px;
 }
-
+/* Similar to finalize */
 #submit input:hover {
-	opacity: 0.75;
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+	background-color: #7B1403;
+	cursor: pointer;
 }

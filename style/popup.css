@@ -1,9 +1,10 @@
+/* Page size imitation */
 main {
 	width: 960px;
 	height: 540px;
 	border: 3px solid black;
 }
-
+/* Left column */
 .lcol{
 	float: left;
 	width: 25%;
@@ -12,7 +13,7 @@ main {
 	text-align: center;
 	padding: 10px;
 }
-
+/* Right column */
 .rcol{
 	overflow: auto;
 	margin: 50px;
@@ -23,7 +24,7 @@ main {
 .rcol > p{
 	padding: 10px;
 }
-
+/* Bottom alignment */
 .add{
 	padding: 20px;
 }
@@ -32,12 +33,12 @@ main {
 	
 	float: left;
 }
-
+/* Send to cart */
 #tocart{
 	float: right;
 	width: 20%;
 }
-
+/* Finalize button standard */
 .finalize{	
 	background-color: #9B3417;
 	border-style: none;	
@@ -60,7 +61,7 @@ main {
 #detail{
 	padding: 20px;
 }
-
+/* Submit button reset */
 input#submit{
 	background:none;
 	border:none;

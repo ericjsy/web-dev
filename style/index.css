@@ -1,13 +1,14 @@
+/* Main content padding for appearance */
 main #content {
 	padding: 20px 50px;
 }
-
+/* Image rounding */
 #content img {
 	border-radius: 15px;
 	float: left;
 	margin-bottom: 10px;
 }
-
+/* Content alignment */
 .event {
 	overflow: auto;
 	padding: 15px;
@@ -26,7 +27,7 @@ main #content {
 .event p {
 	text-indent: 40px;
 }
-
+ /* Remove cascade */
 #content hr {
 	background-color: #F2B7A6;
 	border: 0;

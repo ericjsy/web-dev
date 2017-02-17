@@ -3,7 +3,8 @@
 	position: relative;
 
 }
-
+/* Filter basic appearance */
+/* Fixed position necessary */
 #filter {
 	font-weight: bold;
 	position: fixed;
@@ -27,7 +28,7 @@
 #products {
 	margin-left: 170px;
 }
-
+/* Picture response */
 .thumbnails {
 	display: inline-block;
 }
