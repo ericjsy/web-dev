@@ -102,12 +102,10 @@ main{
 }
 
 #receipt{
-	
 	background-color: #9B3417;
 	border-style: none;	
 	color: white;
 	height: 60px;
-	
 	font-family: Verdana;
 	font-size: 20px;
 	text-align: center;
@@ -146,7 +144,6 @@ main{
 	color: white;
 	height: 80px;
 	width: 100%;
-	
 	font-family: Verdana;
 	font-size: 20px;
 }

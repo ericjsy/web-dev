@@ -51,7 +51,8 @@ main p{
 
 .accinfo{
 	margin-top: 100px;
-	margin-left: 100px;	
+	margin-left: 100px;
+	width: 70%;
 }
 
 .sline{
@@ -60,12 +61,33 @@ main p{
 
 #email{
 	float: left;
+	width: 100%;
 }
 
 #password{
 	float: left;
+	width: 100%;
 }
 
-.previous{
-	
+#previous{
+	padding: 20px;
+	text-align: center;
+	border: 5px solid #9B3417;
+}
+
+#previous img{
+	padding: 5px;
+}
+
+.orders{
+	margin-top: 50px;
+}
+
+.change{
+	float: right;
+	background-color: #9B3417;
+	border-style: none;	
+	color: white;
+	font-family: Verdana;
+	padding: 5px;
 }
