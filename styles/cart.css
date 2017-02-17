@@ -1,6 +1,7 @@
 main{
 	padding-bottom: 40px;
 }
+
 #toprow p{
 	margin-top: 0;
 	margin-bottom: 0;	
@@ -8,12 +9,13 @@ main{
 }
 
 #toprow{
-	width: 85%;
+	width: 100%;
 	margin: auto;
 	padding-bottom: 50px;
 	background-image: url("../images/banner.jpeg");
 	background-repeat: no-repeat;
 	height: 116px;
+	padding-left: 100px;
 }
 
 #shopcart{
@@ -23,10 +25,9 @@ main{
 }
 
 #botrow{
-	width: 87%;
+	width: 95%;
 	margin: auto;
 	margin-bottom: 50px;
-	
 }
 
 #cart{
@@ -43,13 +44,12 @@ main{
 	width: 25%;
 }
 
-
 #detail p{
 	margin: 0;
 }
 
 .item{
-	padding-top: 50px;
+	padding-top: 35px;
 }
 
 .pqi{
@@ -78,18 +78,13 @@ main{
 }
 
 .pinfo{
-	padding: 0px 43px;
+	padding: 0px 30px;
+	margin-left: 30px;
 }
 
 .ppqi{
 	width: 50%;
 	float: right;
-}
-
-
-
-#irow{
-	
 }
 
 #rightcont{
@@ -121,22 +116,6 @@ main{
 
 .extraspace{
 	height: 25px;
-}
-
-.price{
-	border: 1px red solid;
-}
-
-.quantity{
-	border: 1px red solid;
-}
-
-.itemtotal{
-	border: 1px red solid;
-}
-
-.Subtotal{
-	border: 1px red solid;
 }
 
 #main{	
