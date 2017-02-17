@@ -102,6 +102,7 @@ main{
 	position: absolute;
 	background-color: white;
 	border: 3px solid #9B3417;
+	height: 455px;
 }
 
 #receipt{
@@ -145,14 +146,13 @@ main{
 	background-color: #9B3417;
 	border-style: none;	
 	color: white;
-	height: 80px;
 	width: 100%;
 	font-family: Verdana;
-	font-size: 20px;	
-	padding: 30px 0px;
+	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
-	
+	position: absolute;
+	padding: 33px 0px;
 }
 .finalize:visited{
 	color: white;

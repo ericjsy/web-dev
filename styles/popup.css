@@ -36,7 +36,6 @@ main {
 #tocart{
 	float: right;
 	width: 20%;
-	
 }
 
 .finalize{	
@@ -45,6 +44,8 @@ main {
 	color: white;
 	height: 24px;
 	font-family: Verdana;
+	text-decoration: none;
+	padding: 4px;
 }
 
 #detail{
