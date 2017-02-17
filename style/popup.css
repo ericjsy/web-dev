@@ -1,0 +1,53 @@
+main {
+	width: 960px;
+	height: 540px;
+	border: 3px solid black;
+}
+
+.lcol{
+	float: left;
+	width: 25%;
+	margin: 50px;
+	height: 425px;
+	text-align: center;
+	padding: 10px;
+}
+
+.rcol{
+	overflow: auto;
+	margin: 50px;
+	height: 425px;
+	padding: 10px;	
+}
+
+.rcol > p{
+	padding: 10px;
+}
+
+.add{
+	padding: 20px;
+}
+
+#amount{
+	
+	float: left;
+}
+
+#tocart{
+	float: right;
+	width: 20%;
+}
+
+.finalize{	
+	background-color: #9B3417;
+	border-style: none;	
+	color: white;
+	height: 24px;
+	font-family: Verdana;
+	text-decoration: none;
+	padding: 4px;
+}
+
+#detail{
+	padding: 20px;
+}

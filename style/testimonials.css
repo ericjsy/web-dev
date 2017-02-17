@@ -1,0 +1,44 @@
+/* Testimonials exclusive */
+h2 {
+	margin-top: 0;
+	padding: 10px 0 0 20px;
+}
+
+.testimonial {
+	border-bottom: solid 1px #F2B7A6;
+	margin: 0 10px;
+	min-height: 120px;
+	position: relative;
+	overflow: hidden;
+}
+
+.odd {
+	bottom: 0;
+	float: left;
+	height: 100px;
+	margin: auto;
+	padding: 0 20px;
+	position: absolute;
+	top: 0;
+}
+
+.even {
+	bottom: 0;
+	float: right;
+	height: 100px;
+	margin: auto;
+	padding: 0 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.oddcontent {
+	margin-left: 120px;
+	padding: 20px;
+}
+
+.evencontent {
+	margin-right: 120px;
+	padding: 20px;
+}

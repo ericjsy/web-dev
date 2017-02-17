@@ -1,0 +1,35 @@
+main #content {
+	padding: 20px 50px;
+}
+
+#content img {
+	border-radius: 15px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.event {
+	overflow: auto;
+	padding: 15px;
+}
+
+.event h2 {
+	margin-bottom: 0;
+}
+
+.event h6 {
+	font-style: italic;
+	font-weight: normal;
+	margin: 0;
+}
+
+.event p {
+	text-indent: 40px;
+}
+
+#content hr {
+	background-color: #F2B7A6;
+	border: 0;
+	clear: left;
+	height: 1px;
+}

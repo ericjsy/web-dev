@@ -1,0 +1,132 @@
+/* For older browsers that don't support header,
+footer, nav, and main elements */
+header, footer, nav, main {
+	background-color: #FFFFFF;
+	display: block;
+	font-family: "Times New Roman", Georgia, serif;
+	font-size: 14pt;
+}
+
+/* Styles for the whole page */
+body {
+	margin: 0;
+}
+
+#main {
+	margin: auto;
+	min-height: 100vh;
+	width: 85%;
+}
+
+#submit {
+	display: none;
+}
+
+.submit {
+	display: none;
+}
+
+#filter {
+	display: none;
+}
+
+.sectionhead {
+	border-bottom: solid 1px #000000;
+	padding-top: 20px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+/* End of whole page styles */
+
+/* The back to top anchor */
+#backup {
+	display: none;
+}
+
+/* Header, nav, slideshow removed */
+header {
+	display:none;
+}
+
+.clear {
+	clear: both;
+}
+
+nav{
+	display:none;
+}
+
+.fotorama {
+	display: none;
+}
+
+.change {
+	display: none;
+}
+
+#content hr {
+	background-color: #000000;
+	border: 0;
+	clear: left;
+	height: 1px;
+}
+
+/* Footer styles*/	
+footer {
+	height: 20%;
+	position: relative;
+	bottom: 0;
+}
+
+#operation th {
+	text-align: left;
+}
+#operation td {
+	padding-right: 10px;
+}
+
+.footcontainer > div {
+	padding: 20px 0px;
+}
+
+/* For footcontainer */
+@media screen and (min-width: 50em) {
+  .footcontainer > div {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* For footcontainer */
+@media screen and (min-width: 70em) {
+  .footcontainer > div {
+    width: 25%;
+  }
+}
+
+.footcontainer {
+	margin: auto;
+	width: 80%;	
+}	
+
+.footcontainer a:link {
+	color: #000000;
+}
+
+.footcontainer table{
+	padding:0; margin:0;
+	border-collapse: collapse;
+}
+
+#sitemap div{
+	display: none;
+}
+
+/*SM*/
+.fa a{
+	display: none;
+}
+
+
+
