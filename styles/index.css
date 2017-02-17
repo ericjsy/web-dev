@@ -28,6 +28,8 @@ main #content {
 }
 
 #content hr {
-	border: 1px solid #F2B7A6;
+	background-color: #F2B7A6;
+	border: 0;
 	clear: left;
+	height: 1px;
 }
