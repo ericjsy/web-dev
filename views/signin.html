@@ -5,6 +5,7 @@
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../styles/base.css" media="screen">
 	<link rel="stylesheet" href="../styles/signup.css" media="screen">
+	<link rel="stylesheet" href="../styles/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -19,8 +20,8 @@
 					<a href="#main" tabindex="1">Skip to content</a>
 				</div>	
 				<div id="logincart">
-					<a href="login">Sign In</a>
-					<a href="cart">Cart</a>
+					<a href="signin.html">Sign In</a>
+					<a href="cart.html">Cart</a>
 				</div>
 			
 			
@@ -57,49 +58,50 @@
 		</div>
 	</header>
     <main id ="main">
-			<div id="left">
-				<form action="#" method="post">
+	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+		<div id="left">
+			<form action="#" method="post">
+				
+					<h2>Sign in</h2>
+					<label for="Username">Username <span class="required">*</span><br>
+					</label>
+						<input class="input" type="text" name="name" placeholder="Username" required><br>
 					
-						<h2>Sign in</h2>
-						<label for="Username">Username<br>
-						</label>
-							<input class="input" type="text" name="name" placeholder="Username" required><br>
-						
-						<label for="Password">Password<br>
-						</label>
-							<input class="input" type="password" name="password" placeholder="********" required><br>
-						
-						<label for="Remember">Remember me
-						</label>
-							<input type="checkbox">
-						
-							<input class="submit" type="submit" name="name" value="log in"><br>
+					<label for="Password">Password <span class="required">*</span><br>
+					</label>
+						<input class="input" type="password" name="password" placeholder="********" required><br>
 					
-				</form>
-			</div>
-			
-			<div id="right">
-				<form action="#" method="post">
+					<label for="Remember">Remember me
+					</label>
+						<input type="checkbox">
 					
-					<h2>Create a new account</h2>
-						<label for="Username">Username<br>
-						</label>
-							<input class="input" type="text" name="name" id="Username" placeholder="Username" required><br>
-						<label for="Password">Password<br>
-						</label>
-							<input class="input" type="password" name="password"  id="Password" placeholder="********" required><br>
-							
-						<label for="Password">Verify Password<br>
-						</label>
-							<input class="input" type="password" name="password" id="Verify" placeholder="********" required><br>
-							
-						<label for="email">E-mail<br>
-						</label>
-							<input class="input" type="email" name="email" id="E-mail" placeholder="e-mail" required><br>
-							
-							<input class="submit" type="submit" name="name" value="submit"><br>
-				</form>
-			</div>
+						<input class="submit" type="submit" name="name" value="Log in"><br>
+				
+			</form>
+		</div>
+		
+		<div id="right">
+			<form action="#" method="post">
+				
+				<h2>Create a new account</h2>
+					<label for="Username">Username <span class="required">*</span><br>
+					</label>
+						<input class="input" type="text" name="name" id="Username" placeholder="Username" required><br>
+					<label for="Password">Password <span class="required">*</span><br>
+					</label>
+						<input class="input" type="password" name="password"  id="Password" placeholder="********" required><br>
+						
+					<label for="Password">Verify Password <span class="required">*</span><br>
+					</label>
+						<input class="input" type="password" name="password" id="Verify" placeholder="********" required><br>
+						
+					<label for="email">E-mail <span class="required">*</span><br>
+					</label>
+						<input class="input" type="email" name="email" id="E-mail" placeholder="e-mail" required><br>
+						
+						<input class="submit" type="submit" name="name" value="Submit"><br>
+			</form>
+		</div>
 	</main>	
 
 	<!--footer-->
