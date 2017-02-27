@@ -70,18 +70,6 @@ header {
 	width: 300px;
 }
 
-#skip {
-	float: left;
-}
-
-#skip a:link{
-	color: #F7D0BB;	
-}
-
-#skip a:visited{
-	color: white;	
-}
-
 #logincart {
 	float: right;
 }
