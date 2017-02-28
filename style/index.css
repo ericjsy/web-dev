@@ -18,10 +18,9 @@ main #content {
 	margin-bottom: 0;
 }
 
-.event h6 {
+time {
+	font-size: small;
 	font-style: italic;
-	font-weight: normal;
-	margin: 0;
 }
 
 .event p {
