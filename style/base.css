@@ -72,10 +72,12 @@ header {
 
 #logincart {
 	float: right;
+	width: 115px;
 }
 
 #logincart a{
 	color: #F7D0BB;
+	text-align: center;
 }
 
 header ul {
@@ -116,13 +118,13 @@ nav{
 }
 
 .navbutton {
-	width: 100px;
+	width: 120px;
 	color: #F7D0BB;
 	display: inline-block;
 }
 	
 .navbutton p {
-	text-align: right;
+	text-align: center;
 }
 
 /* End of header styles*/
