@@ -118,7 +118,7 @@ nav{
 }
 
 .navbutton {
-	width: 120px;
+	padding: 5px 20px;
 	color: #F7D0BB;
 	display: inline-block;
 }
@@ -204,36 +204,37 @@ footer {
 }
 
 /*SM*/
-.fa a{
+.footcontainer .fa a{
+  background: #F7D0BB;
+  color: #9B3417;
   padding: 5px;
   font-size: 20px;
   width: 20px;
   text-align: center;
   text-decoration: none;
   margin: 2px;
-  border-radius: 50%;
+  border-radius: 25%;
 }
 
-.fa-instagram:hover {
+.footcontainer .fa-instagram:hover {
 	background: #125688;
 	color: #FFFFFF;
 }
 
-.fa-pinterest:hover {
+.footcontainer .fa-pinterest:hover {
   background: #cb2027;
-  color: #9B3417;
+  color: #FFFFFF;
 }
 
-.fa-facebook:hover {
+.footcontainer .fa-facebook:hover {
   background: #3B5998;
-  color: #9B3417;
+  color: #FFFFFF;
 }
 
-.fa-twitter:hover {
+.footcontainer .fa-twitter:hover {
   background: #55ACEE;
-  color: #9B3417;
+  color: #FFFFFF;
 }
-
 
 /* End of footer styles */
 
