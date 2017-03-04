@@ -110,6 +110,7 @@ header p:hover {
 nav{
 	background-color: #9B3417;
 	float: right;
+	clear: right;
 	position: relative;
 	margin-top: 20px;
 }
@@ -121,7 +122,7 @@ nav{
 }
 	
 .navbutton p {
-	text-align: center;
+	text-align: right;
 }
 
 /* End of header styles*/
