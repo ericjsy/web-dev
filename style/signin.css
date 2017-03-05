@@ -4,13 +4,12 @@
 }
 	
 #rightcol {
-
+	margin-left: 430px;
 	overflow: auto;
 }
 		
 #leftcol {
 	float: left;
-
 	padding-right: 10px;
 	width: 390px;
 }	
@@ -21,14 +20,12 @@
 	height: 20px;
 	padding: 5px;
 	margin-bottom: 10px;
-	margin-left: 10px;
 	margin-top: 1px; 
-	width: 250px;
+	width: 300px;
 }
 	
 h2 {
 	margin-bottom: 10px;
- 	margin-left: 10px;
 }
 /* Required submission */
 .required {
@@ -36,18 +33,23 @@ h2 {
 }
 /* Right shift input labels */
 label{
-	margin-left:30px;
 	padding-bottom:10px;
 }
 /* Similar to Finalize */
-.submit {
+.submit, .login {
 	background-color: #9B3417;
 	border-style: none;
 	color: white;
 	height: 25px;
-	margin-left:35px;
 	width: 50px;
-}	
+}
+.submit {
+	margin-left: 260px;
+}
+
+.login {
+	margin-left: 110px;
+}
 
 /* Error message */
 #LoginError, #SignUpError {
