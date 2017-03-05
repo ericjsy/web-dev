@@ -33,17 +33,6 @@ function validCatering() {
 	j.style.border = "";
 	k.style.border = "";
 	l.style.border = "";
-	$('errCatering').innerHTML = "";
-	$('errFirstName').innerHTML = "";
-	$('errLastName').innerHTML = "";
-	$('errPhone').innerHTML = "";
-	$('errEmail').innerHTML = "";
-	$('errAddress').innerHTML = "";
-	$('errDate').innerHTML = "";
-	$('errStartTime').innerHTML = "";
-	$('errEndTime').innerHTML = "";
-	$('errFunction').innerHTML = "";
-	$('errGuests').innerHTML = "";
 	
 	if ( a.value.length < 1 ) {
 		$('errCatering').innerHTML = "Please fill in all required fields.";
@@ -223,6 +212,22 @@ function warnInvalidAddress(id){
 		$(id).focus();
 	}
 }
+
+function warnInvalidDate(id){
+	var a = new Date( $(id).value );
+	var b = new Date();
+	b.setDate( b.getDate() + 13 );
+	
+	$(id).style.border = "";
+	$('errDate').innerHTML = "";
+
+	if ( isNaN( Date.parse(a) ) || a < b ){
+		$('errDate').innerHTML = " The date of the function must be at least two weeks from the order date."
+			+ " If a day, month, or year is not specified, it will default to 1 (eg, 2001, January, or 1st).";
+		$(id).style.border = "1px solid red";
+		$(id).focus();
+	}
+}	
 
 // Validate number of guests
 function warnInvalidGuests(id){
