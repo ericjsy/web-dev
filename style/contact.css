@@ -32,6 +32,21 @@ li {
 .required {
 	color: red;
 }
+
+.error {
+	color: red;
+	font-size: small;	
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input:valid {
+	border: 1px solid #eee;
+	border-radius: 2px;
+}
+
 /* Check for post */
 input {
 	border: 1px solid #eee;

@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="../style/contact.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../javascript/contact.js"></script>
+	
 </head>
 
 <body>
@@ -85,32 +87,28 @@
 				<h2>
 					Feedback
 				</h2>
-				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+				<form name="contactForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return(submitCheck())">
 					<fieldset>
 						<ul>
 							<li>
 								<label for="fname">
-									Full Name<span class="required">*</span><br>
+									Full Name <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
 									id="fname" 
 									name="fname" 
-									placeholder="First and last name" 
-									required="required" 
-									pattern="[a-zA-Z\s]{1,}" 
-									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
+									placeholder="First and last name">
 							</li>
 							<li>
 								<label for="email">
 									<br>Email <span class="required">*</span><br>
 								</label>
 								<input 
-									type="email" 
+									type="text" 
 									id="email" 
 									name="email" 
-									placeholder="name@domain.com"
-									required="required">
+									placeholder="name@domain.com">
 							</li>
 							<li>
 								<label for="feedback">
@@ -120,13 +118,12 @@
 									name="feedback" 
 									id="feedback" 
 									placeholder="Enter your comments here."
-									required="required"
 									cols="41" 
 									rows="4"></textarea>
 							</li>
 						</ul>
 							<div id="submit">
-								<br><input type="submit" accesskey="S">
+								<br><input type="submit" accesskey="S"><span class="error"></span>
 							</div>
 					</fieldset>
 				</form>
