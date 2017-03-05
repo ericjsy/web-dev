@@ -1,4 +1,4 @@
-// Helper Functions
+/* Helper Functions */
 
 function $(id){
 	var element = document.getElementById(id);
@@ -8,32 +8,38 @@ function $(id){
 	return element;
 }
 
-// Sign Up Form
+/* Sign Up Form */
 
 function validLogin(){
-	var x = document.forms["login"]["txtUsername"];
-	var y = document.forms["login"]["txtPassword"];
+	var loginInfo = [$('txtUsername'), $('txtPassword')];
+	var errorMessage = ["username", "password"];
 	
-	if ( x.value.length < 1 ) {
-		$('loginError').innerHTML = "Please provide your username.";
-		x.style.border = "1px solid red";
-		y.style.border = "";
-		x.focus();
-		return false;
-	}
+	var i = 0;
+	var j = 0;
 	
-	if ( y.value.length < 1 ) {
-		$('loginError').innerHTML = "Please provide your password.";
-		x.style.border = "";
-		y.style.border = "1px solid red";
-		y.focus();
+	for (i; i < loginInfo.length; i++) {
+		
+		// Resets all borders
+		while (j < loginInfo.length) {
+		loginInfo[j].style.border = "";	
+		j++;
+		}
+		
+		// Indicates missing field and prints out appropriate error message
+		if ( loginInfo[i].value.length < 1 ) {
+		$('loginError').innerHTML = "Please provide your " + errorMessage[i] + ".";
+		loginInfo[i].style.border = "1px solid red";
+		loginInfo[i].focus();
 		return false;
+		}	
+		
 	}
 
 }
 
-// New Account Form
+/* New Account Form */
 
+// Warnings
 function verifyPassword(id){
 	var strX = $(id).value;
 	var strY = document.getElementById("txtNewPassword").value;
@@ -54,49 +60,30 @@ function warnInvalidEmail(id) {
 		$('signUpError').innerHTML = " Valid emails end in .com, .ca, or .org";
 }
 
+// Test submission
 function validSignup() {
-	var w = document.forms["signIn"]["txtNewUser"];
-	var x = document.forms["signIn"]["txtNewPassword"];
-	var y = document.forms["signIn"]["txtVerify"];
-	var z = document.forms["signIn"]["txtEmail"];
+	var signUpInfo = [$('txtNewUser'), $('txtNewPassword'), $('txtVerify'), $('txtEmail')];
+	var errorMessage = ["provide a username", "provide a password", "verify your password", "provide an email"];
+	
+	var i = 0;
+	var j = 0;
+	
+	for (i; i < signUpInfo.length; i++) {
+		
+		// Resets all borders
+		while (j < signUpInfo.length) {
+		signUpInfo[j].style.border = "";	
+		j++;
+		}
+		
+		// Indicates missing field and prints out appropriate error message
+		if ( signUpInfo[i].value.length < 1 ) {
+		$('signUpError').innerHTML = "Please " + errorMessage[i] + ".";
+		signUpInfo[i].style.border = "1px solid red";
+		signUpInfo[i].focus();
+		return false;
+		}	
+		
+	}
 
-	if ( w.value.length < 1 ) {
-		$('signUpError').innerHTML = "Please provide a username.";
-		w.style.border = "1px solid red";
-		x.style.border = "";
-		y.style.border = "";
-		z.style.border = "";
-		w.focus();
-		return false;
-	}
-	
-	if ( x.value.length < 1 ) {
-		$('signUpError').innerHTML = "Please provide a password.";
-		w.style.border = "";
-		x.style.border = "1px solid red";
-		y.style.border = "";
-		z.style.border = "";
-		x.focus();
-		return false;
-	}
-	
-	if ( y.value.length < 1 ) {
-		$('signUpError').innerHTML = "Please verify your password.";
-		w.style.border = "";
-		x.style.border = "";
-		y.style.border = "1px solid red";
-		z.style.border = "";
-		y.focus();
-		return false;
-	}
-	
-	if ( z.value.length < 1 ) {
-		$('signUpError').innerHTML = "Please provide an email.";
-		w.style.border = "";
-		x.style.border = "";
-		y.style.border = "";
-		z.style.border = "1px solid red";
-		z.focus();
-		return false;
-	}
 }
