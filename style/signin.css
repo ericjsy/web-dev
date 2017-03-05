@@ -4,13 +4,13 @@
 }
 	
 #rightcol {
-	height: 400px;
+
 	overflow: auto;
 }
 		
 #leftcol {
 	float: left;
-	height: 400px;
+
 	padding-right: 10px;
 	width: 390px;
 }	
@@ -48,3 +48,8 @@ label{
 	margin-left:35px;
 	width: 50px;
 }	
+
+/* Error message */
+#LoginError, #SignUpError {
+	color: red;
+}

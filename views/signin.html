@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 	<html lang="en">
-	<head>
+<head>
 	<meta charset="utf-8">
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/signin.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="../javascript/signin.js">
+	</script>
 </head>
 
 <body>
@@ -67,49 +70,117 @@
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div id="leftrightcol">
 			<div id="leftcol">
-				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+				<form 
+				id="Login" 
+				action="http://webdevfoundations.net/scripts/formdemo.asp" 
+				method="post"
+				onsubmit="return validLogin()">
 					
 						<h2>Sign in</h2>
 						<label for="Username">Username <span class="required">*</span><br>
 						</label>
-							<input class="input" type="text" name="name" placeholder="Username" required><br>
+							<input 
+							class="input"
+							type="text" 
+							name="username" 
+							id="txtUsername" 
+							placeholder="Username">
+							
+							<br>
 						
 						<label for="Password">Password <span class="required">*</span><br>
 						</label>
-							<input class="input" type="password" name="password" placeholder="********" required><br>
+							<input 
+							class="input" 
+							type="password" 
+							name="password" 
+							id="txtPassword"
+							placeholder="********" ">
+							
+							<br>
 						
 						<label for="Remember">
 							Remember me
 						</label>
-							<input id="Remember" type="checkbox" name="remember">
+							<input 
+							id="Remember" 
+							type="checkbox" 
+							name="remember">
 						
-							<input class="submit" type="submit" name="name" value="Log in"><br>
+							<input 
+							class="submit" 
+							type="submit" 
+							name="name" 
+							value="Log in"><br>
 					
 				</form>
+				
+				<p id="LoginError"></p>
 			</div>
 			
 			<div id="rightcol">
-				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+				<form 
+				id="Signup" 
+				action="http://webdevfoundations.net/scripts/formdemo.asp" 
+				method="post"
+				onsubmit="return validSignup()">
 					
 					<h2>Create a new account</h2>
-						<label for="Username">Username <span class="required">*</span><br>
+						<label for="txtNewUser">Username <span class="required">*</span><br>
 						</label>
-							<input class="input" type="text" name="name" id="Username" placeholder="Username" required><br>
-						<label for="Password">Password <span class="required">*</span><br>
-						</label>
-							<input class="input" type="password" name="password"  id="Password" placeholder="********" required><br>
+							<input 
+							class="input" 
+							type="text" 
+							name="newuser" 
+							id="txtNewUser" 
+							placeholder="Username" 
+							onblur="warnFieldEmpty('txtNewUser')">
 							
-						<label for="Password">Verify Password <span class="required">*</span><br>
-						</label>
-							<input class="input" type="password" name="password" id="Verify" placeholder="********" required><br>
+							<br>
 							
-						<label for="E-mail">
+						<label for="txtNewPassword">Password <span class="required">*</span><br>
+						</label>
+							<input 
+							class="input" 
+							type="password" 
+							name="newpassword" 
+							id="txtNewPassword" 
+							placeholder="********" >
+							
+							<br>
+							
+						<label for="txtVerify">Verify Password <span class="required">*</span><br>
+						</label>
+							<input 
+							class="input" 
+							type="password" 
+							name="password" 
+							id="txtVerify" 
+							placeholder="********"
+							onblur="verifyPassword('txtVerify')">
+							<br>
+							
+						<label for="txtEmail">
 							E-mail <span class="required">*</span><br>
 						</label>
-							<input class="input" type="email" name="email" id="E-mail" placeholder="e-mail" required><br>
+							<input 
+							class="input" 
+							type="email" 
+							name="email" 
+							id="txtEmail" 
+							placeholder="e-mail"
+							onblur="warnInvalidEmail('txtEmail')">
 							
-							<input class="submit" type="submit" name="name" value="Submit"><br>
+							<br>
+							
+							<input 
+							class="submit" 
+							type="submit" 
+							name="name" 
+							value="Submit"><br>
 				</form>
+				
+				<p id="SignUpError"></p>
 			</div>
 		</div>
 		<p class="backup">
