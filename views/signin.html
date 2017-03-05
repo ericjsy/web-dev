@@ -70,17 +70,12 @@
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div id="leftrightcol">
 			<div id="leftcol">
-				<form 
-				id="Login" 
-				action="http://webdevfoundations.net/scripts/formdemo.asp" 
-				method="post"
-				onsubmit="return validLogin()">
-					
-						<h2>Sign in</h2>
+				<form id="login" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validLogin()">
+					<h2>Sign in</h2>
+					<fieldset>	
 						<label for="Username">Username <span class="required">*</span><br>
 						</label>
 							<input 
-							class="input"
 							type="text" 
 							name="username" 
 							id="txtUsername" 
@@ -91,45 +86,43 @@
 						<label for="Password">Password <span class="required">*</span><br>
 						</label>
 							<input 
-							class="input" 
 							type="password" 
 							name="password" 
 							id="txtPassword"
-							placeholder="********" ">
-							
-							<br>
-						
-						<label for="Remember">
-							Remember me
-						</label>
-							<input 
-							id="Remember" 
-							type="checkbox" 
-							name="remember">
+							placeholder="********">
 						
 							<input 
 							class="login" 
 							type="submit" 
-							name="name" 
-							value="Log in"><br>
-					
+							name="name"
+							accesskey="L"							
+							value="Log in">
+							
+							<div id="floatRight">
+							<p><br> &nbsp; Remember me </p>
+							<input 
+							type="checkbox" 
+							id="remember" 
+							name="remember">
+							</div><br>
+							
+						<p id="loginError"></p>
+					</fieldset>
 				</form>
-				
-				<p id="LoginError"></p>
 			</div>
 			
 			<div id="rightcol">
 				<form 
-				id="Signup" 
-				action="http://webdevfoundations.net/scripts/formdemo.asp" 
-				method="post"
-				onsubmit="return validSignup()">
-					
-					<h2>Create a new account</h2>
+					id="signIn" 
+					action="http://webdevfoundations.net/scripts/formdemo.asp" 
+					method="post"
+					onsubmit="return validSignup()">
+						
+						<h2>Create a new account</h2>
+						<fieldset>
 						<label for="txtNewUser">Username <span class="required">*</span><br>
 						</label>
-							<input 
-							class="input" 
+							<input  
 							type="text" 
 							name="newuser" 
 							id="txtNewUser" 
@@ -140,8 +133,7 @@
 							
 						<label for="txtNewPassword">Password <span class="required">*</span><br>
 						</label>
-							<input 
-							class="input" 
+							<input  
 							type="password" 
 							name="newpassword" 
 							id="txtNewPassword" 
@@ -152,7 +144,6 @@
 						<label for="txtVerify">Verify Password <span class="required">*</span><br>
 						</label>
 							<input 
-							class="input" 
 							type="password" 
 							name="password" 
 							id="txtVerify" 
@@ -163,12 +154,11 @@
 						<label for="txtEmail">
 							E-mail <span class="required">*</span><br>
 						</label>
-							<input 
-							class="input" 
+							<input  
 							type="email" 
 							name="email" 
 							id="txtEmail" 
-							placeholder="e-mail"
+							placeholder="name@domain.com"
 							onblur="warnInvalidEmail('txtEmail')">
 							
 							<br>
@@ -176,11 +166,13 @@
 							<input 
 							class="submit" 
 							type="submit" 
-							name="name" 
+							name="name"
+							accesskey="S"
 							value="Submit"><br>
-				</form>
-				
-				<p id="SignUpError"></p>
+							
+							<p id="signUpError"></p>
+						</fieldset>
+				</form>	
 			</div>
 		</div>
 	</main>	

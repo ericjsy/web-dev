@@ -87,7 +87,7 @@
 				<h2>
 					Feedback
 				</h2>
-				<form name="contactForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return(submitCheck())">
+				<form name="contact" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validFeedback()">
 					<fieldset>
 						<ul>
 							<li>
@@ -108,7 +108,8 @@
 									type="text" 
 									id="email" 
 									name="email" 
-									placeholder="name@domain.com">
+									placeholder="name@domain.com"
+									onblur="warnInvalidEmail('email')">
 							</li>
 							<li>
 								<label for="feedback">
@@ -122,9 +123,9 @@
 									rows="4"></textarea>
 							</li>
 						</ul>
-							<div id="submit">
-								<br><input type="submit" accesskey="S"><span class="error"></span>
-							</div>
+						<div id="submit">
+							<br><input type="submit" accesskey="S"><span id="feedbackError"></span>
+						</div>
 					</fieldset>
 				</form>
 				</div>

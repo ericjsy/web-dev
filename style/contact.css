@@ -33,7 +33,7 @@ li {
 	color: red;
 }
 
-.error {
+#feedbackError {
 	color: red;
 	font-size: small;	
 }

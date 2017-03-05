@@ -1,21 +1,33 @@
 // Helper Functions
 
-function $(cls) {
-	var element = document.getElementsByClassName(cls);
-	if ( element == null )
-		alert( 'Programmer error: ' + cls + ' does not exist.');
+function $(id){
+	var element = document.getElementById(id);
+	
+	if( element == null )
+		alert( 'Programmer error: ' + id + ' does not exist.' );
 	return element;
 }
 
 // Contact Us Form
 
-function submitCheck() {
-	var x = document.forms["contactForm"]["fname"];
-	var y = document.forms["contactForm"]["email"];
-	var z = document.forms["contactForm"]["feedback"];
+function testValidEmail(id) {
+	var str = $(id).value;
+	
+	return ( str.length > 0 && str.substring(str.length-4) == ".com" || str.substring(str.length-4) == ".org" || str.substring(str.length-3) == ".ca" );
+}
 
-	if (x.value.length < 1) {
-		$('error')[0].innerHTML = " Please provide your full name.";
+function warnInvalidEmail(id) {
+	if ( !testValidEmail(id) )
+		$('feedbackError').innerHTML = " Valid emails end in .com, .ca, or .org";
+}
+
+function validFeedback() {
+	var x = document.forms["contact"]["fname"];
+	var y = document.forms["contact"]["email"];
+	var z = document.forms["contact"]["feedback"];
+
+	if ( x.value.length < 1 ) {
+		$('feedbackError').innerHTML = " Please provide your full name.";
 		x.style.border = "1px solid red";
 		y.style.border = "";
 		z.style.border = "";
@@ -23,8 +35,8 @@ function submitCheck() {
 		return false;
 	}
 	
-	if (y.value.length < 1) {
-		$('error')[0].innerHTML = " Please provide your email.";
+	if ( y.value.length < 1 ) {
+		$('feedbackError').innerHTML = " Please provide your email.";
 		x.style.border = "";
 		y.style.border = "1px solid red";
 		z.style.border = "";
@@ -32,12 +44,17 @@ function submitCheck() {
 		return false;
 	}
 		
-	if (z.value.length < 1) {
-		$('error')[0].innerHTML = " Please provide feedback.";
+	if ( z.value.length < 1 ) {
+		$('feedbackError').innerHTML = " Please provide feedback.";
 		x.style.border = "";
 		y.style.border = "";
 		z.style.border = "1px solid red";
 		z.focus();
 		return false;
 	}
+	
+	if ( !testValidEmail(id) ) {
+		return false;
+	}
+	
 }
