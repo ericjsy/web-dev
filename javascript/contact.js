@@ -1,4 +1,4 @@
-// Helper Functions
+/* Helper Functions */
 
 function $(id){
 	var element = document.getElementById(id);
@@ -8,7 +8,7 @@ function $(id){
 	return element;
 }
 
-// Contact Us Form
+/* Contact Us Form */
 
 function testValidEmail(id) {
 	var str = $(id).value;
@@ -22,35 +22,27 @@ function warnInvalidEmail(id) {
 }
 
 function validFeedback() {
-	var x = document.forms["contact"]["fname"];
-	var y = document.forms["contact"]["email"];
-	var z = document.forms["contact"]["feedback"];
-
-	if ( x.value.length < 1 ) {
-		$('feedbackError').innerHTML = " Please provide your full name.";
-		x.style.border = "1px solid red";
-		y.style.border = "";
-		z.style.border = "";
-		x.focus();
-		return false;
-	}
+	var feedbackInfo = [$('fname'), $('email'), $('feedback')];
+	var errorMessage = ["full name", "email", "feedback"];
 	
-	if ( y.value.length < 1 ) {
-		$('feedbackError').innerHTML = " Please provide your email.";
-		x.style.border = "";
-		y.style.border = "1px solid red";
-		z.style.border = "";
-		y.focus();
-		return false;
-	}
+	var j = 0;
+	
+	for (i = 0; i < feedbackInfo.length; i++) {
 		
-	if ( z.value.length < 1 ) {
-		$('feedbackError').innerHTML = " Please provide feedback.";
-		x.style.border = "";
-		y.style.border = "";
-		z.style.border = "1px solid red";
-		z.focus();
-		return false;
+		// Resets all borders
+		while (j < feedbackInfo.length) {
+			feedbackInfo[j].style.border = "";	
+			j++;
+		}
+		
+		// Indicates missing field and prints out appropriate error message
+		if ( feedbackInfo[i].value.length < 1 ) {
+			$('feedbackError').innerHTML = "Please provide your " + errorMessage[i] + ".";
+			feedbackInfo[i].style.border = "1px solid red";
+			feedbackInfo[i].focus();
+			return false;
+		}	
+		
 	}
 	
 	if ( !testValidEmail(id) ) {
