@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="../style/catering.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="../javascript/catering.js"></script>
 </head>
 
 <body>
@@ -79,7 +81,11 @@
 					<br><br>All fields marked with an <span class="required">*</span> are required.
 					</p>
 				</div>
-				<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+				<form 
+				id="cateringForm" 
+				action="http://webdevfoundations.net/scripts/formdemo.asp" 
+				method="post"
+				onsubmit="return validCatering()">
 					<fieldset>
 					
 						<!-- Need to finish all acceptable patterns -->
@@ -89,73 +95,72 @@
 						</h2>
 						<ul>
 							<li>
-								<label for="fname">
+								<label for="txtFirstName">
 									First Name<span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="fname" 
+									id="txtFirstName" 
 									name="fname" 
-									placeholder="First name" 
-									required="required" 
-									pattern="[a-zA-Z]{1,}" 
-									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john">
+									placeholder="First name"
+									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john"
+									onblur="warnInvalidName('txtFirstName')">
+									<span id="errFirstName"></span>
 							</li>
 							<li>
-								<label for="lname">
+								<label for="txtLastName">
 									<br>Last Name <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="lname" 
+									id="txtLastName" 
 									name="lname" 
-									placeholder="Last name" 
-									required="required" 
-									pattern="[a-zA-Z]{1,}" 
-									title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe">
+									placeholder="Last name"
+									title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe"
+									onblur="warnInvalidName('txtLastName')">
+									<span id="errLastName"></span>
 							</li>
 							<li>
 								<div>
 									<br>Contact Number <span class="required">*</span><br>
 								</div>
 								<input 
-									type="text" 
+									type="number" 
 									class="tel"
+									id="numPhone_0"
 									name="tel1" 
-									placeholder="###" 
-									required="required" 
-									maxlength="3" 
-									pattern="([0-9]{3})" 
-									title="Contact number should only contain numbers. e.g. 123"> -
+									placeholder="###"
+									title="Contact number should only contain numbers. e.g. 123"
+									onblur="warnInvalidPhone01('numPhone_0')"> -
 								<input 
-									type="text" 
+									type="number" 
 									class="tel" 
+									id="numPhone_1"
 									name="tel2" 
-									placeholder="###" 
-									required="required"
-									maxlength="3" 
-									pattern="([0-9]{3})"  
-									title="Contact number should only contain numbers. e.g. 123"> -
+									placeholder="###"
+									title="Contact number should only contain numbers. e.g. 123"
+									onblur="warnInvalidPhone01('numPhone_1')"> -
 								<input 
-									type="text" 
-									class="tel"  
+									type="number" 
+									class="tel" 
+									id="numPhone_2"
 									name="tel3" 
-									placeholder="####" 
-									required="required" 
-									maxlength="4" 
-									pattern="([0-9]{4})" 
-									title="Contact number should only contain numbers. e.g. 1234">
+									placeholder="####"
+									title="Contact number should only contain numbers. e.g. 1234"
+									onblur="warnInvalidPhone2('numPhone_2')">
+									<span id="errPhone"></span>
 							</li>
 							<li>
-								<label for="email">
+								<label for="txtEmail">
 									<br>Email <span class="required">*</span><br>
 								</label>
 								<input 
 									type="email" 
-									id="email" 
+									id="txtEmail" 
 									name="email" 
 									placeholder="name@domain.com"
-									required="required">
+									onblur="warnInvalidEmail('txtEmail')">
+									<span id="errEmail"></span>
 							</li>
 						</ul>
 					</fieldset>
@@ -165,56 +170,60 @@
 						</h2>
 						<ul>
 							<li>
-								<label for="organization">
+								<label for="txtOrganization">
 									Organization<br>
 								</label>
 								<input 
 									type="text" 
-									id="organization" 
+									id="txtOrganization" 
 									name="organization" 
 									placeholder="Organization">
 							</li>
 							<li>
-								<label for="inputaddress">
+								<label for="txtAddress">
 									<br>Address <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="inputaddress" 
+									id="txtAddress" 
 									name="inputaddress" 
 									placeholder="Address"
-									required="required" 
-									title="Address should be alphanumeric. e.g. 1234 Bakery Lane">
+									title="Address should be alphanumeric. e.g. 1234 Bakery Lane"
+									onblur="warnInvalidAddress('txtAddress')">
+									<span id="errAddress"></span>
 							</li>
 							<li>
-								<label for="date">
+								<label for="txtDate">
 									<br>Date of Event <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="date" 
-									name="date" 
-									required="required">
+									id="txtDate" 
+									name="date"
+									onblur="clearWarning('txtDate')">
+									<span id="errDate"></span>
 							</li>
 							<li>
-								<label for="start">
+								<label for="txtStartTime">
 									<br>Start Time <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="start" 
-									name="start" 
-									required="required">
+									id="txtStartTime" 
+									name="start"
+									onblur="clearWarning('txtStartTime')">
+									<span id="errStartTime"></span>
 							</li>
 							<li>
-								<label for="end">
+								<label for="txtEndTime">
 									<br>End Time <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="end" 
-									name="end" 
-									required="required">
+									id="txtEndTime" 
+									name="end"
+									onblur="clearWarning('txtEndTime')">
+									<span id="errEndTime"></span>
 							</li>
 						</ul>
 					</fieldset>
@@ -224,35 +233,37 @@
 						</h2>
 						<ul>
 							<li>
-								<label for="function">
+								<label for="lstFunction">
 									Type of Function <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="function" 
+									id="lstFunction" 
 									name="function" 
-									placeholder="Function"
-									required="required" 
+									placeholder="Function" 
 									title="Function cannot contain any numbers, symbols or spaces. Please see the drop down for suggestions."
-									list="functions">
+									list="functions"
+									onblur="warnInvalidName('lstFunction')">
 										<datalist id="functions">
 											<option value="Birthday">
 											<option value="Corporate">
-											<option value="Social Event">
+											<option value="Social">
 											<option value="Wedding">
 										</datalist>
+									<span id="errFunction"></span>
 							</li>
 							<li>
-								<label for="guests">
+								<label for="numGuests">
 									<br>Number of Guests <span class="required">*</span><br>
 								</label>
 								<input 
 									type="number" 
-									id="guests" 
+									id="numGuests" 
 									name="guests" 
 									placeholder="Number of Guests"
-									required="required"
-									min="50">
+									title="Minimum 50 guests"
+									onblur="warnInvalidGuests('numGuests')">
+									<span id="errGuests"></span>
 							</li>
 							<li>
 								<div id="desired">
@@ -260,41 +271,41 @@
 									Macarons
 										<input 
 											type="checkbox" 
-											id="macarons" 
+											id="chkMacarons" 
 											name="macarons" 
 											value="yes">
 									Desserts
 										<input 
 											type="checkbox" 
-											id="desserts" 
+											id="chkDesserts" 
 											name="desserts" 
 											value="yes">
 									Cakes
 										<input 
 											type="checkbox" 
-											id="cakes" 
+											id="chkCakes" 
 											name="cakes" 
 											value="yes">
 								</div>
 							</li>
 							<li>
-								<label for="allergies">
+								<label for="taAllergies">
 									<br>Dietary Restrictions<br>
 								</label>
 								<textarea 
-									id="allergies" 
+									id="taAllergies" 
 									name="allergies" 
 									placeholder="Enter your allergies here."
 									cols="41" 
 									rows="4"></textarea>
 							</li>
 							<li>
-								<label for="comments">
+								<label for="taComments">
 								<br>Additional Information<br>
 								</label>
 								<textarea 
 									name="comments" 
-									id="comments" 
+									id="taComments" 
 									placeholder="Enter your comments here."
 									cols="41" 
 									rows="4"></textarea>
@@ -302,7 +313,7 @@
 						</ul>
 					</fieldset>
 					<div id="submit">
-						<br><input type="submit" accesskey="S">
+						<br><input type="submit" accesskey="S"><span id="errCatering"></span>
 					</div>
 				</form>
 			</div>
