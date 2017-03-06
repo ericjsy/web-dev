@@ -19,13 +19,13 @@ function validLogin(){
 		loginInfo[j].style.border = "";	
 	}
 	
+	// Indicates missing field and prints out appropriate error message
 	for ( var i = 0; i < loginInfo.length; i++ ) {
 
-		// Indicates missing field and prints out appropriate error message
 		if ( loginInfo[i].value.length < 1 ) {
-		$('loginError').innerHTML = "Please provide your " + errorMessage[i] + ".";
-		loginInfo[i].style.border = "1px solid red";
-		loginInfo[i].focus();
+			$('loginError').innerHTML = "Please provide your " + errorMessage[i] + ".";
+			loginInfo[i].style.border = "1px solid red";
+			loginInfo[i].focus();
 		return false;
 		}	
 		
