@@ -105,7 +105,7 @@
 									placeholder="First name"
 									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john"
 									onblur="warnInvalidName('txtFirstName')">
-									<span id="errFirstName"></span>
+									<span id="errFirstName" class="errorMessage"></span>
 							</li>
 							<li>
 								<label for="txtLastName">
@@ -118,7 +118,7 @@
 									placeholder="Last name"
 									title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe"
 									onblur="warnInvalidName('txtLastName')">
-									<span id="errLastName"></span>
+									<span id="errLastName" class="errorMessage"></span>
 							</li>
 							<li>
 								<div>
@@ -148,7 +148,7 @@
 									placeholder="####"
 									title="Contact number should only contain numbers. e.g. 1234"
 									onblur="warnInvalidPhone2('numPhone_2')">
-									<span id="errPhone"></span>
+									<span id="errPhone" class="errorMessage"></span>
 							</li>
 							<li>
 								<label for="txtEmail">
@@ -160,7 +160,7 @@
 									name="email" 
 									placeholder="name@domain.com"
 									onblur="warnInvalidEmail('txtEmail')">
-									<span id="errEmail"></span>
+									<span id="errEmail" class="errorMessage"></span>
 							</li>
 						</ul>
 					</fieldset>
@@ -190,7 +190,7 @@
 									placeholder="Address"
 									title="Address should be alphanumeric. e.g. 1234 Bakery Lane"
 									onblur="warnInvalidAddress('txtAddress')">
-									<span id="errAddress"></span>
+									<span id="errAddress" class="errorMessage"></span>
 							</li>
 							<li>
 								<label for="txtDate">
@@ -201,7 +201,7 @@
 									id="txtDate" 
 									name="date"
 									onblur="warnInvalidDate('txtDate')">
-									<span id="errDate"></span>
+									<span id="errDate" class="errorMessage"></span>
 							</li>
 							<li>
 								<label for="txtStartTime">
@@ -212,7 +212,7 @@
 									id="txtStartTime" 
 									name="start"
 									onblur="clearWarning('txtStartTime')">
-									<span id="errStartTime"></span>
+									<span id="errStartTime" class="errorMessage"></span>
 							</li>
 							<li>
 								<label for="txtEndTime">
@@ -223,7 +223,7 @@
 									id="txtEndTime" 
 									name="end"
 									onblur="clearWarning('txtEndTime')">
-									<span id="errEndTime"></span>
+									<span id="errEndTime" class="errorMessage"></span>
 							</li>
 						</ul>
 					</fieldset>
@@ -250,7 +250,7 @@
 											<option value="Social">
 											<option value="Wedding">
 										</datalist>
-									<span id="errFunction"></span>
+									<span id="errFunction" class="errorMessage"></span>
 							</li>
 							<li>
 								<label for="numGuests">
@@ -263,7 +263,7 @@
 									placeholder="Number of Guests"
 									title="Minimum 50 guests"
 									onblur="warnInvalidGuests('numGuests')">
-									<span id="errGuests"></span>
+									<span id="errGuests" class="errorMessage"></span>
 							</li>
 							<li>
 								<div id="desired">
