@@ -24,20 +24,17 @@ function warnInvalidEmail(id) {
 function validFeedback() {
 	var feedbackInfo = [$('fname'), $('email'), $('feedback')];
 	var errorMessage = ["full name", "email", "feedback"];
+		
+	// Resets all borders
+	for ( var j = 0; j < feedbackInfo.length; j++ ) {
+		feedbackInfo[j].style.border = "";	
+	}
 	
-	var j = 0;
-	
+	// Indicates missing field and prints out appropriate error message
 	for (i = 0; i < feedbackInfo.length; i++) {
 		
-		// Resets all borders
-		while (j < feedbackInfo.length) {
-			feedbackInfo[j].style.border = "";	
-			j++;
-		}
-		
-		// Indicates missing field and prints out appropriate error message
 		if ( feedbackInfo[i].value.length < 1 ) {
-			$('feedbackError').innerHTML = "Please provide your " + errorMessage[i] + ".";
+			$('feedbackError').innerHTML = " Please provide your " + errorMessage[i] + ".";
 			feedbackInfo[i].style.border = "1px solid red";
 			feedbackInfo[i].focus();
 			return false;
