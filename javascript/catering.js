@@ -1,136 +1,52 @@
-// Helper functions
+/* Helper functions */
+
 function $(id){
-var element = document.getElementById(id);
-if( element == null )
-	alert( 'Programmer error: ' + id + ' does not exist.' );
-return element;
+	var element = document.getElementById(id);
+
+	if( element == null )
+		alert( 'Programmer error: ' + id + ' does not exist.' );
+	return element;
 }
 
-// Validate Catering form
+/* Catering Form */
+
 function validCatering() {
-	var a = $('txtFirstName');
-	var b = $('txtLastName');
-	var c = $('numPhone_0');
-	var d = $('numPhone_1');
-	var e = $('numPhone_2');
-	var f = $('txtEmail');
-	var g = $('txtAddress');
-	var h = $('txtDate');
-	var i = $('txtStartTime');
-	var j = $('txtEndTime');
-	var k = $('lstFunction');
-	var l = $('numGuests');
-	
-	a.style.border = "";
-	b.style.border = "";
-	c.style.border = "";
-	d.style.border = "";
-	e.style.border = "";
-	f.style.border = "";
-	g.style.border = "";
-	h.style.border = "";
-	i.style.border = "";
-	j.style.border = "";
-	k.style.border = "";
-	l.style.border = "";
-	
-	if ( a.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errFirstName').innerHTML = "Please enter a first name.";
-		a.style.border = "1px solid red";
-		a.focus();
-		return false;
-	}
-	
-	if ( b.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errLastName').innerHTML = "Please enter a last name.";
-		b.style.border = "1px solid red";
-		b.focus();
-		return false;
-	}
-	
-	if ( c.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errPhone').innerHTML = "Please enter a phone number.";
-		c.style.border = "1px solid red";
-		c.focus();
-		return false;
-	}
-	
-	if ( d.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errPhone').innerHTML = "Please enter a phone number.";
-		d.style.border = "1px solid red";
-		d.focus();
-		return false;
-	}
-	
-	if ( e.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errPhone').innerHTML = "Please enter a phone number.";
-		e.style.border = "1px solid red";
-		e.focus();
-		return false;
-	}
-	
-	if ( f.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errEmail').innerHTML = "Please enter an email address.";
-		f.style.border = "1px solid red";
-		f.focus();
-		return false;
-	}
-	
-	if ( g.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errAddress').innerHTML = "Please enter a physical address.";
-		g.style.border = "1px solid red";
-		g.focus();
-		return false;
-	}
-	
-	if ( h.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errDate').innerHTML = "Please enter a date.";
-		h.style.border = "1px solid red";
-		h.focus();
-		return false;
-	}
-	
-	if ( i.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errStartTime').innerHTML = "Please enter a start time.";
-		i.style.border = "1px solid red";
-		i.focus();
-		return false;
-	}
-	
-	if ( j.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errEndTime').innerHTML = "Please enter an end time.";
-		j.style.border = "1px solid red";
-		j.focus();
-		return false;
-	}
-	
-	if ( k.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errFunction').innerHTML = "Please enter a function or select one from the list.";
-		k.style.border = "1px solid red";
-		k.focus();
-		return false;
-	}
-	
-	if ( l.value.length < 1 ) {
-		$('errCatering').innerHTML = "Please fill in all required fields.";
-		$('errGuests').innerHTML = "Please enter the number of guests.";
-		l.style.border = "1px solid red";
-		l.focus();
-		return false;
-	}
-}
 
+	var cateringInfo = [ 
+		{ field: $('txtFirstName'), error: $('errFirstName'), message: "a first name" },
+		{ field: $('txtLastName'), error: $('errLastName'), message: "a last name" },
+		{ field: $('numPhone_0'), error: $('errPhone'), message: "a phone number" },
+		{ field: $('numPhone_1'), error: $('errPhone'), message: "a phone number" },
+		{ field: $('numPhone_2'), error: $('errPhone'), message: "a phone number" },
+		{ field: $('txtEmail'), error: $('errEmail'), message: "an email address" },
+		{ field: $('txtAddress'), error: $('errAddress'), message: "a physical address" },
+		{ field: $('txtDate'), error: $('errCatering'), message: "a date" },
+		{ field: $('txtStartTime'), error: $('errStartTime'), message: "a start time" },
+		{ field: $('txtEndTime'), error: $('errEndTime'), message: "an end time" },
+		{ field: $('lstFunction'), error: $('errFunction'), message: "a function or select one from the list" },
+		{ field: $('numGuests'), error: $('errGuests'), message: "the number of guests" }
+	];
+	
+	// Resets all borders
+	for (j = 0; j < cateringInfo.length; j++) {
+		cateringInfo[j].field.style.border = "";
+	}
+	
+	// Indicates missing field and prints out appropriate error message
+	for (i = 0; i < cateringInfo.length; i++) {
+				
+		if ( cateringInfo[i].field.value.length < 1 ) {
+			$('errCatering').innerHTML = "Please fill in all required fields.";
+			cateringInfo[i].error.innerHTML = "Please enter " + cateringInfo[i].message + ".";
+			cateringInfo[i].field.style.border = "1px solid red";
+			cateringInfo[i].field.focus();
+			return false;
+		}	
+		
+	}
+
+}
+	
 // Validate name, type of function
 function warnInvalidName(id){
 	$(id).style.border = "";
