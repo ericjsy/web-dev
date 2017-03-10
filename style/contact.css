@@ -33,9 +33,10 @@ li {
 	color: red;
 }
 
-#feedbackError {
+#errFeedback, .errorMessage {
 	color: red;
-	font-size: small;	
+	font-size: small;
+	width: 300px;	
 }
 
 input:focus, textarea:focus {

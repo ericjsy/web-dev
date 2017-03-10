@@ -14,75 +14,75 @@
 
 <body>
 	<!--header-->
-		<header>
-			<div id="headcontainer">
-				<!--Nav is within the header-->
-				<a href="index.html"><div id="logo"></div></a>
-					<div id="logincart">
-						<a href="signin.html">Sign In</a>
-						<a href="cart.html">Cart</a>
-					</div>
-				<nav>
-					<ul>
-						<li>
-							<a href="aboutus.html">
-								<div class="navbutton">
-									<p>About Us</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="products.html">
-								<div class="navbutton">
-									<p>Products</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="catering.html">
-								<div class="navbutton">
-									<p>Catering</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="testimonials.html">
-								<div class="navbutton">
-									<p>Testimonials</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="contact.html">
-								<div class="navbutton">
-									<p>Contact Us</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				
-				<!--Keep the "clear" div so all the floated divs stay in the header-->
-				<div class="clear"></div>
-			</div>
-		</header>
-		
-		<!--main content here-->
-		<main id="main">
-			<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-			<div id="fullcontainer">
-				<div class="container1">
-					<h2>
-						Location
-					</h2>
-					<div id="map"><img src="../images/map.png" alt="map" width="303" height="302"></div>
-					<div id="location">
-						1234 Bakery Lane
-						<br>Vancouver, British Columbia
-						<br>Canada V8W 5K9
-					</div>
+	<header>
+		<div id="headcontainer">
+			<!--Nav is within the header-->
+			<a href="index.html"><div id="logo"></div></a>
+				<div id="logincart">
+					<a href="signin.html">Sign In</a>
+					<a href="cart.html">Cart</a>
 				</div>
-				<div class="container2">
+			<nav>
+				<ul>
+					<li>
+						<a href="aboutus.html">
+							<div class="navbutton">
+								<p>About Us</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="products.html">
+							<div class="navbutton">
+								<p>Products</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="catering.html">
+							<div class="navbutton">
+								<p>Catering</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="testimonials.html">
+							<div class="navbutton">
+								<p>Testimonials</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html">
+							<div class="navbutton">
+								<p>Contact Us</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<!--Keep the "clear" div so all the floated divs stay in the header-->
+			<div class="clear"></div>
+		</div>
+	</header>
+	
+	<!--main content here-->
+	<main id="main">
+		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+		<div id="fullcontainer">
+			<div class="container1">
+				<h2>
+					Location
+				</h2>
+				<div id="map"><img src="../images/map.png" alt="map" width="303" height="302"></div>
+				<div id="location">
+					1234 Bakery Lane
+					<br>Vancouver, British Columbia
+					<br>Canada V8W 5K9
+				</div>
+			</div>
+			<div class="container2">
 				<h2>
 					Feedback
 				</h2>
@@ -90,47 +90,51 @@
 					<fieldset>
 						<ul>
 							<li>
-								<label for="fname">
+								<label for="txtFullName">
 									Full Name <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="fname" 
-									name="fname" 
-									placeholder="First and last name">
+									id="txtFullName" 
+									name="txtFullName" 
+									placeholder="First and last name"
+									onblur="warnInvalidName('txtFullName')">
 							</li>
+							<span id="errFullName" class="errorMessage"></span>
 							<li>
-								<label for="email">
+								<label for="txtEmail">
 									<br>Email <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="email" 
-									name="email" 
+									id="txtEmail" 
+									name="txtEmail" 
 									placeholder="name@domain.com"
-									onblur="warnInvalidEmail('email')">
+									onblur="warnInvalidEmail('txtEmail')">
 							</li>
+							<span id="errEmail" class="errorMessage"></span>
 							<li>
-								<label for="feedback">
-								<br>Feedback <span class="required">*</span><br>
+								<label for="txtFeedback">
+									<br>Feedback <span class="required">*</span><br>
 								</label>
 								<textarea 
-									name="feedback" 
-									id="feedback" 
+									name="txtFeedback" 
+									id="txtFeedback" 
 									placeholder="Enter your comments here."
 									cols="41" 
-									rows="4"></textarea>
+									rows="4">
+								</textarea>
 							</li>
 						</ul>
 						<div id="submit">
-							<br><input type="submit" accesskey="S"><span id="feedbackError"></span>
+							<br><input type="submit" accesskey="S">
+							<span id="errFeedback"></span>
 						</div>
 					</fieldset>
 				</form>
-				</div>
 			</div>
-		</main>
-	</div>
+		</div>
+	</main>
 	
 	<!--footer-->
 	<footer>
