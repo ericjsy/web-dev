@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="../style/products.css">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="../javascript/products.js"></script>
+
 </head>
 
 <body>
@@ -72,22 +75,28 @@
 		<div id="filter">
 			<ul>
 				<li>
-					<a href="#brownies">Brownies</a>
+					<input type="checkbox" id="chkGlutenFree" onchange="hideGluten()">
+					<img src="../images/icons/gluten.png" alt="gluten" width="20" height="20">
+					Gluten-Free
 				</li>
 				<li>
-					<a href="#cakes">Cakes</a>
+					<input type="checkbox" id="chkEggFree" onchange="hideEgg()">
+					<img src="../images/icons/egg.png" alt="egg" width="20" height="20">
+					Egg-Free
 				</li>
 				<li>
-					<a href="#cookies">Cookies</a>
+					<input type="checkbox" id="chkLactoseFree" onchange="hideMilk()">
+					<img src="../images/icons/milk.png" alt="milk" width="20" height="20">
+					Lactose-Free
 				</li>
 				<li>
-					<a href="#cupcakes">Cupcakes</a>
+					<input type="checkbox" id="chkPeanutFree" onchange="hidePeanut()">
+					<img src="../images/icons/peanut.png" alt="nut" width="20" height="20">
+					Nut-Free
 				</li>
 				<li>
-					<a href="#donuts">Donuts</a>
-				</li>
-				<li>
-					<a href="#macarons">Macarons</a>
+					<input type="checkbox" id="chkReset" onchange="resetAll()">
+					Reset
 				</li>
 			</ul>
 		</div>
@@ -101,8 +110,8 @@
 				</tr>
 				<tr>
 					<td class="thumbnails"><img src="../images/products/brownies.jpg" width="150" height="112" alt="chocolate brownie"></td>
-					<td class="thumbnails"><img src="../images/products/brownies2.jpg" width="150" height="112" alt="iced sugar brownie"></td>
-					<td class="thumbnails"><img src="../images/products/brownies3.jpg" width="150" height="112" alt="marshmallow fudge"></td>
+					<td class="thumbnails"><img src="../images/products/brownies2.jpg" width="150" height="112" alt="iced sugar brownie" class="gluten"></td>
+					<td class="thumbnails"><img src="../images/products/brownies3.jpg" width="150" height="112" alt="marshmallow fudge" class="milk"></td>
 				</tr>
 
 				<tr>
@@ -111,9 +120,9 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/chocolatecake.jpg" width="150" height="112" alt="chocolate cake"></td>
-					<td class="thumbnails"><img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tart"></td>
-					<td class="thumbnails"><img src="../images/products/cakes3.jpg" width="150" height="112" alt="raspberry cake"></td>
+					<td class="thumbnails"><img src="../images/chocolatecake.jpg" width="150" height="112" alt="chocolate cake" class="egg"></td>
+					<td class="thumbnails"><img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tart" class="milk"></td>
+					<td class="thumbnails"><img src="../images/products/cakes3.jpg" width="150" height="112" alt="raspberry cake" class="milk"></td>
 				</tr>
 
 				<tr>
@@ -122,9 +131,9 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/cookies.jpg" width="150" height="112" alt="blueberry cookies"></td>
-					<td class="thumbnails"><img src="../images/products/cookies2.jpg" width="150" height="112" alt="almond cookies"></td>
-					<td class="thumbnails"><img src="../images/products/cookies3.jpg" width="150" height="112" alt="oatmeal cookies"></td>
+					<td class="thumbnails"><img src="../images/products/cookies.jpg" width="150" height="112" alt="blueberry cookies" class="gluten"></td>
+					<td class="thumbnails"><img src="../images/products/cookies2.jpg" width="150" height="112" alt="almond cookies" class="nut"></td>
+					<td class="thumbnails"><img src="../images/products/cookies3.jpg" width="150" height="112" alt="oatmeal cookies" class="egg"></td>
 				</tr>
 
 				<tr>
@@ -133,9 +142,9 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/cupcakes.jpg" width="150" height="112" alt="lime cupcake"></td>
-					<td class="thumbnails"><img src="../images/products/cupcakes2.jpg" width="150" height="112" alt="chocolate cupcake"></td>
-					<td class="thumbnails"><img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="butter cream cupcake"></td>
+					<td class="thumbnails"><img src="../images/products/cupcakes.jpg" width="150" height="112" alt="lime cupcake" class="egg"></td>
+					<td class="thumbnails"><img src="../images/products/cupcakes2.jpg" width="150" height="112" alt="chocolate cupcake" class="gluten"></td>
+					<td class="thumbnails"><img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="butter cream cupcake" class="egg"></td>
 				</tr>
 
 				<tr>
@@ -144,9 +153,9 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/donut.jpg" width="150" height="112" alt="powdered donut"></td>
-					<td class="thumbnails"><img src="../images/products/donut2.jpg" width="150" height="112" alt="sugar donut"></td>
-					<td class="thumbnails"><img src="../images/products/donut3.jpg" width="150" height="112" alt="homemade donut"></td>
+					<td class="thumbnails"><img src="../images/products/donut.jpg" width="150" height="112" alt="powdered donut" class="milk"></td>
+					<td class="thumbnails"><img src="../images/products/donut2.jpg" width="150" height="112" alt="sugar donut" class="egg"></td>
+					<td class="thumbnails"><img src="../images/products/donut3.jpg" width="150" height="112" alt="homemade donut" class="gluten"></td>
 				</tr>
 
 				<tr>
@@ -155,9 +164,9 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/macaron.jpg" width="150" height="112" alt="raspberry macaron"></td>
-					<td class="thumbnails"><img src="../images/products/macaron2.jpg" width="150" height="112" alt="peach macaron"></td>
-					<td class="thumbnails"><img src="../images/products/macaron3.jpg" width="150" height="112" alt="oreo macaron"></td>
+					<td class="thumbnails"><img src="../images/products/macaron.jpg" width="150" height="112" alt="raspberry macaron" class="nut"></td>
+					<td class="thumbnails"><img src="../images/products/macaron2.jpg" width="150" height="112" alt="peach macaron" class="nut"></td>
+					<td class="thumbnails"><img src="../images/products/macaron3.jpg" width="150" height="112" alt="oreo macaron" class="egg"></td>
 				</tr>
 			</table>
 			<p class="backup">
