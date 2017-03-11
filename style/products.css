@@ -6,27 +6,24 @@
 /* Filter basic appearance */
 /* Fixed position necessary */
 #filter {
-	font-weight: bold;
 	position: fixed;
-	text-transform: uppercase;
 }
 
 #filter ul {
-	
 	list-style-type: none;
 }
 
 #filter li {
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
-#filter a {
-	color:#000000;
-	text-decoration: none;
+#filter .special {
+	font-weight: bold;
+	padding-top: 8px;
 }
 
 #products {
-	margin-left: 240px;
+	margin-left: 270px;
 }
 /* Picture response */
 .thumbnails {
@@ -40,3 +37,30 @@
 	text-transform: uppercase;
 }
 
+.thumbnails figure {
+	margin: 0;
+	padding: 5px;
+	position: relative;
+}
+
+figcaption {
+	text-align: left;
+}
+
+/* Tooltip */
+.tooltip {
+	display: inline-block;
+	position: absolute;
+	bottom: 25px;
+}
+
+.tooltip .tooltiptext {
+	background-color: #9B3417;
+	color: #F7D0BB;
+	display: inline-block;
+	font-size: 0.85em;
+	visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;

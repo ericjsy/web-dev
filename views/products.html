@@ -74,29 +74,31 @@
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div id="filter">
 			<ul>
+				<li class="special">
+					Filter by:
+				</li>
 				<li>
 					<input type="checkbox" id="chkGlutenFree" onchange="hideGluten()">
-					<img src="../images/icons/gluten.png" alt="gluten" width="20" height="20">
-					Gluten-Free
+					<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+					Contains Gluten
 				</li>
 				<li>
 					<input type="checkbox" id="chkEggFree" onchange="hideEgg()">
-					<img src="../images/icons/egg.png" alt="egg" width="20" height="20">
-					Egg-Free
+					<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+					Contains Eggs
 				</li>
 				<li>
 					<input type="checkbox" id="chkLactoseFree" onchange="hideMilk()">
-					<img src="../images/icons/milk.png" alt="milk" width="20" height="20">
-					Lactose-Free
+					<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+					Contains Lactose
 				</li>
 				<li>
 					<input type="checkbox" id="chkPeanutFree" onchange="hidePeanut()">
-					<img src="../images/icons/peanut.png" alt="nut" width="20" height="20">
-					Nut-Free
+					<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+					Contains Nuts
 				</li>
 				<li>
-					<input type="checkbox" id="chkReset" onchange="resetAll()">
-					Reset
+					<input type="button" onclick="resetAll()" value="Show All" class="buttons">
 				</li>
 			</ul>
 		</div>
@@ -109,9 +111,38 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/brownies.jpg" width="150" height="112" alt="chocolate brownie"></td>
-					<td class="thumbnails"><img src="../images/products/brownies2.jpg" width="150" height="112" alt="iced sugar brownie" class="gluten"></td>
-					<td class="thumbnails"><img src="../images/products/brownies3.jpg" width="150" height="112" alt="marshmallow fudge" class="milk"></td>
+					<td class="thumbnails">
+						<figure>
+							<img src="../images/products/brownies.jpg" width="150" height="112" alt="chocolate brownie">
+							<br>
+							<div class="tooltip">
+								<span class="tooltiptext">Allergy-free</span>
+							</div>
+							<figcaption>Chocolate Brownie</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="gluten">
+							<img src="../images/products/brownies2.jpg" width="150" height="112" alt="iced sugar brownie">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<span class="tooltiptext">Contains gluten</span>
+							</div>
+							<figcaption>Iced Sugar Brownie</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="milk">
+							<img src="../images/products/brownies3.jpg" width="150" height="112" alt="marshmallow fudge">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<span class="tooltiptext">Contains lactose</span>
+							</div>
+							<figcaption>Marshmallow Fudge</figcaption>
+						</figure>
+					</td>
 				</tr>
 
 				<tr>
@@ -120,9 +151,39 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/chocolatecake.jpg" width="150" height="112" alt="chocolate cake" class="egg"></td>
-					<td class="thumbnails"><img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tart" class="milk"></td>
-					<td class="thumbnails"><img src="../images/products/cakes3.jpg" width="150" height="112" alt="raspberry cake" class="milk"></td>
+					<td class="thumbnails">
+						<figure class="egg">
+							<img src="../images/chocolatecake.jpg" width="150" height="112" alt="chocolate cake">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<span class="tooltiptext">Contains eggs</span>
+							</div>
+							<figcaption>Chocolate Cake</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="milk">
+							<img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tart">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<span class="tooltiptext">Contains lactose</span>
+							</div>
+							<figcaption>Chocolate Tart</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="milk">
+							<img src="../images/products/cakes3.jpg" width="150" height="112" alt="raspberry cake">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<span class="tooltiptext">Contains lactose</span>
+							</div>
+							<figcaption>Raspberry Cake</figcaption>
+						</figure>
+					</td>
 				</tr>
 
 				<tr>
@@ -131,9 +192,39 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/cookies.jpg" width="150" height="112" alt="blueberry cookies" class="gluten"></td>
-					<td class="thumbnails"><img src="../images/products/cookies2.jpg" width="150" height="112" alt="almond cookies" class="nut"></td>
-					<td class="thumbnails"><img src="../images/products/cookies3.jpg" width="150" height="112" alt="oatmeal cookies" class="egg"></td>
+					<td class="thumbnails">
+						<figure class="gluten">
+							<img src="../images/products/cookies.jpg" width="150" height="112" alt="blueberry cookies">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<span class="tooltiptext">Contains gluten</span>
+							</div>
+							<figcaption>Blueberry Cookies</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="nut">
+							<img src="../images/products/cookies2.jpg" width="150" height="112" alt="almond cookies">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+								<span class="tooltiptext">Contains nuts</span>
+							</div>
+							<figcaption>Almond Cookies</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="egg">
+							<img src="../images/products/cookies3.jpg" width="150" height="112" alt="oatmeal cookies">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<span class="tooltiptext">Contains eggs</span>
+							</div>
+							<figcaption>Oatmeal Cookies</figcaption>
+						</figure>
+					</td>
 				</tr>
 
 				<tr>
@@ -142,9 +233,39 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/cupcakes.jpg" width="150" height="112" alt="lime cupcake" class="egg"></td>
-					<td class="thumbnails"><img src="../images/products/cupcakes2.jpg" width="150" height="112" alt="chocolate cupcake" class="gluten"></td>
-					<td class="thumbnails"><img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="butter cream cupcake" class="egg"></td>
+					<td class="thumbnails">
+						<figure class="egg">
+							<img src="../images/products/cupcakes.jpg" width="150" height="112" alt="lime cupcake">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<span class="tooltiptext">Contains eggs</span>
+							</div>
+							<figcaption>Lime Cupcake</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="gluten">
+							<img src="../images/products/cupcakes2.jpg" width="150" height="112" alt="chocolate cupcake">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<span class="tooltiptext">Contains gluten</span>
+							</div>
+							<figcaption>Chocolate Cupcake</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="egg">
+							<img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="butter cream cupcake">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<span class="tooltiptext">Contains eggs</span>
+							</div>
+							<figcaption>Butter Cream Cupcake</figcaption>
+						</figure>
+					</td>
 				</tr>
 
 				<tr>
@@ -153,9 +274,39 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/donut.jpg" width="150" height="112" alt="powdered donut" class="milk"></td>
-					<td class="thumbnails"><img src="../images/products/donut2.jpg" width="150" height="112" alt="sugar donut" class="egg"></td>
-					<td class="thumbnails"><img src="../images/products/donut3.jpg" width="150" height="112" alt="homemade donut" class="gluten"></td>
+					<td class="thumbnails">
+						<figure class="milk">
+							<img src="../images/products/donut.jpg" width="150" height="112" alt="powdered donut">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<span class="tooltiptext">Contains lactose</span>
+							</div>
+							<figcaption>Powdered Donut</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="egg">
+							<img src="../images/products/donut2.jpg" width="150" height="112" alt="sugar donut">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<span class="tooltiptext">Contains eggs</span>
+							</div>
+							<figcaption>Sugar Donut</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="gluten">
+							<img src="../images/products/donut3.jpg" width="150" height="112" alt="homemade donut">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<span class="tooltiptext">Contains gluten</span>
+							</div>
+							<figcaption>Homemade Donut</figcaption>
+						</figure>
+					</td>
 				</tr>
 
 				<tr>
@@ -164,9 +315,39 @@
 					</th>
 				</tr>
 				<tr>
-					<td class="thumbnails"><img src="../images/products/macaron.jpg" width="150" height="112" alt="raspberry macaron" class="nut"></td>
-					<td class="thumbnails"><img src="../images/products/macaron2.jpg" width="150" height="112" alt="peach macaron" class="nut"></td>
-					<td class="thumbnails"><img src="../images/products/macaron3.jpg" width="150" height="112" alt="oreo macaron" class="egg"></td>
+					<td class="thumbnails">
+						<figure class="nut">
+							<img src="../images/products/macaron.jpg" width="150" height="112" alt="raspberry macaron">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+								<span class="tooltiptext">Contains nuts</span>
+							</div>
+							<figcaption>Raspberry Macaron</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="nut">
+							<img src="../images/products/macaron2.jpg" width="150" height="112" alt="peach macaron">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+								<span class="tooltiptext">Contains nuts</span>
+							</div>
+							<figcaption>Peach Macaron</figcaption>
+						</figure>
+					</td>
+					<td class="thumbnails">
+						<figure class="egg">
+							<img src="../images/products/macaron3.jpg" width="150" height="112" alt="oreo macaron">
+							<br>
+							<div class="tooltip">
+								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<span class="tooltiptext">Contains eggs</span>
+							</div>
+							<figcaption>Oreo Macaron</figcaption>
+						</figure>
+					</td>
 				</tr>
 			</table>
 			<p class="backup">
