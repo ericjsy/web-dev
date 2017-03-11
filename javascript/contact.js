@@ -8,9 +8,7 @@ function $(id){
 	return element;
 }
 
-
 /* Contact Us Form */
-
 
 // Warning for name field
 function warnInvalidName(id){
@@ -48,7 +46,7 @@ function warnInvalidEmail(id) {
 	}
 }
 
-// Validate submission
+// Validates submission
 function validFeedback() {
 	var feedbackInfo = ['txtFullName', 'txtEmail', 'txtFeedback'];
 		
@@ -75,7 +73,7 @@ function validFeedback() {
 			}
 		}
 		
-		// Checks for a invalid email
+		// Checks for an invalid email
 		if ( i == 1 ) {
 			if ( !testValidEmail(feedbackInfo[i]) ) {
 				warnInvalidEmail(feedbackInfo[i]);
