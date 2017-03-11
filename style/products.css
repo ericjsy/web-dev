@@ -51,7 +51,7 @@ figcaption {
 .tooltip {
 	display: inline-block;
 	position: absolute;
-	bottom: 25px;
+	bottom: 24px;
 }
 
 .tooltip .tooltiptext {
