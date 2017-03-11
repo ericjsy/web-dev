@@ -10,7 +10,7 @@ function $(id){
 
 /* Contact Us Form */
 
-// Validate name
+// Warning for name field
 function warnInvalidName(id){
 	$(id).style.border = "";
 	$('errFullName').innerHTML = ""
@@ -25,7 +25,7 @@ function warnInvalidName(id){
 	}
 }
 
-// Validate Email
+// Warning for email field
 function testValidEmail(id) {
 	var str = $(id).value;
 	
@@ -41,11 +41,12 @@ function warnInvalidEmail(id) {
 	$('errEmail').innerHTML = "";
 	
 	if ( !testValidEmail(id) ){
-		$('errEmail').innerHTML = " Valid emails require an '@' and must end in .com, .ca, or .org";
+		$('errEmail').innerHTML = " Valid emails contain an @ symbol and end with .com, .ca, or .org.";
 		$(id).style.border = "1px solid red";
 	}
 }
 
+// Validates submission
 function validFeedback() {
 	var feedbackInfo = ['txtFullName', 'txtEmail', 'txtFeedback'];
 		
@@ -54,15 +55,31 @@ function validFeedback() {
 		$(feedbackInfo[j]).style.border = "";	
 	}
 	
-	// Indicates missing field and prints out error message
-	for (i = 0; i < feedbackInfo.length; i++) {
+	for ( var i = 0; i < feedbackInfo.length; i++ ) {
 		
+		// Checks for missing fields
 		if ( $(feedbackInfo[i]).value.length < 1 ) {
 			$('errFeedback').innerHTML = " Please fill in all required fields.";
 			$(feedbackInfo[i]).style.border = "1px solid red";
 			$(feedbackInfo[i]).focus();
 			return false;
-		}	
+		}
+		
+		// Checks for an invalid name
+		if ( i == 0 ) {
+			if ( /[^a-zA-Z ]+/.test( $('txtFullName').value ) ) {
+				warnInvalidName(feedbackInfo[i]);
+				return false;
+			}
+		}
+		
+		// Checks for an invalid email
+		if ( i == 1 ) {
+			if ( !testValidEmail(feedbackInfo[i]) ) {
+				warnInvalidEmail(feedbackInfo[i]);
+				return false;
+			}
+		}
 		
 	}
 	

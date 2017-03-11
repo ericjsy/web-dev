@@ -24,7 +24,6 @@ input {
 	border-radius: 2px;
 	height: 20px;
 	padding: 5px;
-	margin-bottom: 10px;
 	margin-top: 1px; 
 	width: 300px;
 }
@@ -73,10 +72,12 @@ label{
 }
 /* Similar to Finalize */
 
-
+li {
+	list-style-type: none;
+}
 
 /* Error message */
-#loginError, #signUpError {
+#errLogin, #errSignUp, .errorMessage {
 	color: red;
 	font-size: small;
 }

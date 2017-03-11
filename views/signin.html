@@ -73,7 +73,7 @@
 				<form id="login" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validLogin()">
 					<h2>Sign in</h2>
 					<fieldset>	
-						<label for="Username">Username <span class="required">*</span><br>
+						<label for="Username"><br>Username <span class="required">*</span><br>
 						</label>
 							<input 
 							type="text" 
@@ -81,7 +81,7 @@
 							id="txtUsername" 
 							placeholder="Username">
 							
-							<br>
+							<br><br>
 						
 						<label for="Password">Password <span class="required">*</span><br>
 						</label>
@@ -91,6 +91,8 @@
 							id="txtPassword"
 							placeholder="********">
 						
+							<br><br>
+							
 							<input 
 							class="login" 
 							type="submit" 
@@ -106,7 +108,7 @@
 							name="remember">
 							</div><br>
 							
-						<p id="loginError"></p>
+						<p id="errLogin"></p>
 					</fieldset>
 				</form>
 			</div>
@@ -120,7 +122,7 @@
 						
 						<h2>Create a new account</h2>
 						<fieldset>
-						<label for="txtNewUser">Username <span class="required">*</span><br>
+						<label for="txtNewUser"><br>Username <span class="required">*</span><br>
 						</label>
 							<input  
 							type="text" 
@@ -128,7 +130,7 @@
 							id="txtNewUser" 
 							placeholder="Username">
 							
-							<br>
+							<br><br>
 							
 						<label for="txtNewPassword">Password <span class="required">*</span><br>
 						</label>
@@ -138,7 +140,7 @@
 							id="txtNewPassword" 
 							placeholder="********" >
 							
-							<br>
+							<br><br>
 							
 						<label for="txtVerify">Verify Password <span class="required">*</span><br>
 						</label>
@@ -148,19 +150,23 @@
 							id="txtVerify" 
 							placeholder="********"
 							onblur="verifyPassword('txtVerify')">
-							<br>
+							<span id="errVerify" class="errorMessage"></span>
+							
+							<br><br>
 							
 						<label for="txtEmail">
 							E-mail <span class="required">*</span><br>
 						</label>
 							<input  
-							type="email" 
-							name="email" 
+							type="text" 
+							name="txtEmail" 
 							id="txtEmail" 
 							placeholder="name@domain.com"
 							onblur="warnInvalidEmail('txtEmail')">
 							
-							<br>
+							<span id="errEmail" class="errorMessage"></span>
+							
+							<br><br>
 							
 							<input 
 							class="submit" 
@@ -169,7 +175,7 @@
 							accesskey="S"
 							value="Submit"><br>
 							
-							<span id="signUpError"></span>
+							<span id="errSignUp"></span>
 						</fieldset>
 				</form>	
 			</div>

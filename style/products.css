@@ -44,14 +44,21 @@
 }
 
 figcaption {
-	text-align: left;
+	text-align: center;
 }
 
 /* Tooltip */
 .tooltip {
 	display: inline-block;
 	position: absolute;
-	bottom: 24px;
+	top: 5px;
+	width: 150px;
+}
+
+.tooltip img {
+	border-left: solid 2px #FFFFFF;
+	border-right: solid 2px #FFFFFF;
+	border-bottom: solid 2px #FFFFFF;
 }
 
 .tooltip .tooltiptext {
@@ -59,6 +66,9 @@ figcaption {
 	color: #F7D0BB;
 	display: inline-block;
 	font-size: 0.85em;
+	left: 24px;
+	position: absolute;
+	top: 0;
 	visibility: hidden;
 }
 
