@@ -5,24 +5,12 @@ header, footer, nav, main {
 	display: block;
 }
 
-/* Styles for the whole page */
 body {
 	background-color: #F2B7A6;
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0;
+	padding: 0;
 }
-
-#main {
-	margin: auto;
-	min-height: 100vh;
-	width: 85%;
-}
-
-#printlogo {
-	display:none
-}
-
-/* End of whole page styles */
 
 /* The back to top anchor */
 .backup {
@@ -45,20 +33,23 @@ body {
 	color: #9B3417;
 }
 
+nav ul { 
+	margin: 0; 
+	padding: 0; 
+}
 
 
 /* Header styles */
 header {
 	background-color: #9B3417;
 	color: #F7D0BB;
-	min-height: 100px;
 	width: 100%;
 }
 
 #headcontainer {
 	margin: auto;
 	position: relative;
-	width: 80%;	
+	width: 85%;	
 }
 
 #logo{
@@ -66,13 +57,8 @@ header {
 	background-repeat: no-repeat;
 	background-size: contain;
 	float: left;
-	height: 100px;
+	height: 60px;
 	width: 300px;
-}
-
-#logincart {
-	float: right;
-	width: 115px;
 }
 
 #logincart a{
@@ -111,43 +97,74 @@ header p:hover {
 /* Nav styles. Contained within header */
 nav{
 	background-color: #9B3417;
-	float: right;
-	clear: right;
-	position: relative;
-	margin-top: 20px;
 }
 
-.navbutton {
+.navlink {
 	padding: 5px 20px;
 	color: #F7D0BB;
 	display: inline-block;
+	text-align: center;
 }
-	
-.navbutton p {
+
+.navshop {
+	padding: 5px 20px;
+	color: #F7D0BB;
+	display: inline-block;
+	float: right;
 	text-align: center;
 }
 
 /* End of header styles*/
+
+
+/* Styles for the whole page */
+
+#main {
+	margin: auto;
+	min-height: 100vh;
+}
+
+#printlogo {
+	display:none
+}
+
+/* End of whole page styles */
+
+
 
 /* Footer styles*/	
 footer {
 	background-color: #9B3417;
 	color: #F7D0BB;
 	height: 20%;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	position: relative;
 	bottom: 0;
+	line-height: 150%;
+	padding: 0 200px;
 }
 
-#operation th {
+th {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+#hours 	{
 	text-align: left;
 }
-#operation td {
+
+#hours td {
 	padding-right: 10px;
 }
 
+.footcontainer {
+	margin: 0 0 0 17%;
+	width: 75%;
+	box-sizing: border-box;
+}
+
 .footcontainer > div {
-	padding: 20px 0px;
+	padding: 50px 0 0	;
+	box-sizing: border-box;
 }
 
 /* For footcontainer */
@@ -174,9 +191,9 @@ footer {
   }
 }
 
-.footcontainer {
-	margin: auto;
-	width: 80%;	
+.footcontainer th{
+	text-align: left;
+	font-size: 1.5em;
 }	
 
 .footcontainer a:link {
@@ -194,7 +211,8 @@ footer {
 }
 
 .footcontainer table{
-	padding:0; margin:0;
+	padding: 0; 
+	margin: 0;
 	border-collapse: collapse;
 }
 
@@ -214,6 +232,7 @@ footer {
   text-decoration: none;
   margin: 2px;
   border-radius: 25%;
+  
 }
 
 .footcontainer .fa-instagram:hover {
@@ -222,18 +241,27 @@ footer {
 }
 
 .footcontainer .fa-pinterest:hover {
-  background: #cb2027;
-  color: #FFFFFF;
+	background: #cb2027;
+	color: #FFFFFF;
 }
 
 .footcontainer .fa-facebook:hover {
-  background: #3B5998;
-  color: #FFFFFF;
+	background: #3B5998;
+	color: #FFFFFF;
 }
 
 .footcontainer .fa-twitter:hover {
-  background: #55ACEE;
-  color: #FFFFFF;
+	background: #55ACEE;
+	color: #FFFFFF;
+}
+
+.footcontainer td:nth-of-type(2) {
+	font-family: Verdana, Arial, sans-serif;
+	padding-left: 10px;
+}
+
+#copyr{
+	margin: 35px 10% 35px 10%;
 }
 
 /* End of footer styles */

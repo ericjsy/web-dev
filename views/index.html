@@ -15,60 +15,68 @@
 
 <body>
 	<div id="top"></div>
-	<!--header-->
-	<header>
+	<!--header--><header>
 		<div id="headcontainer">
-			<!--Nav is within the header-->
-			<a href="index.html"><div id="logo"></div></a>
-			<div id="special">	
-				<div id="logincart">
-					<a href="signin.html">Sign In</a>
-					<a href="cart.html">Cart</a>
-				</div>
-			</div>
-
-				<nav>
-					<ul>
-						<li>
-							<a href="aboutus.html">
-								<div class="navbutton">
-									<p>About Us</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="products.html">
-								<div class="navbutton">
-									<p>Products</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="catering.html">
-								<div class="navbutton">
-									<p>Catering</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="testimonials.html">
-								<div class="navbutton">
-									<p>Testimonials</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="contact.html">
-								<div class="navbutton">
-									<p>Contact Us</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</nav>
-		
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">
+							<div id="logo"></div>
+						</a>
+					</li>
+					<li>
+						<a href="aboutus.html">
+							<div class="navlink">
+								<p>About Us</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="products.html">
+							<div class="navlink">
+								<p>Products</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="catering.html">
+							<div class="navlink">
+								<p>Catering</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="testimonials.html">
+							<div class="navlink">
+								<p>Testimonials</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html">
+							<div class="navlink">
+								<p>Contact Us</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="cart.html">
+							<div class="navshop">
+								<p>Cart</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="signin.html">
+							<div class="navshop">
+								<p>Sign In</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
 			<!--Keep the "clear" div so all the floated divs stay in the header-->
- 			<div class="clear"></div>
+			<div class="clear"></div>
 		</div>
 	</header>
 	<!--main content here-->
@@ -137,10 +145,12 @@
 	<!--footer-->
 	<footer>
 		<div class="footcontainer">
-			<div>
+			<div id="hours">
 				<table>					
 					<tr>
-						<th colspan="2">Hours of Operation <br> &nbsp; </th>
+						<th colspan="2">
+							HOURS <br> &nbsp; 
+						</th>
 					</tr>
 					<tr>
 						<td>
@@ -169,47 +179,118 @@
 				</table>
 			</div>			
 			<div id="sitemap">
-				<div> 
-					<b>Navigation links</b>
-					<br>
-					&nbsp; <br>
-					<a href="index.html">Home</a>
-					<br>
-					<a href="aboutus.html">About</a>
-					<br>
-					<a href="products.html">Products</a>
-					<br>
-					<a href="catering.html">Catering</a>
-					<br>
-					<a href="testimonials.html">Testimonials</a>
-					<br>
-					<a href="contact.html">Contact</a>
-				</div>
+				<table>
+					<tr>
+						<th>
+							LINKS <br> &nbsp;
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html">Home</a><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="products.html">Products</a><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="products.html">Products</a><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="catering.html">Catering</a><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="testimonials.html">Testimonials</a><br>		
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="contact.html">Contact</a><br>
+						</td>
+					</tr>
+				</table>
 			</div>
-			<div id="contactinfo">
-				<div id="address">
-					<b>Address</b>
-					<br> &nbsp;
-				</div>
-				<div>
-					1234 Bakery Lane<br>
-					Vancouver, British Columbia<br>
-					Canada V8W 5K9
-				</div>
-				<br>
-				<div id="phone">
-					<a href="tel:604-888-8888">(604)-888-8888</a>
-				</div>			
+			<div id="contactinfo">				
+				<table>
+					<tr id="address">
+						<th>
+							<b>ADDRESS</b> <br> &nbsp;
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="./contact.html">
+								<div>
+								1234 Bakery Lane<br>
+								Vancouver, British Columbia<br>
+								Canada V8W 5K9
+								</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td id="phone">
+							<a href="tel:604-888-8888">(604)-888-8888</a><br>
+						</td>
+					</tr>
+				</table>
 			</div>
 			<div class="fa">
-				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
-				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
-				<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
-				<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+				<table id="follow">
+					<tr>
+						<th colspan="2">
+							CONNECT <br> &nbsp;
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+						</td>
+						<td>
+							Facebook
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+						</td>
+						<td>
+							Twitter
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
+						</td>
+						<td>
+							Pinterest
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+						</td>
+						<td>
+							Instagram						
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
+		<div  id="copyr">
+			<hr>
+			<p>
+				Copyright &copy; Madeleine's, All rights reserved.
+			</p>
+		</div>
 	</footer>
-
 </body>
 
 </html>
