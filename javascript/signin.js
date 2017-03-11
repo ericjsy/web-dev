@@ -10,6 +10,7 @@ function $(id){
 
 /* Sign Up Form */
 
+// Validate Log In
 function validLogin(){
 	var loginInfo = ['txtUsername', 'txtPassword'];
 	
@@ -34,7 +35,7 @@ function validLogin(){
 
 /* New Account Form */
 
-// Warnings
+// Warning for password field
 function testMatchingPassword(id){
 	var x = $(id).value;
 	var y = $("txtNewPassword").value;
@@ -52,7 +53,7 @@ function verifyPassword(id){
 	}
 }
 
-// Validate email
+// Warning for email field
 function testValidEmail(id){
 	var str = $(id).value;
 	
@@ -73,7 +74,7 @@ function warnInvalidEmail(id){
 	}
 }
 
-// Test submission
+// Validates submission
 function validSignup() {
 	var signUpInfo = ['txtNewUser', 'txtNewPassword', 'txtVerify', 'txtEmail'];
 	
@@ -84,7 +85,7 @@ function validSignup() {
 	
 	for ( var i = 0; i < signUpInfo.length; i++ ) {
 
-		// Indicates missing field and prints out appropriate error message
+		// Checks for missing fields
 		if ( $(signUpInfo[i]).value.length < 1 ) {
 			$('errSignUp').innerHTML = "Please fill in all required fields.";
 			$(signUpInfo[i]).style.border = "1px solid red";
@@ -92,24 +93,18 @@ function validSignup() {
 			return false;
 		}
 		
+		// Checks for different passwords
 		if ( i == 2 ) {
-			
-			// Tests for verified password
 			if ( !testMatchingPassword(signUpInfo[i]) ) {
-				$('errVerify').innerHTML = " You must re-enter the same password!";
-				$(signUpInfo[i]).style.border = "1px solid red";
-				$(signUpInfo[i]).focus();
+				verifyPassword(signUpInfo[i]);
 				return false;
 			}
 		}
 		
+		// Checks for an invalid email
 		if ( i == 3 ) {
-			
-			// Tests for a valid email
 			if ( !testValidEmail(signUpInfo[i]) ) {
-				$('errEmail').innerHTML = " Valid emails contain an @ symbol and end with .com, .ca, or .org.";
-				$(signUpInfo[i]).style.border = "1px solid red";
-				$(signUpInfo[i]).focus();
+				warnInvalidEmail(signUpInfo[i]);
 				return false;
 			}
 		}
