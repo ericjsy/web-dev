@@ -6,10 +6,10 @@
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/contact.css" media="screen">
+	<link rel="stylesheet" href="../style/form.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="../javascript/contact.js"></script>
-	
+	<script src="../javascript/contact.js"></script>	
 </head>
 
 <body>
@@ -70,8 +70,8 @@
 	<!--main content here-->
 	<main id="main">
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<div id="fullcontainer">
-			<div class="container1">
+		<div id="wrapper">
+			<div id="leftcol">
 				<h2>
 					Location
 				</h2>
@@ -82,7 +82,7 @@
 					<br>Canada V8W 5K9
 				</div>
 			</div>
-			<div class="container2">
+			<div id="rightcol">
 				<h2>
 					Feedback
 				</h2>
@@ -100,7 +100,7 @@
 									placeholder="First and last name"
 									onblur="warnInvalidName('txtFullName')">
 							</li>
-							<span id="errFullName" class="errorMessage"></span>
+							<li id="errFullName" class="errorMessage"></li>
 							<li>
 								<label for="txtEmail">
 									<br>Email <span class="required">*</span><br>
@@ -112,7 +112,7 @@
 									placeholder="name@domain.com"
 									onblur="warnInvalidEmail('txtEmail')">
 							</li>
-							<span id="errEmail" class="errorMessage"></span>
+							<li id="errEmail" class="errorMessage"></li>
 							<li>
 								<label for="txtFeedback">
 									<br>Feedback <span class="required">*</span><br>
@@ -124,11 +124,17 @@
 									cols="41" 
 									rows="4"></textarea>
 							</li>
+							<br>
+							<li>
+								<input 
+									type="submit"
+									class="submit"
+									name="submit"
+									accesskey="S"
+									value="Submit">
+							</li>
+							<li id="errFeedback"></li>
 						</ul>
-						<div id="submit">
-							<br><input type="submit" accesskey="S">
-							<span id="errFeedback"></span>
-						</div>
 					</fieldset>
 				</form>
 			</div>

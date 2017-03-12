@@ -6,11 +6,11 @@
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/catering.css" media="screen">
+	<link rel="stylesheet" href="../style/form.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
 	<script src="../javascript/catering.js"></script>
-	
+
 	<!-- Widgets -->
 	
 	<!-- Datepicker -->
@@ -21,10 +21,6 @@
 	<!-- Wickedpicker -->
 	<link rel="stylesheet" href="../widgets/wickedpicker/stylesheets/wickedpicker.css">
 	<script src="../widgets/wickedpicker/src/wickedpicker.js"></script>
-	
-	
-	
-	
 </head>
 
 <body>
@@ -269,7 +265,7 @@
 							<li id="errGuests" class="errorMessage"></li>
 							<li>
 								<div id="desired">
-									<br>Desired Product(s): &nbsp;
+									<br>Desired Product(s):<br>
 									Macarons
 										<input 
 											type="checkbox" 
@@ -312,11 +308,18 @@
 									cols="41" 
 									rows="4"></textarea>
 							</li>
+							<br>
+							<li>
+								<input 
+									type="submit" 
+									class="submit"
+									name="submit"							
+									accesskey="S"
+									value="Submit">
+							</li>
+							<li id="errCatering" class="errorMessage"></li>
 						</ul>
 					</fieldset>
-					<div id="submit">
-						<br><input type="submit" accesskey="S"><span id="errCatering" class="errorMessage"></span>
-					</div>
 				</form>
 			</div>
 			<!--leave the id="top" somewhere so we have a back to top link-->

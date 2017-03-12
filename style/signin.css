@@ -1,93 +1,38 @@
-#leftrightcol {
+/* two column format */
+#wrapper {
 	margin: auto;
-	width: 750px;
+	width: 900px;
 }
-	
-#rightcol {
-	overflow: auto;
-}
-		
+
 #leftcol {
 	float: left;
 	margin-right: 15px;
 }	
-
-fieldset {
-	border: 1px solid #9B3417;
-	border-radius: 15px;
-	width: 325px;
-}
-
-/* Submission form looks*/
-input {
-	border: 1px solid #eee;
-	border-radius: 2px;
-	height: 20px;
-	padding: 5px;
-	margin-top: 1px; 
-	width: 230px;
-}
 	
+#rightcol {
+	overflow: auto;
+}
+
+/* Log in and remember me positioning */
 #remember {
 	margin: 0;
 	width: 15px;
 	vertical-align: middle;
 }
 
-
-#floatRight p {
+#floatRight {
 	display: inline;
+	float: right;
+	margin-right: 50px;
 }
 
-.submit, .login {
-	background-color: #9B3417;
-	border-style: none;
-	color: white;
-	height: 40px;
-	margin-bottom: 20px;
-	margin-left: 40px;
-	width: 100px;
-}	
-
-.login {
+.submit {
 	float: left;
 }
 
-.submit:hover, .login:hover {
-	-webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-	background-color: #7B1403;
-	cursor: pointer;
-}
-	
-h2 {
-	margin-bottom: 10px;
-}
-/* Required submission */
-.required {
-	color: red;
-}
-/* Right shift input labels */
-label{
-	padding-bottom:10px;
-}
-/* Similar to Finalize */
-
-li {
-	list-style-type: none;
-}
-
-/* Error message */
-#errLogin, #errSignUp, .errorMessage {
+/* submission error messages */
+#errLogin, #errSignUp {
+	clear: left;
 	color: red;
 	font-size: small;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-input:valid {
-	border: 1px solid #eee;
-	border-radius: 2px;
 }

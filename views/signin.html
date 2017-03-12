@@ -5,11 +5,10 @@
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/signin.css" media="screen">
+	<link rel="stylesheet" href="../style/form.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<script src="../javascript/signin.js">
-	</script>
+	<script src="../javascript/signin.js"></script>
 </head>
 
 <body>
@@ -68,7 +67,7 @@
 	</header>
     <main id ="main">
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<div id="leftrightcol">
+		<div id="wrapper">
 			<div id="leftcol">
 				<h2>
 					Sign in
@@ -96,23 +95,25 @@
 									id="txtPassword"
 									placeholder="********">
 							</li>
-						</ul>	
-						<br><input 
-							class="login" 
-							type="submit" 
-							name="name"
-							accesskey="L"							
-							value="Log in">
+							<br>
+							<li>
+								<input 
+									class="submit" 
+									type="submit" 
+									name="name"
+									accesskey="L"							
+									value="Log in">
+							</li>
 									
-						<div id="floatRight">
-							<p><br> &nbsp; Remember me </p>
+						<li id="floatRight">
+							<br> Remember me 
 							<input 
 								type="checkbox" 
 								id="remember" 
 								name="remember">
-						</div><br>
-									
-						<p id="errLogin"></p>
+						</li><br>		
+						<li id="errLogin"></li>
+						</ul>
 					</fieldset>
 				</form>
 			</div>
@@ -167,14 +168,18 @@
 									onblur="warnInvalidEmail('txtEmail')">
 							</li>
 							<li id="errEmail" class="errorMessage"></li>
+							<br>
+							<li>
+								<input 
+									type="submit" 
+									class="submit" 
+									name="submit"
+									accesskey="S"
+									value="Submit">
+							</li>
+							<br>
+							<li id="errSignUp"></li>
 						</ul>
-						<br><input 
-							class="submit" 
-							type="submit" 
-							name="name"
-							accesskey="S"
-							value="Submit"><br>
-						<span id="errSignUp"></span>
 					</fieldset>
 				</form>	
 			</div>
