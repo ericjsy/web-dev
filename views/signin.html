@@ -70,113 +70,112 @@
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div id="leftrightcol">
 			<div id="leftcol">
+				<h2>
+					Sign in
+				</h2>
 				<form id="login" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validLogin()">
-					<h2>Sign in</h2>
-					<fieldset>	
-						<label for="Username"><br>Username <span class="required">*</span><br>
-						</label>
-							<input 
-							type="text" 
-							name="username" 
-							id="txtUsername" 
-							placeholder="Username">
-							
-							<br><br>
-						
-						<label for="Password">Password <span class="required">*</span><br>
-						</label>
-							<input 
-							type="password" 
-							name="password" 
-							id="txtPassword"
-							placeholder="********">
-						
-							<br><br>
-							
-							<input 
+					<fieldset>
+						<ul>
+							<li>
+								<label for="Username">
+									Username <span class="required">*</span><br>
+								</label>
+								<input 
+									type="text" 
+									name="username" 
+									id="txtUsername" 
+									placeholder="Username">
+							</li>
+							<li>
+								<label for="Password">
+									<br>Password <span class="required">*</span><br>
+								</label>
+								<input 
+									type="password" 
+									name="password" 
+									id="txtPassword"
+									placeholder="********">
+							</li>
+						</ul>	
+						<br><input 
 							class="login" 
 							type="submit" 
 							name="name"
 							accesskey="L"							
 							value="Log in">
-							
-							<div id="floatRight">
+									
+						<div id="floatRight">
 							<p><br> &nbsp; Remember me </p>
 							<input 
-							type="checkbox" 
-							id="remember" 
-							name="remember">
-							</div><br>
-							
+								type="checkbox" 
+								id="remember" 
+								name="remember">
+						</div><br>
+									
 						<p id="errLogin"></p>
 					</fieldset>
 				</form>
 			</div>
-			
 			<div id="rightcol">
-				<form 
-					id="signIn" 
-					action="http://webdevfoundations.net/scripts/formdemo.asp" 
-					method="post"
-					onsubmit="return validSignup()">
-						
-						<h2>Create a new account</h2>
-						<fieldset>
-						<label for="txtNewUser"><br>Username <span class="required">*</span><br>
-						</label>
-							<input  
-							type="text" 
-							name="newuser" 
-							id="txtNewUser" 
-							placeholder="Username">
-							
-							<br><br>
-							
-						<label for="txtNewPassword">Password <span class="required">*</span><br>
-						</label>
-							<input  
-							type="password" 
-							name="newpassword" 
-							id="txtNewPassword" 
-							placeholder="********" >
-							
-							<br><br>
-							
-						<label for="txtVerify">Verify Password <span class="required">*</span><br>
-						</label>
-							<input 
-							type="password" 
-							name="password" 
-							id="txtVerify" 
-							placeholder="********"
-							onblur="verifyPassword('txtVerify')">
-							<span id="errVerify" class="errorMessage"></span>
-							
-							<br><br>
-							
-						<label for="txtEmail">
-							E-mail <span class="required">*</span><br>
-						</label>
-							<input  
-							type="text" 
-							name="txtEmail" 
-							id="txtEmail" 
-							placeholder="name@domain.com"
-							onblur="warnInvalidEmail('txtEmail')">
-							
-							<span id="errEmail" class="errorMessage"></span>
-							
-							<br><br>
-							
-							<input 
+				<h2>
+					Create a new account
+				</h2>
+				<form id="signIn" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validSignup()">	
+					<fieldset>
+						<ul>
+							<li>
+								<label for="txtNewUser">
+									Username <span class="required">*</span><br>
+								</label>
+								<input  
+									type="text" 
+									name="newuser" 
+									id="txtNewUser" 
+									placeholder="Username">
+							</li>
+							<li>	
+								<label for="txtNewPassword">
+									<br>Password <span class="required">*</span><br>
+								</label>
+								<input  
+									type="password" 
+									name="newpassword" 
+									id="txtNewPassword" 
+									placeholder="********" >
+							</li>
+							<li>	
+								<label for="txtVerify">
+									<br>Verify Password <span class="required">*</span><br>
+								</label>
+								<input 
+									type="password" 
+									name="password" 
+									id="txtVerify" 
+									placeholder="********"
+									onblur="verifyPassword('txtVerify')">
+							</li>
+							<li id="errVerify" class="errorMessage"></li>
+							<li>									
+								<label for="txtEmail">
+									<br>E-mail <span class="required">*</span><br>
+								</label>
+								<input  
+									type="text" 
+									name="txtEmail" 
+									id="txtEmail" 
+									placeholder="name@domain.com"
+									onblur="warnInvalidEmail('txtEmail')">
+							</li>
+							<li id="errEmail" class="errorMessage"></li>
+						</ul>
+						<br><input 
 							class="submit" 
 							type="submit" 
 							name="name"
 							accesskey="S"
 							value="Submit"><br>
-							
-							<span id="errSignUp"></span>
-						</fieldset>
+						<span id="errSignUp"></span>
+					</fieldset>
 				</form>	
 			</div>
 		</div>

@@ -96,17 +96,10 @@
 					<br><br>All fields marked with an <span class="required">*</span> are required.
 					</p>
 				</div>
-				<form 
-				id="cateringForm" 
-				action="http://webdevfoundations.net/scripts/formdemo.asp" 
-				method="post"
-				onsubmit="return validCatering()">
-					<fieldset>
-					
-						<!-- Need to finish all acceptable patterns -->
-					
+				<form id="cateringForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validCatering()">
+					<fieldset>					
 						<h2>
-						Contact Information
+							Contact Information
 						</h2>
 						<ul>
 							<li>
@@ -118,7 +111,6 @@
 									id="txtFirstName" 
 									name="fname" 
 									placeholder="First name"
-									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john"
 									onblur="warnInvalidName('txtFirstName')">
 							</li>
 							<li id="errFirstName" class="errorMessage"></li>
@@ -131,7 +123,6 @@
 									id="txtLastName" 
 									name="lname" 
 									placeholder="Last name"
-									title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe"
 									onblur="warnInvalidName('txtLastName')">
 							</li>
 							<li id="errLastName" class="errorMessage"></li>
@@ -145,7 +136,6 @@
 									id="numPhone_0"
 									name="tel1" 
 									placeholder="###"
-									title="Contact number should only contain numbers. e.g. 123"
 									onblur="warnInvalidPhone01('numPhone_0')"> -
 								<input 
 									type="number" 
@@ -153,7 +143,6 @@
 									id="numPhone_1"
 									name="tel2" 
 									placeholder="###"
-									title="Contact number should only contain numbers. e.g. 123"
 									onblur="warnInvalidPhone01('numPhone_1')"> -
 								<input 
 									type="number" 
@@ -161,7 +150,6 @@
 									id="numPhone_2"
 									name="tel3" 
 									placeholder="####"
-									title="Contact number should only contain numbers. e.g. 1234"
 									onblur="warnInvalidPhone2('numPhone_2')">
 							</li>
 							<li id="errPhone" class="errorMessage"></li>
@@ -203,7 +191,6 @@
 									id="txtAddress" 
 									name="inputaddress" 
 									placeholder="Address"
-									title="Address should be alphanumeric. e.g. 1234 Bakery Lane"
 									onblur="warnInvalidAddress('txtAddress')">
 							</li>
 							<li id="errAddress" class="errorMessage"></li>
@@ -258,9 +245,7 @@
 									type="text" 
 									id="lstFunction" 
 									name="function" 
-									placeholder="Function" 
-									title="Function cannot contain any numbers, symbols or spaces. Please see the drop down for suggestions."
-									list="functions"
+									placeholder="Function"
 									onblur="warnInvalidName('lstFunction')">
 										<datalist id="functions">
 											<option value="Birthday">
@@ -279,7 +264,6 @@
 									id="numGuests" 
 									name="guests" 
 									placeholder="Number of Guests"
-									title="Minimum 50 guests"
 									onblur="warnInvalidGuests('numGuests')">
 							</li>
 							<li id="errGuests" class="errorMessage"></li>
