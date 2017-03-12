@@ -98,7 +98,6 @@ function warnInvalidDate(id){
 
 	if ( isNaN( Date.parse(a) ) || a < b ){
 		$('errDate').innerHTML = " The date of the function must be at least two weeks from the order date."
-			+ " If a day, month, or year is not specified, it will default to 1 (eg, 2001, January, or 1st).";
 		$(id).style.border = "1px solid red";
 	}
 }	

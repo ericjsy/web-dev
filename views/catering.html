@@ -10,6 +10,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<script src="../javascript/catering.js"></script>
+	
+	<!-- Widgets -->
+	<link rel="stylesheet" href="../widgets/datepicker/jquery-ui.css">
+	<script src="../widgets/datepicker/external/jquery/jquery.js"></script>
+	<script src="../widgets/datepicker/jquery-ui.js"></script>
+	
 </head>
 
 <body>
@@ -200,7 +206,7 @@
 									type="text" 
 									id="txtDate" 
 									name="date"
-									onblur="warnInvalidDate('txtDate')">
+									onchange="warnInvalidDate('txtDate')">
 							</li>
 							<li id="errDate" class="errorMessage"></li>
 							<li>
@@ -400,6 +406,15 @@
 		</div>
 	</footer>
 
+	<!-- Widgets -->
+	<script>
+	var $j = jQuery.noConflict();
+	
+	$j( function() {
+		$j( "#txtDate" ).datepicker();
+	} );
+	</script>
+	
 </body>
 
 </html>
