@@ -3,89 +3,66 @@ footer, nav, and main elements */
 header, footer, nav, main, figure, figcaption {
 	background-color: #FFFFFF;
 	display: block;
+	font-size: 80%;
+}
+
+.centered {
+  position: fixed;
+  left: 50%;
+}
+
+a {
+	text-decoration: none;
 }
 
 body {
 	background-color: #F2B7A6;
 	font-family: Verdana, Arial, sans-serif;
 	margin: 0;
-	padding: 0;
 }
+
+/* Styles for the whole page */
+#main {
+	min-height: 50vh;
+}
+
+/* End of whole page styles */
 
 /* The back to top anchor */
 .backup {
-	margin: 0;
-	padding-right: 10px;
-	text-align:right;
-}
 
-.backup a:link{
-	margin: 0;
-	padding-right: 10px;
-	text-align:right;
-	color: #9B3417;
 }
-
-.backup a:visited{
-	margin: 0;
-	padding-right: 10px;
-	text-align:right;
-	color: #9B3417;
-}
-
-nav ul { 
-	margin: 0; 
-	padding: 0; 
-}
-
 
 /* Header styles */
 header {
 	background-color: #9B3417;
-	color: #F7D0BB;
 	width: 100%;
-}
-
-#headcontainer {
-	margin: auto;
-	position: relative;
-	width: 85%;	
-}
-
-#logo{
-	background-image: url(../images/logo.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	float: left;
-	height: 60px;
-	width: 300px;
-}
-
-#logincart a{
-	color: #F7D0BB;
 	text-align: center;
 }
 
+#headbox {
+	margin: auto;
+	width: 90%;
+}
+
+#logo{
+	float: left;
+}
+
 header ul {
-	list-style-type: none;
 	margin: 0;
+	padding: 0;
+	display: inline-block;
+	line-height: 50px;
+	padding-left: 10px;
 }
 
 header li {
 	display: inline;
+	list-style-type: none;
 }
 
-header a:link {
-	color: #9B3417;
-	text-decoration: none;
-}
-
-header a:visited {
-	color: #9B3417;
-	text-decoration: none;
-}
-
-header p:hover {
+a.navlink:hover {
 	text-decoration: underline;
 }
 
@@ -93,55 +70,46 @@ header p:hover {
 	clear: both;
 }
 
-
 /* Nav styles. Contained within header */
 nav{
 	background-color: #9B3417;
+	padding: 0;
 }
 
 .navlink {
-	padding: 5px 20px;
+	padding: 0px 20px;
 	color: #F7D0BB;
 	display: inline-block;
-	text-align: center;
 }
 
 .navshop {
-	padding: 5px 20px;
+	padding: 0 30px 0 50px;
 	color: #F7D0BB;
 	display: inline-block;
 	float: right;
-	text-align: center;
+	padding-top: 15px;
+	text-decoration: none;
+}
+70
+.fa-shopping-cart a:hover{
+	text-decoration: none;
 }
 
+.fa-user-circle a:hover{
+	text-decoration: none;
+}
 /* End of header styles*/
-
-
-/* Styles for the whole page */
-
-#main {
-	margin: auto;
-	min-height: 100vh;
-}
-
-#printlogo {
-	display:none
-}
-
-/* End of whole page styles */
-
-
 
 /* Footer styles*/	
 footer {
 	background-color: #9B3417;
 	color: #F7D0BB;
-	height: 20%;
-	font-size: 0.8em;
+	
+	font-size: ;
 	position: relative;
 	bottom: 0;
 	line-height: 150%;
-	padding: 0 200px;
+	padding: 0 200px 5px 200px;
 }
 
 th {
@@ -156,61 +124,61 @@ th {
 	padding-right: 10px;
 }
 
-.footcontainer {
+.footbox {
 	margin: 0 0 0 17%;
 	width: 75%;
 	box-sizing: border-box;
 }
 
-.footcontainer > div {
+.footbox > div {
 	padding: 50px 0 0	;
 	box-sizing: border-box;
 }
 
-/* For footcontainer */
+/* For footbox */
 @media screen and (min-width: 50em) {
-  .footcontainer {
+	.footbox {
     overflow: hidden;
-  }
-  .footcontainer > div {
-    float: left;
+	}
+	.footbox > div {
+	float: left;
     width: 50%;
-  }
-  .footcontainer > div:nth-child(odd) {
+	}
+	.footbox > div:nth-child(odd) {
     clear: left;
-  }
+	}
 }
 
-/* For footcontainer */
+/* For footbox */
 @media screen and (min-width: 70em) {
-  .footcontainer > div {
+  .footbox > div {
     width: 25%;
   }
-  .footcontainer > div:nth-child(odd) {
+  .footbox > div:nth-child(odd) {
     clear: none;
   }
 }
 
-.footcontainer th{
+.footbox th{
 	text-align: left;
-	font-size: 1.5em;
+	font-size: ;
 }	
 
-.footcontainer a:link {
+.footbox a:link {
 	color: #F7D0BB;
 	text-decoration: none;
 }
 
-.footcontainer a:visited {
+.footbox a:visited {
 	color: #F7D0BB;
 	text-decoration: none;
 }
 
-.footcontainer a:hover {
+.footbox a:hover {
 	color: #FFFFFF;
 }
 
-.footcontainer table{
+.footbox table{
 	padding: 0; 
 	margin: 0;
 	border-collapse: collapse;
@@ -222,40 +190,40 @@ th {
 }
 
 /*SM*/
-.footcontainer .fa a{
-  background: #F7D0BB;
-  color: #9B3417;
-  padding: 5px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px;
-  border-radius: 25%;
+.footbox .fa a{
+	background: #F7D0BB;
+	color: #9B3417;
+	padding: 5px;
+	font-size: ;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 2px;
+	border-radius: 25%;
   
 }
 
-.footcontainer .fa-instagram:hover {
+.footbox .fa-instagram:hover {
 	background: #125688;
 	color: #FFFFFF;
 }
 
-.footcontainer .fa-pinterest:hover {
+.footbox .fa-pinterest:hover {
 	background: #cb2027;
 	color: #FFFFFF;
 }
 
-.footcontainer .fa-facebook:hover {
+.footbox .fa-facebook:hover {
 	background: #3B5998;
 	color: #FFFFFF;
 }
 
-.footcontainer .fa-twitter:hover {
+.footbox .fa-twitter:hover {
 	background: #55ACEE;
 	color: #FFFFFF;
 }
 
-.footcontainer td:nth-of-type(2) {
+.footbox td:nth-of-type(2) {
 	font-family: Verdana, Arial, sans-serif;
 	padding-left: 10px;
 }
