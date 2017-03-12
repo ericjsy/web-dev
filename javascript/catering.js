@@ -134,7 +134,7 @@ function validCatering() {
 		{ field: 'numPhone_2', error: $('errPhone'), message: "a phone number" },
 		{ field: 'txtEmail', error: $('errEmail'), message: "an email address" },
 		{ field: 'txtAddress', error: $('errAddress'), message: "a physical address" },
-		{ field: 'txtDate', error: $('errCatering'), message: "a date" },
+		{ field: 'txtDate', error: $('errDate'), message: "a date" },
 		{ field: 'txtStartTime', error: $('errStartTime'), message: "a start time" },
 		{ field: 'txtEndTime', error: $('errEndTime'), message: "an end time" },
 		{ field: 'lstFunction', error: $('errFunction'), message: "a function or select one from the list" },
