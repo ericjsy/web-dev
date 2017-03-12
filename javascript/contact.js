@@ -67,7 +67,7 @@ function validFeedback() {
 		
 		// Checks for an invalid name
 		if ( i == 0 ) {
-			if ( /[^a-zA-Z ]+/.test( $('txtFullName').value ) ) {
+			if ( /[^a-zA-Z ]+/.test( $(feedbackInfo[i]).value ) ) {
 				warnInvalidName(feedbackInfo[i]);
 				return false;
 			}
