@@ -12,9 +12,18 @@
 	<script src="../javascript/catering.js"></script>
 	
 	<!-- Widgets -->
+	
+	<!-- Datepicker -->
 	<link rel="stylesheet" href="../widgets/datepicker/jquery-ui.css">
 	<script src="../widgets/datepicker/external/jquery/jquery.js"></script>
 	<script src="../widgets/datepicker/jquery-ui.js"></script>
+	
+	<!-- Wickedpicker -->
+	<link rel="stylesheet" href="../widgets/wickedpicker/stylesheets/wickedpicker.css">
+	<script src="../widgets/wickedpicker/src/wickedpicker.js"></script>
+	
+	
+	
 	
 </head>
 
@@ -206,6 +215,7 @@
 									type="text" 
 									id="txtDate" 
 									name="date"
+									placeholder="MM/DD/YYYY"
 									onchange="warnInvalidDate('txtDate')">
 							</li>
 							<li id="errDate" class="errorMessage"></li>
@@ -217,6 +227,7 @@
 									type="text" 
 									id="txtStartTime" 
 									name="start"
+									placeholder="H : MM TT"
 									onblur="clearWarning('txtStartTime')">
 							</li>
 							<li id="errStartTime" class="errorMessage"></li>
@@ -228,6 +239,7 @@
 									type="text" 
 									id="txtEndTime" 
 									name="end"
+									placeholder="H : MM TT"
 									onblur="clearWarning('txtEndTime')">
 							</li>
 							<li id="errEndTime" class="errorMessage"></li>
@@ -413,6 +425,9 @@
 	$j( function() {
 		$j( "#txtDate" ).datepicker();
 	} );
+	
+	$j('#txtStartTime').wickedpicker();
+	$j('#txtEndTime').wickedpicker();
 	</script>
 	
 </body>
