@@ -107,6 +107,14 @@ footer {
 	float: left;
 }
 
+#hours a{
+	color: #F7D0BB;
+}
+
+#hours a:hover{
+	color: #FFFFFF;
+}
+
 #slogan {
 	flex: 1;
 	text-align: center;	
