@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="../style/cart.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="../javascript/cart.js"></script>
 </head>
 
 <body>
@@ -101,7 +103,7 @@
 					<div class="ppqi">
 						<span class="pinfo">$1.00</span>
 						<span class="pinfo">
-							<select>
+							<select id="selQ1" onchange="calculatePrice()">
 								<option value="0">Quantity</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -114,7 +116,7 @@
 								<option value="9">9</option>
 							</select>
 						</span>
-						<span class="pinfo">$10.00</span>
+						<span class="pinfo" id="price1">$10.00</span>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -129,7 +131,7 @@
 					<div class="ppqi">
 						<span class="pinfo">$2.00</span>
 						<span class="pinfo">
-							<select>
+							<select id="selQ2" onchange="calculatePrice()">
 								<option value="0">Quantity</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -142,7 +144,7 @@
 								<option value="9">9</option>
 							</select>
 						</span>
-						<span class="pinfo">$20.00</span>
+						<span class="pinfo" id="price2">$20.00</span>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -157,7 +159,7 @@
 					<div class="ppqi">
 						<span class="pinfo">$1.00</span>
 						<span class="pinfo">
-							<select>
+							<select id="selQ3" onchange="calculatePrice()">
 								<option value="0">Quantity</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -170,7 +172,7 @@
 								<option value="9">9</option>
 							</select>
 						</span>
-						<span class="pinfo">$5.00</span>
+						<span class="pinfo" id="price3">$5.00</span>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -185,7 +187,7 @@
 					<div class="ppqi">
 						<span class="pinfo">$25.00</span>
 						<span class="pinfo">
-							<select>
+							<select id="selQ4" onchange="calculatePrice()">
 								<option value="0">Quantity</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -198,7 +200,7 @@
 								<option value="9">9</option>
 							</select>
 						</span>
-						<span class="pinfo">$25.00</span>
+						<span class="pinfo" id="price4">$25.00</span>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -214,10 +216,10 @@
 				<div id="receipt">Your receipt </div>
 				<div class="extraspace"></div>
 				<div id="order">
-					<p><span class="leftside">Subtotal:</span><span class="rightside">$24.99</span></p>
-					<p><span class="leftside">Tax: </span><span class="rightside">$3.75</span></p>
-					<p><span class="leftside">Pickup time: </span><span class="rightside">Feb. 14th</span></p>				
-					<p><span class="leftside">Total: </span><span class="rightside">$28.74</span></p>
+					<p><span class="leftside">Subtotal:</span><span class="rightside" id="txtSubtotal">$24.99</span></p>
+					<p><span class="leftside">Tax: </span><span class="rightside" id="txtTax">$3.75</span></p>
+					<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup">Feb. 14th</span></p>				
+					<p><span class="leftside">Total: </span><span class="rightside" id="txtTotal">$28.74</span></p>
 					<div class="extraspace"></div>
 					<div><span class="discount">Receive 20% off your purchase!</span></div>
 				</div>
