@@ -211,7 +211,7 @@
 									id="txtStartTime" 
 									name="start"
 									placeholder="H : MM TT"
-									onblur="clearWarning('txtStartTime')">
+									onblur="warnInvalidStartTime()">
 							</li>
 							<li id="errStartTime" class="errorMessage"></li>
 							<li>
@@ -223,7 +223,7 @@
 									id="txtEndTime" 
 									name="end"
 									placeholder="H : MM TT"
-									onblur="clearWarning('txtEndTime')">
+									onblur="warnInvalidEndTime()">
 							</li>
 							<li id="errEndTime" class="errorMessage"></li>
 						</ul>
