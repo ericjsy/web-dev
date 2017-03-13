@@ -117,7 +117,6 @@ function warnInvalidGuests(id){
 function clearWarning(id){
 	if ( $(id).value.length > 0 ){
 		$(id).style.border = "";
-		$('errDate').innerHTML = "";
 		$('errStartTime').innerHTML = "";
 		$('errEndTime').innerHTML = "";
 	}
