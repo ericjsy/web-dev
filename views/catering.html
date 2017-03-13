@@ -6,11 +6,11 @@
 	<title>!DOCTYPE Desserts</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/catering.css" media="screen">
+	<link rel="stylesheet" href="../style/form.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
 	<script src="../javascript/catering.js"></script>
-	
+
 	<!-- Widgets -->
 	
 	<!-- Datepicker -->
@@ -21,10 +21,6 @@
 	<!-- Wickedpicker -->
 	<link rel="stylesheet" href="../widgets/wickedpicker/stylesheets/wickedpicker.css">
 	<script src="../widgets/wickedpicker/src/wickedpicker.js"></script>
-	
-	
-	
-	
 </head>
 
 <body>
@@ -96,17 +92,10 @@
 					<br><br>All fields marked with an <span class="required">*</span> are required.
 					</p>
 				</div>
-				<form 
-				id="cateringForm" 
-				action="http://webdevfoundations.net/scripts/formdemo.asp" 
-				method="post"
-				onsubmit="return validCatering()">
-					<fieldset>
-					
-						<!-- Need to finish all acceptable patterns -->
-					
+				<form id="cateringForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validCatering()">
+					<fieldset>					
 						<h2>
-						Contact Information
+							Contact Information
 						</h2>
 						<ul>
 							<li>
@@ -118,7 +107,6 @@
 									id="txtFirstName" 
 									name="fname" 
 									placeholder="First name"
-									title="First name cannot contain any numbers, symbols or spaces. e.g. John, john"
 									onblur="warnInvalidName('txtFirstName')">
 							</li>
 							<li id="errFirstName" class="errorMessage"></li>
@@ -131,7 +119,6 @@
 									id="txtLastName" 
 									name="lname" 
 									placeholder="Last name"
-									title="Last name cannot contain any numbers, symbols or spaces. e.g. Doe, doe"
 									onblur="warnInvalidName('txtLastName')">
 							</li>
 							<li id="errLastName" class="errorMessage"></li>
@@ -145,7 +132,6 @@
 									id="numPhone_0"
 									name="tel1" 
 									placeholder="###"
-									title="Contact number should only contain numbers. e.g. 123"
 									onblur="warnInvalidPhone01('numPhone_0')"> -
 								<input 
 									type="number" 
@@ -153,7 +139,6 @@
 									id="numPhone_1"
 									name="tel2" 
 									placeholder="###"
-									title="Contact number should only contain numbers. e.g. 123"
 									onblur="warnInvalidPhone01('numPhone_1')"> -
 								<input 
 									type="number" 
@@ -161,7 +146,6 @@
 									id="numPhone_2"
 									name="tel3" 
 									placeholder="####"
-									title="Contact number should only contain numbers. e.g. 1234"
 									onblur="warnInvalidPhone2('numPhone_2')">
 							</li>
 							<li id="errPhone" class="errorMessage"></li>
@@ -203,7 +187,6 @@
 									id="txtAddress" 
 									name="inputaddress" 
 									placeholder="Address"
-									title="Address should be alphanumeric. e.g. 1234 Bakery Lane"
 									onblur="warnInvalidAddress('txtAddress')">
 							</li>
 							<li id="errAddress" class="errorMessage"></li>
@@ -228,7 +211,7 @@
 									id="txtStartTime" 
 									name="start"
 									placeholder="H : MM TT"
-									onblur="clearWarning('txtStartTime')">
+									onchange="warnInvalidStartTime()">
 							</li>
 							<li id="errStartTime" class="errorMessage"></li>
 							<li>
@@ -240,7 +223,7 @@
 									id="txtEndTime" 
 									name="end"
 									placeholder="H : MM TT"
-									onblur="clearWarning('txtEndTime')">
+									onchange="warnInvalidEndTime()">
 							</li>
 							<li id="errEndTime" class="errorMessage"></li>
 						</ul>
@@ -258,9 +241,7 @@
 									type="text" 
 									id="lstFunction" 
 									name="function" 
-									placeholder="Function" 
-									title="Function cannot contain any numbers, symbols or spaces. Please see the drop down for suggestions."
-									list="functions"
+									placeholder="Function"
 									onblur="warnInvalidName('lstFunction')">
 										<datalist id="functions">
 											<option value="Birthday">
@@ -279,13 +260,12 @@
 									id="numGuests" 
 									name="guests" 
 									placeholder="Number of Guests"
-									title="Minimum 50 guests"
 									onblur="warnInvalidGuests('numGuests')">
 							</li>
 							<li id="errGuests" class="errorMessage"></li>
 							<li>
 								<div id="desired">
-									<br>Desired Product(s): &nbsp;
+									<br>Desired Product(s):<br>
 									Macarons
 										<input 
 											type="checkbox" 
@@ -328,11 +308,18 @@
 									cols="41" 
 									rows="4"></textarea>
 							</li>
+							<br>
+							<li>
+								<input 
+									type="submit" 
+									class="submit"
+									name="submit"							
+									accesskey="S"
+									value="Submit">
+							</li>
+							<li id="errCatering" class="errorMessage"></li>
 						</ul>
 					</fieldset>
-					<div id="submit">
-						<br><input type="submit" accesskey="S"><span id="errCatering" class="errorMessage"></span>
-					</div>
 				</form>
 			</div>
 			<!--leave the id="top" somewhere so we have a back to top link-->

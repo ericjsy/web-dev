@@ -88,6 +88,7 @@ function warnInvalidAddress(id){
 	}
 }
 
+// Warning for date field
 function warnInvalidDate(id){
 	var a = new Date( $(id).value );
 	var b = new Date();
@@ -100,7 +101,55 @@ function warnInvalidDate(id){
 		$('errDate').innerHTML = " The date of the function must be at least two weeks from the order date."
 		$(id).style.border = "1px solid red";
 	}
+}
+
+// Warning for start time field
+function warnInvalidStartTime(){
+	var date = new Date( $('txtDate').value );
+	var start = [$('txtStartTime').value.substr(0,2), $('txtStartTime').value.substr(-5,2), $('txtStartTime').value.substr(-2,2)];
+	$('errStartTime').innerHTML = "";
+	
+	var error = "";
+	
+	if ( date.getDay() == 0 || date.getDay() == 6 ) {
+		if ( start[0] < 10 && start[2] == "AM" ) {
+			error = "Please enter a time after 10 am";
+		} else if ( (start[0] > 3 || start[0] == 3 && start[1] > 0) && start[2] == "PM" ) {
+			error = "Please enter a time before 3 pm";
+		}
+	} else {
+		if ( start[0] < 8 && start[2] == "AM" ) {
+			error = "Please enter a time after 8 am";
+		} else if ( (start[0] > 4 || start[0] == 4 && start[1] > 0) && start[2] == "PM" ) {
+			error = "Please enter a time before 4 pm";
+		}
+	}
+	$('errStartTime').innerHTML = error;
 }	
+
+// Warning for end time field
+function warnInvalidEndTime(){
+	var date = new Date( $('txtDate').value );
+	var end = [$('txtEndTime').value.substr(0,2), $('txtEndTime').value.substr(-5,2), $('txtEndTime').value.substr(-2,2)];
+	$('errEndTime').innerHTML = "";
+	
+	var error = "";
+	
+	if ( date.getDay() == 0 || date.getDay() == 6 ) {
+		if ( end[0] < 10 && end[2] == "AM" ) {
+			error = "Please enter a time after 10 am";
+		} else if ( (end[0] > 3 || end[0] == 3 && end[1] > 0) && end[2] == "PM" ) {
+			error = "Please enter a time before 3 pm";
+		}
+	} else {
+		if ( end[0] < 8 && end[2] == "AM" ) {
+			error = "Please enter a time after 8 am";
+		} else if ( (end[0] > 4 || end[0] == 4 && end[1] > 0) && end[2] == "PM" ) {
+			error = "Please enter a time before 4 pm";
+		}
+	}
+	$('errEndTime').innerHTML = error;
+}
 
 // Warning for number of guests
 function warnInvalidGuests(id){
@@ -110,16 +159,6 @@ function warnInvalidGuests(id){
 	if ( isNaN($(id).value) || $(id).value < 50 ){
 		$('errGuests').innerHTML = " A minimum of 50 guests is required.";
 		$(id).style.border = "1px solid red";
-	}
-}
-
-// Clears warnings
-function clearWarning(id){
-	if ( $(id).value.length > 0 ){
-		$(id).style.border = "";
-		$('errDate').innerHTML = "";
-		$('errStartTime').innerHTML = "";
-		$('errEndTime').innerHTML = "";
 	}
 }
 
