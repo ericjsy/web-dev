@@ -1,316 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>!DOCTYPE Desserts</title>
+	<title>Madeleine's</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/cart.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	<script src="../javascript/cart.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../javascript/backtop.js"></script>
 </head>
 
 <body>
-<header>
-	<div id="top">
-	<div id="headcontainer">
-		<!--Nav is within the header-->
-		<a href="index.html"><div id="logo"></div></a>
-		<div id="special">	
-			<div id="logincart">
-				<a href="signin.html">Sign In</a>
-				<a href="cart.html">Cart</a>
+	<header>
+		<nav>
+			<div id="logo">
+				<a href="index.html"><img src="../images/logo.png" alt="Madeleine's"></a>
+				<a href="index.html"><img src="../images/cake.png" alt="cake"></a>
 			</div>
-		</div>
-		
-			<nav>
+			<div id="navbar">
 				<ul>
 					<li>
-						<a href="aboutus.html">
-							<div class="navbutton">
-								<p>About Us</p>
-							</div>
-						</a>
+						<a href="aboutus.html">About Us</a>
 					</li>
 					<li>
-						<a href="products.html">
-							<div class="navbutton">
-								<p>Products</p>
-							</div>
-						</a>
+						<a href="products.html">Products</a>
 					</li>
 					<li>
-						<a href="catering.html">
-							<div class="navbutton">
-								<p>Catering</p>
-							</div>
-						</a>
+						<a href="catering.html">Catering</a>
 					</li>
 					<li>
-						<a href="testimonials.html">
-							<div class="navbutton">
-								<p>Testimonials</p>
-							</div>
-						</a>
+						<a href="testimonials.html">Reviews</a>
 					</li>
 					<li>
-						<a href="contact.html">
-							<div class="navbutton">
-								<p>Contact Us</p>
-							</div>
-						</a>
+						<a href="contact.html">Contact Us</a>
 					</li>
 				</ul>
-			</nav>
-
-		
+			</div>
+			<div id="navshop">
+				<a href="cart.html" class="fa fa-shopping-cart fa-2x"></a>
+				<a href="signin.html" class="fa fa-user-circle fa-2x"></a>
+			</div>
+		</nav>
 		<!--Keep the "clear" div so all the floated divs stay in the header-->
 		<div class="clear"></div>
-	</div>
-	</div>
-</header>
+	</header>
 	
-<main id="main">
-	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-	<div id="toprow">
-		<div id="shopcart">
-			<p>Your shopping cart</p>
-		</div>
-		<div id="toppic">
-		</div>
-	</div>
-	<div id="botrow">
-		<div id="cart">
-			<div id="detail">
-				<p>Item</p>
+	<main id="main">
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<div id="toprow">
+			<div id="shopcart">
+				<p>Your shopping cart</p>
 			</div>
-			<div class="pqi">				
-				<span class="trspace">Price</span>
-				<span class="trspace">Quantity</span>
-				<span class="trspace">Subtotal</span>
+			<div id="toppic">
+			</div>
+		</div>
+		<div id="botrow">
+			<div id="cart">
+				<div id="detail">
+					<p>Item</p>
+				</div>
+				<div class="pqi">				
+					<span class="trspace">Price</span>
+					<span class="trspace">Quantity</span>
+					<span class="trspace">Subtotal</span>
+				</div>
+				<div class="clear"></div>
+				<hr>
+			<!-- ITEM(S) SEPARATOR COMMENT-->	
+				<div id="irow">
+					<!-- ITEM(S) -->
+					<div class="product">
+						<img src="../images/chocolatecake.jpg" alt="Blueberry & Strawberry Cupcake" width="145" height="109"> 
+					</div>
+					<div class="item">
+						<span class="pname">Blueberry & Strawberry Cupcake</span>
+						<div class="ppqi">
+							<span class="pinfo">$1.00</span>
+							<span class="pinfo">
+								<select id="selQ1" onchange="calculatePrice()">
+									<option value="0">Quantity</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+								</select>
+							</span>
+							<span class="pinfo" id="price1">$10.00</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<hr>
+					<br>
+					<!-- ITEM(S) -->
+					<div class="product">
+						<img src="../images/chocolatecake.jpg" alt="Brownies" width="145" height="109">
+					</div>
+					<div class="item">
+						<span class="pname">Brownies</span>
+						<div class="ppqi">
+							<span class="pinfo">$2.00</span>
+							<span class="pinfo">
+								<select id="selQ2" onchange="calculatePrice()">
+									<option value="0">Quantity</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+								</select>
+							</span>
+							<span class="pinfo" id="price2">$20.00</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<hr>
+					<br>
+					<!-- ITEM(S) -->
+					<div class="product">
+						<img src="../images/chocolatecake.jpg" alt="Mousse Cake" width="145" height="109">
+					</div>
+					<div class="item">
+						<span class="pname">Mousse Cake</span>
+						<div class="ppqi">
+							<span class="pinfo">$1.00</span>
+							<span class="pinfo">
+								<select id="selQ3" onchange="calculatePrice()">
+									<option value="0">Quantity</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+								</select>
+							</span>
+							<span class="pinfo" id="price3">$5.00</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<hr>
+					<br>
+					<!-- ITEM(S) -->
+					<div class="product">
+						<img src="../images/chocolatecake.jpg" alt="Rose cookie" width="145" height="109">
+					</div>
+					<div class="item">
+						<span class="pname">Rose cookie</span>
+						<div class="ppqi">
+							<span class="pinfo">$25.00</span>
+							<span class="pinfo">
+								<select id="selQ4" onchange="calculatePrice()">
+									<option value="0">Quantity</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+								</select>
+							</span>
+							<span class="pinfo" id="price4">$25.00</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<hr>
+					<br>
+					<!-- ITEM(S) -->
+				</div>
+			<!-- ITEM(S) SEPARATOR COMMENT-->
+			</div>
+			
+			<div id="rightcont">
+				<div id="checkout">
+					<div id="receipt">Your receipt </div>
+					<div class="extraspace"></div>
+					<div id="order">
+						<p><span class="leftside">Subtotal:</span><span class="rightside" id="txtSubtotal">$24.99</span></p>
+						<p><span class="leftside">Tax: </span><span class="rightside" id="txtTax">$3.75</span></p>
+						<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup">Feb. 14th</span></p>				
+						<p><span class="leftside">Total: </span><span class="rightside" id="txtTotal">$28.74</span></p>
+						<div class="extraspace"></div>
+						<div><span class="discount">Receive 20% off your purchase!</span></div>
+					</div>
+					
+					<form class="cart" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+						<div class="finalize"><input id="submit" type="submit" accesskey="S" value="CHECKOUT"></div>
+					</form>
+				</div>
 			</div>
 			<div class="clear"></div>
-			<hr>
-		<!-- ITEM(S) SEPARATOR COMMENT-->	
-			<div id="irow">
-				<!-- ITEM(S) -->
-				<div class="product">
-					<img src="../images/chocolatecake.jpg" alt="Blueberry & Strawberry Cupcake" width="145" height="109"> 
-				</div>
-				<div class="item">
-					<span class="pname">Blueberry & Strawberry Cupcake</span>
-					<div class="ppqi">
-						<span class="pinfo">$1.00</span>
-						<span class="pinfo">
-							<select id="selQ1" onchange="calculatePrice()">
-								<option value="0">Quantity</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-							</select>
-						</span>
-						<span class="pinfo" id="price1">$10.00</span>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<hr>
-				<br>
-				<!-- ITEM(S) -->
-				<div class="product">
-					<img src="../images/chocolatecake.jpg" alt="Brownies" width="145" height="109">
-				</div>
-				<div class="item">
-					<span class="pname">Brownies</span>
-					<div class="ppqi">
-						<span class="pinfo">$2.00</span>
-						<span class="pinfo">
-							<select id="selQ2" onchange="calculatePrice()">
-								<option value="0">Quantity</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-							</select>
-						</span>
-						<span class="pinfo" id="price2">$20.00</span>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<hr>
-				<br>
-				<!-- ITEM(S) -->
-				<div class="product">
-					<img src="../images/chocolatecake.jpg" alt="Mousse Cake" width="145" height="109">
-				</div>
-				<div class="item">
-					<span class="pname">Mousse Cake</span>
-					<div class="ppqi">
-						<span class="pinfo">$1.00</span>
-						<span class="pinfo">
-							<select id="selQ3" onchange="calculatePrice()">
-								<option value="0">Quantity</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-							</select>
-						</span>
-						<span class="pinfo" id="price3">$5.00</span>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<hr>
-				<br>
-				<!-- ITEM(S) -->
-				<div class="product">
-					<img src="../images/chocolatecake.jpg" alt="Rose cookie" width="145" height="109">
-				</div>
-				<div class="item">
-					<span class="pname">Rose cookie</span>
-					<div class="ppqi">
-						<span class="pinfo">$25.00</span>
-						<span class="pinfo">
-							<select id="selQ4" onchange="calculatePrice()">
-								<option value="0">Quantity</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-							</select>
-						</span>
-						<span class="pinfo" id="price4">$25.00</span>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<hr>
-				<br>
-				<!-- ITEM(S) -->
-			</div>
-		<!-- ITEM(S) SEPARATOR COMMENT-->
 		</div>
-		
-		<div id="rightcont">
-			<div id="checkout">
-				<div id="receipt">Your receipt </div>
-				<div class="extraspace"></div>
-				<div id="order">
-					<p><span class="leftside">Subtotal:</span><span class="rightside" id="txtSubtotal">$24.99</span></p>
-					<p><span class="leftside">Tax: </span><span class="rightside" id="txtTax">$3.75</span></p>
-					<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup">Feb. 14th</span></p>				
-					<p><span class="leftside">Total: </span><span class="rightside" id="txtTotal">$28.74</span></p>
-					<div class="extraspace"></div>
-					<div><span class="discount">Receive 20% off your purchase!</span></div>
+	</main>
+	<footer>
+		<div class="footbox0">
+			<div id="info">
+				<div id="hours">
+					Weekdays 8 - 4 | Weekends 10 - 3  <br>
+					<a href="tel:6048888888">(604) 888 - 8888</a>
 				</div>
-				
-				<form class="cart" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-					<div class="finalize"><input id="submit" type="submit" accesskey="S" value="CHECKOUT"></div>
-				</form>
+				<div id="slogan">
+					- A little bliss in every bite -
+				</div>
+				<div id="address">
+					1234 Bakery Lane Vancouver <br>
+					B.C. Canada V8W 5K9
+				</div>
 			</div>
 		</div>
-		<div class="clear"></div>
-	</div>
-	<div>
-		<p class="backup">
-			<a href="#top">Back to top</a>
-		</p>
-	</div>
-</main>
-	
-<footer>
-	<div class="footcontainer">
-		<div>
-			<table id="operation">					
-				<tr>
-					<th colspan="2">Hours of Operation <br> &nbsp; </th>
-				</tr>
-				<tr>
-					<td>
-						Mon - Fri
-					</td>
-					<td>
-						8AM - 4PM
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Sat - Sun
-					</td>
-					<td>
-						10AM - 3PM
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Holidays
-					</td>
-					<td>
-						Closed
-					</td>
-				</tr>
-			</table>
-		</div>			
-		<div id="sitemap">
-			<div> 
-				<b>Navigation links</b>
-				&nbsp; <br> <br>
-				<a href="index.html">Home</a>
-				<br>
-				<a href="aboutus.html">About</a>
-				<br>
-				<a href="products.html">Products</a>
-				<br>
-				<a href="catering.html">Catering</a>
-				<br>
-				<a href="testimonials.html">Testimonials</a>
-				<br>
-				<a href="contact.html">Contact</a>
+		<div class="footbox1">
+			<div id="anchor">
+				<div id="links"> 
+					<a href="aboutus.html" id="aboutus">About Us</a> |
+					<a href="products.html">Products</a> |
+					<a href="catering.html">Catering</a> |
+					<a href="testimonials.html">Reviews</a> |
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div id="logo2">
+					<a href="index.html"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
+				</div>
+				<div id="sm">
+					<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
+					<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"></a>
+					<a href="https://www.instagram.com" class="fa fa-pinterest fa-2x"></a>
+					<a href="https://www.pinterest.com" class="fa fa-instagram fa-2x"></a>
+				</div>
 			</div>
 		</div>
-		<div id="contactinfo">
-			<div id="address">
-				<b>Address</b>
-				<br> &nbsp;
+		<div class="footbox2">
+			<div id="copyr">
+				Copyright &copy; Madeleine's, All Rights Reserved
 			</div>
-			<div>
-				1234 Bakery Lane<br>
-				Vancouver, British Columbia<br>
-				Canada V8W 5K9
-			</div>
-			<br>
-			<div id="phone">
-				<a href="tel:604-888-8888">(604)-888-8888</a>
-			</div>			
 		</div>
-		<div class="fa">
-			<a href="https://www.facebook.com" class="fa fa-facebook"></a>
-			<a href="https://www.twitter.com" class="fa fa-twitter"></a>
-			<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
-			<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
-		</div>
-	</div>
-</footer>
-	
+	</footer>
 </body>
 </html>

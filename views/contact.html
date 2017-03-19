@@ -3,73 +3,56 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>!DOCTYPE Desserts</title>
+	<title>Madeleine's</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/contact.css" media="screen">
 	<link rel="stylesheet" href="../style/form.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="../javascript/contact.js"></script>	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../javascript/backtop.js"></script>
 </head>
 
 <body>
 	<!--header-->
 	<header>
-		<div id="headcontainer">
-			<!--Nav is within the header-->
-			<a href="index.html"><div id="logo"></div></a>
-				<div id="logincart">
-					<a href="signin.html">Sign In</a>
-					<a href="cart.html">Cart</a>
-				</div>
-			<nav>
+		<nav>
+			<div id="logo">
+				<a href="index.html"><img src="../images/logo.png" alt="Madeleine's"></a>
+				<a href="index.html"><img src="../images/cake.png" alt="cake"></a>
+			</div>
+			<div id="navbar">
 				<ul>
 					<li>
-						<a href="aboutus.html">
-							<div class="navbutton">
-								<p>About Us</p>
-							</div>
-						</a>
+						<a href="aboutus.html">About Us</a>
 					</li>
 					<li>
-						<a href="products.html">
-							<div class="navbutton">
-								<p>Products</p>
-							</div>
-						</a>
+						<a href="products.html">Products</a>
 					</li>
 					<li>
-						<a href="catering.html">
-							<div class="navbutton">
-								<p>Catering</p>
-							</div>
-						</a>
+						<a href="catering.html">Catering</a>
 					</li>
 					<li>
-						<a href="testimonials.html">
-							<div class="navbutton">
-								<p>Testimonials</p>
-							</div>
-						</a>
+						<a href="testimonials.html">Reviews</a>
 					</li>
 					<li>
-						<a href="contact.html">
-							<div class="navbutton">
-								<p>Contact Us</p>
-							</div>
-						</a>
+						<a href="contact.html">Contact Us</a>
 					</li>
 				</ul>
-			</nav>
-			
-			<!--Keep the "clear" div so all the floated divs stay in the header-->
-			<div class="clear"></div>
-		</div>
-	</header>
-	
+			</div>
+			<div id="navshop">
+				<a href="cart.html" class="fa fa-shopping-cart fa-2x"></a>
+				<a href="signin.html" class="fa fa-user-circle fa-2x"></a>
+			</div>
+		</nav>
+		<!--Keep the "clear" div so all the floated divs stay in the header-->
+		<div class="clear"></div>
+	</header>	
 	<!--main content here-->
 	<main id="main">
-		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
 		<div id="wrapper">
 			<div id="leftcol">
 				<h2>
@@ -143,76 +126,44 @@
 	
 	<!--footer-->
 	<footer>
-		<div class="footcontainer">
-			<div>
-				<table id="operation">					
-					<tr>
-						<th colspan="2">Hours of Operation <br> &nbsp; </th>
-					</tr>
-					<tr>
-						<td>
-							Mon - Fri
-						</td>
-						<td>
-							8AM - 4PM
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Sat - Sun
-						</td>
-						<td>
-							10AM - 3PM
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Holidays
-						</td>
-						<td>
-							Closed
-						</td>
-					</tr>
-				</table>
-			</div>			
-			<div id="sitemap">
-				<div> 
-					<b>Navigation links</b>
-					<br>
-					&nbsp; <br>
-					<a href="index.html">Home</a>
-					<br>
-					<a href="aboutus.html">About</a>
-					<br>
-					<a href="products.html">Products</a>
-					<br>
-					<a href="catering.html">Catering</a>
-					<br>
-					<a href="testimonials.html">Testimonials</a>
-					<br>
-					<a href="contact.html">Contact</a>
+		<div class="footbox0">
+			<div id="info">
+				<div id="hours">
+					Weekdays 8 - 4 | Weekends 10 - 3  <br>
+					<a href="tel:6048888888">(604) 888 - 8888</a>
 				</div>
-			</div>
-			<div id="contactinfo">
+				<div id="slogan">
+					- A little bliss in every bite -
+				</div>
 				<div id="address">
-					<b>Address</b>
-					<br> &nbsp;
+					1234 Bakery Lane Vancouver <br>
+					B.C. Canada V8W 5K9
 				</div>
-				<div>
-					1234 Bakery Lane<br>
-					Vancouver, British Columbia<br>
-					Canada V8W 5K9
-				</div>
-				<br>
-				<div id="phone">
-					<a href="tel:604-888-8888">(604)-888-8888</a>
-				</div>			
 			</div>
-			<div class="fa">
-				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
-				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
-				<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
-				<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
+		</div>
+		<div class="footbox1">
+			<div id="anchor">
+				<div id="links"> 
+					<a href="aboutus.html" id="aboutus">About Us</a> |
+					<a href="products.html">Products</a> |
+					<a href="catering.html">Catering</a> |
+					<a href="testimonials.html">Reviews</a> |
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div id="logo2">
+					<a href="index.html"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
+				</div>
+				<div id="sm">
+					<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
+					<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"></a>
+					<a href="https://www.instagram.com" class="fa fa-pinterest fa-2x"></a>
+					<a href="https://www.pinterest.com" class="fa fa-instagram fa-2x"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footbox2">
+			<div id="copyr">
+				Copyright &copy; Madeleine's, All Rights Reserved
 			</div>
 		</div>
 	</footer>

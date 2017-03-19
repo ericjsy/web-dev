@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>!DOCTYPE Desserts</title>
+	<title>Madeleine's</title>
 	<link rel="stylesheet" href="../style/base.css" media="screen">
 	<link rel="stylesheet" href="../style/index.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
@@ -11,77 +11,48 @@
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../javascript/backtop.js"></script>
 </head>
 
 <body>
-	<div id="top"></div>
-	<!--header--><header>
-		<div id="headcontainer">
-			<nav>
+	<header>
+		<nav>
+			<div id="logo">
+				<a href="index.html"><img src="../images/logo.png" alt="Madeleine's"></a>
+				<a href="index.html"><img src="../images/cake.png" alt="cake"></a>
+			</div>
+			<div id="navbar">
 				<ul>
 					<li>
-						<a href="index.html">
-							<div id="logo"></div>
-						</a>
+						<a href="aboutus.html">About Us</a>
 					</li>
 					<li>
-						<a href="aboutus.html">
-							<div class="navlink">
-								<p>About Us</p>
-							</div>
-						</a>
+						<a href="products.html">Products</a>
 					</li>
 					<li>
-						<a href="products.html">
-							<div class="navlink">
-								<p>Products</p>
-							</div>
-						</a>
+						<a href="catering.html">Catering</a>
 					</li>
 					<li>
-						<a href="catering.html">
-							<div class="navlink">
-								<p>Catering</p>
-							</div>
-						</a>
+						<a href="testimonials.html">Reviews</a>
 					</li>
 					<li>
-						<a href="testimonials.html">
-							<div class="navlink">
-								<p>Testimonials</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="contact.html">
-							<div class="navlink">
-								<p>Contact Us</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="cart.html">
-							<div class="navshop">
-								<p>Cart</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="signin.html">
-							<div class="navshop">
-								<p>Sign In</p>
-							</div>
-						</a>
+						<a href="contact.html">Contact Us</a>
 					</li>
 				</ul>
-			</nav>
-			<!--Keep the "clear" div so all the floated divs stay in the header-->
-			<div class="clear"></div>
-		</div>
+			</div>
+			<div id="navshop">
+				<a href="cart.html" class="fa fa-shopping-cart fa-2x"></a>
+				<a href="signin.html" class="fa fa-user-circle fa-2x"></a>
+			</div>
+		</nav>
+		<!--Keep the "clear" div so all the floated divs stay in the header-->
+		<div class="clear"></div>
 	</header>
 	<!--main content here-->
 	<main id="main">
-		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
 		<div class="fotorama" data-autoplay="true">
 			<img src="../images/Slideshow/cupcakes.jpg" alt="cupcakes" height="961" width="2048">
 			<img src="../images/Slideshow/fruitcake.jpg" alt="fruitcake" height="961" width="2048">
@@ -136,159 +107,49 @@
 				</p>
 			</div>
 		</div>
-		<!--leave the id="top" somewhere so we have a back to top link-->
-		<p class="backup">
-			<a href="#top">Back to top</a>
-		</p>
 	</main>
 	
 	<!--footer-->
 	<footer>
-		<div class="footcontainer">
-			<div id="hours">
-				<table>					
-					<tr>
-						<th colspan="2">
-							HOURS <br> &nbsp; 
-						</th>
-					</tr>
-					<tr>
-						<td>
-							Mon - Fri
-						</td>
-						<td>
-							8AM - 4PM
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Sat - Sun
-						</td>
-						<td>
-							10AM - 3PM
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Holidays
-						</td>
-						<td>
-							Closed
-						</td>
-					</tr>
-				</table>
-			</div>			
-			<div id="sitemap">
-				<table>
-					<tr>
-						<th>
-							LINKS <br> &nbsp;
-						</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="index.html">Home</a><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="products.html">Products</a><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="products.html">Products</a><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="catering.html">Catering</a><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="testimonials.html">Testimonials</a><br>		
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="contact.html">Contact</a><br>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div id="contactinfo">				
-				<table>
-					<tr id="address">
-						<th>
-							<b>ADDRESS</b> <br> &nbsp;
-						</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="./contact.html">
-								<div>
-								1234 Bakery Lane<br>
-								Vancouver, British Columbia<br>
-								Canada V8W 5K9
-								</div>
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td id="phone">
-							<a href="tel:604-888-8888">(604)-888-8888</a><br>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="fa">
-				<table id="follow">
-					<tr>
-						<th colspan="2">
-							CONNECT <br> &nbsp;
-						</th>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://www.facebook.com" class="fa fa-facebook"></a>
-						</td>
-						<td>
-							Facebook
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://www.twitter.com" class="fa fa-twitter"></a>
-						</td>
-						<td>
-							Twitter
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://www.instagram.com" class="fa fa-pinterest"></a>
-						</td>
-						<td>
-							Pinterest
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://www.pinterest.com" class="fa fa-instagram"></a>
-						</td>
-						<td>
-							Instagram						
-						</td>
-					</tr>
-				</table>
+		<div class="footbox0">
+			<div id="info">
+				<div id="hours">
+					Weekdays 8 - 4 | Weekends 10 - 3  <br>
+					<a href="tel:6048888888">(604) 888 - 8888</a>
+				</div>
+				<div id="slogan">
+					- A little bliss in every bite -
+				</div>
+				<div id="address">
+					1234 Bakery Lane Vancouver <br>
+					B.C. Canada V8W 5K9
+				</div>
 			</div>
 		</div>
-		<div  id="copyr">
-			<hr>
-			<p>
-				Copyright &copy; Madeleine's, All rights reserved.
-			</p>
+		<div class="footbox1">
+			<div id="anchor">
+				<div id="links"> 
+					<a href="aboutus.html" id="aboutus">About Us</a> |
+					<a href="products.html">Products</a> |
+					<a href="catering.html">Catering</a> |
+					<a href="testimonials.html">Reviews</a> |
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div id="logo2">
+					<a href="index.html"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
+				</div>
+				<div id="sm">
+					<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
+					<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"></a>
+					<a href="https://www.instagram.com" class="fa fa-pinterest fa-2x"></a>
+					<a href="https://www.pinterest.com" class="fa fa-instagram fa-2x"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footbox2">
+			<div id="copyr">
+				Copyright &copy; Madeleine's, All Rights Reserved
+			</div>
 		</div>
 	</footer>
 </body>
