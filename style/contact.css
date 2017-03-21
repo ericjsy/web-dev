@@ -1,74 +1,28 @@
-/* Left container floating */
-.container1 {
+/* two column format */
+#wrapper {
+	margin: auto;
+	width: 900px;
+	padding-top: 50px;
+}
+
+#leftcol {
 	float: left;
 	margin-right: 15px;
 }
-/* Right imitating float */
-.container2 {
-	overflow: auto;
-}
-/* Similar to General */
-#fullcontainer {
-	margin: auto;
-	width: 750px;
-}
-/* Rounding of corners */
-fieldset {
-	border: 1px solid #9B3417;
-	border-radius: 15px;
-	width:400px;
+
+#rightcol {
+	float: right;
 }
  
+/* left column */
 #location {
 	height: 85px;
 	padding: 10px;
 	width:275px;
 }
 
-li {
-	list-style-type: none;
-}
-
-.required {
+/* submission error messages */
+#errFeedback {
 	color: red;
-}
-
-#errFeedback, .errorMessage {
-	color: red;
-	font-size: small;
-	width: 300px;	
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-input:valid {
-	border: 1px solid #eee;
-	border-radius: 2px;
-}
-
-/* Check for post */
-input {
-	border: 1px solid #eee;
-	border-radius: 2px;
-	padding: 5px;
-	width: 300px;
-}
-
-#submit input {
-	background-color: #9B3417;
-	border-style: none;
-	color: white;
-	height: 40px;
-	margin-bottom: 20px;
-	margin-left: 40px;
-	width: 100px;
-}
-/* Similar to Finalize */
-#submit input:hover {
-	-webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-	background-color: #7B1403;
-	cursor: pointer;
+	font-size: small;	
 }

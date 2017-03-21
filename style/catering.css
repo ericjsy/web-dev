@@ -1,28 +1,23 @@
-/* Left alignment */
+/* left cushion */
 #wrapper {
 	padding-left: 20px;
 }
 
+/* information section */
 h1 {
 	border-bottom: 1px solid #F2B7A6;
 	margin-top: 0;
 	padding-top: 10px;
-	width: 480px;
+	width: 400px;
 }
 
-#info p {
-	width: 550px;
+#catinfo p {
+	width: 400px;
 }
 
+/* form to form spacing */
 form {
 	padding-top: 10px;
-	width: 550px;
-}
-/* Box rounding and soften */
-fieldset {
-	border: 1px solid #9B3417;
-	border-radius: 15px;
-	margin-bottom: 10px;
 	width: 550px;
 }
 
@@ -31,21 +26,7 @@ h2 {
 	padding-top: 5px;
 }
 
-li {
-	list-style-type: none;
-}
-/* Necessary sections */
-.required {
-	color: red;
-}
-
-input {
-	border: 1px solid #eee;
-	border-radius: 2px;
-	padding: 5px;
-	width: 300px;
-}
-/* Necessary section -webkit for Safari */
+/* remove arrows for number input types */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -55,42 +36,8 @@ input[type=number]::-webkit-inner-spin-button {
 .tel {
 	width: 54px;
 }
+
 /* Float right effect */
 #desired input {
 	width: 15px;
-}
-
-#submit input {
-	background-color: #9B3417;
-	border-style: none;
-	color: white;
-	height: 40px;
-	margin-bottom: 20px;
-	width: 100px;
-}
-/* Similar to finalize */
-#submit input:hover {
-	-webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-	background-color: #7B1403;
-	cursor: pointer;
-}
-
-/* Error messages */
-form span {
-	color: red;
-}
-
-.errorMessage {
-	color: red;
-	font-size: small;	
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-input:valid {
-	border: 1px solid #eee;
-	border-radius: 2px;
 }
