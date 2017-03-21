@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="../javascript/contact.js"></script>	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="../javascript/backtop.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="../javascript/backtop.js"></script> -->
 </head>
 
 <body>
@@ -73,17 +73,17 @@
 					<fieldset>
 						<ul>
 							<li>
-								<label for="txtFullName">
-									Full Name <span class="required">*</span><br>
+								<label for="txtName">
+									Name <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									id="txtFullName" 
-									name="txtFullName" 
-									placeholder="First and last name"
-									onblur="warnInvalidName('txtFullName')">
+									id="txtName" 
+									name="txtName" 
+									placeholder="Name"
+									onblur="warnInvalidName('txtName')">
 							</li>
-							<li id="errFullName" class="errorMessage"></li>
+							<li id="errName" class="errorMessage"></li>
 							<li>
 								<label for="txtEmail">
 									<br>Email <span class="required">*</span><br>

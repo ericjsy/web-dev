@@ -90,7 +90,7 @@ function warnInvalidAddress(id){
 function warnInvalidDate(id){
 	var a = new Date( $(id).value );
 	var b = new Date();
-	b.setDate( b.getDate() + 13 );
+	b.setDate( b.getDate() + 14 );
 	
 	var today = new Date();
 	var day = today.getDate();
@@ -104,7 +104,7 @@ function warnInvalidDate(id){
 		$('errDate').innerHTML = "The date of the function must be at least two weeks from the order date."
 		$(id).style.border = "1px solid red";
 	} else if ( a < today ) {
-		$('errDate').innerHTML = "The date can not have passed already."
+		$('errDate').innerHTML = "The date cannot have passed already."
 		$(id).style.border = "1px solid red";
 	} else if ( isNaN( Date.parse(a) ) || a < b ) {
 		$('errDate').innerHTML = "The date of the function must be at least two weeks from the order date."
@@ -168,9 +168,11 @@ function warnInvalidGuests(id){
 	if ( isNaN($(id).value)) {
 		$('errGuests').innerHTML = "Please enter numeric values only.";
 		$(id).style.border = "1px solid red";
-	}
-	else if ( $(id).value < 50 ) {
+	} else if ( $(id).value < 50 ) {
 		$('errGuests').innerHTML = "A minimum of 50 guests is required.";
+		$(id).style.border = "1px solid red";
+	} else if ( $(id).value > 250 ) {
+		$('errGuests').innerHTML = "A maximum of 250 guests is allowed.";
 		$(id).style.border = "1px solid red";
 	}
 }
@@ -273,7 +275,7 @@ function validCatering() {
 		
 		// Checks for an invalid number of guests
 		if ( i == 11 ) {
-			if ( isNaN(helperField.value) || helperField.value < 50 ) {
+			if ( isNaN(helperField.value) || helperField.value < 50 || helperField.value > 250 ) {
 				warnInvalidGuests(idField);
 				helperField.focus();
 				return false;

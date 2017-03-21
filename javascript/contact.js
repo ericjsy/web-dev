@@ -13,13 +13,13 @@ function $(id){
 // Warning for name field
 function warnInvalidName(id){
 	$(id).style.border = "";
-	$('errFullName').innerHTML = ""
+	$('errName').innerHTML = ""
 	
 	if ( /[^a-zA-Z ]+/.test( $(id).value ) ) {
 		$(id).style.border = "1px solid red";
 		
-		if ( id == "txtFullName" ){
-			$('errFullName').innerHTML = " Valid names contain only alphabetical characters.";
+		if ( id == "txtName" ){
+			$('errName').innerHTML = " Valid names contain only alphabetical characters.";
 		}
 
 	}
@@ -48,7 +48,7 @@ function warnInvalidEmail(id) {
 
 // Validates submission
 function validFeedback() {
-	var feedbackInfo = ['txtFullName', 'txtEmail', 'txtFeedback'];
+	var feedbackInfo = ['txtName', 'txtEmail', 'txtFeedback'];
 		
 	// Resets all borders
 	for ( var j = 0; j < feedbackInfo.length; j++ ) {
