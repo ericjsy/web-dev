@@ -1,7 +1,8 @@
 /* two column format */
 #wrapper {
 	margin: auto;
-	width: 750px;
+	width: 900px;
+	padding-top: 50px;
 }
 
 #leftcol {
@@ -10,7 +11,7 @@
 }
 
 #rightcol {
-	overflow: auto;
+	float: right;
 }
  
 /* left column */

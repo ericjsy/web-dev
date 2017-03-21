@@ -10,9 +10,9 @@
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="../javascript/catering.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="../javascript/backtop.js"></script>
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno"> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<!-- <script src="../javascript/backtop.js"></script> -->
 	
 	<!-- Widgets -->
 	
@@ -65,10 +65,8 @@
 	<!--main content here-->
 	<main id="main">
 		<div id="wrapper">
-			<div id="info">
-				<h1>
-					Catering Form
-				</h1>
+			<div id="catinfo">
+				<h1>Catering Form</h1>
 				<p>
 					We can accommodate all types of functions that require sweets! Please provide at least 2 weeks notice and a minimum of 50 guests. 
 				<br><br>All fields marked with an <span class="required">*</span> are required.
@@ -224,6 +222,7 @@
 								id="lstFunction" 
 								name="function" 
 								placeholder="Function"
+								list="functions"
 								onblur="warnInvalidName('lstFunction')">
 									<datalist id="functions">
 										<option value="Birthday">
