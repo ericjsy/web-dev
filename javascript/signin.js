@@ -40,14 +40,14 @@ function testMatchingPassword(id){
 	var x = $(id).value;
 	var y = $("txtNewPassword").value;
 	
-	return ( x == y );
+	return ( x != y && x.length > 0 );
 }
 
 function verifyPassword(id){
 	$(id).style.border = "";
 	$('errVerify').innerHTML = "";
 
-	if ( !testMatchingPassword(id) ) {
+	if ( testMatchingPassword(id) ) {
 		$('errVerify').innerHTML = "You must re-enter the same password!";
 		$(id).style.border = "1px solid red";
 	}
@@ -57,8 +57,7 @@ function verifyPassword(id){
 function testValidEmail(id){
 	var str = $(id).value;
 	
-	return ( str.length > 0 
-		&& (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
+	return ( (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
 		&& ( str.substring(str.length-4) == ".com" 
 		|| str.substring(str.length-4) == ".org" 
 		|| str.substring(str.length-3) == ".ca" ) );
@@ -68,7 +67,7 @@ function warnInvalidEmail(id){
 	$(id).style.border = "";
 	$('errEmail').innerHTML = "";
 	
-	if ( !testValidEmail(id) ){
+	if ( !testValidEmail(id) && $(id).value.length > 0 ){
 		$('errEmail').innerHTML = "Valid emails require an '@' and a domain name. They cannot include spaces and must end in .com, .ca, or .org";
 		$(id).style.border = "1px solid red";
 	}

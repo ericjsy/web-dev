@@ -58,8 +58,7 @@ function warnInvalidPhone(areaCode, threeDigit, fourDigit) {
 function testValidEmail(id) {
 	var str = $(id).value;
 	
-	return ( str.length > 0 
-		&& (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
+	return ( (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
 		&& str.substring(str.length-4) == ".com" 
 		|| str.substring(str.length-4) == ".org" 
 		|| str.substring(str.length-3) == ".ca" );
@@ -69,7 +68,7 @@ function warnInvalidEmail(id) {
 	$(id).style.border = "";
 	$('errEmail').innerHTML = "";
 	
-	if ( !testValidEmail(id) ){
+	if ( !testValidEmail(id) && $(id).value.length > 0 ){
 		$('errEmail').innerHTML = "Valid emails require an '@' and a domain name. They cannot include spaces and must end in .com, .ca, or .org";
 		$(id).style.border = "1px solid red";
 	}
@@ -165,10 +164,10 @@ function warnInvalidGuests(id){
 	$(id).style.border = "";
 	$('errGuests').innerHTML = "";
 	
-	if ( isNaN($(id).value)) {
+	if ( isNaN($(id).value) && $(id).value.length > 0) {
 		$('errGuests').innerHTML = "Please enter numeric values only.";
 		$(id).style.border = "1px solid red";
-	} else if ( $(id).value < 50 ) {
+	} else if ( $(id).value < 50 && $(id).value.length > 0 ) {
 		$('errGuests').innerHTML = "A minimum of 50 guests is required.";
 		$(id).style.border = "1px solid red";
 	} else if ( $(id).value > 250 ) {
