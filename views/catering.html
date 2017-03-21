@@ -85,7 +85,7 @@
 							<input 
 								type="text" 
 								id="txtFirstName" 
-								name="fname" 
+								name="txtFirstName" 
 								placeholder="First name"
 								onblur="warnInvalidName('txtFirstName')">
 						</li>
@@ -97,36 +97,36 @@
 							<input 
 								type="text" 
 								id="txtLastName" 
-								name="lname" 
+								name="txtLastName" 
 								placeholder="Last name"
 								onblur="warnInvalidName('txtLastName')">
 						</li>
 						<li id="errLastName" class="errorMessage"></li>
 						<li>
-							<div>
+							<label for="txtNumPhone_0">
 								<br>Contact Number <span class="required">*</span><br>
-							</div>
+							</label>
 							<input 
 								type="text" 
 								class="tel"
-								id="numPhone_0"
-								name="tel1" 
+								id="txtNumPhone_0"
+								name="txtNumPhone_0" 
 								placeholder="###"
-								onblur="warnInvalidPhone('numPhone_0', 'numPhone_1', 'numPhone_2')"> -
+								onblur="warnInvalidPhone('txtNumPhone_0', 'txtNumPhone_1', 'txtNumPhone_2')"> -
 							<input 
 								type="text" 
 								class="tel" 
-								id="numPhone_1"
-								name="tel2" 
+								id="txtNumPhone_1"
+								name="txtNumPhone_1" 
 								placeholder="###"
-								onblur="warnInvalidPhone('numPhone_0', 'numPhone_1', 'numPhone_2')"> -
+								onblur="warnInvalidPhone('txtNumPhone_0', 'txtNumPhone_1', 'txtNumPhone_2')"> -
 							<input 
 								type="text" 
 								class="tel" 
-								id="numPhone_2"
-								name="tel3" 
+								id="txtNumPhone_2"
+								name="txtNumPhone_2" 
 								placeholder="####"
-								onblur="warnInvalidPhone('numPhone_0', 'numPhone_1', 'numPhone_2')">
+								onblur="warnInvalidPhone('txtNumPhone_0', 'txtNumPhone_1', 'txtNumPhone_2')">
 						</li>
 						<li id="errPhone" class="errorMessage"></li>
 						<li>
@@ -136,7 +136,7 @@
 							<input 
 								type="text" 
 								id="txtEmail" 
-								name="email" 
+								name="txtEmail" 
 								placeholder="name@domain.com"
 								onblur="warnInvalidEmail('txtEmail')">
 						</li>
@@ -155,7 +155,7 @@
 							<input 
 								type="text" 
 								id="txtOrganization" 
-								name="organization" 
+								name="txtOrganization" 
 								placeholder="Organization">
 						</li>
 						<li>
@@ -165,7 +165,7 @@
 							<input 
 								type="text" 
 								id="txtAddress" 
-								name="inputaddress" 
+								name="txtAddress" 
 								placeholder="Address"
 								onblur="warnInvalidAddress('txtAddress')">
 						</li>
@@ -177,7 +177,7 @@
 							<input 
 								type="text" 
 								id="txtDate" 
-								name="date"
+								name="txtDate"
 								placeholder="MM/DD/YYYY"
 								onchange="warnInvalidDate('txtDate')">
 						</li>
@@ -189,7 +189,7 @@
 							<input 
 								type="text" 
 								id="txtStartTime" 
-								name="start"
+								name="txtStartTime"
 								placeholder="H : MM TT"
 								onchange="warnInvalidStartTime()">
 						</li>
@@ -201,7 +201,7 @@
 							<input 
 								type="text" 
 								id="txtEndTime" 
-								name="end"
+								name="txtEndTime"
 								placeholder="H : MM TT"
 								onchange="warnInvalidEndTime()">
 						</li>
@@ -220,7 +220,7 @@
 							<input 
 								type="text" 
 								id="lstFunction" 
-								name="function" 
+								name="lstFunction" 
 								placeholder="Function"
 								list="functions"
 								onblur="warnInvalidName('lstFunction')">
@@ -233,15 +233,15 @@
 						</li>
 						<li id="errFunction" class="errorMessage"></li>
 						<li>
-							<label for="numGuests">
+							<label for="txtNumGuests">
 								<br>Number of Guests <span class="required">*</span><br>
 							</label>
 							<input 
 								type="text" 
-								id="numGuests" 
-								name="guests" 
+								id="txtNumGuests" 
+								name="txtNumGuests" 
 								placeholder="Number of Guests"
-								onblur="warnInvalidGuests('numGuests')">
+								onblur="warnInvalidGuests('txtNumGuests')">
 						</li>
 						<li id="errGuests" class="errorMessage"></li>
 						<li>
@@ -251,19 +251,19 @@
 									<input 
 										type="checkbox" 
 										id="chkMacarons" 
-										name="macarons" 
+										name="chkMacarons" 
 										value="yes">
 								Desserts
 									<input 
 										type="checkbox" 
 										id="chkDesserts" 
-										name="desserts" 
+										name="chkDesserts" 
 										value="yes">
 								Cakes
 									<input 
 										type="checkbox" 
 										id="chkCakes" 
-										name="cakes" 
+										name="chkCakes" 
 										value="yes">
 							</div>
 						</li>
@@ -273,7 +273,7 @@
 							</label>
 							<textarea 
 								id="taAllergies" 
-								name="allergies" 
+								name="taAllergies" 
 								placeholder="Enter your allergies here."
 								cols="41" 
 								rows="4"></textarea>
@@ -283,8 +283,8 @@
 							<br>Additional Information<br>
 							</label>
 							<textarea 
-								name="comments" 
 								id="taComments" 
+								name="taComments" 
 								placeholder="Enter your comments here."
 								cols="41" 
 								rows="4"></textarea>

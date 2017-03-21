@@ -60,22 +60,22 @@
 					<fieldset>
 						<ul>
 							<li>
-								<label for="Username">
+								<label for="txtUsername">
 									Username <span class="required">*</span><br>
 								</label>
 								<input 
 									type="text" 
-									name="username" 
+									name="txtUsername" 
 									id="txtUsername" 
 									placeholder="Username">
 							</li>
 							<li>
-								<label for="Password">
+								<label for="txtPassword">
 									<br>Password <span class="required">*</span><br>
 								</label>
 								<input 
 									type="password" 
-									name="password" 
+									name="txtPassword" 
 									id="txtPassword"
 									placeholder="********">
 							</li>
@@ -84,17 +84,17 @@
 								<input 
 									class="submit" 
 									type="submit" 
-									name="name"
+									name="login"
 									accesskey="L"							
-									value="Log in">
+									value="Login">
 							</li>
 									
 						<li id="floatRight">
 							<br> Remember me 
 							<input 
 								type="checkbox" 
-								id="remember" 
-								name="remember">
+								id="chkRemember" 
+								name="chkRemember">
 						</li><br>		
 						<li id="errLogin"></li>
 						</ul>
@@ -114,7 +114,7 @@
 								</label>
 								<input  
 									type="text" 
-									name="newuser" 
+									name="txtNewUser" 
 									id="txtNewUser" 
 									placeholder="Username">
 							</li>
@@ -124,7 +124,7 @@
 								</label>
 								<input  
 									type="password" 
-									name="newpassword" 
+									name="txtNewPassword" 
 									id="txtNewPassword" 
 									placeholder="********" >
 							</li>
@@ -134,7 +134,7 @@
 								</label>
 								<input 
 									type="password" 
-									name="password" 
+									name="txtVerify" 
 									id="txtVerify" 
 									placeholder="********"
 									onblur="verifyPassword('txtVerify')">

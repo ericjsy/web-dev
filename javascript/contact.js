@@ -41,7 +41,7 @@ function warnInvalidEmail(id) {
 	$('errEmail').innerHTML = "";
 	
 	if ( !testValidEmail(id) ){
-		$('errEmail').innerHTML = " Valid emails contain an @ symbol and end with .com, .ca, or .org.";
+		$('errEmail').innerHTML = "Valid emails require an '@' and a domain name. They cannot include spaces and must end in .com, .ca, or .org";
 		$(id).style.border = "1px solid red";
 	}
 }
