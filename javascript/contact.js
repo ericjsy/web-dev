@@ -30,7 +30,7 @@ function testValidEmail(id) {
 	var str = $(id).value;
 	
 	return ( str.length > 0 
-		&& (/[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
+		&& (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
 		&& str.substring(str.length-4) == ".com" 
 		|| str.substring(str.length-4) == ".org" 
 		|| str.substring(str.length-3) == ".ca" );
