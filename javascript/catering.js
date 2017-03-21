@@ -92,11 +92,22 @@ function warnInvalidDate(id){
 	var b = new Date();
 	b.setDate( b.getDate() + 13 );
 	
+	var today = new Date();
+	var day = today.getDate();
+	var month = today.getMonth();
+	var year = today.getFullYear(); 
+	
 	$(id).style.border = "";
-	$('errDate').innerHTML = "";
-
-	if ( isNaN( Date.parse(a) ) || a < b ){
-		$('errDate').innerHTML = " The date of the function must be at least two weeks from the order date."
+	$('errDate').innerHTML = ""; 
+	
+	if ( a.getDate() == day && a.getMonth() == month && a.getFullYear() == year ) {
+		$('errDate').innerHTML = "The date of the function must be at least two weeks from the order date."
+		$(id).style.border = "1px solid red";
+	} else if ( a < today ) {
+		$('errDate').innerHTML = "The date can not have passed already."
+		$(id).style.border = "1px solid red";
+	} else if ( isNaN( Date.parse(a) ) || a < b ) {
+		$('errDate').innerHTML = "The date of the function must be at least two weeks from the order date."
 		$(id).style.border = "1px solid red";
 	}
 }
