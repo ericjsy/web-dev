@@ -107,26 +107,26 @@
 								<br>Contact Number <span class="required">*</span><br>
 							</div>
 							<input 
-								type="number" 
+								type="text" 
 								class="tel"
 								id="numPhone_0"
 								name="tel1" 
 								placeholder="###"
-								onblur="warnInvalidPhone01('numPhone_0')"> -
+								onblur="warnInvalidPhone('numPhone_0', 'numPhone_1', 'numPhone_2')"> -
 							<input 
-								type="number" 
+								type="text" 
 								class="tel" 
 								id="numPhone_1"
 								name="tel2" 
 								placeholder="###"
-								onblur="warnInvalidPhone01('numPhone_1')"> -
+								onblur="warnInvalidPhone('numPhone_0', 'numPhone_1', 'numPhone_2')"> -
 							<input 
-								type="number" 
+								type="text" 
 								class="tel" 
 								id="numPhone_2"
 								name="tel3" 
 								placeholder="####"
-								onblur="warnInvalidPhone2('numPhone_2')">
+								onblur="warnInvalidPhone('numPhone_0', 'numPhone_1', 'numPhone_2')">
 						</li>
 						<li id="errPhone" class="errorMessage"></li>
 						<li>
@@ -237,7 +237,7 @@
 								<br>Number of Guests <span class="required">*</span><br>
 							</label>
 							<input 
-								type="number" 
+								type="text" 
 								id="numGuests" 
 								name="guests" 
 								placeholder="Number of Guests"

@@ -36,23 +36,21 @@ function warnInvalidName(id){
 }
 
 // Warning for phone number field
-function warnInvalidPhone01(id){
-	$(id).style.border = "";
-	$('errPhone').innerHTML = "";
+function warnInvalidPhone(areaCode, threeDigit, fourDigit) {
+	$(areaCode).style.border = "";
+	$(threeDigit).style.border = "";
+	$(fourDigit).style.border = "";
+	$('errPhone').innerHTML = "";	
 	
-	if ( isNaN($(id).value) || $(id).value < 100 || $(id).value > 999 ) {
-		$('errPhone').innerHTML = " Valid phone numbers are in the format ###-###-####.";
-		$(id).style.border = "1px solid red";
-	} 
-}
-
-function warnInvalidPhone2(id) {
-	$(id).style.border = "";
-	$('errPhone').innerHTML = "";
-		
-	if ( isNaN($(id).value) || $(id).value < 1000 || $(id).value > 9999 ) {
-		$('errPhone').innerHTML = " Valid phone numbers are in the format ###-###-####.";
-		$(id).style.border = "1px solid red";
+	if ( (isNaN($(areaCode).value) || $(areaCode).value < 100 || $(areaCode).value > 999) && $(areaCode).value.length > 0 ) {
+		$(areaCode).style.border = "1px solid red";
+		$('errPhone').innerHTML = "Valid phone numbers are in the format ###-###-####.";
+	} else if ( (isNaN($(threeDigit).value) || $(threeDigit).value < 100 || $(threeDigit).value > 999) && $(threeDigit).value.length > 0 ) {
+		$(threeDigit).style.border = "1px solid red";
+		$('errPhone').innerHTML = "Valid phone numbers are in the format ###-###-####.";
+	} else if ( (isNaN($(fourDigit).value) || $(fourDigit).value < 1000 || $(fourDigit).value > 9999) && $(fourDigit).value.length > 0 ) {
+		$(fourDigit).style.border = "1px solid red";
+		$('errPhone').innerHTML = "Valid phone numbers are in the format ###-###-####.";
 	}
 }
 
@@ -61,7 +59,7 @@ function testValidEmail(id) {
 	var str = $(id).value;
 	
 	return ( str.length > 0 
-		&& (/[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
+		&& (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
 		&& str.substring(str.length-4) == ".com" 
 		|| str.substring(str.length-4) == ".org" 
 		|| str.substring(str.length-3) == ".ca" );
@@ -72,7 +70,7 @@ function warnInvalidEmail(id) {
 	$('errEmail').innerHTML = "";
 	
 	if ( !testValidEmail(id) ){
-		$('errEmail').innerHTML = " Valid emails require an '@', a domain name and must end in .com, .ca, or .org";
+		$('errEmail').innerHTML = "Valid emails require an '@' and a domain name. They cannot include spaces and must end in .com, .ca, or .org";
 		$(id).style.border = "1px solid red";
 	}
 }
@@ -156,8 +154,12 @@ function warnInvalidGuests(id){
 	$(id).style.border = "";
 	$('errGuests').innerHTML = "";
 	
-	if ( isNaN($(id).value) || $(id).value < 50 ){
-		$('errGuests').innerHTML = " A minimum of 50 guests is required.";
+	if ( isNaN($(id).value)) {
+		$('errGuests').innerHTML = "Please enter numeric values only.";
+		$(id).style.border = "1px solid red";
+	}
+	else if ( $(id).value < 50 ) {
+		$('errGuests').innerHTML = "A minimum of 50 guests is required.";
 		$(id).style.border = "1px solid red";
 	}
 }
@@ -212,7 +214,7 @@ function validCatering() {
 		// Checks for an invalid 3 digit phone number
 		if ( i == 2 || i == 3 ) {
 			if ( isNaN(helperField.value) || helperField.value < 100 || helperField.value > 999 ) {
-				warnInvalidPhone01(idField);
+				helperField.style.border = "1px solid red"
 				helperField.focus();
 				return false;
 			}
@@ -221,7 +223,7 @@ function validCatering() {
 		// Checks for an invalid 4 digit phone number
 		if ( i == 4 ) {
 			if ( isNaN(helperField.value) || helperField.value < 1000 || helperField.value > 9999 ) {
-				warnInvalidPhone01(idField);
+				helperField.style.border = "1px solid red"
 				helperField.focus();
 				return false;
 			}
