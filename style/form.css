@@ -30,11 +30,6 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-input:valid {
-	border: 1px solid #eee;
-	border-radius: 2px;
-}
-
 /* submit buttons */
 .submit {
 	background-color: #9B3417;
@@ -47,7 +42,6 @@ input:valid {
 }	
 
 .submit:hover {
-	-webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 	background-color: #7B1403;
 	cursor: pointer;
