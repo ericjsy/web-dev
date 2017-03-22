@@ -4,16 +4,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Madeleine's</title>
-	<link rel="stylesheet" href="../style/base.css" media="screen">
+	
 	<link rel="stylesheet" href="../style/index.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$.noConflict();
+	</script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">	
 	<script src="../javascript/backtop.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel="stylesheet" href="../style/base.css" media="screen">
 </head>
 
 <body>
@@ -44,7 +46,7 @@
 			</div>
 			<div id="navshop">
 				<a href="cart.html" class="fa fa-shopping-cart fa-2x"></a>
-				<a href="signin.html" class="fa fa-user-circle fa-2x"></a>
+				<a href="signin.html" class="fa fa-user-circle fa-2x"></a>	
 			</div>
 		</nav>
 		<!--Keep the "clear" div so all the floated divs stay in the header-->
@@ -53,58 +55,82 @@
 	<!--main content here-->
 	<main id="main">
 		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
-		<div class="fotorama" data-autoplay="true">
-			<img src="../images/Slideshow/cupcakes.jpg" alt="cupcakes" height="961" width="2048">
-			<img src="../images/Slideshow/fruitcake.jpg" alt="fruitcake" height="961" width="2048">
-			<img src="../images/Slideshow/macarons.jpg" alt="macarons" height="961" width="2048">
+		<div id="slideshow">
+			<div class="w3-display-container">
+			  <img class="mySlides" src="../images/Slideshow/cupcakes.jpg">
+			  <img class="mySlides" src="../images/Slideshow/fruitcake.jpg">
+			  <img class="mySlides" src="../images/Slideshow/macarons.jpg">
+			  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			  </div>
+			</div>
 		</div>
+		<script src="../javascript/index.js"></script>
+		
+		<div class="subBanner">
+			<div class="promos" id="epic1"><p>Latest Events</p></div>
+			<div class="promos" id="epic2"><p>Macaron Sales</p></div>
+			<div class="promos" id="epic3"><p>Specials</p></div>
+		</div>
+		<div class="clear"></div>
+		
 		<div id="content">
-			<img src="../images/valentines.jpg" alt="macarons2" height="240" width="210">
 			<div class="event">
-				<h2>
-					Happy Valentines Day!
-				</h2>
-				<time datetime="2017-02-14">
-					February 14, 2017
-				</time>
-				<p>
-					It's that wonderful time of the year again!
-				</p>
-				<p>
-					 Whether you are spending this day with your significant other, family or friends, we want to help you celebrate over some delicious desserts. Visit out products page and enjoy a 20% discount on <strong>all</strong> items at check-out.
-				</p>		
+				<img src="../images/valentines.jpg" alt="macarons2" height="240" width="210">
+				<div class="textblock">
+					<h2>
+						Happy Valentines Day!
+					</h2>
+					<time datetime="2017-02-14">
+						February 14, 2017
+					</time>
+					<p>
+						It's that wonderful time of the year again!
+					</p>
+					<p>
+						 Whether you are spending this day with your significant other, family or friends, we want to help you celebrate over some delicious desserts. Visit out products page and enjoy a 20% discount on <strong>all</strong> items at check-out.
+					</p>
+				</div>
 			</div>
 			<hr>
-			<img src="../images/macarons2.jpg" alt="macarons2" height="240" width="210">
 			<div class="event">
-				<h2>
-					Macaron Week!
-				</h2>
-				<time datetime="2017-02-06">
-					February 6, 2017
-				</time>
-				<p>
-					This week only, we are selling <strong>all</strong> macarons at 25% discount! 
-				</p>	
-				<p>
-					Our macaron selection continues to grow as we experiment with seasonal flavors. We have just updated our current selection, so be sure to visit our products page!
-				</p>
+				<img src="../images/macarons2.jpg" alt="macarons2" height="240" width="210">
+				<div class="textblock">
+					<h2>
+						Macaron Week!
+					</h2>
+					<time datetime="2017-02-06">
+						February 6, 2017
+					</time>
+					<p>
+						This week only, we are selling <strong>all</strong> macarons at 25% discount! 
+					</p>	
+					<p>
+						Our macaron selection continues to grow as we experiment with seasonal flavors. We have just updated our current selection, so be sure to visit our products page!
+					</p>
+				</div>
 			</div>
 			<hr>
-			<img src="../images/anniversary.jpg" alt="macarons2" height="240" width="210">
 			<div class="event">
-				<h2>
-					Celebrating our 10th Anniversary!
-				</h2>
-				<time datetime="2017-01-30">
-					January 30, 2017
-				</time>
-				<p>
-					We're so excited to announce that !DOCTYPE Desserts is celebrating its 10th Anniversary. We first started this patisserie as a small group of four hopeful bakers. Ten years later, our family has grown to 100+ members (past and present). We would like to show our appreciation by giving 20% discount to everyone! 
-				</p>
-				<p>
-					Thank you Vancouver for your continued support!
-				</p>
+				<img src="../images/anniversary.jpg" alt="macarons2" height="240" width="210">
+				<div class="textblock">	
+					<h2>
+						Celebrating our 10th Anniversary!
+					</h2>
+					<time datetime="2017-01-30">
+						January 30, 2017
+					</time>
+					<p>
+						We're so excited to announce that !DOCTYPE Desserts is celebrating its 10th Anniversary. We first started this patisserie as a small group of four hopeful bakers. Ten years later, our family has grown to 100+ members (past and present). We would like to show our appreciation by giving 20% discount to everyone! 
+					</p>
+					<p>
+						Thank you Vancouver for your continued support!
+					</p>
+				</div>
 			</div>
 		</div>
 	</main>

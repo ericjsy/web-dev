@@ -1,6 +1,24 @@
 /* Main content padding for appearance */
-main #content {
-	padding: 20px 50px;
+
+#slideshow {
+	margin: 0;
+	padding-bottom: 1px;
+	width: 100%;
+}	
+
+#slideshow img {
+	margin: 0;
+	width: 100vw;
+	height: 80vh;
+}
+
+.w3-display-container {
+	width: 100%;
+}
+
+#content{
+	width: 90%;
+	margin: auto;
 }
 /* Image rounding */
 #content img {
@@ -11,7 +29,10 @@ main #content {
 /* Content alignment */
 .event {
 	overflow: auto;
-	padding: 15px;
+}
+
+.textblock {
+	margin-left: 250px;
 }
 
 .event h2 {
@@ -26,10 +47,62 @@ time {
 .event p {
 	text-indent: 40px;
 }
+
  /* Remove cascade */
 #content hr {
 	background-color: #F2B7A6;
 	border: 0;
 	clear: left;
 	height: 1px;
+}
+
+.mySlides {
+	display: none;
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor: pointer;
+}
+.w3-badge {
+	height: 17px;
+	width: 13px;
+	padding: 0;
+}
+
+.promos {
+	-webkit-filter: brightness(0.85);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0 0 1px white inset;
+	float: left;
+	height: 30vh;
+	width: calc(100%/3);
+}
+
+.promos p {
+	background: white;
+	color: black;
+	font-size: large;
+	font-weight: bold;
+	opacity: 0.70;
+	padding: 15px;
+	text-align: center;	
+}
+
+.promos:hover {
+	-webkit-filter: none;
+}
+
+#epic1 {
+	background-image: url(../images/eventslices.jpg);
+	background-size: cover;
+}
+
+#epic2 {
+	background-image: url(../images/eventcups.jpg);
+	background-size: cover;
+}
+
+#epic3 {
+	background-image: url(../images/eventcakes.jpg);
+	background-size: cover;
 }
