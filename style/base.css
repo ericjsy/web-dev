@@ -16,7 +16,7 @@ body {
 	background-color: #FFFFFF;
 	min-height: 100vh;
 	padding-top: 50px;
-	margin-bottom: 200px;
+	margin-bottom: 170px;
 }
 
 .clear {
@@ -31,6 +31,7 @@ header {
 	background-color: #9B3417;
 	width: 100%;
 	text-align: center;
+	z-index: 2;
 }
 
 nav {
@@ -227,3 +228,7 @@ footer {
 }
 
 /* End of footer styles */
+
+#printlogo {
+	display: none;
+}

@@ -2,7 +2,6 @@
 
 #slideshow {
 	margin: 0;
-	padding-bottom: 1px;
 	width: 100%;
 }	
 
@@ -16,15 +15,9 @@
 	width: 100%;
 }
 
-#content{
-	width: 90%;
-	margin: auto;
-}
 /* Image rounding */
 #content img {
-	border-radius: 15px;
 	float: left;
-	margin-bottom: 10px;
 }
 /* Content alignment */
 .event {
@@ -58,6 +51,7 @@ time {
 
 .mySlides {
 	display: none;
+	-webkit-filter: brightness(1.1);
 }
 .w3-left, .w3-right, .w3-badge {
 	cursor: pointer;
@@ -72,10 +66,11 @@ time {
 	-webkit-filter: brightness(0.85);
 	background-repeat: no-repeat;
 	background-size: cover;
-	box-shadow: 0 0 0 1px white inset;
 	float: left;
-	height: 30vh;
+	height: 26vh;
 	width: calc(100%/3);
+	position: absolute;
+	width: 100%;
 }
 
 .promos p {
@@ -88,6 +83,45 @@ time {
 	text-align: center;	
 }
 
+.subBanner {
+	display: flex;
+}
+
+.subBanner img {
+	width: 100%;
+	height: 100%;
+}
+
+.leftbox {
+	flex: 1;
+	position: relative;
+}
+
+.leftbox:hover .overlay {
+	height: 100%;
+	bottom: 0;
+}
+
+.midbox {
+	flex: 1;
+	position: relative;
+}
+
+.midbox:hover .overlay {
+	height: 100%;
+	bottom: 0;
+}
+
+.rightbox {
+	flex: 1;
+	position: relative;
+}
+
+.rightbox:hover .overlay {
+	height: 100%;
+	bottom: 0;
+}
+
 .promos:hover {
 	-webkit-filter: none;
 }
@@ -95,6 +129,32 @@ time {
 #epic1 {
 	background-image: url(../images/eventslices.jpg);
 	background-size: cover;
+	flex: 1;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #9B3417;
+	opacity: 0.9;
+	overflow: hidden;
+	height: 0;
+	transition: 1s ease;
+}
+
+.h2{
+	font-size: 1.5vh;
+}
+
+.text {
+	width: 70%;
+	margin: auto;
+	margin-top: 50px;
+	color: white;
+	font-size: 1.2vh;
+	height: 200px;
 }
 
 #epic2 {

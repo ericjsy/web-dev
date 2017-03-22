@@ -30,13 +30,9 @@ function backtop()
 
 // Scroll
 
-
 jQuery(window).on('scroll', fadein);
+
 backtop();
-
-
-
-
 
 // jQuery(window).scroll(function() {
 
@@ -49,6 +45,5 @@ backtop();
 		// jQuery('header').fadeOut();
 	// }
 // });
-
 
 });
