@@ -51,4 +51,5 @@ input:focus, textarea:focus {
 .errorMessage {
 	color: red;
 	font-size: small;
+	width: 300px;
 }
