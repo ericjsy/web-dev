@@ -41,3 +41,9 @@ input[type=number]::-webkit-inner-spin-button {
 #desired input {
 	width: 15px;
 }
+
+td {
+	padding: 3px;
+}
+
+
