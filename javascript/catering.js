@@ -227,6 +227,7 @@ function validCatering() {
 		if ( i == 2 || i == 3 ) {
 			if ( isNaN(helperField.value) || helperField.value < 100 || helperField.value > 999 ) {
 				helperField.style.border = "1px solid red"
+				$('errPhone').innerHTML = "Valid phone numbers are in the format ###-###-####.";
 				helperField.focus();
 				return false;
 			}
@@ -236,6 +237,7 @@ function validCatering() {
 		if ( i == 4 ) {
 			if ( isNaN(helperField.value) || helperField.value < 1000 || helperField.value > 9999 ) {
 				helperField.style.border = "1px solid red"
+				$('errPhone').innerHTML = "Valid phone numbers are in the format ###-###-####.";
 				helperField.focus();
 				return false;
 			}
