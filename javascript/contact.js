@@ -47,7 +47,7 @@ function warnInvalidEmail(id) {
 
 // Validates submission
 function validFeedback() {
-	var feedbackInfo = ['txtName', 'txtEmail', 'txtFeedback'];
+	var feedbackInfo = ['txtName', 'txtEmail', 'taFeedback'];
 		
 	// Resets all borders
 	for ( var j = 0; j < feedbackInfo.length; j++ ) {
