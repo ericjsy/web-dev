@@ -4,13 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>!DOCTYPE Desserts</title>
-	<link rel="stylesheet" href="../style/popup.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
-	
+	<link rel="stylesheet" href="../style/form.css" media="screen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="../javascript/popup.js"></script>
+	<link rel="stylesheet" href="../style/popup.css" media="screen">
 </head>
 
 <body>
@@ -18,6 +21,7 @@
 <main>
 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
+				
 	<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">
 	  <div class="modal-dialog">
@@ -49,12 +53,13 @@
 					Nutritional Facts per Cupcake: <br> Calories: 300<br> Total Fat: 15% <br> Calcium: 25% <br> Carbohydrates: 14%
 				</p>
 				<div class="add">
-					<form id="amount" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-						<label for="myChoice">How many would you like? </label>
-						<input type="number" name="myChoice" id="myChoice" min="1" max="99">
+					<form id="amount" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validPopUp('txtQuantity')">
+						<label for="txtQuantity">How many would you like? </label>
+						<input type="text" name="txtQuantity" id="txtQuantity" onblur="warnInvalidQuantity('txtQuantity')">
 					<div id="tocart">
 						<div class="finalize"><input id="submit" type="submit" accesskey="S" value="Add to Cart"></div>
 					</div>
+					<p id="errQuantity" class="errorMessage"></p>
 					</form>
 				</div>
 			</div>
