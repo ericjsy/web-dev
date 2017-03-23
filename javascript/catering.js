@@ -115,20 +115,26 @@ function warnInvalidDate(id){
 function warnInvalidStartTime(){
 	var date = new Date( $('txtDate').value );
 	var start = [$('txtStartTime').value.substr(0,2), $('txtStartTime').value.substr(-5,2), $('txtStartTime').value.substr(-2,2)];
-	$('errStartTime').innerHTML = "";
+	var startHours;
 	
+	$('errStartTime').innerHTML = "";
 	var error = "";
 	
+	if ( start[2] == "PM" ) {
+		startHours = parseInt( start[0] ) + 12;
+	} else {
+		startHours = parseInt( start[0] );
+	}
 	if ( date.getDay() == 0 || date.getDay() == 6 ) {
-		if ( start[0] < 10 && start[2] == "AM" ) {
+		if ( startHours < 10 ) {
 			error = "Please enter a time after 10 am";
-		} else if ( (start[0] > 3 || start[0] == 3 && start[1] > 0) && start[2] == "PM" ) {
+		} else if ( startHours > 15 || startHours == 15 && start[1] > 0 ) {
 			error = "Please enter a time before 3 pm";
 		}
 	} else {
-		if ( start[0] < 8 && start[2] == "AM" ) {
+		if ( startHours < 8 ) {
 			error = "Please enter a time after 8 am";
-		} else if ( (start[0] > 4 || start[0] == 4 && start[1] > 0) && start[2] == "PM" ) {
+		} else if ( startHours > 16 || startHours == 16 && start[1] > 0) {
 			error = "Please enter a time before 4 pm";
 		}
 	}
@@ -138,21 +144,40 @@ function warnInvalidStartTime(){
 // Warning for end time field
 function warnInvalidEndTime(){
 	var date = new Date( $('txtDate').value );
+	var start = [$('txtStartTime').value.substr(0,2), $('txtStartTime').value.substr(-5,2), $('txtStartTime').value.substr(-2,2)];
 	var end = [$('txtEndTime').value.substr(0,2), $('txtEndTime').value.substr(-5,2), $('txtEndTime').value.substr(-2,2)];
-	$('errEndTime').innerHTML = "";
+	var startHours;
+	var endHours;
 	
+	$('errEndTime').innerHTML = "";
 	var error = "";
 	
+	if ( start[2] == "PM" ) {
+		startHours = parseInt( start[0] ) + 12;
+	} else {
+		startHours = parseInt( start[0] );
+	}
+	
+	if ( end[2] == "PM" ) {
+		endHours = parseInt( end[0] ) + 12;
+	} else {
+		endHours = parseInt( end[0] );
+	}
+
+	if ( startHours > endHours ) {
+		error = "Please enter a time after your chosen start time";
+	}
+	
 	if ( date.getDay() == 0 || date.getDay() == 6 ) {
-		if ( end[0] < 10 && end[2] == "AM" ) {
+		if ( endHours < 10 ) {
 			error = "Please enter a time after 10 am";
-		} else if ( (end[0] > 3 || end[0] == 3 && end[1] > 0) && end[2] == "PM" ) {
+		} else if ( endHours > 15 || endHours == 15 && end[1] > 0 ) {
 			error = "Please enter a time before 3 pm";
 		}
 	} else {
-		if ( end[0] < 8 && end[2] == "AM" ) {
+		if ( endHours < 8 ) {
 			error = "Please enter a time after 8 am";
-		} else if ( (end[0] > 4 || end[0] == 4 && end[1] > 0) && end[2] == "PM" ) {
+		} else if ( endHours > 16 || endHours == 16 && end[1] > 0 ) {
 			error = "Please enter a time before 4 pm";
 		}
 	}
