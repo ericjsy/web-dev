@@ -2,92 +2,58 @@ main{
 	padding-bottom: 40px;
 }
 
-/* Top row necessary padding reset */
-#toprow p{
-	margin-top: 0;
-	margin-bottom: 0;	
-	padding: 50px 0 30px 0;
-}
-/* Top row + banner */
-#toprow{
-	width: 100%;
+#leftcont{
 	margin: auto;
-	padding-bottom: 50px;
-	background-image: url("../images/banner.jpeg");
-	background-repeat: no-repeat;
-	height: 116px;
-	
-	background-size:cover;
-}
-/* Left column items */
-#shopcart{
-	font-size: 30px;
-	padding: 0px 20px;
-	font-family: Verdana;
-}
-/* Content */
-#botrow{
-	
-	margin: auto;
-	margin-bottom: 50px;
-}
-/* Order */
-#cart{
-	width: 60%;
-	margin-left: 0px;
-	padding: 50px 0px;
-	float: left;
-	margin-left: 50px;
+	width: 80%;
+	margin-top: 50px;
 }
 
-#detail{
-	font-size: 20px;
-	text-align: center;
+table {
+	width: 50%;
+	margin: auto;
 	float: left;
-	width: 25%;
+	border: 1px solid #9B3417;
+	border-radius: 15px;
+	box-sizing: border-box;
+	padding: 50px;
 }
 
-#detail p{
+tr {
+	padding: 15px 0;
 	margin: 0;
+	border-bottom: 1px solid #9B3417;
+	width: 100%;
+	display: flex;
 }
 
-.item{
-	padding-top: 20px;
-}
-/* Price Quantity Item total */
-.pqi{
-	font-size: 20px;
-	text-align: right;
-	width: 55%;
-	float: right;
+td input{
+	width: 50px;
 }
 
-.trspace {
-	padding: 0px 15px;
-}
-/* Product image float fix */
-.product img{
-	width: 15%;
-	float: left;
+th:first-child {
+	padding-left: 50px;
+	text-align: left;
 }
 
-.pname{
-	font-size: 14px;
-	font-weight: 700;
-	width: 20%;
-	float: left;
-	padding-left: 10px;
+td:first-child {
+	padding-left: 50px;
 }
 
-.pinfo{
-	padding: 0px 15px;
-	margin-left: 30px;
+th:not(:first-child) {
+	text-align: left;
 }
 
-.ppqi{
-	
-	text-align: right;
-	float: right;
+td:not(:first-child) {
+	text-align: left;
+	padding-top: 50px;
+}
+
+.flex2 {
+	flex: 2;
+}
+
+.flex1 {
+	flex: 1;
 }
 
 #rightcont{
@@ -120,15 +86,13 @@ main{
 	height: 25px;
 }
 
-#general{	
-	position: relative;
-}
 
 #order{
 	margin: 15px;
 	font-family: Verdana;
 	line-height: 26.4px;
 }
+
 .leftside{
 	font-weight: bold;
 	color: #9B3417;

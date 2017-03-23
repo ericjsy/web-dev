@@ -54,164 +54,60 @@
 	<main id="main">
 		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<div id="toprow">
-			<div id="shopcart">
-				<p>Your shopping cart</p>
-			</div>
-			<div id="toppic">
-			</div>
+		
+		<div id="leftcont">
+			<table>
+				<tr>
+					<th class="flex2">Item</th>
+					<th class="flex1">Unit Price</th>
+					<th class="flex1">Quantity</th>
+					<th class="flex1">Unit Subtotal</th>
+				</tr>
+				<tr> 
+					<td class="flex2" id="img1"><img src="../images/products/cakes3.jpg" alt="cake3"></td>
+					<td class="flex1" id="unitp1" value="1">$1.00</td>
+					<td class="flex1" id="qty1"><input id="q1" type="text" name="quantity1" value="0" onblur="calcPrice()"></td>
+					<td class="flex1" id="unitst1">$5.00</td>
+				</tr>
+				<tr> 
+					<td class="flex2" id="img2"><img src="../images/products/cakes2.jpg" alt="cake2"></td>
+					<td class="flex1" id="unitp2">$2.00</td>
+					<td class="flex1" id="qty2"><input id="q2" type="text" name="quantity1" value="0" onblur="calcPrice()"></td>
+					<td class="flex1" id="unitst2">$10.00</td>
+				</tr>
+				<tr> 
+					<td class="flex2" id="img3"><img src="../images/products/brownies2.jpg" alt="brownies2"></td>
+					<td class="flex1" id="unitp3">$5.00</td>
+					<td class="flex1" id="qty3"><input id="q3" type="text" name="quantity1" value="0" onblur="calcPrice()"></td>
+					<td class="flex1" id="unitst3">$25.00</td>
+				</tr>
+				<tr> 
+					<td class="flex2" id="img4"><img src="../images/products/cupcakes3.jpg" alt="cupcake3"></td>
+					<td class="flex1" id="unitp4">$10.00</td>
+					<td class="flex1" id="qty4"><input id="q4" type="text" name="quantity1" value="0" onblur="calcPrice()"></td>
+					<td class="flex1" id="unitst4">$20.00</td>
+				</tr>
+			</table>
 		</div>
-		<div id="botrow">
-			<div id="cart">
-				<div id="detail">
-					<p>Item</p>
-				</div>
-				<div class="pqi">				
-					<span class="trspace">Price</span>
-					<span class="trspace">Quantity</span>
-					<span class="trspace">Subtotal</span>
-				</div>
-				<div class="clear"></div>
-				<hr>
-			<!-- ITEM(S) SEPARATOR COMMENT-->	
-				<div id="irow">
-					<!-- ITEM(S) -->
-					<div class="product">
-						<img src="../images/chocolatecake.jpg" alt="Blueberry & Strawberry Cupcake" width="145" height="109"> 
-					</div>
-					<div class="item">
-						<span class="pname">Blueberry & Strawberry Cupcake</span>
-						<div class="ppqi">
-							<span class="pinfo">$1.00</span>
-							<span class="pinfo">
-								<select id="selQ1" onchange="calculatePrice()">
-									<option value="0">Quantity</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-								</select>
-							</span>
-							<span class="pinfo" id="price1">$10.00</span>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<hr>
-					<br>
-					<!-- ITEM(S) -->
-					<div class="product">
-						<img src="../images/chocolatecake.jpg" alt="Brownies" width="145" height="109">
-					</div>
-					<div class="item">
-						<span class="pname">Brownies</span>
-						<div class="ppqi">
-							<span class="pinfo">$2.00</span>
-							<span class="pinfo">
-								<select id="selQ2" onchange="calculatePrice()">
-									<option value="0">Quantity</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-								</select>
-							</span>
-							<span class="pinfo" id="price2">$20.00</span>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<hr>
-					<br>
-					<!-- ITEM(S) -->
-					<div class="product">
-						<img src="../images/chocolatecake.jpg" alt="Mousse Cake" width="145" height="109">
-					</div>
-					<div class="item">
-						<span class="pname">Mousse Cake</span>
-						<div class="ppqi">
-							<span class="pinfo">$1.00</span>
-							<span class="pinfo">
-								<select id="selQ3" onchange="calculatePrice()">
-									<option value="0">Quantity</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-								</select>
-							</span>
-							<span class="pinfo" id="price3">$5.00</span>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<hr>
-					<br>
-					<!-- ITEM(S) -->
-					<div class="product">
-						<img src="../images/chocolatecake.jpg" alt="Rose cookie" width="145" height="109">
-					</div>
-					<div class="item">
-						<span class="pname">Rose cookie</span>
-						<div class="ppqi">
-							<span class="pinfo">$25.00</span>
-							<span class="pinfo">
-								<select id="selQ4" onchange="calculatePrice()">
-									<option value="0">Quantity</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-								</select>
-							</span>
-							<span class="pinfo" id="price4">$25.00</span>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<hr>
-					<br>
-					<!-- ITEM(S) -->
-				</div>
-			<!-- ITEM(S) SEPARATOR COMMENT-->
-			</div>
-			
-			<div id="rightcont">
-				<div id="checkout">
-					<div id="receipt">Your receipt </div>
+		<div id="rightcont">
+			<div id="checkout">
+				<div id="receipt">Your receipt </div>
+				<div class="extraspace"></div>
+				<div id="order">
+					<p><span class="leftside">Subtotal:</span><span class="rightside" id="txtSubtotal">$0.00</span></p>
+					<p><span class="leftside">Tax: </span><span class="rightside" id="txtTax">$0.00</span></p>
+					<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup"> --- </span></p>				
+					<p><span class="leftside">Total: </span><span class="rightside" id="txtTotal">$0.00</span></p>
 					<div class="extraspace"></div>
-					<div id="order">
-						<p><span class="leftside">Subtotal:</span><span class="rightside" id="txtSubtotal">$24.99</span></p>
-						<p><span class="leftside">Tax: </span><span class="rightside" id="txtTax">$3.75</span></p>
-						<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup">Feb. 14th</span></p>				
-						<p><span class="leftside">Total: </span><span class="rightside" id="txtTotal">$28.74</span></p>
-						<div class="extraspace"></div>
-						<div><span class="discount">Receive 20% off your purchase!</span></div>
-					</div>
-					
-					<form class="cart" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-						<div class="finalize"><input id="submit" type="submit" accesskey="S" value="CHECKOUT"></div>
-					</form>
+					<div><span class="discount">Receive 20% off your purchase!</span></div>
 				</div>
+				
+				<form class="cart" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+					<div class="finalize"><input id="submit" type="submit" accesskey="S" value="CHECKOUT"></div>
+				</form>
 			</div>
-			<div class="clear"></div>
 		</div>
+		<div class="clear"></div>
 	</main>
 	<footer>
 		<div class="footbox0">
