@@ -9,39 +9,58 @@ function $(id){
 }
 
 /* Cart */
-function calculatePrice() {
+function calcPrice() {
+	
 	var items = [
-		{ unitPrice: 1, quantity: $('selQ1'), total: $('price1') },
-		{ unitPrice: 2, quantity: $('selQ2'), total: $('price2') },
-		{ unitPrice: 1, quantity: $('selQ3'), total: $('price3') },
-		{ unitPrice: 25, quantity: $('selQ4'), total: $('price4') }
+		{ unitPrice: 1,  quantity: $('q1'), subtotal: $('unitst1') },
+		{ unitPrice: 2,  quantity: $('q2'), subtotal: $('unitst2') },
+		{ unitPrice: 5,  quantity: $('q3'), subtotal: $('unitst3') },
+		{ unitPrice: 10, quantity: $('q4'), subtotal: $('unitst4') }
 	];
 	
-	var subtotal = 0;
+	var csubtotal = 0;
 	var tax = 0;
 	var total = 0;
+	
+	for ( var i=0; i<items.length; i++ ) {
+		
+		var price = items[i].quantity.value * items[i].unitPrice;
+		
+		items[i].subtotal.innerHTML = "$" + price.toFixed(2);
+		
+		csubtotal += price;
+		$('txtSubtotal').innerHTML = "$" + csubtotal.toFixed(2);
+		
+		tax = csubtotal * 0.05;
+		$('txtTax').innerHTML = "$" + tax.toFixed(2);
+		
+		total = csubtotal + tax;
+		$('txtTotal').innerHTML = "$" + total.toFixed(2);
+		
+		
+		/* var price = items[i].quantity.value * items[i].unitPrice;
+		
+		items[i].subtotal.innerHTML = "$" + price.toFixed(2);
+		
+		csubtotal += price;
+		$('txtSubtotal').innerHTML = "$" + csubtotal.toFixed(2);
+		
+		tax = csubtotal * 0.05;
+		$('txtTax').innerHTML = "$" + tax.toFixed(2);
+		
+		total = csubtotal + tax;
+		$('txtTotal').innerHTML = "$" + total.toFixed(2);
+		 */
+	}
 	
 	var months = [
 		"January", "February", "March", "April", "May", "June",
 		"July", "August", "September", "October", "November", "December"
 	];
-	var pickup = new Date();
-	pickup.setDate( pickup.getDate() + 3 );
-	$('txtPickup').innerHTML = months[pickup.getMonth()] + " " + pickup.getDate() + " " + pickup.getFullYear();
 	
-	for ( var i=0; i<items.length; i++ ) {
-		
-		var price = items[i].quantity.selectedIndex * items[i].unitPrice;
-		items[i].total.innerHTML = "$" + price.toFixed(2);
-		
-		subtotal += price;
-		$('txtSubtotal').innerHTML = "$" + subtotal.toFixed(2);
-		
-		tax = subtotal * 0.05;
-		$('txtTax').innerHTML = "$" + tax.toFixed(2);
-		
-		total = subtotal + tax;
-		$('txtTotal').innerHTML = "$" + total.toFixed(2);
-		
-	}
+	var pickup = new Date();
+	
+	pickup.setDate( pickup.getDate() + 3 );
+	$('txtPickup').innerHTML = months[pickup.getMonth()] + " " + pickup.getDate() + ", " + pickup.getFullYear();
+	
 }
