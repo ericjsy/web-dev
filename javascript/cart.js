@@ -12,10 +12,10 @@ function $(id){
 function calcPrice() {
 	
 	var items = [
-		{ unitPrice: 1,  quantity: $('q1'), subtotal: $('unitst1') },
-		{ unitPrice: 2,  quantity: $('q2'), subtotal: $('unitst2') },
-		{ unitPrice: 5,  quantity: $('q3'), subtotal: $('unitst3') },
-		{ unitPrice: 10, quantity: $('q4'), subtotal: $('unitst4') }
+		{ unitPrice: 1,  quantity: $('txtQuantity1'), subtotal: $('unitst1') },
+		{ unitPrice: 2,  quantity: $('txtQuantity2'), subtotal: $('unitst2') },
+		{ unitPrice: 5,  quantity: $('txtQuantity3'), subtotal: $('unitst3') },
+		{ unitPrice: 10, quantity: $('txtQuantity4'), subtotal: $('unitst4') }
 	];
 	
 	var csubtotal = 0;
@@ -37,20 +37,6 @@ function calcPrice() {
 		total = csubtotal + tax;
 		$('txtTotal').innerHTML = "$" + total.toFixed(2);
 		
-		
-		/* var price = items[i].quantity.value * items[i].unitPrice;
-		
-		items[i].subtotal.innerHTML = "$" + price.toFixed(2);
-		
-		csubtotal += price;
-		$('txtSubtotal').innerHTML = "$" + csubtotal.toFixed(2);
-		
-		tax = csubtotal * 0.05;
-		$('txtTax').innerHTML = "$" + tax.toFixed(2);
-		
-		total = csubtotal + tax;
-		$('txtTotal').innerHTML = "$" + total.toFixed(2);
-		 */
 	}
 	
 	var months = [
