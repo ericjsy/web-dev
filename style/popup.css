@@ -1,38 +1,56 @@
 /* Page size imitation */
+
+p {
+	margin: 0;
+}
+
 .modal-dialog {
-	width: 80%;
+	width: 65%;
 	height: 80%;
+}
+
+.modal-footer {
+	height: 70px;
+	padding-bottom: 10px;
+}
+
+.mcontent {
+	padding: 50px;
+}
+
+button.close {
+	padding: 15px 20px 0 0;
 }
 
 main {
 	width: 960px;
 	height: 540px;
-	border: 3px solid black;
 }
 /* Left column */
 .lcol{
 	float: left;
 	width: 25%;
-	margin: 50px;
-	height: 425px;
+	margin: 0 25px;
 	text-align: center;
 	padding: 10px;
 }
 /* Right column */
 .rcol{
 	overflow: auto;
-	margin: 50px;
+	margin: 0;
 	height: 425px;
-	padding: 10px;	
 }
 
-.rcol > p{
-	padding: 10px;
-}
-/* Bottom alignment */
-.add{
+.facts {
 	padding: 20px;
+	width: 200px;
 }
+
+#txtQuantity {
+	margin-right: 10px;
+}
+
+/* Bottom alignment */
 
 #amount{
 	
@@ -63,16 +81,15 @@ main {
 	cursor: pointer;
 }
 
-#detail{
-	padding: 20px;
-}
 /* Submit button reset */
-input#submit{
+#submit{
 	background:none;
 	border:none;
+	background-color: #9B3417;
 	color: white;
-	
 	font-family: Verdana;
 	font-size: 12px;
-	cursor: pointer;	
+	cursor: pointer;
+	width: 100px;
+	float: right;
 }

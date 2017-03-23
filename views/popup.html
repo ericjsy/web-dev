@@ -21,54 +21,67 @@
 <main>
 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 	<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-				
-	<!-- Modal -->
+						
+		<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
-
-		<!-- Modal content-->
-		<div class="modal-content">
-		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Modal Header</h4>
-		  </div>
-			<div class="lcol">
-				<h3>Strawberry cupcake</h3>
-				<img src="../images/products/cupcakes3.jpg" alt="Cupcake" width="150" height="112">
-				<hr>
-				<p>
-					Allergens: <br> <br> <img src="../images/icons/egg.png" alt="Contains eggs" height="50" width="50">
-				</p>
-			</div>
-			<div class="rcol">
-				<p id="detail">An elegant, fluffy strawberry cupcake with deliciously sweet blueberry icing powdered with cinnamon and sprinkled with fun! Scrumptious for everyone and a beautiful treat for your parents, grandparents, siblings and friends!</p>
-				<hr>
-				<p>
-					Sweetness factor:  
-					<img src="../images/sweet.png" alt="+1 rating" width="25" height="25">
-					<img src="../images/sweet.png" alt="+1 rating" width="25" height="25">
-					<img src="../images/sweet.png" alt="+1 rating" width="25" height="25">
-				</p>
-				<p>
-					Nutritional Facts per Cupcake: <br> Calories: 300<br> Total Fat: 15% <br> Calcium: 25% <br> Carbohydrates: 14%
-				</p>
-				<div class="add">
-					<form id="amount" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validPopUp('txtQuantity')">
-						<label for="txtQuantity">How many would you like? </label>
-						<input type="text" name="txtQuantity" id="txtQuantity" onblur="warnInvalidQuantity('txtQuantity')">
-					<div id="tocart">
-						<div class="finalize"><input id="submit" type="submit" accesskey="S" value="Add to Cart"></div>
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="mcontent">
+					<div class="lcol">
+						<img src="../images/products/cupcakes3.jpg" alt="Cupcake" width="150" height="112">
+						<h3>Strawberry cupcake</h3>
+						<hr>
+						<p>
+							Allergens: <br> <br> <img src="../images/icons/egg.png" alt="Contains eggs" height="50" width="50">
+						</p>
 					</div>
-					<p id="errQuantity" class="errorMessage"></p>
-					</form>
+					<div class="rcol">
+						<hr>
+						<p id="detail">An elegant, fluffy strawberry cupcake with deliciously sweet blueberry icing powdered with cinnamon and sprinkled with fun! 
+						Scrumptious for everyone and a beautiful treat for your parents, grandparents, siblings and friends!</p>
+						<hr>
+						<p>
+							Sweetness factor:  
+							<img src="../images/sweet.png" alt="+1 rating" width="25" height="25">
+							<img src="../images/sweet.png" alt="+1 rating" width="25" height="25">
+							<img src="../images/sweet.png" alt="+1 rating" width="25" height="25">
+						</p>	
+						<br>
+						<table class="facts">
+							<caption>Nutritional Facts per Cupcake:</caption>
+							<tr>
+								<td>Calories:</td>
+								<td>300</td>
+							</tr>
+							<tr>
+								<td>Total Fat:</td>
+								<td>5%</td>
+							</tr>
+							<tr>
+								<td>Calcium:</td>
+								<td>25%</td>
+							</tr>
+							<tr>
+								<td>Carbohydrates:</td>
+								<td>14%</td>
+							</tr>
+						</table>
+						<div class="add">
+							<form id="amount" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validPopUp('txtQuantity')">
+								<br> <label for="txtQuantity">How many would you like? </label> <br>
+								<input type="text" name="txtQuantity" id="txtQuantity" onblur="warnInvalidQuantity('txtQuantity')">
+							<div id="tocart">
+								<input id="submit" type="submit" accesskey="S" value="Add to Cart">
+							</div>
+							<p id="errQuantity" class="errorMessage"></p>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
-		  <div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		  </div>
 		</div>
-
-	  </div>
 	</div>
 </main>
 
