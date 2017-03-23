@@ -60,7 +60,7 @@ function warnInvalidPassword(id) {
 	$('errPassword').innerHTML = "";
 
 	if ( !testValidPassword(id) && $(id).value.length > 0 ) {
-		$('errPassword').innerHTML = "It must be 6 or more characters with at least one lowercase letter, one uppercase letter and one digit.";
+		$('errPassword').innerHTML = "It must be 6 or more characters with at least one lowercase letter, one uppercase letter and one digit (excluding spaces and symbols).";
 		$(id).style.border = "1px solid red";
 	}
 }
