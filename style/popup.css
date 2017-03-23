@@ -1,4 +1,9 @@
 /* Page size imitation */
+.modal-dialog {
+	width: 80%;
+	height: 80%;
+}
+
 main {
 	width: 960px;
 	height: 540px;

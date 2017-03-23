@@ -35,15 +35,45 @@ function validLogin(){
 
 /* New Account Form */
 
+// Warning for username field
+function testValidNewUser(id) {
+	return ( /^[a-zA-Z0-9_-]{3,15}$/.test( $(id).value ) );
+}
+
+function warnInvalidNewUser(id) {
+	$(id).style.border = "";
+	$('errNewUser').innerHTML = "";
+
+	if ( !testValidNewUser(id) && $(id).value.length > 0 ) {
+		$('errNewUser').innerHTML = "It must be 3-15 characters and can only include alphanumeric characters, underscores and dashes.";
+		$(id).style.border = "1px solid red";
+	}
+}
+
 // Warning for password field
-function testMatchingPassword(id){
+function testValidPassword(id) {
+	return ( /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/.test( $(id).value ) );
+}
+
+function warnInvalidPassword(id) {
+	$(id).style.border = "";
+	$('errPassword').innerHTML = "";
+
+	if ( !testValidPassword(id) && $(id).value.length > 0 ) {
+		$('errPassword').innerHTML = "It must be 6 or more characters with at least one lowercase letter, one uppercase letter and one digit.";
+		$(id).style.border = "1px solid red";
+	}
+}
+
+// Warning for password verification
+function testMatchingPassword(id) {
 	var x = $(id).value;
 	var y = $("txtNewPassword").value;
 	
 	return ( x != y && x.length > 0 );
 }
 
-function verifyPassword(id){
+function verifyMatchingPassword(id) {
 	$(id).style.border = "";
 	$('errVerify').innerHTML = "";
 
@@ -54,7 +84,7 @@ function verifyPassword(id){
 }
 
 // Warning for email field
-function testValidEmail(id){
+function testValidEmail(id) {
 	var str = $(id).value;
 	
 	return ( (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
@@ -63,7 +93,7 @@ function testValidEmail(id){
 		|| str.substring(str.length-3) == ".ca" ) );
 }
 
-function warnInvalidEmail(id){
+function warnInvalidEmail(id) {
 	$(id).style.border = "";
 	$('errEmail').innerHTML = "";
 	
@@ -92,10 +122,26 @@ function validSignup() {
 			return false;
 		}
 		
+		// Checks for invalid username
+		if ( i == 0 ) {
+			if ( !testValidNewUser(signUpInfo[i]) ) {
+				warnInvalidNewUser(signUpInfo[i]);
+				return false;
+			}
+		}
+		
+		// Checks for invalid password
+		if ( i == 1 ) {
+			if ( !testValidPassword(signUpInfo[i]) ) {
+				warnInvalidPassword(signUpInfo[i]);
+				return false;
+			}
+		}
+		
 		// Checks for different passwords
 		if ( i == 2 ) {
-			if ( !testMatchingPassword(signUpInfo[i]) ) {
-				verifyPassword(signUpInfo[i]);
+			if ( testMatchingPassword(signUpInfo[i]) ) {
+				verifyMatchingPassword(signUpInfo[i]);
 				return false;
 			}
 		}
