@@ -207,16 +207,16 @@ function validCatering() {
 	var cateringInfo = [ 
 		{ field: 'txtFirstName', error: $('errFirstName'), message: "a first name" },
 		{ field: 'txtLastName', error: $('errLastName'), message: "a last name" },
-		{ field: 'txtNumPhone_0', error: $('errPhone'), message: "a phone number" },
-		{ field: 'txtNumPhone_1', error: $('errPhone'), message: "a phone number" },
-		{ field: 'txtNumPhone_2', error: $('errPhone'), message: "a phone number" },
+		{ field: 'txtPhone_0', error: $('errPhone'), message: "a phone number" },
+		{ field: 'txtPhone_1', error: $('errPhone'), message: "a phone number" },
+		{ field: 'txtPhone_2', error: $('errPhone'), message: "a phone number" },
 		{ field: 'txtEmail', error: $('errEmail'), message: "an email address" },
 		{ field: 'txtAddress', error: $('errAddress'), message: "a physical address" },
 		{ field: 'txtDate', error: $('errDate'), message: "a date" },
 		{ field: 'txtStartTime', error: $('errStartTime'), message: "a start time" },
 		{ field: 'txtEndTime', error: $('errEndTime'), message: "an end time" },
 		{ field: 'lstFunction', error: $('errFunction'), message: "a function or select one from the list" },
-		{ field: 'txtNumGuests', error: $('errGuests'), message: "the number of guests" }
+		{ field: 'txtGuests', error: $('errGuests'), message: "the number of guests" }
 	];
 	
 	// Resets all borders
