@@ -3,7 +3,7 @@
 h2 {
 	text-align: left;
 	margin-top: 0px;
-	padding-top:40px;
+	padding-top:30px;
 	margin-bottom: 0px;
 	color:black;
 	height:100px;
@@ -11,10 +11,9 @@ h2 {
 }
 /* text# Header box alignment */
 .text1 {
-		margin-left: 15px;
-		padding: 10px;
-		margin-right: 150px;
-		margin-top: 0;
+		margin-left: 70px;
+		width:55%;
+		height:250px;
 		color: black;
 }
 
@@ -22,21 +21,23 @@ h2 {
 		background-image: url("../images/900.jpg");
 		background-repeat: no-repeat; 
 		background-position: center;
-		width:100%;
+		margin:auto;
         height: 300px;
 		overflow: auto;
+		margin-top: 5px;
 		
 		
 } 
 
 .box2 {
-		background-image: url("../images/11.jpg");
+		background-image: url("../images/7.jpg");
 		background-repeat: no-repeat; 
 		background-position: center;
         height: 300px;
-		width:100%;
 		overflow: auto;
-		margin-top=0;
+		padding-top:8px;
+		margin-top: 5px;
+		width: 100%;
 }   
 
 .box3 {
@@ -44,26 +45,19 @@ h2 {
 		background-repeat: no-repeat; 
 		background-position: center; 
         height: 300px;
-		width:100%;
 		overflow: auto;
-		margin-top=0;
+		padding-top:8px;
+		margin-top: 5px;
 }		
 
 		
  h3 {
-		padding: 3px 20px 5px 0;
 		color: black;
 		text-align: black;
-		margin-left:50px;
 }
 
 .text {
-		padding-right: 100px;
-		padding-left: 50px;
 		font-size: 100%;
 		color: black;
-		margin-right: 150px;
 		text-align: left;
-		float: left;
-		width: 60%;
 } 
