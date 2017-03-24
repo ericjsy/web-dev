@@ -21,7 +21,13 @@
 	padding-top: 8px;
 }
 
-#products, h3 {
+h3 {
+	margin-left: 270px;
+	width: 90%;
+	font-weight: bold;
+}
+
+#products {
 	margin-left: 270px;
 	width: 90%;
 }
@@ -95,7 +101,6 @@ button {
 
 #wrap {
 	position: absolute;
-	width: 200%;
 }
 
 .errorMessage {
