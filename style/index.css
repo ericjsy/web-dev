@@ -1,6 +1,7 @@
 /* Main content padding for appearance */
 
 #slideshow {
+	background-image: url('../images/Slideshow/cupcakes.jpg');
 	margin: 0;
 	width: 100%;
 }	
