@@ -106,10 +106,12 @@ function warnInvalidEmail(id) {
 // Validates submission
 function validSignup() {
 	var signUpInfo = ['txtNewUser', 'txtNewPassword', 'txtVerify', 'txtEmail'];
+	var signUpError = ['errNewUser', 'errPassword', 'errVerify', 'errEmail']
 	
-	// Resets all borders
+	// Resets all borders and warning messages
 	for ( var j = 0; j < signUpInfo.length; j++ ) {
 		$(signUpInfo[j]).style.border = "";	
+		$(signUpError[j]).innerHTML = "";
 	}
 	
 	for ( var i = 0; i < signUpInfo.length; i++ ) {
