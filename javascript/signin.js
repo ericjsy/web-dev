@@ -60,7 +60,7 @@ function warnInvalidPassword(id) {
 	$('errPassword').innerHTML = "";
 
 	if ( !testValidPassword(id) && $(id).value.length > 0 ) {
-		$('errPassword').innerHTML = "It must be 6 or more characters with at least one lowercase letter, one uppercase letter and one digit (excluding spaces and symbols).";
+		$('errPassword').innerHTML = "It must be 6 or more characters with at least one lowercase letter, one uppercase letter and one digit.";
 		$(id).style.border = "1px solid red";
 	}
 }
@@ -106,12 +106,10 @@ function warnInvalidEmail(id) {
 // Validates submission
 function validSignup() {
 	var signUpInfo = ['txtNewUser', 'txtNewPassword', 'txtVerify', 'txtEmail'];
-	var signUpError = ['errNewUser', 'errPassword', 'errVerify', 'errEmail']
 	
-	// Resets all borders and warning messages
+	// Resets all borders
 	for ( var j = 0; j < signUpInfo.length; j++ ) {
 		$(signUpInfo[j]).style.border = "";	
-		$(signUpError[j]).innerHTML = "";
 	}
 	
 	for ( var i = 0; i < signUpInfo.length; i++ ) {
