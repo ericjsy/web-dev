@@ -8,6 +8,12 @@ function $(id){
 	return element;
 }
 
+// Call all onBlur functions
+function onBlur() {
+	validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4);
+	calcPrice();
+}
+
 // Validates Submission
 function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
 	$('txtQuantity1').style.border = "";
@@ -20,7 +26,7 @@ function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
 		$('txtQuantity1').style.border = "1px solid red";
 		$('errCart').innerHTML = "Invalid quantity.";
 		return false;
-	} else if ( $('txtQuantity1').value < 1 || $('txtQuantity1').value > 100 && $('txtQuantity1').value.length > 0 ) {
+	} else if ( ($('txtQuantity1').value < 1 || $('txtQuantity1').value > 100) && $('txtQuantity1').value.length > 0 ) {
 		$('txtQuantity1').style.border = "1px solid red";
 		$('errCart').innerHTML = "Quantity must be between 1-100.";
 		return false;
@@ -28,7 +34,7 @@ function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
 		$('txtQuantity2').style.border = "1px solid red";
 		$('errCart').innerHTML = "Invalid quantity.";
 		return false;
-	} else if ( $('txtQuantity2').value < 1 || $('txtQuantity2').value > 100 && $('txtQuantity2').value.length > 0 ) {
+	} else if ( ($('txtQuantity2').value < 1 || $('txtQuantity2').value > 100) && $('txtQuantity2').value.length > 0 ) {
 		$('txtQuantity2').style.border = "1px solid red";
 		$('errCart').innerHTML = "Quantity must be between 1-100.";
 		return false;
@@ -36,7 +42,7 @@ function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
 		$('txtQuantity3').style.border = "1px solid red";
 		$('errCart').innerHTML = "Invalid quantity.";
 		return false;
-	} else if ( $('txtQuantity3').value < 1 || $('txtQuantity3').value > 100 && $('txtQuantity3').value.length > 0 ) {
+	} else if ( ($('txtQuantity3').value < 1 || $('txtQuantity3').value > 100) && $('txtQuantity3').value.length > 0 ) {
 		$('txtQuantity3').style.border = "1px solid red";
 		$('errCart').innerHTML = "Quantity must be between 1-100.";
 		return false;
@@ -44,11 +50,11 @@ function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
 		$('txtQuantity4').style.border = "1px solid red";
 		$('errCart').innerHTML = "Invalid quantity.";
 		return false;
-	} else if ( $('txtQuantity4').value < 1 || $('txtQuantity4').value > 100 && $('txtQuantity4').value.length > 0 ) {
+	} else if ( ($('txtQuantity4').value < 1 || $('txtQuantity4').value > 100) && $('txtQuantity4').value.length > 0 ) {
 		$('txtQuantity4').style.border = "1px solid red";
 		$('errCart').innerHTML = "Quantity must be between 1-100.";
 		return false;
-	}
+	} else $('errCart').innerHTML = "<br>";
 }
 
 /* Cart */
@@ -93,3 +99,4 @@ function calcPrice() {
 	$('txtPickup').innerHTML = months[pickup.getMonth()] + " " + pickup.getDate() + ", " + pickup.getFullYear();
 	
 }
+
