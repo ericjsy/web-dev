@@ -58,7 +58,7 @@ function warnInvalidPhone(areaCode, threeDigit, fourDigit) {
 function testValidEmail(id) {
 	var str = $(id).value;
 	
-	return ( (/^[a-zA-Z\d_]+\@[a-zA-z]+\.[a-zA-z]{2,3}/.test( $(id).value ))
+	return ( (/^[a-zA-Z\d_]+\@[a-zA-Z]+\.[a-zA-Z]{2,3}/.test( $(id).value ))
 		&& str.substring(str.length-4) == ".com" 
 		|| str.substring(str.length-4) == ".org" 
 		|| str.substring(str.length-3) == ".ca" );
