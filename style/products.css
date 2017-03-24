@@ -107,3 +107,7 @@ button {
 	color: red;
 	font-size: small;
 }
+
+body {
+	min-height: 110vh;
+}
