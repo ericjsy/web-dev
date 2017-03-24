@@ -3,7 +3,7 @@ function hideGluten() {
 	
 	if ( document.getElementById('chkGlutenFree').checked == true ){
 		for ( var i=0; i<listGluten.length; i++ ){
-			listGluten[i].style.display = "none";
+			listGluten[i].style.visibility = "hidden"; /*DISPLAY = "NONE"*/
 		}
 	} else {
 		for ( var j=0; j<listGluten.length; j++ ){
@@ -17,7 +17,7 @@ function hideEgg() {
 	
 	if ( document.getElementById('chkEggFree').checked == true ){
 		for ( var i=0; i<listEgg.length; i++ ){
-			listEgg[i].style.display = "none";
+			listEgg[i].style.visibility = "hidden";
 		}
 	} else {
 		for ( var j=0; j<listEgg.length; j++ ){
@@ -31,7 +31,7 @@ function hideMilk() {
 	
 	if ( document.getElementById('chkLactoseFree').checked == true ){
 		for ( var i=0; i<listMilk.length; i++ ){
-			listMilk[i].style.display = "none";
+			listMilk[i].style.visibility = "hidden";
 		}
 	} else {
 		for ( var j=0; j<listMilk.length; j++ ){
@@ -45,7 +45,7 @@ function hidePeanut() {
 	
 	if ( document.getElementById('chkPeanutFree').checked == true ){
 		for ( var i=0; i<listNut.length; i++ ){
-			listNut[i].style.display = "none";
+			listNut[i].style.visibility = "hidden";
 		}
 	} else {
 		for ( var j=0; j<listNut.length; j++ ){
@@ -57,25 +57,25 @@ function hidePeanut() {
 function resetAll() {
 	var listGluten = document.getElementsByClassName('gluten');
 	for ( var i=0; i<listGluten.length; i++ ){
-			listGluten[i].style.display = "block";
+			listGluten[i].style.visibility = "visible"; /*DISPLAY="BLOCK"*/
 		}
 	document.getElementById('chkGlutenFree').checked = false;
 
 	var listEgg = document.getElementsByClassName('egg');
 	for ( var i=0; i<listEgg.length; i++ ){
-			listEgg[i].style.display = "block";
+			listEgg[i].style.visibility = "visible";
 		}
 	document.getElementById('chkEggFree').checked = false;
 	
 	var listMilk = document.getElementsByClassName('milk');
 	for ( var i=0; i<listMilk.length; i++ ){
-			listMilk[i].style.display = "block";
+			listMilk[i].style.visibility = "visible";
 		}
 	document.getElementById('chkLactoseFree').checked = false;	
 			
 	var listNut = document.getElementsByClassName('nut');
 	for ( var i=0; i<listNut.length; i++ ){
-			listNut[i].style.display = "block";
+			listNut[i].style.visibility = "visible";
 		}
 	document.getElementById('chkPeanutFree').checked = false;
 }

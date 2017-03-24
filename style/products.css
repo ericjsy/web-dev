@@ -1,7 +1,6 @@
 /* Products Exclusive CSS */
 #general {
 	position: relative;
-
 }
 /* Filter basic appearance */
 /* Fixed position necessary */
@@ -83,4 +82,27 @@ figcaption {
 	border:none; 
 	background-color: white;
 	padding: 0;
+}
+
+body {
+	min-height: 200vh;
+}
+
+.tleft {
+	float: left;
+	margin-right: 20px;
+}
+
+.tright {
+	overflow: auto;
+}
+
+#wrap {
+	position: absolute;
+	width: 200%;
+}
+
+.errorMessage {
+	color: red;
+	font-size: small;
 }

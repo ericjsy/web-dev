@@ -1,3 +1,7 @@
+body {
+	padding-bottom: 20px;
+}
+
 main p{
 	margin: 0;
 }
@@ -9,12 +13,12 @@ main p{
 .leftcol{
 	float:left;
 	width: 50%;
-	margin-top: 100px;
+	margin: 50px 0;
 }
 /* Left column vertical spacing */
 #allergies{
 	text-align: center;
-	padding: 20px 0px;
+	margin: 10px 0;
 }
 /* Picture of favourites */
 #likes{
@@ -33,7 +37,6 @@ main p{
 }
 
 .rightcol{
-	padding-top: 50px;
 	overflow: auto;
 }
 

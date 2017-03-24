@@ -5,6 +5,10 @@
 	width:50%;
 }
 
+.boxes {
+	padding-bottom: 20px;
+}
+
 .boxes div{
 	height: 300px;
 }
