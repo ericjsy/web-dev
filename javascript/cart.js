@@ -8,6 +8,49 @@ function $(id){
 	return element;
 }
 
+// Validates Submission
+function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
+	$('txtQuantity1').style.border = "";
+	$('txtQuantity2').style.border = "";
+	$('txtQuantity3').style.border = "";
+	$('txtQuantity4').style.border = "";
+	$('errCart').innerHTML = "";	
+	
+	if ( (isNaN($('txtQuantity1').value)) && $('txtQuantity1').value.length > 0 ) {
+		$('txtQuantity1').style.border = "1px solid red";
+		$('errCart').innerHTML = "Invalid quantity.";
+		return false;
+	} else if ( $('txtQuantity1').value < 1 || $('txtQuantity1').value > 100 && $('txtQuantity1').value.length > 0 ) {
+		$('txtQuantity1').style.border = "1px solid red";
+		$('errCart').innerHTML = "Quantity must be between 1-100.";
+		return false;
+	} else if ( (isNaN($('txtQuantity2').value)) && $('txtQuantity2').value.length > 0 ) {
+		$('txtQuantity2').style.border = "1px solid red";
+		$('errCart').innerHTML = "Invalid quantity.";
+		return false;
+	} else if ( $('txtQuantity2').value < 1 || $('txtQuantity2').value > 100 && $('txtQuantity2').value.length > 0 ) {
+		$('txtQuantity2').style.border = "1px solid red";
+		$('errCart').innerHTML = "Quantity must be between 1-100.";
+		return false;
+	} else if ( (isNaN($('txtQuantity3').value)) && $('txtQuantity3').value.length > 0 ) {
+		$('txtQuantity3').style.border = "1px solid red";
+		$('errCart').innerHTML = "Invalid quantity.";
+		return false;
+	} else if ( $('txtQuantity3').value < 1 || $('txtQuantity3').value > 100 && $('txtQuantity3').value.length > 0 ) {
+		$('txtQuantity3').style.border = "1px solid red";
+		$('errCart').innerHTML = "Quantity must be between 1-100.";
+		return false;
+	} else if ( (isNaN($('txtQuantity4').value)) && $('txtQuantity4').value.length > 0 ) {
+		$('txtQuantity4').style.border = "1px solid red";
+		$('errCart').innerHTML = "Invalid quantity.";
+		return false;
+	} else if ( $('txtQuantity4').value < 1 || $('txtQuantity4').value > 100 && $('txtQuantity4').value.length > 0 ) {
+		$('txtQuantity4').style.border = "1px solid red";
+		$('errCart').innerHTML = "Quantity must be between 1-100.";
+		return false;
+	}
+}
+
 /* Cart */
 function calcPrice() {
 	
