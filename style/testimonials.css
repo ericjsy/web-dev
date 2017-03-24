@@ -1,65 +1,37 @@
 /* Header reset and padding */
- 
-h2 {
-	text-align: left;
-	margin-top: 0px;
-	padding-top:30px;
-	margin-bottom: 0px;
-	color:black;
-	height:100px;
-	padding-left: 70px;
-}
+
 /* text# Header box alignment */
 .text1 {
-		margin-left: 70px;
-		width:55%;
-		height:250px;
-		color: black;
+	width:50%;
+}
+
+.boxes div{
+	height: 300px;
 }
 
 .box1 {
-		background-image: url("../images/900.jpg");
-		background-repeat: no-repeat; 
-		background-position: center;
-		margin:auto;
-        height: 300px;
-		overflow: auto;
-		margin-top: 5px;
-		
-		
+	background-image: url("../images/900.jpg");
+	background-repeat: no-repeat; 
+	background-position: right;
 } 
 
 .box2 {
-		background-image: url("../images/7.jpg");
-		background-repeat: no-repeat; 
-		background-position: center;
-        height: 300px;
-		overflow: auto;
-		padding-top:8px;
-		margin-top: 5px;
-		width: 100%;
+	background-image: url("../images/7.jpg");
+	background-repeat: no-repeat; 
+	background-position: right;
 }   
 
 .box3 {
-		background-image: url("../images/462.jpg");
-		background-repeat: no-repeat; 
-		background-position: center; 
-        height: 300px;
-		overflow: auto;
-		padding-top:8px;
-		margin-top: 5px;
-}		
-
-		
- h3 {
-		color: black;
-		text-align: black;
-		m
+	background-image: url("../images/462.jpg");
+	background-repeat: no-repeat; 
+	background-position: right;
 }
 
-.text {
-		font-size: 100%;
-		color: black;
-		text-align: left;
-		padding-top: 10px;
-} 
+main {
+	width: 60%;
+	margin: auto;
+}
+
+h1 {
+	padding-bottom: 50px;
+}

@@ -31,13 +31,22 @@ header {
 	background-color: #9B3417;
 	width: 100%;
 	text-align: center;
-	z-index: 2;
+	z-index: 3;
 }
 
 nav {
 	margin: 0 auto;
 	width: 90%;
 	display: flex;
+	height: 52px;
+}
+
+#navbar ul {
+	margin: 16px;
+}
+
+#navbar a{
+	font-size: 16px;
 }
 
 nav a{
@@ -89,6 +98,7 @@ footer {
 	width: 100%;
 	bottom: 0;
 	font-size: 75%;
+	height: 170px;
 }
 
 .footbox0 {
@@ -188,7 +198,7 @@ footer {
 }
 
 #copyr{
-	padding: 20px 0;
+	padding: 20px 0 0;
 	font-size: 80%;
 }
 
@@ -198,9 +208,12 @@ footer {
 	color: rgba(247, 208, 187, 0.5);
 	
 	position: fixed;
-	bottom: 50px;
-	right: 25px;
+	bottom: 10px;
+	right: 10px;
     z-index: 2;
+	
+	width: 64px;
+	height: 75px;
 }
 
 .backup:hover {

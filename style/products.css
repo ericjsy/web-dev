@@ -22,9 +22,11 @@
 	padding-top: 8px;
 }
 
-#products {
+#products, h3 {
 	margin-left: 270px;
+	width: 90%;
 }
+
 /* Picture response */
 .thumbnails {
 	display: inline-block;
@@ -53,12 +55,13 @@ figcaption {
 	position: absolute;
 	top: 5px;
 	width: 150px;
+	z-index: 2;
+	opacity: inherit;
 }
 
 .tooltip img {
-	border-left: solid 2px #FFFFFF;
-	border-right: solid 2px #FFFFFF;
-	border-bottom: solid 2px #FFFFFF;
+	border-right: solid 5px #FFFFFF;
+	border-bottom: solid 5px #FFFFFF;
 }
 
 .tooltip .tooltiptext {
@@ -74,4 +77,10 @@ figcaption {
 
 .tooltip:hover .tooltiptext {
 	visibility: visible;
+}
+
+#modal {
+	border:none; 
+	background-color: white;
+	padding: 0;
 }
