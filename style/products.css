@@ -78,8 +78,8 @@ figcaption {
 	visibility: visible;
 }
 
-#modal {
-	border:none; 
+button {
+	border: none; 
 	background-color: white;
 	padding: 0;
 }
