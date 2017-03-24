@@ -54,10 +54,12 @@ h2 {
  h3 {
 		color: black;
 		text-align: black;
+		m
 }
 
 .text {
 		font-size: 100%;
 		color: black;
 		text-align: left;
+		padding-top: 10px;
 } 
