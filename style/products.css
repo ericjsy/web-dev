@@ -84,10 +84,6 @@ button {
 	padding: 0;
 }
 
-body {
-	min-height: 200vh;
-}
-
 .tleft {
 	float: left;
 	margin-right: 20px;
