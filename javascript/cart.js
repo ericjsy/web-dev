@@ -54,6 +54,22 @@ function validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4) {
 		$('txtQuantity4').style.border = "1px solid red";
 		$('errCart').innerHTML = "Quantity must be between 1-100.";
 		return false;
+	} else if ( $('txtQuantity1').value.length == 0 ) {
+		$('txtQuantity1').style.border = "1px solid red";
+		$('errCart').innerHTML = "Please fill in all fields.";
+		return false;
+	} else if ( $('txtQuantity2').value.length == 0 ) {
+		$('txtQuantity2').style.border = "1px solid red";
+		$('errCart').innerHTML = "Please fill in all fields.";
+		return false;
+	} else if ( $('txtQuantity3').value.length == 0 ) {
+		$('txtQuantity3').style.border = "1px solid red";
+		$('errCart').innerHTML = "Please fill in all fields.";
+		return false;
+	} else if ( $('txtQuantity4').value.length == 0 ) {
+		$('txtQuantity4').style.border = "1px solid red";
+		$('errCart').innerHTML = "Please fill in all fields.";
+		return false;
 	} else $('errCart').innerHTML = "<br>";
 }
 
