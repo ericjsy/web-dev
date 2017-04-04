@@ -17,14 +17,14 @@
 	<div class="footbox1">
 		<div id="anchor">
 			<div id="links"> 
-				<a href="aboutus.html" id="aboutus">About Us</a> |
-				<a href="products.html">Products</a> |
-				<a href="catering.html">Catering</a> |
-				<a href="testimonials.html">Reviews</a> |
-				<a href="contact.html">Contact Us</a>
+				<a href="aboutus.php" id="aboutus">About Us</a> |
+				<a href="products.php">Products</a> |
+				<a href="catering.php">Catering</a> |
+				<a href="testimonials.php">Reviews</a> |
+				<a href="contact.php">Contact Us</a>
 			</div>
 			<div id="logo2">
-				<a href="index.html"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
+				<a href="index.php"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
 			</div>
 			<div id="sm">
 				<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
