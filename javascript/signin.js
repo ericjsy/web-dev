@@ -1,4 +1,4 @@
-/* Helper Functions */
+0/* Helper Functions */
 
 function $(id){
 	var element = document.getElementById(id);
@@ -34,6 +34,30 @@ function validLogin(){
 }
 
 /* New Account Form */
+
+function testValidNameField(id) {
+	return (/^[a-zA-Z]+$/.test($(id).value));
+}
+
+function warnInvalidFirstName(id) {
+	$(id).style.border = "";
+	$('errFirstName').innerHTML = "";
+	
+	if ( !testValidNameField(id) && $(id).value.length > 0 ) {
+		$('errFirstName').innerHTML = "Please enter your first name";
+		$(id).style.border = "1px solid red";
+	}
+}
+
+function warnInvalidLastName(id) {
+	$(id).style.border = "";
+	$('errLastName').innerHTML = "";
+	
+	if ( !testValidNameField(id) && $(id).value.length > 0 ) {
+		$('errLastName').innerHTML = "Please enter your last name";
+		$(id).style.border = "1px solid red";
+	}
+}
 
 // Warning for username field
 function testValidNewUser(id) {
@@ -83,7 +107,7 @@ function verifyMatchingPassword(id) {
 	}
 }
 
-// Warning for email field
+/*O // Warning for email field
 function testValidEmail(id) {
 	var str = $(id).value;
 	
@@ -102,10 +126,12 @@ function warnInvalidEmail(id) {
 		$(id).style.border = "1px solid red";
 	}
 }
-
+ */
 // Validates submission
 function validSignup() {
-	var signUpInfo = ['txtNewUser', 'txtNewPassword', 'txtVerify', 'txtEmail'];
+	//O var signUpInfo = ['txtNewUser', 'txtNewPassword', 'txtVerify', 'txtEmail'];
+	
+	var signUpInfo = ['txtFirstName', 'txtLastName', 'txtNewUser', 'txtNewPassword', 'txtVerify'];
 	
 	// Resets all borders
 	for ( var j = 0; j < signUpInfo.length; j++ ) {
@@ -122,8 +148,22 @@ function validSignup() {
 			return false;
 		}
 		
-		// Checks for invalid username
 		if ( i == 0 ) {
+			if ( !testValidNameField(signUpInfo[i]) ) {
+				warnInvalidFirstName(signUpInfo[i]);
+				return false;
+			}
+		}
+		
+		if ( i == 1 ) {
+			if ( !testValidNameField(signUpInfo[i]) ) {
+				warnInvalidLastName(signUpInfo[i]);
+				return false;
+			}
+		}
+		
+		// Checks for invalid username
+		if ( i == 2 ) {
 			if ( !testValidNewUser(signUpInfo[i]) ) {
 				warnInvalidNewUser(signUpInfo[i]);
 				return false;
@@ -131,7 +171,7 @@ function validSignup() {
 		}
 		
 		// Checks for invalid password
-		if ( i == 1 ) {
+		if ( i == 3 ) {
 			if ( !testValidPassword(signUpInfo[i]) ) {
 				warnInvalidPassword(signUpInfo[i]);
 				return false;
@@ -139,20 +179,20 @@ function validSignup() {
 		}
 		
 		// Checks for different passwords
-		if ( i == 2 ) {
+		if ( i == 4 ) {
 			if ( testMatchingPassword(signUpInfo[i]) ) {
 				verifyMatchingPassword(signUpInfo[i]);
 				return false;
 			}
 		}
 		
-		// Checks for an invalid email
+		/* // Checks for an invalid email
 		if ( i == 3 ) {
 			if ( !testValidEmail(signUpInfo[i]) ) {
 				warnInvalidEmail(signUpInfo[i]);
 				return false;
 			}
-		}
+		} */
 		
 	}
 

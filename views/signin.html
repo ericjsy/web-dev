@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 	<html lang="en">
 <head>
@@ -20,40 +23,18 @@
 </head>
 
 <body>
-	<!--header-->
-	<header>
-		<nav>
-			<div id="logo">
-				<a href="index.html"><img src="../images/logo.png" alt="Madeleine's"></a>
-				<a href="index.html"><img src="../images/cake.png" alt="cake"></a>
-			</div>
-			<div id="navbar">
-				<ul>
-					<li>
-						<a href="aboutus.html">About Us</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a href="catering.html">Catering</a>
-					</li>
-					<li>
-						<a href="testimonials.html">Reviews</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-			<div id="navshop">
-				<a href="cart.html" class="fa fa-shopping-cart fa-2x"></a>
-				<a href="signin.html" class="fa fa-user-circle fa-2x"></a>
-			</div>
-		</nav>
-		<!--Keep the "clear" div so all the floated divs stay in the header-->
-		<div class="clear"></div>
-	</header>
+<?php
+	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+		echo '<ul class="err">';
+		foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+			echo '<li>',$msg,'</li>'; 
+		}
+		echo '</ul>';
+		unset($_SESSION['ERRMSG_ARR']);
+	}
+?>
+
+	<?php include 'header.php'; ?>
     <main id ="main">
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
@@ -62,7 +43,7 @@
 				<h2>
 					Sign in
 				</h2>
-				<form id="login" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validLogin()">
+				<form id="login" action="../forum/register.php" method="post" onsubmit="return validLogin()">
 					<fieldset>
 						<ul>
 							<li>
@@ -116,8 +97,32 @@
 					<fieldset>
 						<ul>
 							<li>
+								<label for="txtFirstName">
+									First Name <span class="required">*</span><br>
+								</label>
+								<input  
+									type="text" 
+									name="txtFirstName" 
+									id="txtFirstName" 
+									placeholder="Your first name"
+									onblur="warnInvalidFirstName('txtFirstName')">
+							</li>
+							<li id="errFirstName" class="errorMessage"></li>
+							<li>
+								<label for="txtLastName">
+									<br>Last Name <span class="required">*</span><br>
+								</label>
+								<input  
+									type="text" 
+									name="txtLastName" 
+									id="txtLastName" 
+									placeholder="Your last name"
+									onblur="warnInvalidLastName('txtLastName')">
+							</li>
+							<li id="errLastName" class="errorMessage"></li>
+							<li>
 								<label for="txtNewUser">
-									Username <span class="required">*</span><br>
+									<br>Username <span class="required">*</span><br>
 								</label>
 								<input  
 									type="text" 
@@ -151,7 +156,7 @@
 									onblur="verifyMatchingPassword('txtVerify')">
 							</li>
 							<li id="errVerify" class="errorMessage"></li>
-							<li>									
+							<!--O <li>									
 								<label for="txtEmail">
 									<br>E-mail <span class="required">*</span><br>
 								</label>
@@ -162,7 +167,7 @@
 									placeholder="name@domain.com"
 									onblur="warnInvalidEmail('txtEmail')">
 							</li>
-							<li id="errEmail" class="errorMessage"></li>
+							<li id="errEmail" class="errorMessage"></li> -->
 							<li>
 								<input 
 									type="submit" 
@@ -178,50 +183,7 @@
 			</div>
 		</div>
 	</main>	
-
-	<!--footer-->
-	<footer>
-		<div class="footbox0">
-			<div id="info">
-				<div id="hours">
-					Weekdays 8 - 4 | Weekends 10 - 3  <br>
-					<a href="tel:6048888888">(604) 888 - 8888</a>
-				</div>
-				<div id="slogan">
-					- A little bliss in every bite -
-				</div>
-				<div id="address">
-					1234 Bakery Lane Vancouver <br>
-					B.C. Canada V8W 5K9
-				</div>
-			</div>
-		</div>
-		<div class="footbox1">
-			<div id="anchor">
-				<div id="links"> 
-					<a href="aboutus.html" id="aboutus">About Us</a> |
-					<a href="products.html">Products</a> |
-					<a href="catering.html">Catering</a> |
-					<a href="testimonials.html">Reviews</a> |
-					<a href="contact.html">Contact Us</a>
-				</div>
-				<div id="logo2">
-					<a href="index.html"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
-				</div>
-				<div id="sm">
-					<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
-					<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"></a>
-					<a href="https://www.instagram.com" class="fa fa-pinterest fa-2x"></a>
-					<a href="https://www.pinterest.com" class="fa fa-instagram fa-2x"></a>
-				</div>
-			</div>
-		</div>
-		<div class="footbox2">
-			<div id="copyr">
-				Copyright &copy; Madeleine's, All Rights Reserved
-			</div>
-		</div>
-	</footer>
+	<?php include 'footer.php'; ?>
 </body>
 
 </html>
