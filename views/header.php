@@ -1,4 +1,5 @@
 <header>
+	<script src="../javascript/dropdown.js"></script>
 	<nav>
 		<div id="logo">
 			<a href="index.php"><img src="../images/logo.png" alt="Madeleine's"></a>
@@ -25,7 +26,14 @@
 		</div>
 		<div id="navshop">
 			<a href="cart.php" class="fa fa-shopping-cart fa-2x"></a>
-			<a href="signin.php" class="fa fa-user-circle fa-2x"></a>
+			<div class="dropdown">
+				<a class="fa fa-user-circle fa-2x dropbtn" onclick="drop()"></a>
+				<div id="thisDropdown" class="dropdown-content">
+					<a href="useraccount.php">Account</a>
+					<a href="../forum/forum.php">Forum</a>
+					<a href="#">Log out</a>
+				</div>
+			</div>
 		</div>
 	</nav>
 	<!--Keep the "clear" div so all the floated divs stay in the header-->

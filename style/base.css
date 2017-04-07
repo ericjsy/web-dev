@@ -245,3 +245,30 @@ footer {
 #printlogo {
 	display: none;
 }
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 25%;
+	top: 52px;
+}
+
+#navshop #thisDropdown.dropdown-content a {
+	background-color: #F7D0BB;
+	color: black;
+	padding: 8px 10px;
+	width: 120px;
+}
+
+#navshop #thisDropdown a:hover {
+	background-color: #9B3417;
+	color: #F7D0BB;
+}
+
+.show {
+	display: block;
+}
