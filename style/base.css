@@ -42,7 +42,7 @@ nav {
 }
 
 #navbar ul {
-	margin: 16px;
+	margin: 15px;
 }
 
 #navbar a{
@@ -55,11 +55,11 @@ nav a{
 }
 
 #logo{
-	flex: 1;
+	flex: 2;
 }
 
 #navbar {
-	flex: 3;
+	flex: 5;
 }
 
 #navbar li {
@@ -81,7 +81,7 @@ nav a{
 }
 
 #navshop a{
-	padding: 10px 0 10px 65px;
+	padding: 10px 15px;
 	float: right;
 }
 
@@ -244,4 +244,11 @@ footer {
 
 #printlogo {
 	display: none;
+}
+
+#welcome {
+	flex: 1;
+	margin: 15px;
+	font-family: Verdana, Arial, sans-serif;
+	color: #F7D0BB;
 }
