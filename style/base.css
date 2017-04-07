@@ -2,6 +2,18 @@ a {
 	text-decoration: none;
 }
 
+nav a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: none;
+}
+
 html {
     position: relative;
 }
