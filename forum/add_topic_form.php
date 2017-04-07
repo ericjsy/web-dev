@@ -7,20 +7,23 @@
 <head>
 		<meta charset="utf-8">
 		<title>Create topic</title>
+
+		<link rel="stylesheet" href="../style/base.css" media="screen">
+		<link rel="stylesheet" href="css/forumNewTopic.css" media="screen">
 </head>
 <body>
-<table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+<table id="parentTable" align="center">
 <tr>
 <form id="form1" name="form1" method="post" action="add_topic.php">
 <td>
-<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+<table id="childTable" border="0">
 <tr>
-<td colspan="3" bgcolor="#E6E6E6"><strong>Create New Topic</strong> </td>
+<th colspan="3"><strong>Create New Topic</strong> </td>
 </tr>
 <tr>
 <td width="14%"><strong>Topic</strong></td>
 <td width="2%">:</td>
-<td width="84%"><input name="topic" type="text" id="topic" size="50" /></td>
+<td width="84%"><input name="topic" type="text" id="topic" /></td>
 </tr>
 <tr>
 <td valign="top"><strong>Detail</strong></td>
@@ -30,7 +33,7 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Submit" /> <input type="reset" name="Submit2" value="Reset" /></td>
+<td><input type="submit" class="submit" name="Submit" value="Submit" /> <input type="reset" class="submit" name="Submit2" value="Reset" /></td>
 </tr>
 </table>
 </td>

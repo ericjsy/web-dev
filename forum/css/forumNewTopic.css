@@ -1,0 +1,48 @@
+table, td, th {
+	padding: 10px;
+	border-collapse: collapse;
+}
+
+#parentTable {
+	align: center;
+	background-color: #F7D0BB;
+	cellpadding: 0;
+	cellspacing: 1;
+	margin-top: 10px;
+	width: 400px;
+}
+
+#childTable {
+	background-color: #FFFFFF;
+	cellpadding: 3; 
+	cellspacing: 1; 
+	width: 100%;
+}
+
+table {
+	border: 1px solid #9B3417;
+}
+
+th {
+	background-color: white;
+}
+
+#topic {
+	width: 369px;
+}
+
+.submit {
+	background-color: #9B3417;
+	border-style: none;
+	color: white;
+	height: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100px;
+}	
+
+.submit:hover {
+    transition: all .5s ease-in-out;
+	background-color: #7B1403;
+	cursor: pointer;
+}

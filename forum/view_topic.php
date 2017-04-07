@@ -20,29 +20,40 @@
 	// Question 1b: Display response portion only when user is logged in
 	
 	if (!isLoggedIn()){
-		echo 'Please login to post / view comments!';
+		header("location: ../views/signin.php");
 		exit();
 	}
 ?>
-<table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<title>View topic</title>
+
+		<link rel="stylesheet" href="../style/base.css" media="screen">
+		<link rel="stylesheet" href="css/forumViewTopic.css" media="screen">
+</head>
+
+<table id="outerTopic" border="0" align="center">
 <tr>
-<td><table width="100%" border="0" cellpadding="3" cellspacing="1" bordercolor="1" bgcolor="#FFFFFF">
+<td><table id="innerTopic" border="0">
 <tr>
-<td bgcolor="#F8F7F1"><strong><?php echo $rows['topic']; ?></strong></td>
+<td><strong><?php echo $rows['topic']; ?></strong></td>
 </tr>
 
 <tr>
-<td bgcolor="#F8F7F1"><?php echo $rows['detail']; ?></td>
+<td><?php echo $rows['detail']; ?></td>
 </tr>
 
 <tr>
-<td bgcolor="#F8F7F1"><strong>By :</strong><?php echo $rows['firstname']; ?></td>
+<td><strong>By : </strong><?php echo $rows['firstname']; ?></td>
 </tr>
 
 <!-- Add name after By : -->
 
 <tr>
-<td bgcolor="#F8F7F1"><strong>Date/time : </strong><?php echo $rows['datetime']; ?></td>
+<td><strong>Date/time : </strong><?php echo $rows['datetime']; ?></td>
 </tr>
 </table></td>
 </tr>
@@ -57,28 +68,28 @@ $result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql2);
 
 while($rows=mysqli_fetch_array($result2)){
 ?>
-<table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+<table id="outerResponse" border="0" align="center">
 <tr>
-<td><table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+<td><table id="innerResponse" border="0" cellpadding="3" cellspacing="1">
 <tr>
-<td bgcolor="#F8F7F1"><strong>ID</strong></td>
-<td bgcolor="#F8F7F1">:</td>
-<td bgcolor="#F8F7F1"><?php echo $rows['id']; ?></td>
+<td><strong>ID</strong></td>
+<td>:</td>
+<td><?php echo $rows['id']; ?></td>
 </tr>
 <tr>
-<td width="18%" bgcolor="#F8F7F1"><strong>Name</strong></td>
-<td width="5%" bgcolor="#F8F7F1">:</td>
-<td width="77%" bgcolor="#F8F7F1"><?php echo $rows['firstname']; ?></td>
+<td width="18%"><strong>Name</strong></td>
+<td width="5%">:</td>
+<td width="77%"><?php echo $rows['firstname']; ?></td>
 </tr>
 <tr>
-<td bgcolor="#F8F7F1"><strong>Response</strong></td>
-<td bgcolor="#F8F7F1">:</td>
-<td bgcolor="#F8F7F1"><?php echo $rows['response']; ?></td>
+<td><strong>Response</strong></td>
+<td>:</td>
+<td><?php echo $rows['response']; ?></td>
 </tr>
 <tr>
-<td bgcolor="#F8F7F1"><strong>Date/Time</strong></td>
-<td bgcolor="#F8F7F1">:</td>
-<td bgcolor="#F8F7F1"><?php echo $rows['datetime']; ?></td>
+<td><strong>Date/Time</strong></td>
+<td>:</td>
+<td><?php echo $rows['datetime']; ?></td>
 </tr>
 </table></td>
 </tr>
@@ -90,20 +101,20 @@ while($rows=mysqli_fetch_array($result2)){
 ?>
 
 <BR>
-<table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+<table id="outerInput" border="0" align="center">
 <tr>
 <form name="form1" method="post" action="add_response.php">
 <td>
-<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+<table id="innerInput" border="0">
 <tr>
 <td valign="top"><strong>Response</strong></td>
 <td valign="top">:</td>
-<td><textarea name="response" cols="45" rows="3" id="answer"></textarea></td>
+<td><textarea name="response" cols="45" rows="7" id="answer"></textarea></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td><input name="id" type="hidden" value="<?php echo $id; ?>"></td>
-<td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="Submit2" value="Reset"></td>
+<td><input type="submit" class="submit" name="Submit" value="Submit"> <input type="reset" class="submit" name="Submit2" value="Reset"></td>
 </tr>
 </table>
 </td>

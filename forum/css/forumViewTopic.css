@@ -1,0 +1,57 @@
+#outerTopic {
+	width: 400px;
+	background-color: #F7D0BB;
+}
+
+#innerTopic {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+#outerResponse {
+	width: 400px;
+	background-color: #F7D0BB;
+}
+
+#innerResponse {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+#outerInput {
+	width: 400px;
+	background-color: #F7D0BB;
+}
+
+#innerInput {
+	width: 100%;
+	background-color: #FFFFFF;;
+}
+
+table {
+	border: 1px solid #9B3417;
+}
+
+th {
+	background-color: white;
+}
+
+td {
+	padding: 5px;
+}
+
+.submit {
+	background-color: #9B3417;
+	border-style: none;
+	color: white;
+	height: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100px;
+}	
+
+.submit:hover {
+    transition: all .5s ease-in-out;
+	background-color: #7B1403;
+	cursor: pointer;
+}

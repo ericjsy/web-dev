@@ -6,51 +6,11 @@
 	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB");
 	$tbl_name="topic"; // Table name
 
-<<<<<<< HEAD
-	// Question 1c) Modify our SQL statement to get poster name
-	
-=======
->>>>>>> efdbc93bdc19031fd1a3101fe5deb9eff61c223e
 	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id";
 	// ORDER BY id DESC is order result by descending
 	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 ?>
 
-<<<<<<< HEAD
-<table width="90%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
-<tr>
-<td width="6%" align="center" bgcolor="#E6E6E6"><strong>#</strong></td>
-<td width="53%" align="center" bgcolor="#E6E6E6"><strong>Topic</strong></td>
-<td width="7%" align="center" bgcolor="#E6E6E6"><strong>Date/Time</strong></td>
-
-<!-- Question 1c) Add header cell Name -->
-
-<td width="6%" align="center" bgcolor="#E6E6E6"><strong>Name</strong></td>
-</tr>
-
-<?php
-while($rows=mysqli_fetch_array($result)){ // Start looping table row
-?>
-
-<tr>
-<td bgcolor="#FFFFFF"><?php echo $rows['id']; ?></td>
-<td bgcolor="#FFFFFF"><a href="view_topic.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['topic']; ?></a><BR></td>
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['datetime']; ?></td>
-
-<!-- Question 1c) Add user name here -->
-<td align="center" bgcolor="#FFFFFF"><?php echo $rows['firstname']; ?></td>
-</tr>
-
-<?php
-// Exit looping and close connection
-}
-((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
-?>
-<tr>
-<td colspan="5" align="right" bgcolor="#E6E6E6"><a href="add_topic_form.php"><strong>Create New Topic</strong> </a></td>
-</tr>
-</table>
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,8 +18,8 @@ while($rows=mysqli_fetch_array($result)){ // Start looping table row
 	<meta charset="utf-8">
 	<title>Madeleine's</title>
 	<link rel="stylesheet" href="style/printbase.css" media="print">
-	<link rel="stylesheet" href="style/base.css" media="screen">
-	<link rel="stylesheet" href="style/forum.css" media="screen">
+	<link rel="stylesheet" href="../style/base.css" media="screen">
+	<link rel="stylesheet" href="css/forum.css" media="screen">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -113,9 +73,9 @@ while($rows=mysqli_fetch_array($result)){ // Start looping table row
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 
 	<button id="addtopic">
-		<a href="add_topic_form.php">>>>New Topic<<<</a>
+		<a href="add_topic_form.php">New Topic</a>
 	</button>
-			
+		
 	<table>
 	<tr>
 	<th>Name</th>
@@ -188,4 +148,3 @@ while($rows=mysqli_fetch_array($result)){ // Start looping table row
 </body>
 
 </html>
->>>>>>> efdbc93bdc19031fd1a3101fe5deb9eff61c223e

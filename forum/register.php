@@ -41,27 +41,21 @@
 	
 	//Input Validations
 	if($fname == '') {
-		$errmsg_arr[] = 'First name missing';
 		$errflag = true;
 	}
 	if($lname == '') {
-		$errmsg_arr[] = 'Last name missing';
 		$errflag = true;
 	}
 	if($login == '') {
-		$errmsg_arr[] = 'Login ID missing';
 		$errflag = true;
 	}
 	if($password == '') {
-		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
 	if($cpassword == '') {
-		$errmsg_arr[] = 'Confirm password missing';
 		$errflag = true;
 	}
 	if( strcmp($password, $cpassword) != 0 ) {
-		$errmsg_arr[] = 'Passwords do not match';
 		$errflag = true;
 	}
 	

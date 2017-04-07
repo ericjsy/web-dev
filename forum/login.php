@@ -38,11 +38,9 @@
 	
 	//Input Validations
 	if($login == '') {
-		$errmsg_arr[] = 'Login ID missing';
 		$errflag = true;
 	}
 	if($password == '') {
-		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
 	
@@ -50,7 +48,7 @@
 	if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 		session_write_close();
-		header("location: login_form.php");
+		header("location: ../views/signin.php");
 		exit();
 	}
 	
@@ -74,7 +72,7 @@
 			//Login failed
 			$errmsg_arr[] = 'Login failed';
 			$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-			header("location: login_form.php");
+			header("location: ../views/signin.php");
 			exit();
 		}
 	}else {
