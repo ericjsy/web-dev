@@ -24,6 +24,14 @@
 				</li>
 			</ul>
 		</div>
+		<div id="welcome">
+			<?php
+				if (isLoggedIn()){
+					echo "<a href='logout.php'>".$_SESSION['SESS_FIRST_NAME'].'  '.$_SESSION['SESS_LAST_NAME']."</a>";
+				}
+			?>
+			
+		</div>
 		<div id="navshop">
 			<a href="cart.php" class="fa fa-shopping-cart fa-2x"></a>
 			<div class="dropdown">
@@ -37,5 +45,7 @@
 		</div>
 	</nav>
 	<!--Keep the "clear" div so all the floated divs stay in the header-->
+	
+
 	<div class="clear"></div>
-</header> 
+</header>

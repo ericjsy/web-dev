@@ -111,3 +111,19 @@ button {
 body {
 	min-height: 110vh;
 }
+
+a{
+	text-decoration: none;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: none;
+}

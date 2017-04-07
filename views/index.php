@@ -8,14 +8,12 @@
 	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB, error: ".((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)));
 	$tbl_name="topic"; // Table name // CHANGE ME
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<title>Madeleine's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<link rel="stylesheet" href="../style/index.css" media="screen">
 	<link rel="stylesheet" href="../style/printbase.css" media="print">
@@ -39,9 +37,9 @@
 		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
 		<div id="slideshow">
 			<div class="w3-display-container">
-			  <img class="mySlides" src="../images/slideshow/cupcakes.jpg" alt="Cupcake Slideshow" width="2048" height="961">
-			  <img class="mySlides" src="../images/slideshow/fruitcake.jpg" alt="Fruitcake Slideshow" width="2048" height="961">
-			  <img class="mySlides" src="../images/slideshow/macarons.jpg" alt="Macarons Slideshow" width="2048" height="961">
+			  <img class="mySlides" src="../images/slideshow/a.png" alt="a Slideshow" width="2048" height="961">
+			  <img class="mySlides" src="../images/slideshow/b.png" alt="b Slideshow" width="2048" height="961">
+			  <img class="mySlides" src="../images/slideshow/c.png" alt="c Slideshow" width="2048" height="961">
 			  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
 				<div id="goleft" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
 				<div id="goright" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>

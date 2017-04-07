@@ -1,7 +1,6 @@
 /* Main content padding for appearance */
 
 #slideshow {
-	background-image: url('../images/Slideshow/cupcakes.jpg');
 	margin: 0;
 	width: 100%;
 }	
@@ -10,6 +9,10 @@
 	margin: 0;
 	width: 100vw;
 	height: 80vh;
+}
+
+.hidden {
+	display: none;
 }
 
 .w3-display-container {
