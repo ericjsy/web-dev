@@ -1,31 +1,17 @@
 #outerTopic {
 	width: 400px;
+	margin-top: 20px;
 	background-color: #F7D0BB;
 }
 
-#innerTopic {
+#innerTopic, #innerResponse, #innerInput {
 	width: 100%;
 	background-color: #FFFFFF;
 }
 
-#outerResponse {
+#outerResponse, #outerInput {
 	width: 400px;
 	background-color: #F7D0BB;
-}
-
-#innerResponse {
-	width: 100%;
-	background-color: #FFFFFF;
-}
-
-#outerInput {
-	width: 400px;
-	background-color: #F7D0BB;
-}
-
-#innerInput {
-	width: 100%;
-	background-color: #FFFFFF;;
 }
 
 table {
@@ -54,4 +40,13 @@ td {
     transition: all .5s ease-in-out;
 	background-color: #7B1403;
 	cursor: pointer;
+}
+
+.return {
+	color: #9B3417;
+	float: right;
+}
+
+.return:hover {
+	text-decoration: underline;
 }
