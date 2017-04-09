@@ -87,9 +87,9 @@
 						<li id="errLastName" class="errorMessage"></li>
 						<li>
 							<label for="txtPhone_0">
-								<br>Contact Number <span class="required">*</span><br>
+								<br>Contact Number <span class="required">*</span>
 							</label>
-							<input 
+							<br><input 
 								type="text" 
 								class="tel"
 								id="txtPhone_0"
