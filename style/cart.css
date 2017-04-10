@@ -12,7 +12,7 @@ table {
 	width: 70%;
 	margin: auto;
 	float: left;
-	border: 1px solid #9B3417;
+	border: 3px solid #9B3417;
 	border-radius: 15px;
 	box-sizing: border-box;
 	padding: 50px;
@@ -75,11 +75,11 @@ td:not(:first-child) {
 	background-color: #9B3417;
 	border-style: none;	
 	color: white;
-	height: 60px;
+	height: 98px;
 	font-family: Verdana;
 	font-size: 20px;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 33px;
 }
 
 .extraspace{
@@ -91,6 +91,10 @@ td:not(:first-child) {
 	margin: 15px;
 	font-family: Verdana;
 	line-height: 26.4px;
+}
+
+#order p {
+	padding: 5px 0;
 }
 
 .leftside{
@@ -118,6 +122,7 @@ td:not(:first-child) {
 	text-decoration: none;
 	position: absolute;
 	padding: 33px 0px;
+	bottom: 0;
 }
 .finalize:visited{
 	color: white;

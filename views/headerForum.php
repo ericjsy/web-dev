@@ -27,21 +27,30 @@
 		<div id="welcome">
 			<?php
 				if (isLoggedIn()){
-					echo "<a href='../views/logout.php'>".$_SESSION['SESS_FIRST_NAME'].'  '.$_SESSION['SESS_LAST_NAME']."</a>";
+					echo $_SESSION['SESS_FIRST_NAME'].'  '.$_SESSION['SESS_LAST_NAME'];
 				}
 			?>
 			
 		</div>
 		<div id="navshop">
-			<a href="../views/cart.php" class="fa fa-shopping-cart fa-2x"></a>
-			<div class="dropdown">
-				<a class="fa fa-user-circle fa-2x dropbtn" onclick="drop()"></a>
-				<div id="thisDropdown" class="dropdown-content">
-					<a href="../views/useraccount.php">Account</a>
-					<a href="forum.php">Forum</a>
-					<a href="#">Log out</a>
-				</div>
-			</div>
+			<a href='../views/cart.php' class='fa fa-shopping-cart fa-2x'></a>
+			<?php
+				if (isLoggedIn()){
+					echo "
+					<div class='dropdown'>
+						<a class='fa fa-user-circle fa-2x dropbtn' onclick='drop()'></a>
+						<div id='thisDropdown' class='dropdown-content'>
+							<a href='../views/useraccount.php'>Account</a>
+							<a href='forum.php'>Forum</a>
+							<a href='../views/logout.php'>Log out</a>
+						</div>
+					</div>
+					";
+				} else {
+					echo "<a href='../views/signin.php' class='fa fa-user-circle fa-2x'></a>";
+				}
+			?>
+			
 		</div>
 	</nav>
 	<!--Keep the "clear" div so all the floated divs stay in the header-->

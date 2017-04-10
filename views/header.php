@@ -27,21 +27,30 @@
 		<div id="welcome">
 			<?php
 				if (isLoggedIn()){
-					echo "<a href='logout.php'>".$_SESSION['SESS_FIRST_NAME'].'  '.$_SESSION['SESS_LAST_NAME']."</a>";
+					echo $_SESSION['SESS_FIRST_NAME'].'  '.$_SESSION['SESS_LAST_NAME'];
 				}
 			?>
 			
 		</div>
 		<div id="navshop">
-			<a href="cart.php" class="fa fa-shopping-cart fa-2x"></a>
-			<div class="dropdown">
-				<a class="fa fa-user-circle fa-2x dropbtn" onclick="drop()"></a>
-				<div id="thisDropdown" class="dropdown-content">
-					<a href="useraccount.php">Account</a>
-					<a href="../forum/forum.php">Forum</a>
-					<a href="#">Log out</a>
-				</div>
-			</div>
+			<a href='cart.php' class='fa fa-shopping-cart fa-2x'></a>
+			<?php
+				if (isLoggedIn()){
+					echo "
+					<div class='dropdown'>
+						<a class='fa fa-user-circle fa-2x dropbtn' onclick='drop()'></a>
+						<div id='thisDropdown' class='dropdown-content'>
+							<a href='useraccount.php'>Account</a>
+							<a href='../forum/forum.php'>Forum</a>
+							<a href='logout.php'>Log out</a>
+						</div>
+					</div>
+					";
+				} else {
+					echo "<a href='signin.php' class='fa fa-user-circle fa-2x'></a>";
+				}
+			?>
+			
 		</div>
 	</nav>
 	<!--Keep the "clear" div so all the floated divs stay in the header-->

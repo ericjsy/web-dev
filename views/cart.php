@@ -35,7 +35,7 @@
 	<main id="main">
 		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<form class="cart" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4)">
+		<form class="cart" action="checkout.php" method="post" onsubmit="return validCart(txtQuantity1, txtQuantity2, txtQuantity3, txtQuantity4)">
 		<div id="leftcont">
 			<table>
 				<tr>
@@ -77,9 +77,8 @@
 				<div id="order">
 					<p><span class="leftside">Subtotal:</span><span class="rightside" id="txtSubtotal">$0.00</span></p>
 					<p><span class="leftside">Tax: </span><span class="rightside" id="txtTax">$0.00</span></p>
-					<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup"> --- </span></p>				
+					<p><span class="leftside">Pickup time: </span><span class="rightside" id="txtPickup"> Apr. 18th 2017 </span></p>				
 					<p><span class="leftside">Total: </span><span class="rightside" id="txtTotal">$0.00</span></p>
-					<div class="extraspace"></div>
 					<div><span id="errCart" class="errorMessage">&nbsp;</span></div>
 				</div>
 				<div class="finalize">

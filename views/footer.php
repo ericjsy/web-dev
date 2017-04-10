@@ -29,8 +29,8 @@
 			<div id="sm">
 				<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
 				<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"></a>
-				<a href="https://www.instagram.com" class="fa fa-pinterest fa-2x"></a>
-				<a href="https://www.pinterest.com" class="fa fa-instagram fa-2x"></a>
+				<a href="https://www.pinterest.com" class="fa fa-pinterest fa-2x"></a>
+				<a href="https://www.instagram.com" class="fa fa-instagram fa-2x"></a>
 			</div>
 		</div>
 	</div>

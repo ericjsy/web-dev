@@ -252,15 +252,15 @@
 					</td>
 					<td class="thumbnails">
 						<figure class="egg">
-							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cuBCC')">
-								<img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="butter cream cupcake" id="cuBCC">
+							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cuVC')">
+								<img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="vanilla cupcake" id="cuVC">
 							</button>
 							<br>
 							<div class="tooltip">
 								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
-							<figcaption>Butter Cream Cupcake</figcaption>
+							<figcaption>Vanilla Cupcake</figcaption> 
 						</figure>
 					</td>
 				</tr>
@@ -409,11 +409,11 @@
 								</tr>
 							</table>
 							<div class="add">
-								<form id="amount" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validPopUp('txtQuantity')">
+								<form id="amount" action="javascript:void(0);" method="post" onsubmit="return validPopUp('txtQuantity')">
 									<br> <label for="txtQuantity">How many would you like? (1 - 100) </label> <br>
 									<input type="text" name="txtQuantity" id="txtQuantity" onblur="warnInvalidQuantity('txtQuantity')">
 								<div id="tocart">
-									<input id="submit" type="submit" accesskey="S" value="Add to Cart">
+									<button type="button" data-dismiss="modal"><input id="submit" type="submit" accesskey="S" value="Add to Cart"></button>
 								</div>
 								<p id="errQuantity" class="errorMessage"></p>
 								</form>
