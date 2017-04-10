@@ -7,7 +7,7 @@ function hideGluten() {
 		}
 	} else {
 		for ( var j=0; j<listGluten.length; j++ ){
-			listGluten[j].style.display = "block";
+			listGluten[j].style.visibility = "visible";
 		}
 	}
 }
@@ -21,7 +21,7 @@ function hideEgg() {
 		}
 	} else {
 		for ( var j=0; j<listEgg.length; j++ ){
-			listEgg[j].style.display = "block";
+			listEgg[j].style.visibility = "visible";
 		}
 	}
 }
@@ -35,7 +35,7 @@ function hideMilk() {
 		}
 	} else {
 		for ( var j=0; j<listMilk.length; j++ ){
-			listMilk[j].style.display = "block";
+			listMilk[j].style.visibility = "visible";
 		}
 	}
 }
@@ -49,7 +49,7 @@ function hidePeanut() {
 		}
 	} else {
 		for ( var j=0; j<listNut.length; j++ ){
-			listNut[j].style.display = "block";
+			listNut[j].style.visibility = "visible";
 		}
 	}
 }
