@@ -64,7 +64,7 @@
 			</div>
 			<div class="rightcol">
 				<div class="accinfo">
-					<h3> Account info</h3>
+					<h1> Account info</h1>
 					<div id="email">
 						<p> E-mail: desserts@madeleine.ca 
 						<!-- <button class="change">Change E-mail</button> -->
@@ -84,16 +84,16 @@
 							Previous pastries
 							<div class="clear"></div>
 							<br>
-							<img src="../images/products/cakes3.jpg" alt="Cake" width="150" height="112">
-							<img src="../images/products/cakes2.jpg" alt="Cake" width="150" height="112">
-							<img src="../images/products/cupcakes2.jpg" alt="Cupcake" width="150" height="112">
-							<img src="../images/products/cupcakes.jpg" alt="Cupcake" width="150" height="112">
+							<img src="../images/products/cakes3.jpg" alt="Strawberry Cake" width="150" height="112">
+							<img src="../images/products/cakes2.jpg" alt="Chocolate Tart" width="150" height="112">
+							<img src="../images/products/cupcakes2.jpg" alt="Chocolate Cupcake" width="150" height="112">
+							<img src="../images/products/cupcakes.jpg" alt="Lime Cupcake" width="150" height="112">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 	</main>
 	<?php include 'footer.php'; ?>
 </body>

@@ -35,14 +35,15 @@
 	<?php include 'header.php'; ?>
     <main id ="main">
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<div id="wrapper">
 			<div id="leftcol">
-				<h2>
+				<h1>
 					Sign in
-				</h2>
+				</h1>
 				<form id="login" action="login.php" method="post" onsubmit="return validLogin()">
 					<fieldset>
+						<legend class="emptyLegend"></legend>
 						<ul>
 							<li>
 								<label for="txtUsername">
@@ -69,8 +70,7 @@
 								<input 
 									class="submit" 
 									type="submit" 
-									name="login"
-									accesskey="L"							
+									name="login"							
 									value="Login">
 							</li>
 							<li id="errLogin"></li>
@@ -90,11 +90,12 @@
 				</form>
 			</div>
 			<div id="rightcol">
-				<h2>
+				<h1>
 					Create a new account
-				</h2>
+				</h1>
 				<form id="signIn" action="register.php" method="post" onsubmit="return validSignup()">	
 					<fieldset>
+						<legend class="emptyLegend"></legend>
 						<ul>
 							<li>
 								<label for="txtFirstName">
@@ -173,7 +174,6 @@
 									type="submit" 
 									class="submit" 
 									name="submit"
-									accesskey="S"
 									value="Submit">
 							</li>
 							<li id="errSignUp"></li>
