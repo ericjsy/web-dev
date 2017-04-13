@@ -145,7 +145,7 @@
 					<td class="thumbnails">
 						<figure class="milk">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cCT')">
-								<img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tarts">
+								<img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tarts" id="cCT">
 							</button>
 							<br>
 							<div class="tooltip">
@@ -408,12 +408,12 @@
 									<td>14%</td>
 								</tr>
 							</table>
-							<div class="add">
-								<form id="amount" action="javascript:void(0);" method="post" onsubmit="return validPopUp('txtQuantity')">
+							<div class="add"> <!-- javascript:void(0); -->
+								<form id="amount" action="cart.php" method="post" onsubmit="return validPopUp('txtQuantity')">
 									<br> <label for="txtQuantity">How many would you like? (1 - 100) </label> <br>
 									<input type="text" name="txtQuantity" id="txtQuantity" onblur="warnInvalidQuantity('txtQuantity')">
 								<div id="tocart">
-									<button type="button" data-dismiss="modal"><input id="submit" type="submit" value="Add to Cart"><span class="emptyLink">Add To Cart</span></button>
+								<input id="submit" type="submit" value="Add to Cart"><span class="emptyLink">Add To Cart</span>
 								</div>
 								<p id="errQuantity" class="errorMessage"></p>
 								</form>
