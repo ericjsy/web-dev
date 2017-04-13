@@ -10,13 +10,12 @@
 
 	// get value of id that sent from address bar
 	$id=$_GET['id'];
-	
-	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id";
-	// ORDER BY id DESC is order result by descending
+
+	//id is ordered descending
+	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id ORDER BY id DESC";
+
 	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 
-	$rows=mysqli_fetch_array($result);
-	
 	if (!isLoggedIn()){
 		header("location: ../views/signin.php");
 		exit();

@@ -1,3 +1,7 @@
+input, textarea {
+	font-family: Verdana, Arial, sans-serif;
+}
+
 #outerTopic {
 	width: 400px;
 	margin-top: 20px;

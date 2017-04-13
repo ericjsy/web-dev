@@ -45,12 +45,12 @@ a:hover {
 	border-radius: 10px;
 }
 
-#addtopic a {
+a #addtopic {
 	color: #F7D0BB;
 }
 
-#addtopic:hover {
-    	transition: all .5s ease-in-out;
+a #addtopic:hover {
+   	transition: all .5s ease-in-out;
 	background-color: #7B1403;
 	cursor: pointer;
 }
