@@ -49,9 +49,7 @@
 		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 
-		<button id="addtopic">
-			<a href="add_topic_form.php">New Topic</a>
-		</button>
+		<a href="add_topic_form.php"><button id="addtopic">New Topic</button></a>
 			
 		<table>
 		<tr>
