@@ -56,7 +56,8 @@
 				</p>
 			</div>
 			<form id="cateringForm" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validCatering()">
-				<fieldset>					
+				<fieldset>
+					<legend class="emptyLegend"></legend>
 					<h2>
 						Contact Information
 					</h2>
@@ -95,14 +96,14 @@
 								id="txtPhone_0"
 								name="txtPhone_0" 
 								placeholder="###"
-								onblur="warnInvalidPhone('txtPhone_0', 'txtPhone_1', 'txtPhone_2')"> -
+								onblur="warnInvalidPhone('txtPhone_0', 'txtPhone_1', 'txtPhone_2')"> <label for="txtPhone_1">-</label>
 							<input 
 								type="text" 
 								class="tel" 
 								id="txtPhone_1"
 								name="txtPhone_1" 
 								placeholder="###"
-								onblur="warnInvalidPhone('txtPhone_0', 'txtPhone_1', 'txtPhone_2')"> -
+								onblur="warnInvalidPhone('txtPhone_0', 'txtPhone_1', 'txtPhone_2')"> <label for="txtPhone_2">-</label>
 							<input 
 								type="text" 
 								class="tel" 
@@ -127,6 +128,7 @@
 					</ul>
 				</fieldset>
 				<fieldset>
+					<legend class="emptyLegend"></legend>
 					<h2>
 						Event Information
 					</h2>
@@ -192,6 +194,7 @@
 					</ul>
 				</fieldset>
 				<fieldset>
+					<legend class="emptyLegend"></legend>
 					<h2>
 						Order Form
 					</h2>
@@ -233,7 +236,7 @@
 								<table>
 									<tr>
 										<td>
-											Brownies
+											<label for="chkBrownies">Brownies</label>
 										</td>
 										<td>
 											<input 
@@ -243,7 +246,7 @@
 												value="yes">
 										</td>
 										<td>
-											Cakes
+											<label for="chkCakes">Cakes</label>
 										</td>
 										<td>
 											<input 
@@ -253,7 +256,7 @@
 												value="yes">
 										</td>
 										<td>
-											Cookies
+											<label for="chkCookies">Cookies</label>
 										</td>
 										<td>
 											<input 
@@ -265,7 +268,7 @@
 									</tr>
 									<tr>
 										<td>
-											Cupcakes
+											<label for="chkCupcakes">Cupcakes</label>
 										</td>
 										<td>
 											<input 
@@ -275,7 +278,7 @@
 												value="yes">
 										</td>
 										<td>
-											Donuts
+											<label for="chkDonuts">Donuts</label>
 										</td>
 										<td>
 											<input 
@@ -285,7 +288,7 @@
 												value="yes">
 										</td>
 										<td>
-											Macarons
+											<label for="chkMacarons">Macarons</label>
 										</td>
 										<td>
 											<input 
@@ -323,8 +326,7 @@
 							<input 
 								type="submit" 
 								class="submit"
-								name="submit"							
-								accesskey="S"
+								name="submit"
 								value="Submit">
 						</li>
 						<li id="errCatering" class="errorMessage"></li>
@@ -333,7 +335,7 @@
 			</form>
 		</div>
 		<!--leave the id="top" somewhere so we have a back to top link-->
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 	</main>
 	<?php include 'footer.php'; ?>
 
