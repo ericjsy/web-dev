@@ -68,6 +68,7 @@ time {
 
 #goleft, #goright {
 	font-size: 30px;
+	color: #9B3417;
 }
 
 .promos {
@@ -80,7 +81,7 @@ time {
 	width: 100%;
 }
 
-.promos p {
+.promos h1 {
 	background: white;
 	color: black;
 	font-size: large;

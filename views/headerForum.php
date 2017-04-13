@@ -2,8 +2,8 @@
 	<script src="../javascript/dropdown.js"></script>
 	<nav>
 		<div id="logo">
-			<a href="../views/index.php"><img src="../images/logo.png" alt="Madeleine's"></a>
-			<a href="../views/index.php"><img src="../images/cake.png" alt="cake"></a>
+			<a href="../views/index.php"><img src="../images/logo.png" alt="Madeleine's">
+			<img src="../images/cake.png" alt="cake"></a>
 		</div>
 		<div id="navbar">
 			<ul>
@@ -33,12 +33,12 @@
 			
 		</div>
 		<div id="navshop">
-			<a href='../views/cart.php' class='fa fa-shopping-cart fa-2x'></a>
+			<a href='../views/cart.php' class='fa fa-shopping-cart fa-2x'><span class="emptyLink">Shopping Cart</span></a>
 			<?php
 				if (isLoggedIn()){
 					echo "
 					<div class='dropdown'>
-						<a class='fa fa-user-circle fa-2x dropbtn' onclick='drop()'></a>
+						<a class='fa fa-user-circle fa-2x dropbtn' onclick='drop()'><span class='emptyLink'>Drop Down Menu</span></a>
 						<div id='thisDropdown' class='dropdown-content'>
 							<a href='../views/useraccount.php'>Account</a>
 							<a href='forum.php'>Forum</a>
@@ -47,7 +47,7 @@
 					</div>
 					";
 				} else {
-					echo "<a href='../views/signin.php' class='fa fa-user-circle fa-2x'></a>";
+					echo "<a href='../views/signin.php' class='fa fa-user-circle fa-2x'><span class='emptyLink'>Sign In</span></a>";
 				}
 			?>
 			

@@ -24,13 +24,13 @@
 				<a href="contact.php">Contact Us</a>
 			</div>
 			<div id="logo2">
-				<a href="index.php"><img id="translogo" src="../images/translogo.png" alt="logo"></a>
+				<a href="index.php"><img id="translogo" src="../images/translogo.png" alt="Madeleine's logo"></a>
 			</div>
 			<div id="sm">
-				<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"></a>
-				<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"></a>
-				<a href="https://www.pinterest.com" class="fa fa-pinterest fa-2x"></a>
-				<a href="https://www.instagram.com" class="fa fa-instagram fa-2x"></a>
+				<a href="https://www.facebook.com" class="fa fa-facebook fa-2x" id="fb"><span class="emptyLink">Facebook</span></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter fa-2x"><span class="emptyLink">Twitter</span></a>
+				<a href="https://www.pinterest.com" class="fa fa-pinterest fa-2x"><span class="emptyLink">Pinterest</span></a>
+				<a href="https://www.instagram.com" class="fa fa-instagram fa-2x"><span class="emptyLink">Instagram</span></a>
 			</div>
 		</div>
 	</div>

@@ -211,7 +211,7 @@ footer {
 
 #copyr{
 	padding: 20px 0 0;
-	font-size: 80%;
+	font-size: 100%;
 }
 
 /* The back to top anchor */
@@ -290,4 +290,8 @@ footer {
 	margin: 15px;
 	font-family: Verdana, Arial, sans-serif;
 	color: #F7D0BB;
+}
+
+.emptyLink {
+	display: none;
 }

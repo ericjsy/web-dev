@@ -34,18 +34,18 @@
 	<!--main content here-->
 	<main id="main">
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<div id="slideshow">
 			<div class="w3-display-container">
 			  <img class="mySlides" src="../images/slideshow/a.png" alt="a Slideshow" width="2048" height="961">
 			  <img class="mySlides" src="../images/slideshow/b.png" alt="b Slideshow" width="2048" height="961">
 			  <img class="mySlides" src="../images/slideshow/c.png" alt="c Slideshow" width="2048" height="961">
 			  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-				<div id="goleft" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-				<div id="goright" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+				<a id="goleft" class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</a>
+				<a id="goright" class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</a>
+				<a class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></a>
+				<a class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></a>
+				<a class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></a>
 			  </div>
 			</div>
 		</div>
@@ -54,7 +54,7 @@
 		<div id="content">
 			<div class="subBanner">
 				<div class="leftbox">
-					<div class="promos"><p>Latest Event</p></div>
+					<div class="promos"><h1>Latest Event</h1></div>
 					<img id="epic1" src="../images/eventslices.jpg" alt="slice">
 					<div class="overlay">
 						<div class="text">
@@ -74,7 +74,7 @@
 					</div>
 				</div>
 				<div class="midbox">
-					<div class="promos"><p>Dessert Sales</p></div>
+					<div class="promos"><h1>Dessert Sales</h1></div>
 					<img id="epic2" src="../images/eventcups.jpg" alt="cupcakes">
 					<div class="overlay">
 						<div class="text">
@@ -91,7 +91,7 @@
 					</div>
 				</div>
 				<div class="rightbox">
-					<div class="promos"><p>Special Events</p></div>
+					<div class="promos"><h1>Special Events</h1></div>
 					<img id="epic3" src="../images/eventcakes.jpg" alt="cakes">
 					<div class="overlay">	
 						<div class="text">
