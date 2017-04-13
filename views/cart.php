@@ -47,25 +47,25 @@
 					<th class="flex1">Unit Subtotal</th>
 				</tr>
 				<tr> 
-					<td class="flex2" id="img1"><img src="../images/products/cakes3.jpg" alt="cake3"><label for="txtQuantity1"><span class="prodname">Strawberry Cake</span></label></td>
+					<td class="flex2" id="img1"><img src="../images/products/cakes3.jpg" alt="cake3"><label for="txtQuantity1" class="emptyLink"><span class="prodname">Strawberry Cake</span></label></td>
 					<td class="flex1" id="unitp1">$1.00</td>
 					<td class="flex1" id="qty1"><input id="txtQuantity1" type="text" name="txtQuantity1" onblur="onBlur()"></td>
 					<td class="flex1" id="unitst1">$0.00</td>
 				</tr>
 				<tr> 
-					<td class="flex2" id="img2"><img src="../images/products/cakes2.jpg" alt="cake2"><label for="txtQuantity2"><span class="prodname">Fluff Cake</span></label></td>
+					<td class="flex2" id="img2"><img src="../images/products/cakes2.jpg" alt="cake2"><label for="txtQuantity2" class="emptyLink"><span class="prodname">Fluff Cake</span></label></td>
 					<td class="flex1" id="unitp2">$2.00</td>
 					<td class="flex1" id="qty2"><input id="txtQuantity2" type="text" name="txtQuantity2" onblur="onBlur()"></td>
 					<td class="flex1" id="unitst2">$0.00</td>
 				</tr>
 				<tr> 
-					<td class="flex2" id="img3"><img src="../images/products/brownies2.jpg" alt="brownies2"><label for="txtQuantity3"><span class="prodname">Brown Cookie</span></label></td>
+					<td class="flex2" id="img3"><img src="../images/products/brownies2.jpg" alt="brownies2"><label for="txtQuantity3" class="emptyLink"><span class="prodname">Brown Cookie</span></label></td>
 					<td class="flex1" id="unitp3">$5.00</td>
 					<td class="flex1" id="qty3"><input id="txtQuantity3" type="text" name="txtQuantity3" onblur="onBlur()"></td>
 					<td class="flex1" id="unitst3">$0.00</td>
 				</tr>
 				<tr> 
-					<td class="flex2" id="img4"><img src="../images/products/cupcakes3.jpg" alt="cupcake3"><label for="txtQuantity4"><span class="prodname">Vanilla Cupcake</span></label></td>
+					<td class="flex2" id="img4"><img src="../images/products/cupcakes3.jpg" alt="cupcake3"><label for="txtQuantity4" class="emptyLink"><span class="prodname">Vanilla Cupcake</span></label></td>
 					<td class="flex1" id="unitp4">$10.00</td>
 					<td class="flex1" id="qty4"><input id="txtQuantity4" type="text" name="txtQuantity4" onblur="onBlur()"></td>
 					<td class="flex1" id="unitst4">$0.00</td>

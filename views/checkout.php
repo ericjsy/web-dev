@@ -32,7 +32,7 @@
 <body>
 	<?php include 'header.php'; ?>
     <main id ="main">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<h1>THANK YOU!</h1>
 		<div id="box1">
