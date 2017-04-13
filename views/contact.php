@@ -35,13 +35,13 @@
 	<?php include 'header.php'; ?>
 	<!--main content here-->
 	<main id="main">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div id="wrapper">
 			<div id="leftcol">
-				<h2>
+				<h1>
 					Location
-				</h2>
+				</h1>
 				<div id="map"><img src="../images/map.png" alt="map" width="303" height="302"></div>
 				<div id="location">
 					1234 Bakery Lane
@@ -50,11 +50,12 @@
 				</div>
 			</div>
 			<div id="rightcol">
-				<h2>
+				<h1>
 					Feedback
-				</h2>
+				</h1>
 				<form name="contact" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return validFeedback()">
 					<fieldset>
+						<legend class="emptyLegend"></legend>
 						<ul>
 							<li>
 								<label for="txtName">
@@ -96,7 +97,6 @@
 									type="submit"
 									class="submit"
 									name="submit"
-									accesskey="S"
 									value="Submit">
 							</li>
 							<li id="errFeedback"></li>

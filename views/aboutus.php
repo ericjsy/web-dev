@@ -33,7 +33,7 @@
 	<?php include 'header.php'; ?>
 	<!--main content here-->
 	<main id="main">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<div>
 			<h1>Welcome to Madeleine's!</h1>
@@ -41,7 +41,7 @@
 		<div class="boxes">
 			<div class="box1">
 				<div class="text1">
-					<h3>Our Philosophy</h3>
+					<h2>Our Philosophy</h2>
 					<p class="philosophy">
 						Baking with passion! That is how we started the business. We make our products with love and an eye for detail - baked to perfection.
 					</p><br>
@@ -52,7 +52,7 @@
 			<!--<hr>-->
 			<div class="box2">
 				<div class="text1">
-					<h3>Our History</h3>
+					<h2>Our History</h2>
 					<p class="philosophy"> 
 						In 2007, Ryan and Eric unveiled Madeleine's by opening its doors to the Vancouver market at 1234 Bakery Lane. Ryan is a third generation baker, and his grandfather operated a bakery in Vancouver since 1925.
 					</p><br>

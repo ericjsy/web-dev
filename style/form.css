@@ -18,6 +18,10 @@ fieldset {
 	width: 400px;
 }
 
+.emptyLegend {
+	display: none;
+}
+
 /* text fields */
 input, textarea {
 	border: 1px solid #eee;

@@ -21,10 +21,9 @@
 	padding-top: 8px;
 }
 
-h3 {
+h1 {
 	margin-left: 270px;
 	width: 90%;
-	font-weight: bold;
 }
 
 #products {
@@ -127,4 +126,8 @@ a:hover {
 
 nav a:hover{
 	text-decoration: none;
+}
+
+label {
+	font-weight: normal;
 }

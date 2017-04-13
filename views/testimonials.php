@@ -33,7 +33,7 @@
 	<?php include 'header.php'; ?>
 	<!--main content here-->
 	<main id="main">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
 		<h1>
 			Reviews
@@ -41,7 +41,7 @@
 		<div class="boxes">
 			<div class="box1">
 				<div class="text1">
-					<h3>Jen Graziano Mangano; West Vancouver</h3>
+					<h2>Jen Graziano Mangano; West Vancouver</h2>
 					<p class="text"><q>Thanks for creating this beautiful cake for my daughter's birthday!
 						It's gorgeous! Thanks so much for the detailed cookies.</q>
 					</p>
@@ -49,7 +49,7 @@
 			</div>
 			<div class="box2">
 				<div class="text1">
-					<h3>Yezlul and Mchel; Vancouver</h3>
+					<h2>Yezlul and Mchel; Vancouver</h2>
 					<p class="text"><q>Best. Cake. Ever!!! Madeleine's created my vision better than I even envisioned it! 
 						Unbelievable! Excellent customer service. Efficient, Professional & Patient.</q>
 					</p>
@@ -57,7 +57,7 @@
 			</div>
 			<div class="box3">
 				<div class="text1">
-					<h3>Megan & Chris; New Westminster</h3>
+					<h2>Megan & Chris; New Westminster</h2>
 			
 					<p class="text"><q>The cake you made for our wedding was even more beautiful than we imagined, 
 								and needless to say it tasted excellent too. Thank you for making our dream come true.</q></p>

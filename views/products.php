@@ -38,7 +38,7 @@
 	<!--main content here-->
 	<main id="main">
 		<img id="printlogo" src="../images/whitelogo.png" alt="print logo" width="374" height="168">
-		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"></a>
+		<a href="#" class="backup fa fa-chevron-circle-up fa-5x"><span class="emptyLink">Back to Top</span></a>
 		<div id="filter">
 			<ul>
 				<li class="special">
@@ -46,23 +46,23 @@
 				</li>
 				<li>
 					<input type="checkbox" id="chkGlutenFree" onchange="hideGluten()">
-					<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
-					Contains Gluten
+					<img src="../images/icons/gluten.png" alt="Gluten Allergies" width="20" height="20">
+					<label for="chkGlutenFree">Contains Gluten</label>
 				</li>
 				<li>
 					<input type="checkbox" id="chkEggFree" onchange="hideEgg()">
-					<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
-					Contains Eggs
+					<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
+					<label for="chkEggFree">Contains Eggs</label>
 				</li>
 				<li>
 					<input type="checkbox" id="chkLactoseFree" onchange="hideMilk()">
-					<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
-					Contains Lactose
+					<img src="../images/icons/milk.png" alt="Lactose Allergies" width="20" height="20">
+					<label for="chkLactoseFree">Contains Lactose</label>
 				</li>
 				<li>
 					<input type="checkbox" id="chkPeanutFree" onchange="hidePeanut()">
-					<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
-					Contains Nuts
+					<img src="../images/icons/peanut.png" alt="Nut Allergies" width="20" height="20">
+					<label for="chkPeanutFree">Contains Nuts</label>
 				</li>
 				<li>
 					<input type="button" onclick="resetAll()" value="Show All" class="buttons">
@@ -70,7 +70,7 @@
 			</ul>
 		</div>
 		
-		<h3> Check out our baked goods! Click your favourite dessert to add!</h3>
+		<h1>Click to view and add your favourite desserts!</h1>
 		
 	<div id="products">
 			<!--Back to top links here-->
@@ -85,11 +85,11 @@
 					<td class="thumbnails">
 						<figure>
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('bCB')">
-								<img src="../images/products/brownies.jpg" width="150" height="112" alt="chocolate brownie" id="bCB">
+								<img src="../images/products/brownies.jpg" width="150" height="112" alt="chocolate brownies" id="bCB">
 							</button>
 							<br>
 							<div class="tooltip">
-							<img src="../images/icons/allergyFree.png" alt="allergy-free" width="20" height="20">
+							<img src="../images/icons/allergyFree.png" alt="No Allergies" width="20" height="20">
 								<span class="tooltiptext">Allergy-free</span>
 							</div>
 							<figcaption>Chocolate Brownie</figcaption>
@@ -98,11 +98,11 @@
 					<td class="thumbnails">
 						<figure class="gluten">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('bISB')">
-								<img src="../images/products/brownies2.jpg" width="150" height="112" alt="iced sugar brownie" id="bISB">
+								<img src="../images/products/brownies2.jpg" width="150" height="112" alt="iced sugar brownies" id="bISB">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<img src="../images/icons/gluten.png" alt="Gluten Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains gluten</span>
 							</div>
 							<figcaption>Iced Sugar Brownie</figcaption>
@@ -111,11 +111,11 @@
 					<td class="thumbnails">
 						<figure class="milk">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('mBF')">
-								<img src="../images/products/brownies3.jpg" width="150" height="112" alt="marshmallow fudge" id="mBF">
+								<img src="../images/products/brownies3.jpg" width="150" height="112" alt="marshmallow fudges" id="mBF">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<img src="../images/icons/milk.png" alt="Lactose Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains lactose</span>
 							</div>
 							<figcaption>Marshmallow Fudge</figcaption>
@@ -132,11 +132,11 @@
 					<td class="thumbnails">
 						<figure class="egg">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cCC')">
-								<img src="../images/chocolatecake.jpg" width="150" height="112" alt="chocolate cake" id="cCC">
+								<img src="../images/chocolatecake.jpg" width="150" height="112" alt="chocolate cakes" id="cCC">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
 							<figcaption>Chocolate Cake</figcaption>
@@ -145,11 +145,11 @@
 					<td class="thumbnails">
 						<figure class="milk">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cCT')">
-								<img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tart">
+								<img src="../images/products/cakes2.jpg" width="150" height="112" alt="chocolate tarts">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<img src="../images/icons/milk.png" alt="Lactose Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains lactose</span>
 							</div>
 							<figcaption>Chocolate Tart</figcaption>
@@ -158,11 +158,11 @@
 					<td class="thumbnails">
 						<figure class="milk">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cRC')">
-								<img src="../images/products/cakes3.jpg" width="150" height="112" alt="raspberry cake" id="cRC">
+								<img src="../images/products/cakes3.jpg" width="150" height="112" alt="raspberry cakes" id="cRC">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<img src="../images/icons/milk.png" alt="Lactose Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains lactose</span>
 							</div>
 							<figcaption>Raspberry Cake</figcaption>
@@ -183,10 +183,10 @@
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<img src="../images/icons/gluten.png" alt="Gluten Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains gluten</span>
 							</div>
-							<figcaption>Blueberry Cookies</figcaption>
+							<figcaption>Blueberry Cookie</figcaption>
 						</figure>
 					</td>
 					<td class="thumbnails">
@@ -196,10 +196,10 @@
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+								<img src="../images/icons/peanut.png" alt="Nut Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains nuts</span>
 							</div>
-							<figcaption>Almond Cookies</figcaption>
+							<figcaption>Almond Cookie</figcaption>
 						</figure>
 					</td>
 					<td class="thumbnails">
@@ -209,10 +209,10 @@
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
-							<figcaption>Oatmeal Cookies</figcaption>
+							<figcaption>Oatmeal Cookie</figcaption>
 						</figure>
 					</td>
 				</tr>
@@ -227,11 +227,11 @@
 					<td class="thumbnails">
 						<figure class="egg">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cuLC')">
-								<img src="../images/products/cupcakes.jpg" width="150" height="112" alt="lime cupcake" id="cuLC">
+								<img src="../images/products/cupcakes.jpg" width="150" height="112" alt="lime cupcakes" id="cuLC">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
 							<figcaption>Lime Cupcake</figcaption>
@@ -240,11 +240,11 @@
 					<td class="thumbnails">
 						<figure class="gluten">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cuCC')">
-								<img src="../images/products/cupcakes2.jpg" width="150" height="112" alt="chocolate cupcake" id="cuCC">
+								<img src="../images/products/cupcakes2.jpg" width="150" height="112" alt="chocolate cupcakes" id="cuCC">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<img src="../images/icons/gluten.png" alt="Gluten Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains gluten</span>
 							</div>
 							<figcaption>Chocolate Cupcake</figcaption>
@@ -253,11 +253,11 @@
 					<td class="thumbnails">
 						<figure class="egg">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('cuVC')">
-								<img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="vanilla cupcake" id="cuVC">
+								<img src="../images/products/cupcakes3.jpg" width="150" height="112" alt="vanilla cupcakes" id="cuVC">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
 							<figcaption>Vanilla Cupcake</figcaption> 
@@ -274,11 +274,11 @@
 					<td class="thumbnails">
 						<figure class="milk">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('dPD')">
-								<img src="../images/products/donut.jpg" width="150" height="112" alt="powdered donut" id="dPD">
+								<img src="../images/products/donut.jpg" width="150" height="112" alt="powdered donuts" id="dPD">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/milk.png" alt="contains lactose" width="20" height="20">
+								<img src="../images/icons/milk.png" alt="Lactose Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains lactose</span>
 							</div>
 							<figcaption>Powdered Donut</figcaption>
@@ -287,11 +287,11 @@
 					<td class="thumbnails">
 						<figure class="egg">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('dSD')">
-								<img src="../images/products/donut2.jpg" width="150" height="112" alt="sugar donut" id="dSD">
+								<img src="../images/products/donut2.jpg" width="150" height="112" alt="sugar donuts" id="dSD">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
 							<figcaption>Sugar Donut</figcaption>
@@ -300,11 +300,11 @@
 					<td class="thumbnails">
 						<figure class="gluten">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('dHD')">
-								<img src="../images/products/donut3.jpg" width="150" height="112" alt="homemade donut" id="dHD">
+								<img src="../images/products/donut3.jpg" width="150" height="112" alt="homemade donuts" id="dHD">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/gluten.png" alt="contains gluten" width="20" height="20">
+								<img src="../images/icons/gluten.png" alt="Gluten Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains gluten</span>
 							</div>
 							<figcaption>Homemade Donut</figcaption>
@@ -321,11 +321,11 @@
 					<td class="thumbnails">
 						<figure class="nut">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('mRM')">
-								<img src="../images/products/macaron.jpg" width="150" height="112" alt="raspberry macaron" id="mRM">
+								<img src="../images/products/macaron.jpg" width="150" height="112" alt="raspberry macarons" id="mRM">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+								<img src="../images/icons/peanut.png" alt="Nut Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains nuts</span>
 							</div>
 							<figcaption>Raspberry Macaron</figcaption>
@@ -334,11 +334,11 @@
 					<td class="thumbnails">
 						<figure class="nut">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('mPM')">
-								<img src="../images/products/macaron2.jpg" width="150" height="112" alt="peach macaron" id="mPM">
+								<img src="../images/products/macaron2.jpg" width="150" height="112" alt="peach macarons" id="mPM">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/peanut.png" alt="contains nuts" width="20" height="20">
+								<img src="../images/icons/peanut.png" alt="Nut Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains nuts</span>
 							</div>
 							<figcaption>Peach Macaron</figcaption>
@@ -347,11 +347,11 @@
 					<td class="thumbnails">
 						<figure class="egg">
 							<button type="button" data-toggle="modal" data-target="#myModal"  onclick="uModal('mOM')">
-								<img src="../images/products/macaron3.jpg" width="150" height="112" alt="oreo macaron" id="mOM">
+								<img src="../images/products/macaron3.jpg" width="150" height="112" alt="oreo macarons" id="mOM">
 							</button>
 							<br>
 							<div class="tooltip">
-								<img src="../images/icons/egg.png" alt="contains eggs" width="20" height="20">
+								<img src="../images/icons/egg.png" alt="Egg Allergies" width="20" height="20">
 								<span class="tooltiptext">Contains eggs</span>
 							</div>
 							<figcaption>Oreo Macaron</figcaption>
@@ -370,7 +370,7 @@
 					<div class="mcontent">
 						<div class="lcol">
 							<img src="../images/products/cupcakes3.jpg" alt="Cupcake" width="150" height="112" id="replimg">
-							<h4 id="replprod">&nbsp;</h4>
+							<p id="replprod">Product Name</p>
 							<hr>
 							<p>
 								Allergens: <br> <br> 
@@ -413,7 +413,7 @@
 									<br> <label for="txtQuantity">How many would you like? (1 - 100) </label> <br>
 									<input type="text" name="txtQuantity" id="txtQuantity" onblur="warnInvalidQuantity('txtQuantity')">
 								<div id="tocart">
-									<button type="button" data-dismiss="modal"><input id="submit" type="submit" accesskey="S" value="Add to Cart"></button>
+									<button type="button" data-dismiss="modal"><input id="submit" type="submit" value="Add to Cart"><span class="emptyLink">Add To Cart</span></button>
 								</div>
 								<p id="errQuantity" class="errorMessage"></p>
 								</form>
