@@ -7,7 +7,7 @@
 
 /* required asterisk */
 .required {
-	color: red;
+	color: #9B3417;
 }
 
 /* form borders */
@@ -50,7 +50,7 @@ input:focus, textarea:focus {
 
 /* field error messages */
 .errorMessage {
-	color: red;
+	color: #9B3417;
 	font-size: small;
 	width: 300px;
 }
