@@ -151,3 +151,6 @@ input#submit{
 	cursor: pointer;	
 }
 
+.prodname {
+	padding-left: 30px;
+}
