@@ -71,6 +71,7 @@
 		}else {
 			//Login failed
 			$errmsg_arr[] = 'Login failed';
+			
 			$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 			header("location: ../views/signin.php");
 			exit();

@@ -26,7 +26,10 @@ function validLogin(){
 			$('errLogin').innerHTML = "Please fill in all required fields.";
 			$(loginInfo[i]).style.border = "1px solid red";
 			$(loginInfo[i]).focus();
-		return false;
+			
+			$('wrongsignin').style.display = "none";
+			
+			return false;
 		}	
 		
 	}
