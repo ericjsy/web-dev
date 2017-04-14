@@ -52,3 +52,9 @@ th {
 .return:hover {
 	text-decoration: underline;
 }
+
+#errLogin {
+	clear: left;
+	color: red;
+	font-size: small;
+}

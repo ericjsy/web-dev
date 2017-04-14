@@ -42,6 +42,7 @@
 		//-->
 		</script>
 		<script src="../javascript/backtop.js"></script>
+		<script src="js/addtopicresponse.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
 	
 		<table id="parentTable" align="center">
 			<tr>
-				<form id="form1" name="form1" method="post" action="add_topic.php">
+				<form id="form1" name="form1" method="post" action="add_topic.php" onsubmit="return validtopic()">
 					<td>
 						<table id="childTable" border="0">
 							<tr>
@@ -67,6 +68,11 @@
 								<td valign="top"><strong>Detail</strong></td>
 								<td valign="top">:</td>
 								<td><textarea name="detail" cols="50" rows="3" id="detail"></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td id="errLogin"></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>

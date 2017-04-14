@@ -41,6 +41,7 @@
 		//-->
 		</script>
 		<script src="../javascript/backtop.js"></script>
+		<script src="js/addtopicresponse.js"></script>
 </head>
 
 <body>
@@ -117,13 +118,18 @@
 		<BR>
 		<table id="outerInput" border="0" align="center">
 			<tr>
-				<form name="form1" method="post" action="add_response.php">
+				<form name="form1" method="post" action="add_response.php" onsubmit="return validresponse()">
 					<td>
 						<table id="innerInput" border="0">
 							<tr>
 								<td valign="top"><strong>Response</strong></td>
 								<td valign="top">:</td>
 								<td><textarea name="response" cols="45" rows="7" id="answer"></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td id="errLogin"></td>
 							</tr>
 							<tr>
 								<td>&nbsp;</td>

@@ -1,4 +1,4 @@
-0/* Helper Functions */
+/* Helper Functions */
 
 function $(id){
 	var element = document.getElementById(id);
